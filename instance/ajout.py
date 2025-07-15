@@ -1,0 +1,8070 @@
+plantes = [ 
+	 { 
+ 	 	 "id"  : 1,
+ 	 	 "scientific_name"  : "Abies alba", 
+  	 	 "current_name"  : "Sapin blanc", 
+  	 	 "image"  : "Abies alba/71934.jpg", 
+  	 	 "characteristic"  : "Grand conifère persistant de forme conique, aux aiguilles aplaties et vert foncé, avec des cônes dressés qui se désintègrent sur l'arbre. Écorce lisse chez les jeunes arbres, fissurée avec l'âge.", 
+  	 	 "water_need"  : 15.0 
+	},
+	 { 
+ 	 	 "id"  : 2,
+ 	 	 "scientific_name"  : "Abies cephalonica", 
+  	 	 "current_name"  : "Sapin de Céphalonie", 
+  	 	 "image"  : "Abies cephalonica/65278.jpg", 
+  	 	 "characteristic"  : "Conifère persistant avec des aiguilles rigides, piquantes, vert foncé brillant, disposées radialement autour des rameaux. Cônes cylindriques et dressés.", 
+  	 	 "water_need"  : 12.0 
+	},
+	 { 
+ 	 	 "id"  : 3,
+ 	 	 "scientific_name"  : "Acacia dealbata", 
+  	 	 "current_name"  : "Mimosa d'hiver", 
+  	 	 "image"  : "Acacia dealbata/21740.jpg", 
+  	 	 "characteristic"  : "Arbre ou grand arbuste à croissance rapide, persistant, avec un feuillage très fin, bipenné, de couleur gris-vert. Fleurs jaunes, parfumées, en grappes, apparaissant en hiver.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 4,
+ 	 	 "scientific_name"  : "Acanthus mollis", 
+  	 	 "current_name"  : "Acanthe molle", 
+  	 	 "image"  : "Acanthus mollis/96443.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aux feuilles basales lobées et brillantes, vert foncé. Hampes florales érigées portant des fleurs blanches et pourpres en épis d'été, souvent utilisées dans l'art et l'architecture.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 5,
+ 	 	 "scientific_name"  : "Acer campestre", 
+  	 	 "current_name"  : "Érable champêtre", 
+  	 	 "image"  : "Acer campestre/423.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc, à couronne dense et arrondie. Feuilles trilobées vert foncé, virant au jaune doré en automne. Écorce fissurée, parfois avec des crêtes liégeuses.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 6,
+ 	 	 "scientific_name"  : "Acer monspessulanum", 
+  	 	 "current_name"  : "Érable de Montpellier", 
+  	 	 "image"  : "Acer monspessulanum/1092.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc méditerranéen, à croissance lente. Feuilles trilobées, petites, luisantes, vert foncé, virant au jaune ou rouge-orangé en automne. Tolérant à la sécheresse.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 7,
+ 	 	 "scientific_name"  : "Acer negundo", 
+  	 	 "current_name"  : "Érable à feuilles de frêne", 
+  	 	 "image"  : "Acer negundo/95106.jpg", 
+  	 	 "characteristic"  : "Arbre caduc à croissance rapide, souvent multitronc, avec des feuilles composées (ressemblant à celles du frêne), vert clair, virant au jaune pâle en automne. Espèce pionnière.", 
+  	 	 "water_need"  : 7.0 
+	},
+	 { 
+ 	 	 "id"  : 8,
+ 	 	 "scientific_name"  : "Acer opalus", 
+  	 	 "current_name"  : "Érable opale", 
+  	 	 "image"  : "Acer opalus/3508.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, aux feuilles palmées à 5-7 lobes arrondis, vert foncé et pubescentes en dessous. Belle coloration automnale jaune à orangée. Écorce lisse et grise.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 9,
+ 	 	 "scientific_name"  : "Acer palmatum", 
+  	 	 "current_name"  : "Érable japonais", 
+  	 	 "image"  : "Acer palmatum/2724.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc, très ornemental, avec des feuilles palmées profondément lobées, souvent rouges ou pourpres, virant à des couleurs éclatantes en automne. Nombreux cultivars.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 10,
+ 	 	 "scientific_name"  : "Acer platanoides", 
+  	 	 "current_name"  : "Érable plane", 
+  	 	 "image"  : "Acer platanoides/107391.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à couronne large et arrondie. Feuilles palmées à 5-7 lobes pointus, vert vif, virant au jaune d'or en automne. Produit une sève laiteuse si la feuille est cassée.", 
+  	 	 "water_need"  : 9.0 
+	},
+	 { 
+ 	 	 "id"  : 11,
+ 	 	 "scientific_name"  : "Acer pseudoplatanus", 
+  	 	 "current_name"  : "Érable sycomore", 
+  	 	 "image"  : "Acer pseudoplatanus/109857.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à croissance rapide, avec une cime large et des feuilles palmées à 5 lobes grossièrement dentées, vert foncé sur le dessus et gris-vert en dessous. Écorce s'exfoliant en plaques.", 
+  	 	 "water_need"  : 10.0 
+	},
+	 { 
+ 	 	 "id"  : 12,
+ 	 	 "scientific_name"  : "Acer saccharinum", 
+  	 	 "current_name"  : "Érable argenté", 
+  	 	 "image"  : "Acer saccharinum/81456.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à croissance très rapide, souvent avec plusieurs troncs. Feuilles profondément lobées, vert clair sur le dessus et argentées en dessous. Virage jaune pâle en automne. Rameaux pendants.", 
+  	 	 "water_need"  : 12.0 
+	},
+	 { 
+ 	 	 "id"  : 13,
+ 	 	 "scientific_name"  : "Achillea filipendulina", 
+  	 	 "current_name"  : "Achillée 'Coronation Gold'", 
+  	 	 "image"  : "Achillea filipendulina/85570.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée robuste formant des touffes. Tiges dressées portant de grands corymbes plats de petites fleurs jaune vif et de feuilles finement découpées et aromatiques. Excellente pour les bouquets secs.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 14,
+ 	 	 "scientific_name"  : "Achillea millefolium", 
+  	 	 "current_name"  : "Achillée millefeuille", 
+  	 	 "image"  : "Achillea millefolium/38080.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée commune, aux feuilles finement découpées et aromatiques. Petites fleurs blanches à roses, regroupées en corymbes plats. Très rustique et résistante à la sécheresse.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 15,
+ 	 	 "scientific_name"  : "Achillea ptarmica", 
+  	 	 "current_name"  : "Achillée 'Boule de Neige'", 
+  	 	 "image"  : "Achillea ptarmica/20464.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse aux feuilles lancéolées et dentelées. Fleurs blanches, doubles, ressemblant à de petits pompons, groupées en corymbes lâches. Apprécie les sols frais.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 16,
+ 	 	 "scientific_name"  : "Aconitum lycoctonum", 
+  	 	 "current_name"  : "Aconit tue-loup", 
+  	 	 "image"  : "Aconitum lycoctonum/27350.jpg", 
+  	 	 "characteristic"  : "Plante vivace toxique aux fleurs en casque, généralement jaunes, regroupées en grappes lâches. Feuilles profondément lobées. Typique des sous-bois humides et des lisières.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 17,
+ 	 	 "scientific_name"  : "Aconitum napellus", 
+  	 	 "current_name"  : "Aconit napel", 
+  	 	 "image"  : "Aconitum napellus/293.jpg", 
+  	 	 "characteristic"  : "Plante vivace très toxique, aux fleurs bleu-violet foncé en forme de casque, groupées en épis terminaux. Feuilles palmées et découpées. Pousse dans les milieux frais et humides.", 
+  	 	 "water_need"  : 4.5 
+	},
+	 { 
+ 	 	 "id"  : 18,
+ 	 	 "scientific_name"  : "Adenostyles alliariae", 
+  	 	 "current_name"  : "Adénostyle à feuilles d'alliaire", 
+  	 	 "image"  : "Adenostyles alliariae/86879.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace de montagne aux grandes feuilles basales triangulaires et dentées. Hampes florales dressées portant de nombreux petits capitules rosés ou pourpres. Odeur d'ail froissée.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 19,
+ 	 	 "scientific_name"  : "Adonis annua", 
+  	 	 "current_name"  : "Adonis d'automne", 
+  	 	 "image"  : "Adonis annua/88563.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle aux fleurs rouges écarlates, solitaires, avec un centre sombre. Feuilles très finement découpées. Fleurissant au printemps ou en été, souvent dans les champs cultivés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 20,
+ 	 	 "scientific_name"  : "Aegopodium podagraria", 
+  	 	 "current_name"  : "Égopode podagraire", 
+  	 	 "image"  : "Aegopodium podagraria/102784.jpg", 
+  	 	 "characteristic"  : "Vivace envahissante aux racines traçantes. Feuilles composées de 3 folioles dentées. Petites fleurs blanches en ombelles plates. Souvent considérée comme une mauvaise herbe tenace.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 21,
+ 	 	 "scientific_name"  : "Aesculus hippocastanum", 
+  	 	 "current_name"  : "Marronnier d'Inde", 
+  	 	 "image"  : "Aesculus hippocastanum/55348.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à la couronne large et arrondie. Grandes feuilles palmées à 5-7 folioles. Grandes panicules dressées de fleurs blanches tachées de jaune et rouge. Produit des 'marrons' non comestibles.", 
+  	 	 "water_need"  : 18.0 
+	},
+	 { 
+ 	 	 "id"  : 22,
+ 	 	 "scientific_name"  : "Aethionema saxatile", 
+  	 	 "current_name"  : "Aéthionème des rochers", 
+  	 	 "image"  : "Aethionema saxatile/17257.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace tapissante, idéale pour les rocailles. Feuilles gris-vert, persistantes. Petites fleurs roses ou blanches regroupées en grappes denses. Floraison printanière.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 23,
+ 	 	 "scientific_name"  : "Agave americana", 
+  	 	 "current_name"  : "Agave d'Amérique", 
+  	 	 "image"  : "Agave americana/86404.jpg", 
+  	 	 "characteristic"  : "Grande succulente formant une rosette de feuilles charnues, épaisses, rigides, bleu-vert, bordées d'épines. Fleur unique et spectaculaire après de nombreuses années (monocarpique), sur une hampe florale géante.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 24,
+ 	 	 "scientific_name"  : "Agave sisalana", 
+  	 	 "current_name"  : "Sisal", 
+  	 	 "image"  : "Agave sisalana/15607.jpg", 
+  	 	 "characteristic"  : "Plante succulente aux longues feuilles fibreuses et pointues, de couleur vert clair. Elle produit une fibre résistante (sisal) utilisée pour les cordages. La hampe florale est très haute.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 25,
+ 	 	 "scientific_name"  : "Agrimonia eupatoria", 
+  	 	 "current_name"  : "Aigremoine", 
+  	 	 "image"  : "Agrimonia eupatoria/4238.jpg", 
+  	 	 "characteristic"  : "Plante vivace herbacée de taille moyenne, aux feuilles composées et dentées. Petites fleurs jaunes étoilées disposées en longs épis terminaux. Fruits en forme de cônes accrocheurs.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 26,
+ 	 	 "scientific_name"  : "Agrostemma githago", 
+  	 	 "current_name"  : "Nielle des blés", 
+  	 	 "image"  : "Agrostemma githago/61271.jpg", 
+  	 	 "characteristic"  : "Plante annuelle élancée aux fleurs solitaires, grandes, violet-rose vif, avec des rayures foncées. Feuilles étroites et opposées. Ancienne adventice des cultures céréalières, devenue rare.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 27,
+ 	 	 "scientific_name"  : "Ailanthus altissima", 
+  	 	 "current_name"  : "Ailante glanduleux", 
+  	 	 "image"  : "Ailanthus altissima/46519.jpg", 
+  	 	 "characteristic"  : "Arbre caduc à croissance rapide, souvent invasif, avec de grandes feuilles composées de nombreuses folioles. Odeur désagréable au froissement. Produit de nombreuses samares en grappes. Très résistant à la pollution.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 28,
+ 	 	 "scientific_name"  : "Ajuga chamaepitys", 
+  	 	 "current_name"  : "Bugle de Genève", 
+  	 	 "image"  : "Ajuga chamaepitys/66500.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace tapissante, aux feuilles profondément découpées et velues. Fleurs bleu-violet à blanches, en verticilles à l'aisselle des feuilles. Pousse en milieu sec et ensoleillé.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 29,
+ 	 	 "scientific_name"  : "Ajuga genevensis", 
+  	 	 "current_name"  : "Bugle rampante", 
+  	 	 "image"  : "Ajuga genevensis/15169.jpg", 
+  	 	 "characteristic"  : "Plante vivace couvre-sol formant des rosettes, aux feuilles basales ovales et légèrement dentées. Épis floraux dressés de fleurs bleu-violet. S'étend par des stolons aériens.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 30,
+ 	 	 "scientific_name"  : "Ajuga iva", 
+  	 	 "current_name"  : "Bugle Iva", 
+  	 	 "image"  : "Ajuga iva/34307.jpg", 
+  	 	 "characteristic"  : "Petite vivace méditerranéenne tapissante, aux feuilles petites, spatulées et légèrement velues. Fleurs roses ou pourpres en épis courts. Souvent odorante.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 31,
+ 	 	 "scientific_name"  : "Ajuga reptans", 
+  	 	 "current_name"  : "Bugle rampante", 
+  	 	 "image"  : "Ajuga reptans/60338.jpg", 
+  	 	 "characteristic"  : "Plante vivace couvre-sol aux feuilles vert foncé, parfois pourprées. Fleurs bleu-violet en épis dressés au printemps. S'étend rapidement par des stolons rampants, formant un tapis dense.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 32,
+ 	 	 "scientific_name"  : "Albizia julibrissin", 
+  	 	 "current_name"  : "Arbre à soie", 
+  	 	 "image"  : "Albizia julibrissin/86931.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc ornemental, à la cime étalée en parasol. Feuilles bipennées très fines, ressemblant à des fougères. Fleurs roses en pompons plumeux, très décoratives en été. Gousses plates.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 33,
+ 	 	 "scientific_name"  : "Alcea rosea", 
+  	 	 "current_name"  : "Rose trémière", 
+  	 	 "image"  : "Alcea rosea/69278.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle ou vivace éphémère aux tiges dressées. Grandes fleurs solitaires en forme de coupe, de couleurs variées (rose, rouge, jaune, blanc), le long d'une haute hampe florale. Rustique.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 34,
+ 	 	 "scientific_name"  : "Alliaria petiolata", 
+  	 	 "current_name"  : "Alliaire officinale", 
+  	 	 "image"  : "Alliaria petiolata/37351.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou annuelle aux feuilles cordiformes et dentées. Petites fleurs blanches à quatre pétales, groupées en grappes. Odeur d'ail quand on froisse les feuilles. Envahissante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 35,
+ 	 	 "scientific_name"  : "Allium narcissiflorum", 
+  	 	 "current_name"  : "Ail à fleurs de narcisse", 
+  	 	 "image"  : "Allium narcissiflorum/4105.jpg", 
+  	 	 "characteristic"  : "Petit ail ornemental aux fleurs pendantes en forme de cloche, de couleur rose-pourpre. Feuilles étroites et linéaires. Pousse en petites touffes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 36,
+ 	 	 "scientific_name"  : "Allium nigrum", 
+  	 	 "current_name"  : "Ail noir", 
+  	 	 "image"  : "Allium nigrum/29377.jpg", 
+  	 	 "characteristic"  : "Ail ornemental aux grandes ombelles sphériques de fleurs blanches à verdâtres, parfois avec une tache pourpre au centre. Feuillage rubané. Belle floraison printanière.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 37,
+ 	 	 "scientific_name"  : "Allium polyanthum", 
+  	 	 "current_name"  : "Ail à nombreuses fleurs", 
+  	 	 "image"  : "Allium polyanthum/52561.jpg", 
+  	 	 "characteristic"  : "Ail sauvage aux feuilles linéaires. Grande ombelle sphérique de nombreuses petites fleurs blanc rosé. Odeur d'ail. Peut être envahissant dans certaines conditions.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 38,
+ 	 	 "scientific_name"  : "Allium schoenoprasum", 
+  	 	 "current_name"  : "Ciboulette", 
+  	 	 "image"  : "Allium schoenoprasum/65801.jpg", 
+  	 	 "characteristic"  : "Vivace bulbeuse formant des touffes denses. Feuilles fines, creuses, cylindriques, vert foncé, très aromatiques. Fleurs globuleuses, roses ou pourpres. Largement utilisée comme herbe aromatique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 39,
+ 	 	 "scientific_name"  : "Allium sphaerocephalon", 
+  	 	 "current_name"  : "Ail à tête ronde", 
+  	 	 "image"  : "Allium sphaerocephalon/66497.jpg", 
+  	 	 "characteristic"  : "Ail ornemental distinctif avec des fleurs violet-pourpre foncé regroupées en têtes sphériques et compactes au sommet de tiges fines. Aspect graphique, idéal en massif.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 40,
+ 	 	 "scientific_name"  : "Allium triquetrum", 
+  	 	 "current_name"  : "Ail triquètre", 
+  	 	 "image"  : "Allium triquetrum/49213.jpg", 
+  	 	 "characteristic"  : "Ail sauvage aux feuilles basales linéaires et triangulaires en coupe. Fleurs blanches en forme de clochettes pendantes, regroupées en grappes lâches. Odeur d'ail prononcée. Peut être invasif.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 41,
+ 	 	 "scientific_name"  : "Allium ursinum", 
+  	 	 "current_name"  : "Ail des ours", 
+  	 	 "image"  : "Allium ursinum/22894.jpg", 
+  	 	 "characteristic"  : "Vivace bulbeuse formant des tapis au printemps. Grandes feuilles vertes, lancéolées, au parfum d'ail très prononcé. Fleurs blanches étoilées en ombelles. Très apprécié en cuisine sauvage.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 42,
+ 	 	 "scientific_name"  : "Alnus alnobetula", 
+  	 	 "current_name"  : "Aulne vert", 
+  	 	 "image"  : "Alnus alnobetula/84931.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre caduc, souvent multi-tronc, avec une écorce lisse. Feuilles ovales, doublement dentées. Cônes ovoïdes et ligneux persistants. Pousse dans les zones froides et humides de montagne.", 
+  	 	 "water_need"  : 10.0 
+	},
+	 { 
+ 	 	 "id"  : 43,
+ 	 	 "scientific_name"  : "Alnus cordata", 
+  	 	 "current_name"  : "Aulne de Corse", 
+  	 	 "image"  : "Alnus cordata/61717.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne à croissance rapide, avec une cime conique. Feuilles cordiformes (en forme de cœur), brillantes, vert foncé. Tolérant aux sols secs et à la pollution. Fixe l'azote.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 44,
+ 	 	 "scientific_name"  : "Alnus glutinosa", 
+  	 	 "current_name"  : "Aulne glutineux", 
+  	 	 "image"  : "Alnus glutinosa/23913.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, typique des zones humides. Feuilles arrondies ou obovales, dentelées, vert foncé et brillantes, souvent collantes quand jeunes. Cônes ligneux persistants. Supporte les sols inondés.", 
+  	 	 "water_need"  : 15.0 
+	},
+	 { 
+ 	 	 "id"  : 45,
+ 	 	 "scientific_name"  : "Althaea cannabina", 
+  	 	 "current_name"  : "Guimauve à feuilles de chanvre", 
+  	 	 "image"  : "Althaea cannabina/64050.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aux tiges ramifiées. Feuilles profondément lobées, rappelant le chanvre. Fleurs rose pâle avec un centre plus sombre, ressemblant à de petites roses, groupées à l'aisselle des feuilles.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 46,
+ 	 	 "scientific_name"  : "Althaea officinalis", 
+  	 	 "current_name"  : "Guimauve officinale", 
+  	 	 "image"  : "Althaea officinalis/17074.jpg", 
+  	 	 "characteristic"  : "Plante vivace velue, aux feuilles lobées, gris-vert et duveteuses. Grandes fleurs rose pâle ou blanches, en forme d'entonnoir, le long des tiges. Cultivée pour ses propriétés médicinales (racine).", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 47,
+ 	 	 "scientific_name"  : "Amaranthus deflexus", 
+  	 	 "current_name"  : "Amarante couchée", 
+  	 	 "image"  : "Amaranthus deflexus/12536.jpg", 
+  	 	 "characteristic"  : "Plante annuelle rampante ou ascendante, aux feuilles ovales à losangiques, vert foncé. Petites fleurs verdâtres ou reddish, regroupées en épis compacts et axillaires. Souvent considérée comme une mauvaise herbe.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 48,
+ 	 	 "scientific_name"  : "Ambrosia artemisiifolia", 
+  	 	 "current_name"  : "Ambroisie à feuilles d'armoise", 
+  	 	 "image"  : "Ambrosia artemisiifolia/12650.jpg", 
+  	 	 "characteristic"  : "Plante annuelle très envahissante, à croissance rapide. Feuilles très découpées, ressemblant à celles de l'armoise. Petites fleurs verdâtres, non spectaculaires, produisant un pollen très allergisant.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 49,
+ 	 	 "scientific_name"  : "Amelanchier ovalis", 
+  	 	 "current_name"  : "Amélanchier à feuilles ovales", 
+  	 	 "image"  : "Amelanchier ovalis/75836.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc, à la floraison printanière spectaculaire de fleurs blanches étoilées. Fruits comestibles (amélanches) rouge-noirâtres. Feuillage orangé en automne.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 50,
+ 	 	 "scientific_name"  : "Ammophila arenaria", 
+  	 	 "current_name"  : "Oyat", 
+  	 	 "image"  : "Ammophila arenaria/24669.jpg", 
+  	 	 "characteristic"  : "Graminée vivace robuste, formant de grandes touffes. Feuilles longues, rigides, enroulées et gris-vert. Capable de stabiliser les dunes de sable grâce à son système racinaire étendu et résistant à l'ensablement.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 51,
+ 	 	 "scientific_name"  : "Amorpha fruticosa", 
+  	 	 "current_name"  : "Faux indigo", 
+  	 	 "image"  : "Amorpha fruticosa/57528.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc de taille moyenne, aux feuilles composées de nombreuses petites folioles. Fleurs violet-pourpre avec des étamines saillantes, regroupées en épis dressés. Très résistant et peut devenir envahissant.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 52,
+ 	 	 "scientific_name"  : "Anacamptis champagneuxii", 
+  	 	 "current_name"  : "Orchis de Champagneux", 
+  	 	 "image"  : "Anacamptis champagneuxii/99987.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre rare, aux fleurs roses à pourpres, souvent avec des taches plus foncées sur le labelle. Pousse dans les prairies et pelouses calcaires humides. Plante protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 53,
+ 	 	 "scientific_name"  : "Anacamptis laxiflora", 
+  	 	 "current_name"  : "Orchis à fleurs lâches", 
+  	 	 "image"  : "Anacamptis laxiflora/15101.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre élancée aux fleurs espacées, de couleur rose à pourpre foncé, avec un labelle trilobé. Pousse dans les prairies humides et les marais.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 54,
+ 	 	 "scientific_name"  : "Anacamptis morio", 
+  	 	 "current_name"  : "Orchis bouffon", 
+  	 	 "image"  : "Anacamptis morio/30102.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre commune, aux fleurs rose-violet à pourpre, avec un casque rayé et un labelle lobé tacheté. Pousse dans les prairies, pelouses et bois clairs.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 55,
+ 	 	 "scientific_name"  : "Anacamptis pyramidalis", 
+  	 	 "current_name"  : "Orchis pyramidal", 
+  	 	 "image"  : "Anacamptis pyramidalis/64220.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre reconnaissable à son épi floral dense et conique (pyramidal) de petites fleurs roses à pourpres. Pousse dans les pelouses calcaires, talus ensoleillés.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 56,
+ 	 	 "scientific_name"  : "Anacyclus clavatus", 
+  	 	 "current_name"  : "Anacycle clavé", 
+  	 	 "image"  : "Anacyclus clavatus/91669.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux fleurs ressemblant à de grandes marguerites, avec des ligules blanches sur le dessus et pourpres ou rougeâtres en dessous. Pousse dans les champs et bords de chemins méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 57,
+ 	 	 "scientific_name"  : "Anarrhinum bellidifolium", 
+  	 	 "current_name"  : "Anarrhinum à feuilles de pâquerette", 
+  	 	 "image"  : "Anarrhinum bellidifolium/34588.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace ou bisannuelle aux feuilles basales en rosette et aux tiges florales portant de petites fleurs bleu-violet en grappes lâches. Ressemble à une petite linaire.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 58,
+ 	 	 "scientific_name"  : "Anchusa italica", 
+  	 	 "current_name"  : "Buglosse d'Italie", 
+  	 	 "image"  : "Anchusa italica/102576.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle ou vivace aux tiges velues et aux fleurs d'un bleu intense et vif, en forme de clochettes évasées, regroupées en cymes. Appréciée des pollinisateurs.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 59,
+ 	 	 "scientific_name"  : "Androsace villosa", 
+  	 	 "current_name"  : "Androsace velue", 
+  	 	 "image"  : "Androsace villosa/12994.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace alpine formant des coussins denses. Feuilles velues, en rosette. Petites fleurs blanches ou roses, souvent avec un œil jaune, groupées en ombelles. Idéale en rocaille.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 60,
+ 	 	 "scientific_name"  : "Andryala integrifolia", 
+  	 	 "current_name"  : "Andryale à feuilles entières", 
+  	 	 "image"  : "Andryala integrifolia/46546.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle velue, aux feuilles basales entières ou légèrement dentées. Fleurs jaunes en capitules solitaires, ressemblant à de petits pissenlits. Commune dans les milieux secs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 61,
+ 	 	 "scientific_name"  : "Anemone alpina", 
+  	 	 "current_name"  : "Anémone alpine", 
+  	 	 "image"  : "Anemone alpina/62025.jpg", 
+  	 	 "characteristic"  : "Grande anémone vivace de montagne aux grandes fleurs solitaires, blanches à crème, parfois teintées de bleu-violet à l'extérieur. Feuilles profondément découpées. Fleurs souvent duveteuses à l'extérieur.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 62,
+ 	 	 "scientific_name"  : "Anemone coronaria", 
+  	 	 "current_name"  : "Anémone des fleuristes", 
+  	 	 "image"  : "Anemone coronaria/1751.jpg", 
+  	 	 "characteristic"  : "Vivace tubéreuse aux fleurs grandes et voyantes, en forme de coupe, dans une large gamme de couleurs (rouge, bleu, violet, blanc, rose), souvent avec un œil sombre. Feuilles finement découpées.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 63,
+ 	 	 "scientific_name"  : "Anemone hepatica", 
+  	 	 "current_name"  : "Hépatique à trois lobes", 
+  	 	 "image"  : "Anemone hepatica/14318.jpg", 
+  	 	 "characteristic"  : "Petite vivace printanière de sous-bois. Feuilles persistantes, trilobées, ressemblant à un foie. Fleurs solitaires, bleues, violettes, roses ou blanches. Fleurissant très tôt au printemps.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 64,
+ 	 	 "scientific_name"  : "Anemone nemorosa", 
+  	 	 "current_name"  : "Anémone sylvie", 
+  	 	 "image"  : "Anemone nemorosa/37490.jpg", 
+  	 	 "characteristic"  : "Petite vivace printanière de sous-bois, formant des tapis. Fleurs solitaires, blanches, parfois teintées de rose ou de bleu à l'extérieur. Feuilles délicates et découpées. Se propage par rhizomes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 65,
+ 	 	 "scientific_name"  : "Anemone pulsatilla", 
+  	 	 "current_name"  : "Pulsatille", 
+  	 	 "image"  : "Anemone pulsatilla/54260.jpg", 
+  	 	 "characteristic"  : "Vivace printanière très poilue. Grandes fleurs en forme de cloche, violettes à pourpres (parfois blanches ou jaunes), souvent pendantes. Fleurs suivies de fruits plumeux très décoratifs. Protégée.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 66,
+ 	 	 "scientific_name"  : "Anemone ranunculoides", 
+  	 	 "current_name"  : "Anémone fausse renoncule", 
+  	 	 "image"  : "Anemone ranunculoides/23916.jpg", 
+  	 	 "characteristic"  : "Vivace printanière de sous-bois humides. Fleurs jaune vif, solitaires ou par deux, ressemblant à de petites renoncules. Feuillage vert clair, délicatement découpé.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 67,
+ 	 	 "scientific_name"  : "Anemone rubra", 
+  	 	 "current_name"  : "Anémone rouge", 
+  	 	 "image"  : "Anemone rubra/26394.jpg", 
+  	 	 "characteristic"  : "Plante souvent cultivée, généralement une variété d'Anemone coronaria, caractérisée par ses fleurs d'un rouge intense et éclatant. Idéale pour les massifs.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 68,
+ 	 	 "scientific_name"  : "Anemone vernalis", 
+  	 	 "current_name"  : "Anémone printanière", 
+  	 	 "image"  : "Anemone vernalis/73148.jpg", 
+  	 	 "characteristic"  : "Petite vivace alpine très velue. Fleurs dressées, blanc-crème à l'intérieur, violet-bleu à l'extérieur, souvent poilues. Fleurs précédant les feuilles. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 69,
+ 	 	 "scientific_name"  : "Angelica heterocarpa", 
+  	 	 "current_name"  : "Angélique à fruits variés", 
+  	 	 "image"  : "Angelica heterocarpa/8889.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle ou vivace de courte vie. Tiges robustes et creuses. Grandes feuilles composées et larges ombelles de petites fleurs blanches. Pousse dans les milieux humides.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 70,
+ 	 	 "scientific_name"  : "Angelica sylvestris", 
+  	 	 "current_name"  : "Angélique des bois", 
+  	 	 "image"  : "Angelica sylvestris/109412.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle ou vivace, aux tiges pourpres et creuses. Grandes feuilles très découpées. Grandes ombelles de petites fleurs blanc-rosé ou verdâtres. Odeur forte. Pousse dans les lieux humides.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 71,
+ 	 	 "scientific_name"  : "Antennaria dioica", 
+  	 	 "current_name"  : "Pied-de-chat", 
+  	 	 "image"  : "Antennaria dioica/88559.jpg", 
+  	 	 "characteristic"  : "Petite vivace tapissante, formant des rosettes de feuilles gris-vert feutrées. Fleurs en petits capitules blanc-rosé ou roses, portées sur des tiges velues. Espèce dioïque (fleurs mâles et femelles sur plantes différentes).", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 72,
+ 	 	 "scientific_name"  : "Anthemis maritima", 
+  	 	 "current_name"  : "Anthémis maritime", 
+  	 	 "image"  : "Anthemis maritima/35141.jpg", 
+  	 	 "characteristic"  : "Plante vivace ou bisannuelle des milieux côtiers. Feuilles charnues et finement découpées. Fleurs en capitules solitaires, avec des ligules blanches et un cœur jaune. Odeur aromatique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 73,
+ 	 	 "scientific_name"  : "Anthericum liliago", 
+  	 	 "current_name"  : "Phalangère à fleurs de lis", 
+  	 	 "image"  : "Anthericum liliago/39550.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse aux feuilles linéaires, basales. Tiges florales dressées portant des fleurs blanches étoilées, en forme de lis, regroupées en grappes lâches. Pousse dans les pelouses sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 74,
+ 	 	 "scientific_name"  : "Anthoxanthum odoratum", 
+  	 	 "current_name"  : "Flouve odorante", 
+  	 	 "image"  : "Anthoxanthum odoratum/100216.jpg", 
+  	 	 "characteristic"  : "Graminée vivace formant des touffes. Épis floraux denses, vert-jaunâtre, très parfumés à l'odeur de coumarine (foin coupé). Feuilles linéaires et plates. Commune dans les prairies.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 75,
+ 	 	 "scientific_name"  : "Anthriscus sylvestris", 
+  	 	 "current_name"  : "Cerfeuil sauvage", 
+  	 	 "image"  : "Anthriscus sylvestris/100870.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle ou vivace, aux tiges creuses et striées. Feuilles très finement découpées, ressemblant au persil. Petites fleurs blanches en ombelles plates. Très commune en bord de chemin et sous-bois.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 76,
+ 	 	 "scientific_name"  : "Anthyllis hermanniae", 
+  	 	 "current_name"  : "Anthyllide d'Hermann", 
+  	 	 "image"  : "Anthyllis hermanniae/13041.jpg", 
+  	 	 "characteristic"  : "Petit arbuste méditerranéen aux rameaux ligneux et aux feuilles composées de 3-5 folioles. Petites fleurs jaunes à orangées, regroupées en têtes denses. Tolérante à la sécheresse.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 77,
+ 	 	 "scientific_name"  : "Anthyllis montana", 
+  	 	 "current_name"  : "Anthyllide des montagnes", 
+  	 	 "image"  : "Anthyllis montana/72452.jpg", 
+  	 	 "characteristic"  : "Vivace alpine formant des coussins denses. Feuilles composées, soyeuses. Fleurs roses à pourpres, en têtes compactes, à l'extrémité des tiges. Pousse en rocailles et pelouses sèches d'altitude.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 78,
+ 	 	 "scientific_name"  : "Anthyllis vulneraria", 
+  	 	 "current_name"  : "Anthyllide vulnéraire", 
+  	 	 "image"  : "Anthyllis vulneraria/16612.jpg", 
+  	 	 "characteristic"  : "Vivace très variable, aux feuilles composées. Fleurs jaunes à orangées (parfois rouges ou blanches), regroupées en têtes denses, souvent à l'extrémité de tiges dressées. Plante médicinale.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 79,
+ 	 	 "scientific_name"  : "Antirrhinum majus", 
+  	 	 "current_name"  : "Muflier", 
+  	 	 "image"  : "Antirrhinum majus/71600.jpg", 
+  	 	 "characteristic"  : "Plante vivace éphémère ou annuelle, aux fleurs tubulaires et bilabiées, 'en gueule de loup', dans une large gamme de couleurs vives. Tiges dressées et feuilles lancéolées.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 80,
+ 	 	 "scientific_name"  : "Aphyllanthes monspeliensis", 
+  	 	 "current_name"  : "Aphyllanthe de Montpellier", 
+  	 	 "image"  : "Aphyllanthes monspeliensis/50581.jpg", 
+  	 	 "characteristic"  : "Petite vivace méditerranéenne sans feuilles (ou très réduites), avec des tiges fines et raides. Fleurs solitaires, bleu vif, avec six tépales, apparaissant au sommet des tiges.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 81,
+ 	 	 "scientific_name"  : "Aquilegia vulgaris", 
+  	 	 "current_name"  : "Ancolie commune", 
+  	 	 "image"  : "Aquilegia vulgaris/102619.jpg", 
+  	 	 "characteristic"  : "Vivace élégante aux fleurs caractéristiques en forme de clochettes à cinq éperons, bleues-violettes (parfois roses ou blanches). Feuillage délicat et lobé. Pousse dans les bois clairs et prairies.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 82,
+ 	 	 "scientific_name"  : "Arabidopsis thaliana", 
+  	 	 "current_name"  : "Arabette des dames", 
+  	 	 "image"  : "Arabidopsis thaliana/47049.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle, modèle en génétique. Rosette basale de feuilles spatulées. Tiges florales minces portant de petites fleurs blanches à quatre pétales, suivies de siliques dressées.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 83,
+ 	 	 "scientific_name"  : "Arbutus unedo", 
+  	 	 "current_name"  : "Arbousier", 
+  	 	 "image"  : "Arbutus unedo/112180.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre persistant, à l'écorce rouge-brun qui s'exfolie. Fleurs blanches en clochettes, en automne. Fruits comestibles rouges et sphériques, rappelant les fraises, mûrissant un an après la floraison.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 84,
+ 	 	 "scientific_name"  : "Arctium lappa", 
+  	 	 "current_name"  : "Grande bardane", 
+  	 	 "image"  : "Arctium lappa/86191.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle robuste. Grandes feuilles basales en forme de cœur. Fleurs pourpres en capitules épineux, groupés en corymbes. Fruits (aigrettes) s'accrochant aux vêtements (origine du Velcro).", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 85,
+ 	 	 "scientific_name"  : "Arctium minus", 
+  	 	 "current_name"  : "Petite bardane", 
+  	 	 "image"  : "Arctium minus/85847.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle similaire à la grande bardane mais de taille plus petite. Capitules épineux plus petits et moins denses. Très commune dans les friches et bords de chemins.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 86,
+ 	 	 "scientific_name"  : "Argyrolobium zanonii", 
+  	 	 "current_name"  : "Cytise des Alpes", 
+  	 	 "image"  : "Argyrolobium zanonii/93227.jpg", 
+  	 	 "characteristic"  : "Petit arbuste aux feuilles trifoliées et soyeuses. Fleurs jaune vif, en grappes lâches. Ressemble à un petit cytise, mais moins courant. Pousse en milieux secs et rocailleux.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 87,
+ 	 	 "scientific_name"  : "Aristolochia clematitis", 
+  	 	 "current_name"  : "Aristoloche clématite", 
+  	 	 "image"  : "Aristolochia clematitis/60241.jpg", 
+  	 	 "characteristic"  : "Plante vivace grimpante ou rampante. Fleurs tubulaires, en forme de pipe, jaune-verdâtre, apparaissant à l'aisselle des feuilles. Odeur forte. Plante médicinale et toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 88,
+ 	 	 "scientific_name"  : "Aristolochia pistolochia", 
+  	 	 "current_name"  : "Aristoloche pistoloche", 
+  	 	 "image"  : "Aristolochia pistolochia/46827.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace méditerranéenne, aux feuilles ovales à cordiformes. Fleurs solitaires, vert-jaunâtre avec des veines pourpres, en forme de siphon recourbé. Odeur désagréable.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 89,
+ 	 	 "scientific_name"  : "Aristolochia rotunda", 
+  	 	 "current_name"  : "Aristoloche à feuilles rondes", 
+  	 	 "image"  : "Aristolochia rotunda/75332.jpg", 
+  	 	 "characteristic"  : "Vivace tubéreuse aux feuilles arrondies et cordiformes. Fleurs solitaires, pourpres-brunâtres, en forme de pipe, avec une odeur forte. Pousse dans les garrigues et bords de chemins.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 90,
+ 	 	 "scientific_name"  : "Armeria alpina", 
+  	 	 "current_name"  : "Armérie alpine", 
+  	 	 "image"  : "Armeria alpina/80708.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des coussins denses de feuilles linéaires et persistantes. Tiges florales fines portant des têtes florales globuleuses de petites fleurs roses. Pousse en montagne.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 91,
+ 	 	 "scientific_name"  : "Armeria arenaria", 
+  	 	 "current_name"  : "Armérie des sables", 
+  	 	 "image"  : "Armeria arenaria/21900.jpg", 
+  	 	 "characteristic"  : "Vivace formant des touffes, avec des feuilles linéaires et des tiges florales robustes. Fleurs roses en têtes globuleuses, plus grandes que l'armérie maritime. Pousse sur sols sableux.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 92,
+ 	 	 "scientific_name"  : "Armeria maritima", 
+  	 	 "current_name"  : "Armérie maritime", 
+  	 	 "image"  : "Armeria maritima/50469.jpg", 
+  	 	 "characteristic"  : "Vivace formant des coussins denses de feuilles étroites, persistantes, ressemblant à de l'herbe. Tiges florales fines portant des têtes florales roses (parfois blanches). Tolère les sols salés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 93,
+ 	 	 "scientific_name"  : "Arnica montana", 
+  	 	 "current_name"  : "Arnica des montagnes", 
+  	 	 "image"  : "Arnica montana/17468.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne aux rosettes de feuilles basales et aux tiges florales portant des capitules de fleurs jaune-orangé vif. Fleur odorante et utilisée en phytothérapie. Espèce protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 94,
+ 	 	 "scientific_name"  : "Artemisia vulgaris", 
+  	 	 "current_name"  : "Armoise commune", 
+  	 	 "image"  : "Artemisia vulgaris/19504.jpg", 
+  	 	 "characteristic"  : "Plante vivace herbacée de taille moyenne à grande. Feuilles profondément lobées, vert foncé sur le dessus et gris-blanc tomenteuses en dessous. Petites fleurs verdâtres en panicules. Très aromatique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 95,
+ 	 	 "scientific_name"  : "Arum italicum", 
+  	 	 "current_name"  : "Arum d'Italie", 
+  	 	 "image"  : "Arum italicum/70040.jpg", 
+  	 	 "characteristic"  : "Plante vivace à rhizome tubéreux. Grandes feuilles lustrées, souvent marbrées de crème ou d'argent, apparaissant en automne ou hiver. Spathe vert pâle engainant un spadice jaune (fructification rouge vif en été).", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 96,
+ 	 	 "scientific_name"  : "Arum maculatum", 
+  	 	 "current_name"  : "Arum maculé", 
+  	 	 "image"  : "Arum maculatum/20248.jpg", 
+  	 	 "characteristic"  : "Plante vivace tubéreuse aux feuilles vertes, souvent tachées de pourpre, apparaissant au printemps. Spathe vert-jaunâtre à pourpre, entourant un spadice violet foncé. Baies rouges et toxiques en été.", 
+  	 	 "water_need"  : 2.2 
+	},
+	 { 
+ 	 	 "id"  : 97,
+ 	 	 "scientific_name"  : "Arundo donax", 
+  	 	 "current_name"  : "Canne de Provence", 
+  	 	 "image"  : "Arundo donax/17180.jpg", 
+  	 	 "characteristic"  : "Très grande graminée vivace, formant de denses touffes. Tiges creuses et robustes, ressemblant à des bambous. Longues feuilles étroites. Grandes panicules plumeuses, blanc-argenté. Envahissante.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 98,
+ 	 	 "scientific_name"  : "Asparagus acutifolius", 
+  	 	 "current_name"  : "Asperge sauvage", 
+  	 	 "image"  : "Asparagus acutifolius/21225.jpg", 
+  	 	 "characteristic"  : "Plante vivace aux tiges fines, ligneuses et épineuses. Les 'feuilles' sont en fait des cladodes (rameaux transformés) très fins et piquants. Petites fleurs verdâtres. Jeunes pousses comestibles.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 99,
+ 	 	 "scientific_name"  : "Asparagus officinalis", 
+  	 	 "current_name"  : "Asperge cultivée", 
+  	 	 "image"  : "Asparagus officinalis/26190.jpg", 
+  	 	 "characteristic"  : "Plante vivace herbacée formant des touffes. Tiges fines et ramifiées, portant de minuscules feuilles écailleuses. Petites fleurs verdâtres. Les jeunes pousses (turions) sont le légume comestible.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 100,
+ 	 	 "scientific_name"  : "Asphodelus albus", 
+  	 	 "current_name"  : "Asphodèle blanc", 
+  	 	 "image"  : "Asphodelus albus/58017.jpg", 
+  	 	 "characteristic"  : "Plante vivace à rhizome tubéreux. Feuilles basales linéaires et charnues. Tiges florales robustes portant de nombreuses fleurs blanches étoilées, avec une ligne médiane brune sur les tépales. Pousse en garrigues et pelouses sèches.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 101,
+ 	 	 "scientific_name"  : "Asphodelus cerasiferus", 
+  	 	 "current_name"  : "Asphodèle à gros fruits", 
+  	 	 "image"  : "Asphodelus cerasiferus/4540.jpg", 
+  	 	 "characteristic"  : "Plante vivace méditerranéenne aux feuilles linéaires charnues et une longue hampe florale dressée. Fleurs blanches à rosées avec une ligne centrale brun-rougeâtre sur les tépales, suivies de gros fruits ronds.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 102,
+ 	 	 "scientific_name"  : "Asphodelus ramosus", 
+  	 	 "current_name"  : "Asphodèle ramifié", 
+  	 	 "image"  : "Asphodelus ramosus/3889.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace avec des feuilles basales linéaires et une hampe florale ramifiée. Fleurs blanches aux tépales striés de brun-vert, regroupées en grappes. Pousse en garrigues et pelouses sèches.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 103,
+ 	 	 "scientific_name"  : "Asplenium adiantum-nigrum", 
+  	 	 "current_name"  : "Capillaire noir", 
+  	 	 "image"  : "Asplenium adiantum-nigrum/55853.jpg", 
+  	 	 "characteristic"  : "Fougère persistante aux frondes triangulaires, finement divisées, vert foncé brillant sur un pétiole noir. Pousse dans les fissures de rochers et murs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 104,
+ 	 	 "scientific_name"  : "Asplenium ceterach", 
+  	 	 "current_name"  : "Doradille", 
+  	 	 "image"  : "Asplenium ceterach/24403.jpg", 
+  	 	 "characteristic"  : "Petite fougère persistante aux frondes épaisses, coriaces, vert foncé dessus et écailleuses-rousses dessous. Pousse souvent sur les vieux murs et rochers calcaires.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 105,
+ 	 	 "scientific_name"  : "Asplenium ruta-muraria", 
+  	 	 "current_name"  : "Rue des murs", 
+  	 	 "image"  : "Asplenium ruta-muraria/100419.jpg", 
+  	 	 "characteristic"  : "Petite fougère très commune sur les murs. Frondes bipennées, vert clair, ressemblant à des feuilles de rue. Petits segments cunéiformes. Très résistante à la sécheresse.", 
+  	 	 "water_need"  : 0.3 
+	},
+	 { 
+ 	 	 "id"  : 106,
+ 	 	 "scientific_name"  : "Asplenium scolopendrium", 
+  	 	 "current_name"  : "Scolopendre", 
+  	 	 "image"  : "Asplenium scolopendrium/99054.jpg", 
+  	 	 "characteristic"  : "Fougère persistante aux frondes entières, en forme de lanières larges et brillantes, vert clair. Les spores sont disposées en lignes parallèles au revers des frondes. Aime l'ombre et l'humidité.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 107,
+ 	 	 "scientific_name"  : "Asplenium trichomanes", 
+  	 	 "current_name"  : "Capillaire des murailles", 
+  	 	 "image"  : "Asplenium trichomanes/1201.jpg", 
+  	 	 "characteristic"  : "Petite fougère élégante aux frondes fines et linéaires, avec de petits folioles ronds ou ovales disposés le long d'un pétiole noir brillant. Très commune sur les rochers et murs.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 108,
+ 	 	 "scientific_name"  : "Aster alpinus", 
+  	 	 "current_name"  : "Aster des Alpes", 
+  	 	 "image"  : "Aster alpinus/45586.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne formant des touffes. Grandes fleurs solitaires ressemblant à des marguerites, avec des ligules violettes et un centre jaune. Idéale pour les rocailles.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 109,
+ 	 	 "scientific_name"  : "Astragalus glycyphyllos", 
+  	 	 "current_name"  : "Astragale réglisse", 
+  	 	 "image"  : "Astragalus glycyphyllos/59736.jpg", 
+  	 	 "characteristic"  : "Grande plante herbacée vivace, aux tiges rampantes ou ascendantes. Feuilles composées de nombreuses folioles. Petites fleurs jaune-verdâtre en grappes denses. Gousses allongées.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 110,
+ 	 	 "scientific_name"  : "Astragalus hamosus", 
+  	 	 "current_name"  : "Astragale à crochets", 
+  	 	 "image"  : "Astragalus hamosus/113004.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux tiges couchées. Feuilles composées de folioles ovales. Petites fleurs jaunes ou blanc-jaunâtre en courtes grappes. Gousses recourbées en forme de crochet.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 111,
+ 	 	 "scientific_name"  : "Astragalus monspessulanus", 
+  	 	 "current_name"  : "Astragale de Montpellier", 
+  	 	 "image"  : "Astragalus monspessulanus/60518.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace formant des touffes. Feuilles composées de folioles ovales et soyeuses. Fleurs rose-pourpre en grappes denses et dressées. Pousse en milieux secs et calcaires.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 112,
+ 	 	 "scientific_name"  : "Astrantia major", 
+  	 	 "current_name"  : "Grande astrance", 
+  	 	 "image"  : "Astrantia major/32891.jpg", 
+  	 	 "characteristic"  : "Vivace élégante aux fleurs ombelliformes complexes, avec des bractées papyracées roses, vertes ou blanches entourant de petites fleurs. Feuillage lobé. Apprécie les sols frais et l'ombre partielle.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 113,
+ 	 	 "scientific_name"  : "Astrantia minor", 
+  	 	 "current_name"  : "Petite astrance", 
+  	 	 "image"  : "Astrantia minor/51325.jpg", 
+  	 	 "characteristic"  : "Variété plus petite de l'Astrantia, avec des fleurs similaires aux bractées blanches ou verdâtres. Pousse dans les prairies et bois clairs de montagne. Plus discrète mais charmante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 114,
+ 	 	 "scientific_name"  : "Athyrium filix-femina", 
+  	 	 "current_name"  : "Fougère femelle", 
+  	 	 "image"  : "Athyrium filix-femina/27383.jpg", 
+  	 	 "characteristic"  : "Grande fougère caduque, aux frondes plumeuses, délicates et finement divisées, vert clair. Pousse en touffes dans les lieux frais et ombragés.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 115,
+ 	 	 "scientific_name"  : "Atriplex prostrata", 
+  	 	 "current_name"  : "Arroche étalée", 
+  	 	 "image"  : "Atriplex prostrata/104550.jpg", 
+  	 	 "characteristic"  : "Plante annuelle halophile, aux tiges prostrées ou ascendantes. Feuilles triangulaires à losangiques, vert grisâtre. Petites fleurs verdâtres en glomérules. Pousse sur les sols salés des littoraux.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 116,
+ 	 	 "scientific_name"  : "Atropa belladonna", 
+  	 	 "current_name"  : "Belladone", 
+  	 	 "image"  : "Atropa belladonna/66787.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace très toxique. Feuilles ovales, vert foncé. Fleurs solitaires, campanulées, violet-brunâtres. Fruits noirs et brillants, ressemblant à des cerises, très dangereux. Plante médicinale et hallucinogène.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 117,
+ 	 	 "scientific_name"  : "Aucuba japonica", 
+  	 	 "current_name"  : "Aucuba du Japon", 
+  	 	 "image"  : "Aucuba japonica/45100.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant, très rustique et tolérant à l'ombre dense. Feuilles ovales, luisantes, vert foncé, souvent maculées de jaune (variétés panachées). Petites fleurs pourpres suivies de baies rouges décoratives sur les pieds femelles.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 118,
+ 	 	 "scientific_name"  : "Ballota nigra", 
+  	 	 "current_name"  : "Ballote noire", 
+  	 	 "image"  : "Ballota nigra/79790.jpg", 
+  	 	 "characteristic"  : "Plante vivace herbacée, velue, aux tiges carrées. Feuilles ovales, dentées. Fleurs pourpres ou roses, en verticilles axillaires. Forte odeur désagréable au froissement. Plante médicinale.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 119,
+ 	 	 "scientific_name"  : "Barbarea vulgaris", 
+  	 	 "current_name"  : "Barbarée commune", 
+  	 	 "image"  : "Barbarea vulgaris/105933.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace. Rosette basale de feuilles pennatiséquées. Tiges florales dressées portant des grappes de petites fleurs jaune vif. Fleurissant tôt au printemps, souvent le long des chemins.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 120,
+ 	 	 "scientific_name"  : "Bartsia alpina", 
+  	 	 "current_name"  : "Bartsie alpine", 
+  	 	 "image"  : "Bartsia alpina/31862.jpg", 
+  	 	 "characteristic"  : "Petite plante herbacée vivace, semi-parasite. Feuilles ovales, dentelées, souvent teintées de pourpre. Fleurs violettes foncées en épis denses. Pousse dans les prairies alpines humides.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 121,
+ 	 	 "scientific_name"  : "Bartsia trixago", 
+  	 	 "current_name"  : "Bartsie en forme de trille", 
+  	 	 "image"  : "Bartsia trixago/4535.jpg", 
+  	 	 "characteristic"  : "Plante annuelle semi-parasite, velue. Fleurs blanches, jaunes ou pourpres, bilabiées, regroupées en épis terminaux. Pousse dans les pelouses et friches méditerranéennes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 122,
+ 	 	 "scientific_name"  : "Bellevalia romana", 
+  	 	 "current_name"  : "Bellevalie romaine", 
+  	 	 "image"  : "Bellevalia romana/47018.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse méditerranéenne. Feuilles linéaires et charnues. Tiges florales dressées portant une grappe dense de petites fleurs campanulées, bleues ou violettes, virant au brun avec l'âge.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 123,
+ 	 	 "scientific_name"  : "Bellis perennis", 
+  	 	 "current_name"  : "Pâquerette", 
+  	 	 "image"  : "Bellis perennis/4076.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des rosettes basales de feuilles spatulées. Fleurs en capitules solitaires, blancs ou rosés avec un centre jaune, très communs dans les pelouses. Floraison longue.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 124,
+ 	 	 "scientific_name"  : "Berardia lanuginosa", 
+  	 	 "current_name"  : "Bérardie laineuse", 
+  	 	 "image"  : "Berardia lanuginosa/1927.jpg", 
+  	 	 "characteristic"  : "Plante vivace alpine formant une rosette de feuilles cotonneuses, blanches et soyeuses. Fleurs jaunes en petits capitules. Pousse dans les éboulis et rochers calcaires d'altitude.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 125,
+ 	 	 "scientific_name"  : "Berberis japonica", 
+  	 	 "current_name"  : "Mahonia du Japon", 
+  	 	 "image"  : "Berberis japonica/87016.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant aux grandes feuilles composées de folioles épineuses, vert foncé brillant. Fleurs jaunes parfumées en longues grappes dressées en hiver ou début de printemps. Baies bleu-noirâtre.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 126,
+ 	 	 "scientific_name"  : "Berberis vulgaris", 
+  	 	 "current_name"  : "Épine-vinette", 
+  	 	 "image"  : "Berberis vulgaris/50323.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc épineux. Feuilles ovales, finement dentées. Fleurs jaunes parfumées en grappes pendantes au printemps. Fruits rouges, acides, comestibles (baies). Hôte du champignon de la rouille du blé.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 127,
+ 	 	 "scientific_name"  : "Berteroa incana", 
+  	 	 "current_name"  : "Bertéroa blanchâtre", 
+  	 	 "image"  : "Berteroa incana/94744.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace courte, velue et grisâtre. Feuilles basales en rosette, allongées. Petites fleurs blanches à quatre pétales échancrés, en grappes. Pousse sur sols secs et sableux.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 128,
+ 	 	 "scientific_name"  : "Beta vulgaris", 
+  	 	 "current_name"  : "Betterave (sauvage)", 
+  	 	 "image"  : "Beta vulgaris/95450.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle aux feuilles charnues, ovales ou triangulaires, souvent rougeâtres. Petite fleur verdâtre en épis. Forme sauvage des betteraves cultivées (sucrière, fourragère, potagère).", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 129,
+ 	 	 "scientific_name"  : "Betonica officinalis", 
+  	 	 "current_name"  : "Bétoine officinale", 
+  	 	 "image"  : "Betonica officinalis/65203.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée aux feuilles basales ovales et crénelées. Tiges dressées portant des épis denses de fleurs rose-pourpre. Appréciée en phytothérapie et pour les jardins de fleurs sauvages.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 130,
+ 	 	 "scientific_name"  : "Betula pendula", 
+  	 	 "current_name"  : "Bouleau verruqueux", 
+  	 	 "image"  : "Betula pendula/43725.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne à croissance rapide. Écorce blanche caractéristique, s'exfoliant en plaques chez les sujets âgés. Rameaux pendants. Feuilles triangulaires, dentées, virant au jaune en automne.", 
+  	 	 "water_need"  : 7.0 
+	},
+	 { 
+ 	 	 "id"  : 131,
+ 	 	 "scientific_name"  : "Betula pubescens", 
+  	 	 "current_name"  : "Bouleau pubescent", 
+  	 	 "image"  : "Betula pubescens/85672.jpg", 
+  	 	 "characteristic"  : "Arbre caduc similaire au bouleau verruqueux, mais avec des rameaux et jeunes pousses pubescents. Écorce blanche, moins exfoliante. Feuilles plus arrondies. Souvent dans les milieux humides.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 132,
+ 	 	 "scientific_name"  : "Betula utilis", 
+  	 	 "current_name"  : "Bouleau de l'Himalaya", 
+  	 	 "image"  : "Betula utilis/113123.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, célèbre pour son écorce blanche pure, qui pèle en fines lamelles. Feuilles ovales, dentées, virant au jaune doré en automne. Très ornemental.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 133,
+ 	 	 "scientific_name"  : "Bidens pilosa", 
+  	 	 "current_name"  : "Bident poilu", 
+  	 	 "image"  : "Bidens pilosa/82732.jpg", 
+  	 	 "characteristic"  : "Plante annuelle envahissante. Feuilles divisées en trois folioles. Petits capitules de fleurs blanches (parfois absentes) et un centre jaune. Fruits munis de barbes qui s'accrochent aux vêtements.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 134,
+ 	 	 "scientific_name"  : "Bistorta officinalis", 
+  	 	 "current_name"  : "Renouée bistorte", 
+  	 	 "image"  : "Bistorta officinalis/79873.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse aux feuilles basales ovales et lancéolées. Longs épis floraux roses, denses et cylindriques. Pousse dans les prairies humides et marécageuses.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 135,
+ 	 	 "scientific_name"  : "Bituminaria bituminosa", 
+  	 	 "current_name"  : "Bituminaria bitumineuse", 
+  	 	 "image"  : "Bituminaria bituminosa/91865.jpg", 
+  	 	 "characteristic"  : "Plante vivace méditerranéenne aux feuilles trifoliées et velues. Fleurs bleu-violet en grappes denses. Forte odeur de bitume ou de goudron au froissement. Tolère les sols pauvres et secs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 136,
+ 	 	 "scientific_name"  : "Blackstonia imperfoliata", 
+  	 	 "current_name"  : "Blackstonie à feuilles non perforées", 
+  	 	 "image"  : "Blackstonia imperfoliata/4531.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux feuilles opposées, non soudées à la base. Fleurs jaunes à 8 pétales, regroupées en cymes lâches. Pousse dans les pelouses sèches et calcaires.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 137,
+ 	 	 "scientific_name"  : "Blackstonia perfoliata", 
+  	 	 "current_name"  : "Blackstonie à feuilles perforées", 
+  	 	 "image"  : "Blackstonia perfoliata/30925.jpg", 
+  	 	 "characteristic"  : "Plante annuelle reconnaissable à ses feuilles caulinaires supérieures soudées à la base, 'perforées' par la tige. Fleurs jaunes vif à 8 pétales. Pousse en milieux secs et ensoleillés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 138,
+ 	 	 "scientific_name"  : "Blechnum spicant", 
+  	 	 "current_name"  : "Blechnum en épi", 
+  	 	 "image"  : "Blechnum spicant/5398.jpg", 
+  	 	 "characteristic"  : "Fougère persistante aux frondes dimorphiques : frondes stériles étalées, plumeuses ; frondes fertiles dressées, plus étroites. Pousse dans les sous-bois acides et humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 139,
+ 	 	 "scientific_name"  : "Borago officinalis", 
+  	 	 "current_name"  : "Bourrache officinale", 
+  	 	 "image"  : "Borago officinalis/49593.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue aux feuilles rugueuses. Fleurs bleues en étoile, souvent pendantes, très appréciées des abeilles. Utilisée comme herbe aromatique et médicinale.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 140,
+ 	 	 "scientific_name"  : "Brassica napus", 
+  	 	 "current_name"  : "Colza", 
+  	 	 "image"  : "Brassica napus/14880.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle cultivée. Feuilles basales en rosette, grandes, lobées. Tiges florales dressées portant de nombreuses fleurs jaunes vives en grappes. Cultivée pour son huile.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 141,
+ 	 	 "scientific_name"  : "Broussonetia papyrifera", 
+  	 	 "current_name"  : "Mûrier à papier", 
+  	 	 "image"  : "Broussonetia papyrifera/60339.jpg", 
+  	 	 "characteristic"  : "Arbre caduc à croissance rapide, souvent multitronc. Grandes feuilles lobées, très variables, velues. Fruits ronds et rouges. Écorce utilisée pour faire du papier. Peut être envahissant.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 142,
+ 	 	 "scientific_name"  : "Bryonia cretica", 
+  	 	 "current_name"  : "Bryone de Crète", 
+  	 	 "image"  : "Bryonia cretica/104412.jpg", 
+  	 	 "characteristic"  : "Grande plante grimpante vivace avec des vrilles, aux tiges velues. Feuilles palmées, lobées. Petites fleurs verdâtres en grappes. Fruits rouges, toxiques. Pousse dans les haies et broussailles.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 143,
+ 	 	 "scientific_name"  : "Buddleja davidii", 
+  	 	 "current_name"  : "Arbre aux papillons", 
+  	 	 "image"  : "Buddleja davidii/8138.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc à croissance rapide. Longues panicules coniques de petites fleurs parfumées, généralement violettes (mais aussi roses, blanches), très attrayantes pour les papillons. Peut devenir invasif.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 144,
+ 	 	 "scientific_name"  : "Buglossoides purpurocaerulea", 
+  	 	 "current_name"  : "Grémil pourpre-bleu", 
+  	 	 "image"  : "Buglossoides purpurocaerulea/95917.jpg", 
+  	 	 "characteristic"  : "Vivace rampante formant des tapis. Feuilles ovales, vert foncé. Fleurs tubulaires, passant du pourpre au bleu vif, regroupées en grappes. Pousse dans les sous-bois clairs et lisières.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 145,
+ 	 	 "scientific_name"  : "Bupleurum fruticosum", 
+  	 	 "current_name"  : "Buplèvre ligneux", 
+  	 	 "image"  : "Bupleurum fruticosum/5.jpg", 
+  	 	 "characteristic"  : "Grand arbuste méditerranéen aux feuilles coriaces, ovales et persistantes, vert-bleuté. Petites fleurs jaunes-verdâtres regroupées en ombelles plates. Très tolérant à la sécheresse.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 146,
+ 	 	 "scientific_name"  : "Bupleurum ranunculoides", 
+  	 	 "current_name"  : "Buplèvre fausse renoncule", 
+  	 	 "image"  : "Bupleurum ranunculoides/67424.jpg", 
+  	 	 "characteristic"  : "Plante herbacée vivace aux feuilles basales spatulées. Tiges fines portant des petites fleurs jaunes en ombelles lâches, avec des bractées visibles. Pousse en montagne, dans les pelouses et rocailles.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 147,
+ 	 	 "scientific_name"  : "Buxus sempervirens", 
+  	 	 "current_name"  : "Buis commun", 
+  	 	 "image"  : "Buxus sempervirens/26903.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre persistant, à croissance lente, au feuillage dense et vert foncé. Petites feuilles ovales, luisantes. Très utilisé pour les haies taillées et l'art topiaire. Bois très dur.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 148,
+ 	 	 "scientific_name"  : "Cakile maritima", 
+  	 	 "current_name"  : "Roquette de mer", 
+  	 	 "image"  : "Cakile maritima/13104.jpg", 
+  	 	 "characteristic"  : "Plante annuelle succulente des plages et dunes. Feuilles charnues, lobées. Petites fleurs roses ou blanches en grappes. Adaptée aux sols salés et venteux.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 149,
+ 	 	 "scientific_name"  : "Calendula arvensis", 
+  	 	 "current_name"  : "Souci des champs", 
+  	 	 "image"  : "Calendula arvensis/3281.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle aux fleurs orange vif à jaune, en capitules solitaires. Feuilles allongées et velues. Pousse dans les champs et friches. Ressemble au souci officinal mais plus petit.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 150,
+ 	 	 "scientific_name"  : "Calendula officinalis", 
+  	 	 "current_name"  : "Souci officinal", 
+  	 	 "image"  : "Calendula officinalis/56937.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux fleurs orange ou jaune vif en grands capitules. Feuilles spatulées et légèrement velues. Largement cultivée pour ses fleurs décoratives et ses propriétés médicinales et cosmétiques.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 151,
+ 	 	 "scientific_name"  : "Calluna vulgaris", 
+  	 	 "current_name"  : "Bruyère commune", 
+  	 	 "image"  : "Calluna vulgaris/72788.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant, formant de larges tapis. Petites feuilles imbriquées, vert foncé. Fleurs minuscules, rose-violet (parfois blanches ou rouges), regroupées en épis denses. Pousse sur sols acides et pauvres.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 152,
+ 	 	 "scientific_name"  : "Caltha palustris", 
+  	 	 "current_name"  : "Populage des marais", 
+  	 	 "image"  : "Caltha palustris/20024.jpg", 
+  	 	 "characteristic"  : "Plante vivace des zones humides. Grandes feuilles rondes, luisantes. Fleurs jaune vif et brillantes, en forme de coupe, épanouies tôt au printemps. Aime les bords de ruisseaux et les prairies humides.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 153,
+ 	 	 "scientific_name"  : "Campanula glomerata", 
+  	 	 "current_name"  : "Campanule agglomérée", 
+  	 	 "image"  : "Campanula glomerata/24739.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée aux tiges dressées. Fleurs bleu-violet, en forme de clochettes, regroupées en grappes denses et compactes à l'extrémité des tiges et à l'aisselle des feuilles. Pousse en prairies et lisières.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 154,
+ 	 	 "scientific_name"  : "Campanula latifolia", 
+  	 	 "current_name"  : "Campanule à feuilles larges", 
+  	 	 "image"  : "Campanula latifolia/98688.jpg", 
+  	 	 "characteristic"  : "Grande campanule vivace aux feuilles larges et ovales. Grandes fleurs bleues ou violettes, en forme de clochettes, groupées en grappes lâches. Pousse dans les bois frais et humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 155,
+ 	 	 "scientific_name"  : "Campanula medium", 
+  	 	 "current_name"  : "Campanule 'Cup and Saucer'", 
+  	 	 "image"  : "Campanula medium/34833.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle aux fleurs en forme de clochettes larges et évasées, roses, bleues, blanches ou violettes. Cultivée pour ses grandes fleurs spectaculaires, souvent en 'coupe et soucoupe'.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 156,
+ 	 	 "scientific_name"  : "Campanula patula", 
+  	 	 "current_name"  : "Campanule étalée", 
+  	 	 "image"  : "Campanula patula/25098.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou annuelle élancée. Fleurs bleu-violet clair, largement ouvertes et en forme d'étoile. Pousse dans les prairies et bords de chemins, souvent en touffes lâches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 157,
+ 	 	 "scientific_name"  : "Campanula persicifolia", 
+  	 	 "current_name"  : "Campanule à feuilles de pêcher", 
+  	 	 "image"  : "Campanula persicifolia/59407.jpg", 
+  	 	 "characteristic"  : "Vivace élégante aux feuilles basales persistantes, linéaires. Grandes fleurs bleu-violet (parfois blanches) en forme de coupe ouverte, portées sur des tiges fines et dressées. Très ornementale.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 158,
+ 	 	 "scientific_name"  : "Campanula rapunculus", 
+  	 	 "current_name"  : "Campanule raiponce", 
+  	 	 "image"  : "Campanula rapunculus/16327.jpg", 
+  	 	 "characteristic"  : "Bisannuelle aux racines charnues et comestibles. Tiges dressées portant de nombreuses petites fleurs bleu pâle ou blanches en grappes allongées. Feuilles basales en rosette.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 159,
+ 	 	 "scientific_name"  : "Campanula rhomboidalis", 
+  	 	 "current_name"  : "Campanule rhomboïdale", 
+  	 	 "image"  : "Campanula rhomboidalis/15784.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne aux feuilles basales rhomboïdales et dentelées. Fleurs bleu-violet en clochettes, souvent pendantes, regroupées en grappes lâches. Pousse dans les rocailles et pelouses alpines.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 160,
+ 	 	 "scientific_name"  : "Campanula rotundifolia", 
+  	 	 "current_name"  : "Campanule à feuilles rondes", 
+  	 	 "image"  : "Campanula rotundifolia/53089.jpg", 
+  	 	 "characteristic"  : "Petite vivace aux feuilles basales rondes (souvent éphémères) et feuilles caulinaires linéaires. Fleurs bleu-violet en clochettes pendantes, souvent solitaires. Très répandue dans divers habitats.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 161,
+ 	 	 "scientific_name"  : "Campanula scheuchzeri", 
+  	 	 "current_name"  : "Campanule de Scheuchzer", 
+  	 	 "image"  : "Campanula scheuchzeri/46671.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne aux feuilles basales ovales. Grandes fleurs bleu-violet, en forme de cloche, souvent solitaires et pendantes au sommet des tiges fines. Pousse dans les prairies alpines.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 162,
+ 	 	 "scientific_name"  : "Campanula trachelium", 
+  	 	 "current_name"  : "Campanule gantelée", 
+  	 	 "image"  : "Campanula trachelium/72791.jpg", 
+  	 	 "characteristic"  : "Vivace robuste et velue aux feuilles dentées. Fleurs grandes, bleu-violet (parfois blanches), en forme de cloche, regroupées en grappes. Pousse dans les bois et lisières. Souvent cultivée.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 163,
+ 	 	 "scientific_name"  : "Canna indica", 
+  	 	 "current_name"  : "Cannas des Indes", 
+  	 	 "image"  : "Canna indica/65738.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace tropicale aux grandes feuilles larges, vertes ou bronze. Grandes fleurs asymétriques et voyantes, rouges, oranges, jaunes, en grappes. Cultivée pour son aspect exotique.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 164,
+ 	 	 "scientific_name"  : "Capparis spinosa", 
+  	 	 "current_name"  : "Câprier", 
+  	 	 "image"  : "Capparis spinosa/18381.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux méditerranéen, souvent rampant ou grimpant. Feuilles arrondies, caduques. Grandes fleurs blanches aux nombreuses étamines pourpres, s'ouvrant la nuit. Les boutons floraux sont les câpres comestibles.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 165,
+ 	 	 "scientific_name"  : "Capsella bursa-pastoris", 
+  	 	 "current_name"  : "Capselle bourse-à-pasteur", 
+  	 	 "image"  : "Capsella bursa-pastoris/47818.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle très commune. Rosette basale de feuilles lobées. Petites fleurs blanches en grappes. Caractéristique par ses siliques triangulaires et aplaties, en forme de 'bourse de pasteur'.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 166,
+ 	 	 "scientific_name"  : "Cardamine amara", 
+  	 	 "current_name"  : "Cardamine amère", 
+  	 	 "image"  : "Cardamine amara/2487.jpg", 
+  	 	 "characteristic"  : "Vivace des milieux humides, aux feuilles composées de folioles ovales. Petites fleurs blanches à quatre pétales, avec des anthères violettes, regroupées en grappes. Goût amer.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 167,
+ 	 	 "scientific_name"  : "Cardamine flexuosa", 
+  	 	 "current_name"  : "Cardamine flexueuse", 
+  	 	 "image"  : "Cardamine flexuosa/63842.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle aux tiges flexueuses. Feuilles composées de folioles arrondies. Petites fleurs blanches en grappes lâches. Pousse dans les lieux humides et ombragés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 168,
+ 	 	 "scientific_name"  : "Cardamine heptaphylla", 
+  	 	 "current_name"  : "Cardamine à sept folioles", 
+  	 	 "image"  : "Cardamine heptaphylla/10982.jpg", 
+  	 	 "characteristic"  : "Vivace rare des sous-bois frais. Grandes feuilles composées de 7 folioles. Fleurs blanches à rosées, en grappes. Pousse sur sols riches et humides.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 169,
+ 	 	 "scientific_name"  : "Cardamine pratensis", 
+  	 	 "current_name"  : "Cardamine des prés", 
+  	 	 "image"  : "Cardamine pratensis/112183.jpg", 
+  	 	 "characteristic"  : "Vivace des prairies humides. Feuilles basales en rosette, feuilles caulinaires divisées. Fleurs roses pâles à lilas (parfois blanches), en grappes. Appréciée des papillons (chenilles).", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 170,
+ 	 	 "scientific_name"  : "Carduus acanthoides", 
+  	 	 "current_name"  : "Chardon fausse acanthe", 
+  	 	 "image"  : "Carduus acanthoides/54058.jpg", 
+  	 	 "characteristic"  : "Chardon bisannuel aux tiges ailées et épineuses. Feuilles profondément lobées et très épineuses. Capitules floraux pourpres, solitaires ou groupés. Plante robuste.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 171,
+ 	 	 "scientific_name"  : "Carduus carlinoides", 
+  	 	 "current_name"  : "Chardon carlinoïde", 
+  	 	 "image"  : "Carduus carlinoides/76081.jpg", 
+  	 	 "characteristic"  : "Chardon vivace de montagne. Feuilles épineuses, généralement non décurrentes. Capitules floraux pourpres, solitaires ou en petits groupes. Pousse sur les pelouses rocailleuses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 172,
+ 	 	 "scientific_name"  : "Carduus defloratus", 
+  	 	 "current_name"  : "Chardon sans feuilles", 
+  	 	 "image"  : "Carduus defloratus/56588.jpg", 
+  	 	 "characteristic"  : "Chardon vivace de montagne aux tiges presque sans feuilles dans leur partie supérieure. Capitules solitaires, pourpres, souvent penchés. Pousse dans les alpages et rochers.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 173,
+ 	 	 "scientific_name"  : "Carduus nigrescens", 
+  	 	 "current_name"  : "Chardon noirâtre", 
+  	 	 "image"  : "Carduus nigrescens/52783.jpg", 
+  	 	 "characteristic"  : "Chardon bisannuel ou vivace. Tiges dressées et ailées. Feuilles épineuses. Capitules floraux pourpres, souvent solitaires, à bractées étroites. Ressemble à d'autres chardons.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 174,
+ 	 	 "scientific_name"  : "Carduus nutans", 
+  	 	 "current_name"  : "Chardon penché", 
+  	 	 "image"  : "Carduus nutans/89435.jpg", 
+  	 	 "characteristic"  : "Chardon bisannuel robuste. Tiges ailées épineuses. Grandes feuilles lobées. Grands capitules floraux pourpres, souvent solitaires et penchés sur des pédoncules longs. Très épineux.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 175,
+ 	 	 "scientific_name"  : "Carduus pycnocephalus", 
+  	 	 "current_name"  : "Chardon à têtes denses", 
+  	 	 "image"  : "Carduus pycnocephalus/96329.jpg", 
+  	 	 "characteristic"  : "Chardon annuel ou bisannuel. Tiges très épineuses et ailées. Feuilles lobées. Petits capitules floraux pourpres, groupés en têtes denses. Souvent en milieux secs et perturbés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 176,
+ 	 	 "scientific_name"  : "Carex flacca", 
+  	 	 "current_name"  : "Laîche glauque", 
+  	 	 "image"  : "Carex flacca/95156.jpg", 
+  	 	 "characteristic"  : "Petite laîche vivace formant des touffes. Feuilles étroites, vert-bleuté (glauques), retombantes. Épis floraux mâles et femelles séparés. Pousse dans les prairies humides et pelouses calcaires.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 177,
+ 	 	 "scientific_name"  : "Carex otrubae", 
+  	 	 "current_name"  : "Laîche à épis ronds", 
+  	 	 "image"  : "Carex otrubae/106125.jpg", 
+  	 	 "characteristic"  : "Laîche vivace formant des touffes. Feuilles larges, vert vif. Épis floraux ovoïdes, denses, vert-jaunâtre. Pousse dans les fossés, bords de rivières et milieux humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 178,
+ 	 	 "scientific_name"  : "Carex riparia", 
+  	 	 "current_name"  : "Laîche des rives", 
+  	 	 "image"  : "Carex riparia/103879.jpg", 
+  	 	 "characteristic"  : "Grande laîche vivace formant de vastes colonies. Tiges triangulaires, robustes. Feuilles larges, gris-vert. Longs épis floraux mâles et femelles. Pousse les pieds dans l'eau ou en zones très humides.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 179,
+ 	 	 "scientific_name"  : "Carica papaya", 
+  	 	 "current_name"  : "Papacier", 
+  	 	 "image"  : "Carica papaya/65673.jpg", 
+  	 	 "characteristic"  : "Petit arbre tropical à croissance rapide, souvent non ramifié, avec un tronc tendre. Grandes feuilles palmées, profondément lobées. Fruits ovales et charnus (papayes) poussant directement sur le tronc. Dioïque.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 180,
+ 	 	 "scientific_name"  : "Carlina acanthifolia", 
+  	 	 "current_name"  : "Carline à feuilles d'acanthe", 
+  	 	 "image"  : "Carlina acanthifolia/96501.jpg", 
+  	 	 "characteristic"  : "Grande carline vivace sans tige ou à tige très courte. Rosette de très grandes feuilles épineuses, découpées, ressemblant à l'acanthe. Grand capitule floral unique, jaune pâle, entouré de bractées épineuses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 181,
+ 	 	 "scientific_name"  : "Carlina acaulis", 
+  	 	 "current_name"  : "Carline acaule", 
+  	 	 "image"  : "Carlina acaulis/94046.jpg", 
+  	 	 "characteristic"  : "Vivace sans tige apparente. Rosette basale de feuilles découpées et épineuses. Grand capitule floral unique, blanc-jaunâtre, qui s'ouvre et se ferme selon l'humidité. 'Chardon baromètre'.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 182,
+ 	 	 "scientific_name"  : "Carlina corymbosa", 
+  	 	 "current_name"  : "Carline en corymbe", 
+  	 	 "image"  : "Carlina corymbosa/52001.jpg", 
+  	 	 "characteristic"  : "Carline bisannuelle ou vivace. Tiges ramifiées portant plusieurs capitules floraux jaune-crème, plus petits que les précédentes, regroupés en corymbe. Feuilles épineuses. Pousse en milieux secs et ensoleillés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 183,
+ 	 	 "scientific_name"  : "Carpinus betulus", 
+  	 	 "current_name"  : "Charme commun", 
+  	 	 "image"  : "Carpinus betulus/100040.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, à la couronne dense. Feuilles ovales, doublement dentées, vert vif, virant au jaune doré en automne. Troncs cannelés. Très utilisé pour les haies taillées.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 184,
+ 	 	 "scientific_name"  : "Carpobrotus edulis", 
+  	 	 "current_name"  : "Griffe de sorcière", 
+  	 	 "image"  : "Carpobrotus edulis/63763.jpg", 
+  	 	 "characteristic"  : "Plante succulente rampante, très envahissante, formant de vastes tapis. Feuilles charnues, triangulaires, vert clair. Grandes fleurs jaune pâle. Fruits comestibles. Originaire d'Afrique du Sud.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 185,
+ 	 	 "scientific_name"  : "Carthamus lanatus", 
+  	 	 "current_name"  : "Carthame laineux", 
+  	 	 "image"  : "Carthamus lanatus/29877.jpg", 
+  	 	 "characteristic"  : "Plante annuelle épineuse et laineuse. Tiges dressées. Feuilles épineuses, lobées. Capitules floraux jaune vif, entourés de bractées épineuses. Souvent adventice des cultures.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 186,
+ 	 	 "scientific_name"  : "Castanea sativa", 
+  	 	 "current_name"  : "Châtaignier", 
+  	 	 "image"  : "Castanea sativa/76393.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à croissance rapide, au tronc épais et cannelé. Grandes feuilles dentées. Fleurs en longs chatons mâles pendants et fleurs femelles discrètes. Fruits (châtaignes) comestibles dans une bogue épineuse.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 187,
+ 	 	 "scientific_name"  : "Casuarina cunninghamiana", 
+  	 	 "current_name"  : "Casuarina de Cunningham", 
+  	 	 "image"  : "Casuarina cunninghamiana/107438.jpg", 
+  	 	 "characteristic"  : "Grand arbre persistant, au port pleureur et aux 'feuilles' fines, vert grisâtre, ressemblant à des aiguilles de pin. Tolérant à la sécheresse et aux sols pauvres. Fixe l'azote.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 188,
+ 	 	 "scientific_name"  : "Catalpa bignonioides", 
+  	 	 "current_name"  : "Catalpa commun", 
+  	 	 "image"  : "Catalpa bignonioides/75605.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, à la couronne étalée. Très grandes feuilles cordiformes. Grandes panicules dressées de fleurs blanches tachetées de jaune et pourpre. Longues gousses en forme de haricots, persistantes en hiver.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 189,
+ 	 	 "scientific_name"  : "Catananche caerulea", 
+  	 	 "current_name"  : "Catananche bleue", 
+  	 	 "image"  : "Catananche caerulea/75394.jpg", 
+  	 	 "characteristic"  : "Vivace méditerranéenne aux feuilles basales linéaires. Tiges fines portant des capitules solitaires de fleurs bleu pâle à lavande, avec un cœur plus foncé, ressemblant à de grandes chicorées.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 190,
+ 	 	 "scientific_name"  : "Cedrus atlantica", 
+  	 	 "current_name"  : "Cèdre de l'Atlas", 
+  	 	 "image"  : "Cedrus atlantica/106188.jpg", 
+  	 	 "characteristic"  : "Grand conifère persistant, majestueux, au port conique large. Aiguilles courtes, vert-bleu à argentées, groupées en rosettes. Grands cônes femelles dressés, cylindriques. Très résistant à la sécheresse.", 
+  	 	 "water_need"  : 7.0 
+	},
+	 { 
+ 	 	 "id"  : 191,
+ 	 	 "scientific_name"  : "Celtis australis", 
+  	 	 "current_name"  : "Micocoulier de Provence", 
+  	 	 "image"  : "Celtis australis/30612.jpg", 
+  	 	 "characteristic"  : "Arbre caduc méditerranéen de taille moyenne à grande. Feuilles ovales, dentées, rugueuses. Écorce lisse, grise. Petits fruits ronds, noirs à maturité, comestibles (micocoules). Tolérant à la sécheresse.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 192,
+ 	 	 "scientific_name"  : "Centaurea aspera", 
+  	 	 "current_name"  : "Centaurée rude", 
+  	 	 "image"  : "Centaurea aspera/87181.jpg", 
+  	 	 "characteristic"  : "Vivace ou bisannuelle robuste et rugueuse. Feuilles lobées ou dentées. Capitules floraux roses à pourpres, souvent solitaires, avec des bractées terminées par une forte épine ramifiée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 193,
+ 	 	 "scientific_name"  : "Centaurea calcitrapa", 
+  	 	 "current_name"  : "Centaurée chausse-trape", 
+  	 	 "image"  : "Centaurea calcitrapa/34180.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux tiges ramifiées. Feuilles divisées. Capitules floraux roses ou pourpres, solitaires, très épineux (bractées terminées par une longue épine). Souvent adventice.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 194,
+ 	 	 "scientific_name"  : "Centaurea corymbosa", 
+  	 	 "current_name"  : "Centaurée en corymbe", 
+  	 	 "image"  : "Centaurea corymbosa/48276.jpg", 
+  	 	 "characteristic"  : "Centaurée vivace rare, formant des touffes. Tiges dressées portant des capitules floraux roses-pourpres regroupés en corymbes. Feuilles linéaires à lancéolées. Pousse en milieux rocailleux.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 195,
+ 	 	 "scientific_name"  : "Centaurea decipiens", 
+  	 	 "current_name"  : "Centaurée décevante", 
+  	 	 "image"  : "Centaurea decipiens/33004.jpg", 
+  	 	 "characteristic"  : "Centaurée annuelle aux feuilles basales lobées. Capitules floraux solitaires, pourpres. Ses bractées involucrales sont souvent dentelées et épineuses, mais moins que d'autres espèces.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 196,
+ 	 	 "scientific_name"  : "Centaurea jacea", 
+  	 	 "current_name"  : "Centaurée jacée", 
+  	 	 "image"  : "Centaurea jacea/101017.jpg", 
+  	 	 "characteristic"  : "Vivace commune des prairies et lisières. Capitules floraux roses-pourpres (parfois blancs), sans ligules périphériques allongées. Bractées à marge scarieuse brune, non épineuses.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 197,
+ 	 	 "scientific_name"  : "Centaurea nigra", 
+  	 	 "current_name"  : "Centaurée noire", 
+  	 	 "image"  : "Centaurea nigra/92974.jpg", 
+  	 	 "characteristic"  : "Vivace robuste aux capitules floraux pourpres foncés. Bractées involucrales noires, d'où son nom. Ressemble à la jacée mais les bractées sont plus sombres et frangées. Commune en prairie.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 198,
+ 	 	 "scientific_name"  : "Centaurea paniculata", 
+  	 	 "current_name"  : "Centaurée paniculée", 
+  	 	 "image"  : "Centaurea paniculata/31942.jpg", 
+  	 	 "characteristic"  : "Vivace à feuilles finement divisées. Petits capitules floraux rosés ou pourpres, regroupés en grandes panicules lâches. Pousse sur sols secs et calcaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 199,
+ 	 	 "scientific_name"  : "Centaurea pectinata", 
+  	 	 "current_name"  : "Centaurée pectinée", 
+  	 	 "image"  : "Centaurea pectinata/93607.jpg", 
+  	 	 "characteristic"  : "Centaurée bisannuelle ou vivace aux feuilles profondément divisées. Capitules floraux roses ou pourpres, à bractées terminées par une longue épine pectinée (en peigne).", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 200,
+ 	 	 "scientific_name"  : "Centaurea scabiosa", 
+  	 	 "current_name"  : "Centaurée scabieuse", 
+  	 	 "image"  : "Centaurea scabiosa/71304.jpg", 
+  	 	 "characteristic"  : "Grande vivace commune aux feuilles lobées. Grands capitules floraux roses-pourpres, avec des fleurs externes plus longues. Bractées aux bords foncés et frangés. Attire les insectes pollinisateurs.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 201,
+ 	 	 "scientific_name"  : "Centaurium erythraea", 
+  	 	 "current_name"  : "Petite centaurée commune", 
+  	 	 "image"  : "Centaurium erythraea/67685.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux petites fleurs roses, étoilées, regroupées en cymes lâches. Feuilles basales en rosette. Pousse dans les prairies et pelouses sèches. Plante médicinale.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 202,
+ 	 	 "scientific_name"  : "Centaurium maritimum", 
+  	 	 "current_name"  : "Petite centaurée maritime", 
+  	 	 "image"  : "Centaurium maritimum/27474.jpg", 
+  	 	 "characteristic"  : "Plante annuelle des zones côtières. Petites fleurs roses pâles, similaires à C. erythraea, mais souvent plus ramifiée et adaptée aux sols sableux et salés. Protégée dans certaines régions.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 203,
+ 	 	 "scientific_name"  : "Centella asiatica", 
+  	 	 "current_name"  : "Gotu Kola", 
+  	 	 "image"  : "Centella asiatica/28736.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace rampante formant des tapis. Feuilles rondes ou réniformes. Petites fleurs roses ou blanches discrètes. Appréciée en médecine traditionnelle et cosmétique. Aime l'humidité.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 204,
+ 	 	 "scientific_name"  : "Centranthus angustifolius", 
+  	 	 "current_name"  : "Centranthe à feuilles étroites", 
+  	 	 "image"  : "Centranthus angustifolius/69716.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges dressées et aux feuilles étroites. Fleurs roses à rouges, parfumées, en grappes terminales denses. Pousse dans les rochers calcaires. Très florifère.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 205,
+ 	 	 "scientific_name"  : "Centranthus ruber", 
+  	 	 "current_name"  : "Valériane des jardins", 
+  	 	 "image"  : "Centranthus ruber/47967.jpg", 
+  	 	 "characteristic"  : "Vivace robuste aux feuilles ovales, gris-vert. Fleurs petites, roses à rouges (parfois blanches), très nombreuses, regroupées en panicules denses et parfumées. Pousse facilement dans les murs et rocailles.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 206,
+ 	 	 "scientific_name"  : "Cephalanthera longifolia", 
+  	 	 "current_name"  : "Céphalantère à longues feuilles", 
+  	 	 "image"  : "Cephalanthera longifolia/76427.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre aux feuilles linéaires, dressées. Fleurs blanches, souvent ouvertes, en épis lâches. Pousse dans les sous-bois clairs, sur sols calcaires. Élégante et discrète.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 207,
+ 	 	 "scientific_name"  : "Cephalanthera rubra", 
+  	 	 "current_name"  : "Céphalantère rouge", 
+  	 	 "image"  : "Cephalanthera rubra/1785.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre rare et spectaculaire aux fleurs rose-rouge vif, en épis lâches. Pousse dans les sous-bois de feuillus, sur sols calcaires. Très recherchée par les orchidophiles.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 208,
+ 	 	 "scientific_name"  : "Cephalaria leucantha", 
+  	 	 "current_name"  : "Céphalaire à fleurs blanches", 
+  	 	 "image"  : "Cephalaria leucantha/13948.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aux tiges dressées. Grandes fleurs blanches en capitules sphériques, solitaires, ressemblant à des scabieuses géantes. Feuilles basales lobées. Pousse en pelouses et friches.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 209,
+ 	 	 "scientific_name"  : "Cerastium glomeratum", 
+  	 	 "current_name"  : "Céraiste aggloméré", 
+  	 	 "image"  : "Cerastium glomeratum/61172.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle velue. Feuilles ovales. Petites fleurs blanches à cinq pétales échancrés, regroupées en grappes denses et collantes au sommet des tiges. Très commun.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 210,
+ 	 	 "scientific_name"  : "Ceratonia siliqua", 
+  	 	 "current_name"  : "Caroubier", 
+  	 	 "image"  : "Ceratonia siliqua/52315.jpg", 
+  	 	 "characteristic"  : "Arbre persistant méditerranéen de taille moyenne. Feuilles composées de folioles rondes et coriaces. Fleurs discrètes. Fruits en grandes gousses plates et brunes (caroubes), comestibles. Tolérant à la sécheresse.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 211,
+ 	 	 "scientific_name"  : "Cercis siliquastrum", 
+  	 	 "current_name"  : "Arbre de Judée", 
+  	 	 "image"  : "Cercis siliquastrum/61133.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc à la floraison printanière spectaculaire. Fleurs roses-pourpres, papilionacées, apparaissant directement sur le vieux bois avant les feuilles. Feuilles cordiformes. Gousses plates et brunes.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 212,
+ 	 	 "scientific_name"  : "Chaenorrhinum minus", 
+  	 	 "current_name"  : "Chénorrhinum mineur", 
+  	 	 "image"  : "Chaenorrhinum minus/36262.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle velue. Petites fleurs bilabiées, violettes avec une tache jaune sur le palais. Ressemble à un petit muflier. Pousse dans les milieux secs et rocailleux.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 213,
+ 	 	 "scientific_name"  : "Chamaerops humilis", 
+  	 	 "current_name"  : "Palmier nain", 
+  	 	 "image"  : "Chamaerops humilis/91454.jpg", 
+  	 	 "characteristic"  : "Petit palmier touffu, souvent multitronc, aux feuilles palmées rigides, vert-bleuté, épineuses à la base. Seul palmier indigène d'Europe continentale. Résistant à la sécheresse et au froid modéré.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 214,
+ 	 	 "scientific_name"  : "Chelidonium majus", 
+  	 	 "current_name"  : "Chélidoine", 
+  	 	 "image"  : "Chelidonium majus/2556.jpg", 
+  	 	 "characteristic"  : "Plante vivace aux feuilles lobées, vert bleuté. Fleurs jaune vif à quatre pétales, groupées en petites ombelles. Produit un latex orange et caustique en cas de blessure. Plante médicinale et toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 215,
+ 	 	 "scientific_name"  : "Chenopodium album", 
+  	 	 "current_name"  : "Chénopode blanc", 
+  	 	 "image"  : "Chenopodium album/84451.jpg", 
+  	 	 "characteristic"  : "Plante annuelle commune, souvent considérée comme une mauvaise herbe. Feuilles ovales à losangiques, parfois blanchâtres sur la face inférieure. Petites fleurs verdâtres en épis denses. Comestible jeune.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 216,
+ 	 	 "scientific_name"  : "Chondrilla juncea", 
+  	 	 "current_name"  : "Chondrille à tiges de jonc", 
+  	 	 "image"  : "Chondrilla juncea/108527.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace à tiges ramifiées, presque sans feuilles dans leur partie supérieure, d'où son aspect jonciforme. Fleurs jaunes en petits capitules solitaires. Produit un latex blanc.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 217,
+ 	 	 "scientific_name"  : "Cichorium intybus", 
+  	 	 "current_name"  : "Chicorée sauvage", 
+  	 	 "image"  : "Cichorium intybus/53910.jpg", 
+  	 	 "characteristic"  : "Plante vivace aux feuilles basales en rosette, lobées, et tiges dressées. Belles fleurs bleues (parfois roses ou blanches) en capitules, s'ouvrant le matin et se fermant l'après-midi. Racine utilisée pour le café de chicorée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 218,
+ 	 	 "scientific_name"  : "Circaea lutetiana", 
+  	 	 "current_name"  : "Circée de Paris", 
+  	 	 "image"  : "Circaea lutetiana/64373.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace des sous-bois frais et humides. Feuilles ovales, dentées. Petites fleurs blanches à deux pétales et deux étamines, en grappes fines. Fruits épineux qui s'accrochent.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 219,
+ 	 	 "scientific_name"  : "Cirsium acaulon", 
+  	 	 "current_name"  : "Chardon sans tige", 
+  	 	 "image"  : "Cirsium acaulon/88303.jpg", 
+  	 	 "characteristic"  : "Chardon vivace ne développant pas de tige florale. Grand capitule floral unique, pourpre, sessile, entouré d'une rosette de feuilles très épineuses. Pousse dans les pelouses calcaires sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 220,
+ 	 	 "scientific_name"  : "Cirsium arvense", 
+  	 	 "current_name"  : "Chardon des champs", 
+  	 	 "image"  : "Cirsium arvense/43744.jpg", 
+  	 	 "characteristic"  : "Chardon vivace envahissant, se propageant par rhizomes. Tiges dressées, peu épineuses. Petits capitules floraux roses-pourpres, très nombreux. Mauvaise herbe tenace des cultures.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 221,
+ 	 	 "scientific_name"  : "Cirsium eriophorum", 
+  	 	 "current_name"  : "Chardon laineux", 
+  	 	 "image"  : "Cirsium eriophorum/54182.jpg", 
+  	 	 "characteristic"  : "Grand chardon bisannuel robuste. Tiges robustes et épineuses. Feuilles profondément lobées et épineuses, très velues-laineuses. Gros capitules floraux pourpres, entourés de bractées laineuses.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 222,
+ 	 	 "scientific_name"  : "Cirsium oleraceum", 
+  	 	 "current_name"  : "Chardon maraîcher", 
+  	 	 "image"  : "Cirsium oleraceum/80599.jpg", 
+  	 	 "characteristic"  : "Chardon vivace non épineux (ou peu). Feuilles vertes, lobées. Fleurs jaune pâle à crème, en capitules solitaires ou groupés. Pousse dans les prairies humides et marécageuses. Jeunes feuilles comestibles.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 223,
+ 	 	 "scientific_name"  : "Cirsium palustre", 
+  	 	 "current_name"  : "Chardon des marais", 
+  	 	 "image"  : "Cirsium palustre/92665.jpg", 
+  	 	 "characteristic"  : "Chardon bisannuel ou vivace. Tiges très épineuses, souvent non ramifiées. Feuilles épineuses, décurrentes. Capitules floraux pourpres, petits, regroupés en grappes denses. Pousse en milieu humide.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 224,
+ 	 	 "scientific_name"  : "Cirsium vulgare", 
+  	 	 "current_name"  : "Chardon commun", 
+  	 	 "image"  : "Cirsium vulgare/82816.jpg", 
+  	 	 "characteristic"  : "Chardon bisannuel très épineux. Tiges robustes et ailées. Feuilles très épineuses, décurrentes le long de la tige. Grands capitules floraux pourpres, solitaires ou groupés. Très répandu.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 225,
+ 	 	 "scientific_name"  : "Cistus albidus", 
+  	 	 "current_name"  : "Ciste cotonneux", 
+  	 	 "image"  : "Cistus albidus/68035.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen, aux feuilles ovales, duveteuses et gris-vert. Grandes fleurs roses avec des pétales froissés. Très odorant. Pousse en garrigues et pinèdes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 226,
+ 	 	 "scientific_name"  : "Cistus monspeliensis", 
+  	 	 "current_name"  : "Ciste de Montpellier", 
+  	 	 "image"  : "Cistus monspeliensis/92330.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen, aux feuilles étroites, collantes, vert foncé. Petites fleurs blanches, regroupées en grappes. Très résineux et inflammable. Pousse dans le maquis et la garrigue.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 227,
+ 	 	 "scientific_name"  : "Cistus salviifolius", 
+  	 	 "current_name"  : "Ciste à feuilles de sauge", 
+  	 	 "image"  : "Cistus salviifolius/20036.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen. Feuilles ovales, légèrement rugueuses, vert foncé, ressemblant à celles de la sauge. Fleurs blanches avec une tache jaune à la base des pétales. Très florifère.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 228,
+ 	 	 "scientific_name"  : "Citrus limon", 
+  	 	 "current_name"  : "Citronnier", 
+  	 	 "image"  : "Citrus limon/106587.jpg", 
+  	 	 "characteristic"  : "Petit arbre fruitier persistant, souvent épineux. Feuilles ovales, luisantes, vert foncé. Fleurs blanches parfumées, souvent teintées de pourpre. Fruits jaunes ovales et acides (citrons).", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 229,
+ 	 	 "scientific_name"  : "Clematis flammula", 
+  	 	 "current_name"  : "Clématite odorante", 
+  	 	 "image"  : "Clematis flammula/456.jpg", 
+  	 	 "characteristic"  : "Grande liane grimpante caduque. Petites fleurs blanches étoilées, très parfumées, regroupées en panicules. Fleurs suivies de fruits plumeux. Pousse rapidement et peut devenir envahissante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 230,
+ 	 	 "scientific_name"  : "Clematis vitalba", 
+  	 	 "current_name"  : "Clématite des haies", 
+  	 	 "image"  : "Clematis vitalba/28985.jpg", 
+  	 	 "characteristic"  : "Grande liane grimpante caduque, très vigoureuse. Petites fleurs blanc-crème en grappes, peu odorantes. Fruits très plumeux et décoratifs ('Barbe de vieillard'). Envahissante dans certains milieux.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 231,
+ 	 	 "scientific_name"  : "Clinopodium nepeta", 
+  	 	 "current_name"  : "Calament à petites fleurs", 
+  	 	 "image"  : "Clinopodium nepeta/67869.jpg", 
+  	 	 "characteristic"  : "Plante vivace herbacée, très aromatique. Feuilles ovales, dentées. Petites fleurs rose-violacées ou blanches, bilabiées, regroupées en verticilles axillaires. Pousse en milieux secs et ensoleillés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 232,
+ 	 	 "scientific_name"  : "Clinopodium vulgare", 
+  	 	 "current_name"  : "Clinopode commun", 
+  	 	 "image"  : "Clinopodium vulgare/74141.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée aux tiges dressées. Feuilles ovales, dentées. Fleurs pourpres ou roses, bilabiées, regroupées en verticilles denses et globuleux. Pousse dans les lisières et prairies.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 233,
+ 	 	 "scientific_name"  : "Cneorum tricoccon", 
+  	 	 "current_name"  : "Cnéorum à trois coques", 
+  	 	 "image"  : "Cneorum tricoccon/40635.jpg", 
+  	 	 "characteristic"  : "Petit arbuste persistant méditerranéen, aux feuilles linéaires et luisantes. Petites fleurs jaunes brillantes, solitaires ou groupées. Fruits caractéristiques à trois lobes (coques). Rare et protégé.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 234,
+ 	 	 "scientific_name"  : "Cochlearia danica", 
+  	 	 "current_name"  : "Cochléaire du Danemark", 
+  	 	 "image"  : "Cochlearia danica/79685.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle ou bisannuelle halophile. Feuilles basales en rosette, réniformes. Petites fleurs blanches en grappes. Pousse sur les sols salés du littoral et les bords de routes salées.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 235,
+ 	 	 "scientific_name"  : "Colchicum autumnale", 
+  	 	 "current_name"  : "Colchique d'automne", 
+  	 	 "image"  : "Colchicum autumnale/112475.jpg", 
+  	 	 "characteristic"  : "Plante vivace bulbeuse très toxique. Fleurs roses-lilas, en forme de coupe, apparaissant directement du sol en automne, sans feuilles. Feuilles vertes, larges, apparaissent au printemps suivant. 'Safran des prés'.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 236,
+ 	 	 "scientific_name"  : "Colutea arborescens", 
+  	 	 "current_name"  : "Bagasena", 
+  	 	 "image"  : "Colutea arborescens/54591.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc aux feuilles composées de nombreuses folioles. Fleurs jaune vif, papilionacées, en grappes lâches. Fruits en gousses gonflées et translucides qui éclatent au toucher ('vessies').", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 237,
+ 	 	 "scientific_name"  : "Convallaria majalis", 
+  	 	 "current_name"  : "Muguet de mai", 
+  	 	 "image"  : "Convallaria majalis/96084.jpg", 
+  	 	 "characteristic"  : "Petite vivace rhizomateuse formant des colonies. Grandes feuilles basales ovales. Fleurs blanches, campanulées, très parfumées, pendantes le long d'une hampe. Baies rouges toxiques. Symbole du 1er mai.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 238,
+ 	 	 "scientific_name"  : "Convolvulus althaeoides", 
+  	 	 "current_name"  : "Liseron fausse guimauve", 
+  	 	 "image"  : "Convolvulus althaeoides/24260.jpg", 
+  	 	 "characteristic"  : "Plante grimpante vivace. Feuilles profondément lobées, argentées et soyeuses. Grandes fleurs roses pâles à pourpres, en forme d'entonnoir. Pousse en milieux secs méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 239,
+ 	 	 "scientific_name"  : "Convolvulus arvensis", 
+  	 	 "current_name"  : "Liseron des champs", 
+  	 	 "image"  : "Convolvulus arvensis/86070.jpg", 
+  	 	 "characteristic"  : "Liane herbacée vivace, très envahissante, aux tiges volubiles. Feuilles sagittées ou hastées. Petites fleurs blanches ou roses, en forme d'entonnoir. Difficile à éradiquer en culture.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 240,
+ 	 	 "scientific_name"  : "Convolvulus cantabrica", 
+  	 	 "current_name"  : "Liseron de Cantabrie", 
+  	 	 "image"  : "Convolvulus cantabrica/31771.jpg", 
+  	 	 "characteristic"  : "Plante vivace couchée ou ascendante, velue. Feuilles ovales à lancéolées. Fleurs rose vif, en forme d'entonnoir, plus grandes que C. arvensis. Pousse sur sols secs et rocailleux.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 241,
+ 	 	 "scientific_name"  : "Convolvulus sepium", 
+  	 	 "current_name"  : "Liseron des haies", 
+  	 	 "image"  : "Convolvulus sepium/96442.jpg", 
+  	 	 "characteristic"  : "Grande liane grimpante vivace, très vigoureuse. Grandes feuilles triangulaires. Grandes fleurs blanches ou roses, en forme d'entonnoir. Très commune dans les haies et fossés.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 242,
+ 	 	 "scientific_name"  : "Convolvulus soldanella", 
+  	 	 "current_name"  : "Liseron des dunes", 
+  	 	 "image"  : "Convolvulus soldanella/41132.jpg", 
+  	 	 "characteristic"  : "Plante vivace rampante des sables côtiers. Feuilles charnues, rondes ou réniformes. Grandes fleurs roses-violettes en forme d'entonnoir. Adaptée aux milieux salés et venteux.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 243,
+ 	 	 "scientific_name"  : "Coriaria myrtifolia", 
+  	 	 "current_name"  : "Corroyère à feuilles de myrte", 
+  	 	 "image"  : "Coriaria myrtifolia/46042.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen très toxique. Feuilles opposées, vert foncé, ressemblant à celles du myrte. Fleurs discrètes. Fruits noirs luisants, toxiques. Pousse en garrigues et maquis.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 244,
+ 	 	 "scientific_name"  : "Cornus mas", 
+  	 	 "current_name"  : "Cornouiller mâle", 
+  	 	 "image"  : "Cornus mas/55931.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc, à la floraison hivernale précoce. Petites fleurs jaunes en ombelles, avant l'apparition des feuilles. Fruits rouges, ovales, comestibles (cornouilles), astringents.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 245,
+ 	 	 "scientific_name"  : "Cornus sanguinea", 
+  	 	 "current_name"  : "Cornouiller sanguin", 
+  	 	 "image"  : "Cornus sanguinea/26876.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc aux rameaux rouge vif en hiver, très décoratif. Feuilles ovales, virant au rouge en automne. Petites fleurs blanches en corymbes. Fruits noirs non comestibles. Pousse en haies et lisières.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 246,
+ 	 	 "scientific_name"  : "Coronilla glauca", 
+  	 	 "current_name"  : "Coronille glauque", 
+  	 	 "image"  : "Coronilla glauca/62400.jpg", 
+  	 	 "characteristic"  : "Petit arbuste persistant ou semi-persistant aux feuilles composées de folioles glauques (bleu-vert). Fleurs jaune vif, papilionacées, regroupées en grappes. Floraison longue, souvent hivernale. Parfumée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 247,
+ 	 	 "scientific_name"  : "Coronilla juncea", 
+  	 	 "current_name"  : "Coronille à tiges de jonc", 
+  	 	 "image"  : "Coronilla juncea/89156.jpg", 
+  	 	 "characteristic"  : "Petit arbuste méditerranéen aux rameaux fins et jonciformes. Feuilles réduites. Fleurs jaune vif, papilionacées, en grappes. Très tolérant à la sécheresse. Pousse sur sols secs et rocailleux.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 248,
+ 	 	 "scientific_name"  : "Coronilla valentina", 
+  	 	 "current_name"  : "Coronille de Valence", 
+  	 	 "image"  : "Coronilla valentina/37644.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant aux feuilles composées. Fleurs jaune vif, papilionacées, en grappes, très parfumées. Floraison abondante au printemps. Cultivée pour sa beauté et son parfum.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 249,
+ 	 	 "scientific_name"  : "Coronilla varia", 
+  	 	 "current_name"  : "Coronille panachée", 
+  	 	 "image"  : "Coronilla varia/35391.jpg", 
+  	 	 "characteristic"  : "Vivace rampante et envahissante. Feuilles composées de nombreuses folioles. Fleurs roses et blanches, papilionacées, en têtes denses. Souvent utilisée comme couvre-sol pour stabiliser les talus.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 250,
+ 	 	 "scientific_name"  : "Corydalis solida", 
+  	 	 "current_name"  : "Corydale solide", 
+  	 	 "image"  : "Corydalis solida/22405.jpg", 
+  	 	 "characteristic"  : "Petite vivace tubéreuse des sous-bois. Feuilles délicatement découpées. Fleurs tubulaires, roses, pourpres ou blanches, regroupées en grappes denses. Fleurit très tôt au printemps.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 251,
+ 	 	 "scientific_name"  : "Corylus avellana", 
+  	 	 "current_name"  : "Noisetier commun", 
+  	 	 "image"  : "Corylus avellana/29786.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc, souvent multitronc. Feuilles ovales, dentées, velues. Chatons mâles pendants en hiver. Fruits (noisettes) comestibles, entourés d'une cupule foliacée.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 252,
+ 	 	 "scientific_name"  : "Cotinus coggygria", 
+  	 	 "current_name"  : "Arbre à perruques", 
+  	 	 "image"  : "Cotinus coggygria/90890.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc ou petit arbre. Feuillage ovale, vert (ou pourpre chez certains cultivars), virant au rouge éclatant en automne. Inflorescences vaporeuses, plumeuses, roses ou pourpres, rappelant une perruque.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 253,
+ 	 	 "scientific_name"  : "Crataegus azarolus", 
+  	 	 "current_name"  : "Azérolier", 
+  	 	 "image"  : "Crataegus azarolus/49926.jpg", 
+  	 	 "characteristic"  : "Petit arbre épineux méditerranéen. Feuilles lobées, velues. Fleurs blanches en corymbes au printemps. Fruits comestibles (azéroles), ronds, rouges ou jaunes, au goût acidulé. Tolérant à la sécheresse.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 254,
+ 	 	 "scientific_name"  : "Crataegus germanica", 
+  	 	 "current_name"  : "Néflier commun", 
+  	 	 "image"  : "Crataegus germanica/40590.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc épineux. Grandes feuilles ovales et velues. Grandes fleurs blanches au printemps. Fruits marron-rouges à maturité, comestibles après blettissement (nèfles).", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 255,
+ 	 	 "scientific_name"  : "Crataegus laevigata", 
+  	 	 "current_name"  : "Aubépine à deux styles", 
+  	 	 "image"  : "Crataegus laevigata/5116.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre épineux. Feuilles lobées, luisantes. Fleurs blanches ou roses, souvent doubles chez les cultivars, en corymbes. Fruits rouges (cenelles) avec deux noyaux. Moins commune que C. monogyna.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 256,
+ 	 	 "scientific_name"  : "Crataegus monogyna", 
+  	 	 "current_name"  : "Aubépine monogyne", 
+  	 	 "image"  : "Crataegus monogyna/53219.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre épineux, très commun dans les haies. Feuilles lobées, vert foncé. Fleurs blanches parfumées en corymbes au printemps. Fruits rouges (cenelles) avec un seul noyau. Attire la faune.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 257,
+ 	 	 "scientific_name"  : "Crepis bursifolia", 
+  	 	 "current_name"  : "Crépis à feuilles de bourse-à-pasteur", 
+  	 	 "image"  : "Crepis bursifolia/36927.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace aux feuilles basales très découpées, ressemblant à celles de la bourse-à-pasteur. Petits capitules floraux jaunes, groupés. Pousse dans les milieux secs et perturbés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 258,
+ 	 	 "scientific_name"  : "Crepis capillaris", 
+  	 	 "current_name"  : "Crépis à feuilles capillaires", 
+  	 	 "image"  : "Crepis capillaris/95355.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux tiges ramifiées. Feuilles basales lobées, feuilles caulinaires linéaires. Petits capitules floraux jaunes, nombreux. Très commune dans les friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 259,
+ 	 	 "scientific_name"  : "Crepis foetida", 
+  	 	 "current_name"  : "Crépis fétide", 
+  	 	 "image"  : "Crepis foetida/22282.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux feuilles basales lobées. Capitules floraux jaunes, souvent avec des taches rougeâtres. Odeur désagréable au froissement. Pousse en milieux secs et perturbés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 260,
+ 	 	 "scientific_name"  : "Crepis sancta", 
+  	 	 "current_name"  : "Crépis sacré", 
+  	 	 "image"  : "Crepis sancta/37740.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle aux feuilles basales lobées. Petits capitules floraux jaunes. Se distingue par la forme particulière de ses fruits (akènes), certains avec un pappus et d'autres sans.", 
+  	 	 "water_need"  : 0.7 
+	},
+	 { 
+ 	 	 "id"  : 261,
+ 	 	 "scientific_name"  : "Crepis setosa", 
+  	 	 "current_name"  : "Crépis sétueux", 
+  	 	 "image"  : "Crepis setosa/3755.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle, très velue et hérissée. Feuilles basales lobées. Capitules floraux jaunes, plus grands que d'autres crépi. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 262,
+ 	 	 "scientific_name"  : "Crithmum maritimum", 
+  	 	 "current_name"  : "Criste marine", 
+  	 	 "image"  : "Crithmum maritimum/108885.jpg", 
+  	 	 "characteristic"  : "Plante vivace succulente des rochers côtiers. Feuilles charnues, vert-bleuté, aromatiques. Petites fleurs jaune-vert en ombelles. Tolérante aux embruns et au sel. Comestible.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 263,
+ 	 	 "scientific_name"  : "Crocus nudiflorus", 
+  	 	 "current_name"  : "Crocus d'automne", 
+  	 	 "image"  : "Crocus nudiflorus/4528.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Grandes fleurs violettes, sans feuilles, apparaissant à l'automne directement du sol. Les feuilles étroites apparaissent au printemps suivant. Pousse dans les prairies humides.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 264,
+ 	 	 "scientific_name"  : "Cruciata laevipes", 
+  	 	 "current_name"  : "Croisette velue", 
+  	 	 "image"  : "Cruciata laevipes/5197.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace rampante ou ascendante. Feuilles ovales, verticillées par quatre. Petites fleurs jaune-verdâtre en verticilles axillaires. Très velue. Pousse dans les prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 265,
+ 	 	 "scientific_name"  : "Cucumis sativus", 
+  	 	 "current_name"  : "Concombre", 
+  	 	 "image"  : "Cucumis sativus/69434.jpg", 
+  	 	 "characteristic"  : "Plante annuelle potagère, grimpante ou rampante, aux tiges velues et vrilles. Grandes feuilles lobées. Fleurs jaunes en forme de cloche. Fruits allongés et verts, très juteux.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 266,
+ 	 	 "scientific_name"  : "Cupressus sempervirens", 
+  	 	 "current_name"  : "Cyprès commun", 
+  	 	 "image"  : "Cupressus sempervirens/44567.jpg", 
+  	 	 "characteristic"  : "Grand conifère persistant au port très élancé et colonnaire. Feuillage vert foncé, écailleux, compact. Petits cônes femelles ronds et ligneux. Très résistant à la sécheresse. Symbole méditerranéen.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 267,
+ 	 	 "scientific_name"  : "Cyanus montanus", 
+  	 	 "current_name"  : "Bleuet des montagnes", 
+  	 	 "image"  : "Cyanus montanus/21206.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne aux tiges dressées. Grandes fleurs bleues (parfois violettes ou blanches) en capitules solitaires, à ligules périphériques allongées et frangées. Pousse en prairies d'altitude.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 268,
+ 	 	 "scientific_name"  : "Cyanus segetum", 
+  	 	 "current_name"  : "Bleuet des champs", 
+  	 	 "image"  : "Cyanus segetum/98096.jpg", 
+  	 	 "characteristic"  : "Plante annuelle jadis très commune dans les champs de céréales, devenue rare. Fleurs bleues (parfois roses ou blanches) en capitules solitaires. Feuilles linéaires, gris-vert. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 269,
+ 	 	 "scientific_name"  : "Cyclamen hederifolium", 
+  	 	 "current_name"  : "Cyclamen de Naples", 
+  	 	 "image"  : "Cyclamen hederifolium/37827.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse vivace. Feuilles en forme de lierre (hederifolium), marbrées, apparaissant après la floraison. Fleurs roses, blanches ou violettes, avec des pétales recourbés vers le haut, apparaissant en automne.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 270,
+ 	 	 "scientific_name"  : "Cydonia oblonga", 
+  	 	 "current_name"  : "Cognassier", 
+  	 	 "image"  : "Cydonia oblonga/70459.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc aux rameaux tortueux. Feuilles ovales, duveteuses. Grandes fleurs blanches ou roses pâles au printemps. Fruits (coings) gros, jaunes, très parfumés, consommés cuits.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 271,
+ 	 	 "scientific_name"  : "Cymbalaria muralis", 
+  	 	 "current_name"  : "Cymbalaire des murs", 
+  	 	 "image"  : "Cymbalaria muralis/9466.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace rampante aux tiges fines et aux feuilles petites, rondes, lobées. Petites fleurs lilas avec un palais jaune. Pousse dans les fissures des murs et rochers.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 272,
+ 	 	 "scientific_name"  : "Cynoglossum creticum", 
+  	 	 "current_name"  : "Cynoglosse de Crète", 
+  	 	 "image"  : "Cynoglossum creticum/89725.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace, velue et grisâtre. Feuilles lancéolées. Fleurs bleu pâle ou lilas, avec un cœur plus sombre, regroupées en grappes. Fruits épineux s'accrochant aux vêtements.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 273,
+ 	 	 "scientific_name"  : "Cypripedium calceolus", 
+  	 	 "current_name"  : "Sabot de Vénus", 
+  	 	 "image"  : "Cypripedium calceolus/11360.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre rare et spectaculaire. Grande fleur solitaire, avec des sépales et pétales brun-rougeâtre et un labelle jaune vif en forme de sabot. Pousse dans les sous-bois calcaires. Protégée.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 274,
+ 	 	 "scientific_name"  : "Cytisus lanigerus", 
+  	 	 "current_name"  : "Cytise laineux", 
+  	 	 "image"  : "Cytisus lanigerus/43284.jpg", 
+  	 	 "characteristic"  : "Petit arbuste prostré aux jeunes rameaux très laineux. Feuilles trifoliées. Fleurs jaune vif, papilionacées, en grappes. Pousse en milieux rocailleux et secs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 275,
+ 	 	 "scientific_name"  : "Cytisus oromediterraneus", 
+  	 	 "current_name"  : "Genêt des garrigues", 
+  	 	 "image"  : "Cytisus oromediterraneus/38877.jpg", 
+  	 	 "characteristic"  : "Arbuste méditerranéen aux rameaux verts striés. Feuilles trifoliées, petites. Fleurs jaune vif, papilionacées, très nombreuses, couvrant l'arbuste au printemps. Pousse dans les garrigues et maquis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 276,
+ 	 	 "scientific_name"  : "Cytisus scoparius", 
+  	 	 "current_name"  : "Genêt à balais", 
+  	 	 "image"  : "Cytisus scoparius/16984.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc aux tiges vertes, anguleuses, presque sans feuilles en été. Fleurs jaune vif, papilionacées, abondantes au printemps. Gousses noires et plates. Peut être envahissant.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 277,
+ 	 	 "scientific_name"  : "Dactylis glomerata", 
+  	 	 "current_name"  : "Dactyle aggloméré", 
+  	 	 "image"  : "Dactylis glomerata/48290.jpg", 
+  	 	 "characteristic"  : "Graminée vivace formant des touffes denses. Feuilles larges, vert grisâtre. Inflorescence en panicule formée de fascicules de petits épillets. Très commune dans les prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 278,
+ 	 	 "scientific_name"  : "Dactylorhiza fuchsii", 
+  	 	 "current_name"  : "Orchis de Fuchs", 
+  	 	 "image"  : "Dactylorhiza fuchsii/96184.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre aux feuilles maculées de taches sombres. Fleurs roses à pourpres, avec un labelle fortement lobé et taché de motifs foncés. Pousse dans les prairies et sous-bois clairs.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 279,
+ 	 	 "scientific_name"  : "Dactylorhiza incarnata", 
+  	 	 "current_name"  : "Orchis incarnat", 
+  	 	 "image"  : "Dactylorhiza incarnata/74661.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre des milieux humides. Fleurs roses à rouges, parfois jaunâtres, avec un labelle peu lobé. Feuilles non maculées, vert clair. Pousse dans les tourbières et marais.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 280,
+ 	 	 "scientific_name"  : "Dactylorhiza maculata", 
+  	 	 "current_name"  : "Orchis tacheté", 
+  	 	 "image"  : "Dactylorhiza maculata/79044.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre aux feuilles souvent maculées de taches sombres. Fleurs roses à violettes, avec un labelle lobé et des motifs complexes. Très variable. Pousse dans divers habitats humides.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 281,
+ 	 	 "scientific_name"  : "Dactylorhiza majalis", 
+  	 	 "current_name"  : "Orchis de mai", 
+  	 	 "image"  : "Dactylorhiza majalis/1568.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre robuste, aux feuilles souvent maculées. Fleurs rose-pourpre foncé, en épis denses. Labelle largement lobé et souvent très marqué. Pousse dans les prairies humides et marécageuses.", 
+  	 	 "water_need"  : 2.2 
+	},
+	 { 
+ 	 	 "id"  : 282,
+ 	 	 "scientific_name"  : "Dactylorhiza sambucina", 
+  	 	 "current_name"  : "Orchis sureau", 
+  	 	 "image"  : "Dactylorhiza sambucina/104491.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre printanière aux fleurs jaunes ou pourpres, en épis denses. Le labelle est lobé et les feuilles non maculées. Pousse dans les prairies et pelouses d'altitude.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 283,
+ 	 	 "scientific_name"  : "Daphne cneorum", 
+  	 	 "current_name"  : "Daphné camélée", 
+  	 	 "image"  : "Daphne cneorum/81851.jpg", 
+  	 	 "characteristic"  : "Petit arbuste persistant, prostré, aux feuilles étroites, vert foncé. Fleurs roses vif, très parfumées, regroupées en grappes terminales. Pousse sur sols calcaires, ensoleillés. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 284,
+ 	 	 "scientific_name"  : "Daphne gnidium", 
+  	 	 "current_name"  : "Daphné garou", 
+  	 	 "image"  : "Daphne gnidium/100651.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen aux feuilles linéaires, coriaces. Petites fleurs blanc-jaunâtre, très parfumées, en grappes terminales. Fruits rouges toxiques. Pousse en garrigues et maquis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 285,
+ 	 	 "scientific_name"  : "Daphne laureola", 
+  	 	 "current_name"  : "Daphné lauréolé", 
+  	 	 "image"  : "Daphne laureola/64389.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant aux feuilles ovales, vert foncé brillant, disposées en spirale au sommet des tiges. Fleurs vert-jaunâtre, parfumées, apparaissant en hiver. Fruits noirs toxiques. Pousse en sous-bois frais.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 286,
+ 	 	 "scientific_name"  : "Daphne mezereum", 
+  	 	 "current_name"  : "Bois-gentil", 
+  	 	 "image"  : "Daphne mezereum/63038.jpg", 
+  	 	 "characteristic"  : "Petit arbuste caduc. Fleurs roses-pourpres, très parfumées, apparaissant directement sur les rameaux nus avant les feuilles. Fruits rouges vifs très toxiques. Pousse en sous-bois. Protégée.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 287,
+ 	 	 "scientific_name"  : "Datura stramonium", 
+  	 	 "current_name"  : "Datura stramoine", 
+  	 	 "image"  : "Datura stramonium/101563.jpg", 
+  	 	 "characteristic"  : "Grande plante annuelle très toxique. Feuilles larges, lobées, dentées. Grandes fleurs blanches en trompette. Fruits globuleux et épineux contenant des graines. Odeur désagréable. Pousse en friches.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 288,
+ 	 	 "scientific_name"  : "Daucus carota", 
+  	 	 "current_name"  : "Carotte sauvage", 
+  	 	 "image"  : "Daucus carota/96943.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle. Rosette basale de feuilles finement découpées. Tiges florales dressées portant de grandes ombelles de petites fleurs blanches, souvent avec une fleur centrale pourpre. Racine comestible.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 289,
+ 	 	 "scientific_name"  : "Dianthus armeria", 
+  	 	 "current_name"  : "Œillet arméria", 
+  	 	 "image"  : "Dianthus armeria/76056.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux tiges grêles. Petites fleurs roses ou pourpres, tachetées de blanc, regroupées en têtes denses. Bractées longues et vertes. Pousse en pelouses sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 290,
+ 	 	 "scientific_name"  : "Dianthus carthusianorum", 
+  	 	 "current_name"  : "Œillet des Chartreux", 
+  	 	 "image"  : "Dianthus carthusianorum/95213.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges fines et aux feuilles linéaires. Petites fleurs roses ou pourpres, en capitules lâches, avec des bractées courtes et brunâtres. Pousse dans les pelouses calcaires sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 291,
+ 	 	 "scientific_name"  : "Dianthus gallicus", 
+  	 	 "current_name"  : "Œillet de France", 
+  	 	 "image"  : "Dianthus gallicus/17391.jpg", 
+  	 	 "characteristic"  : "Œillet vivace aux fleurs roses à violettes, souvent frangées, solitaires ou en petits groupes. Pousse dans les sables littoraux et les pelouses sèches. Endémique.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 292,
+ 	 	 "scientific_name"  : "Dianthus hyssopifolius", 
+  	 	 "current_name"  : "Œillet à feuilles d'hysope", 
+  	 	 "image"  : "Dianthus hyssopifolius/93926.jpg", 
+  	 	 "characteristic"  : "Vivace des montagnes et milieux secs. Petites fleurs roses ou pourpres, souvent solitaires, avec des pétales dentelés. Feuilles linéaires, fines. Souvent cultivée pour les rocailles.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 293,
+ 	 	 "scientific_name"  : "Dicentra spectabilis", 
+  	 	 "current_name"  : "Cœur de Marie", 
+  	 	 "image"  : "Dicentra spectabilis/23219.jpg", 
+  	 	 "characteristic"  : "Vivace ornementale aux feuilles finement découpées, vert clair. Fleurs roses et blanches en forme de cœur, pendantes, le long de tiges arquées. Fleurissant au printemps. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 294,
+ 	 	 "scientific_name"  : "Digitalis grandiflora", 
+  	 	 "current_name"  : "Digitale à grandes fleurs", 
+  	 	 "image"  : "Digitalis grandiflora/47749.jpg", 
+  	 	 "characteristic"  : "Vivace robuste. Grandes fleurs jaune pâle, en forme de doigts de gant, tachetées de brun à l'intérieur, regroupées en longs épis. Feuilles lancéolées. Pousse en sous-bois clairs.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 295,
+ 	 	 "scientific_name"  : "Digitalis lutea", 
+  	 	 "current_name"  : "Digitale jaune", 
+  	 	 "image"  : "Digitalis lutea/111259.jpg", 
+  	 	 "characteristic"  : "Vivace élancée. Petites fleurs jaune pâle à blanc-verdâtre, en forme de doigts de gant, regroupées en épis. Moins spectaculaire que D. purpurea mais élégante. Pousse en sous-bois.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 296,
+ 	 	 "scientific_name"  : "Digitalis purpurea", 
+  	 	 "current_name"  : "Digitale pourpre", 
+  	 	 "image"  : "Digitalis purpurea/109515.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle (parfois vivace) très ornementale. Longs épis floraux portant de grandes fleurs en forme de doigts de gant, pourpres, roses ou blanches, tachetées à l'intérieur. Très toxique. Plante médicinale.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 297,
+ 	 	 "scientific_name"  : "Dioscorea communis", 
+  	 	 "current_name"  : "Tamier commun", 
+  	 	 "image"  : "Dioscorea communis/76263.jpg", 
+  	 	 "characteristic"  : "Liane grimpante vivace. Tiges volubiles. Feuilles brillantes, en forme de cœur. Fleurs verdâtres discrètes. Fruits rouges vifs en grappes, très toxiques. Pousse dans les haies et bois.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 298,
+ 	 	 "scientific_name"  : "Diospyros kaki", 
+  	 	 "current_name"  : "Plaqueminier", 
+  	 	 "image"  : "Diospyros kaki/85780.jpg", 
+  	 	 "characteristic"  : "Arbre fruitier caduc de taille moyenne. Feuilles ovales, luisantes. Fleurs discrètes. Fruits comestibles (kakis), orange à maturité, très doux, surtout après les premières gelées. Très décoratif en automne.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 299,
+ 	 	 "scientific_name"  : "Dipcadi serotinum", 
+  	 	 "current_name"  : "Dipcadi tardif", 
+  	 	 "image"  : "Dipcadi serotinum/10707.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse méditerranéenne. Feuilles basales linéaires. Tiges florales fines portant une grappe lâche de petites fleurs campanulées, vertes ou brunes, souvent avec des bords jaunâtres. Rare.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 300,
+ 	 	 "scientific_name"  : "Diphasiastrum tristachyum", 
+  	 	 "current_name"  : "Lycopode à trois épis", 
+  	 	 "image"  : "Diphasiastrum tristachyum/58086.jpg", 
+  	 	 "characteristic"  : "Petite plante herbacée persistante, ressemblant à une petite mousse ou une fougère. Tiges rampantes et dressées, ramifiées en éventail. Portant des sporanges en petits épis. Pousse en landes acides et forêts claires.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 301,
+ 	 	 "scientific_name"  : "Diplotaxis erucoides", 
+  	 	 "current_name"  : "Diplotaxis fausse roquette", 
+  	 	 "image"  : "Diplotaxis erucoides/110338.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle. Feuilles lobées, souvent groupées en rosette. Fleurs blanches à quatre pétales, en grappes. Très commune dans les friches et les cultures en méditerranée. Odeur forte.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 302,
+ 	 	 "scientific_name"  : "Diplotaxis tenuifolia", 
+  	 	 "current_name"  : "Roquette sauvage", 
+  	 	 "image"  : "Diplotaxis tenuifolia/76914.jpg", 
+  	 	 "characteristic"  : "Plante vivace aux feuilles finement découpées et légèrement charnues. Fleurs jaune vif à quatre pétales, en grappes lâches. Forte odeur et saveur piquante. Utilisée en salade.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 303,
+ 	 	 "scientific_name"  : "Dipsacus fullonum", 
+  	 	 "current_name"  : "Cardère sauvage", 
+  	 	 "image"  : "Dipsacus fullonum/76872.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle. Tiges épineuses et cannelées. Feuilles basales en rosette. Inflorescence en capitule ovoïde, épineux, avec des bractées pointues, rappelant un goupillon. Attire les oiseaux en hiver.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 304,
+ 	 	 "scientific_name"  : "Dittrichia viscosa", 
+  	 	 "current_name"  : "Inule visqueuse", 
+  	 	 "image"  : "Dittrichia viscosa/32095.jpg", 
+  	 	 "characteristic"  : "Arbuste méditerranéen aux feuilles allongées et très collantes. Fleurs jaunes en capitules nombreux, en automne. Odeur forte et résineuse. Pousse sur sols perturbés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 305,
+ 	 	 "scientific_name"  : "Doronicum grandiflorum", 
+  	 	 "current_name"  : "Doronic à grandes fleurs", 
+  	 	 "image"  : "Doronicum grandiflorum/45546.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne aux grandes feuilles basales. Grandes fleurs jaune vif en capitules solitaires, ressemblant à de grandes marguerites. Pousse dans les rochers et pelouses d'altitude.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 306,
+ 	 	 "scientific_name"  : "Dorycnium hirsutum", 
+  	 	 "current_name"  : "Dorycnie hérissée", 
+  	 	 "image"  : "Dorycnium hirsutum/38912.jpg", 
+  	 	 "characteristic"  : "Petit arbuste prostré ou ascendant, très velu. Feuilles composées de 5 folioles. Fleurs blanches à rosées, papilionacées, en têtes denses. Pousse en milieux secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 307,
+ 	 	 "scientific_name"  : "Dorycnium pentaphyllum", 
+  	 	 "current_name"  : "Dorycnie à cinq feuilles", 
+  	 	 "image"  : "Dorycnium pentaphyllum/10614.jpg", 
+  	 	 "characteristic"  : "Petit arbuste ou plante vivace. Feuilles composées de 5 folioles. Fleurs blanches à rosées, papilionacées, en têtes denses. Moins velue que D. hirsutum. Pousse en milieux secs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 308,
+ 	 	 "scientific_name"  : "Draba verna", 
+  	 	 "current_name"  : "Drave printanière", 
+  	 	 "image"  : "Draba verna/69863.jpg", 
+  	 	 "characteristic"  : "Minuscule plante annuelle formant une rosette basale de feuilles velues. Très petites fleurs blanches à quatre pétales échancrés. Fleurissant très tôt au printemps, dans les pelouses sèches.", 
+  	 	 "water_need"  : 0.3 
+	},
+	 { 
+ 	 	 "id"  : 309,
+ 	 	 "scientific_name"  : "Dracunculus vulgaris", 
+  	 	 "current_name"  : "Arum dragon", 
+  	 	 "image"  : "Dracunculus vulgaris/94290.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace tubéreuse. Feuilles palmées, lobées. Grande spathe pourpre sombre, spectaculaire, entourant un spadice noir. Forte odeur de charogne. Très ornementale.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 310,
+ 	 	 "scientific_name"  : "Drosera rotundifolia", 
+  	 	 "current_name"  : "Rossolis à feuilles rondes", 
+  	 	 "image"  : "Drosera rotundifolia/49577.jpg", 
+  	 	 "characteristic"  : "Petite plante carnivore des tourbières. Rosette de feuilles rondes, couvertes de poils rouges glanduleux qui piègent les insectes. Petites fleurs blanches. Espèce protégée.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 311,
+ 	 	 "scientific_name"  : "Dryas octopetala", 
+  	 	 "current_name"  : "Dryade à huit pétales", 
+  	 	 "image"  : "Dryas octopetala/4246.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste rampant persistant, formant des tapis. Feuilles ovales, dentées, vert foncé brillant dessus, feutrées dessous. Grandes fleurs blanches à huit pétales. Pousse en montagne, en sols calcaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 312,
+ 	 	 "scientific_name"  : "Dryopteris filix-mas", 
+  	 	 "current_name"  : "Fougère mâle", 
+  	 	 "image"  : "Dryopteris filix-mas/13786.jpg", 
+  	 	 "characteristic"  : "Grande fougère caduque, formant une couronne de grandes frondes dressées, finement divisées. Très commune dans les sous-bois et zones humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 313,
+ 	 	 "scientific_name"  : "Ecballium elaterium", 
+  	 	 "current_name"  : "Concombre d'âne", 
+  	 	 "image"  : "Ecballium elaterium/68011.jpg", 
+  	 	 "characteristic"  : "Plante herbacée vivace rampante. Feuilles triangulaires, velues. Petites fleurs jaunes. Fruits verts et charnus qui explosent violemment à maturité, projetant les graines. Très toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 314,
+ 	 	 "scientific_name"  : "Echinophora spinosa", 
+  	 	 "current_name"  : "Échinophore épineuse", 
+  	 	 "image"  : "Echinophora spinosa/18374.jpg", 
+  	 	 "characteristic"  : "Plante vivace épineuse des dunes côtières. Feuilles très découpées et épineuses. Petites fleurs blanches en ombelles. Fruits épineux. Adaptée aux milieux salés et sableux.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 315,
+ 	 	 "scientific_name"  : "Echinops ritro", 
+  	 	 "current_name"  : "Boule azurée", 
+  	 	 "image"  : "Echinops ritro/111366.jpg", 
+  	 	 "characteristic"  : "Grande vivace aux feuilles épineuses, gris-vert. Grandes inflorescences sphériques, bleu vif, composées de nombreuses petites fleurs. Très décorative et appréciée des pollinisateurs.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 316,
+ 	 	 "scientific_name"  : "Echium vulgare", 
+  	 	 "current_name"  : "Vipérine commune", 
+  	 	 "image"  : "Echium vulgare/67180.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle très velue et hérissée. Rosette basale de feuilles lancéolées. Longues grappes de fleurs bleues vives (parfois roses ou blanches), s'ouvrant du rose au bleu. Très mellifère.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 317,
+ 	 	 "scientific_name"  : "Elaeagnus angustifolia", 
+  	 	 "current_name"  : "Olivier de Bohème", 
+  	 	 "image"  : "Elaeagnus angustifolia/67209.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc, épineux. Feuilles étroites, argentées sur le revers. Fleurs jaunes discrètes, parfumées. Fruits comestibles (drupes) argentés-jaunâtres. Tolérant à la sécheresse et au sel.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 318,
+ 	 	 "scientific_name"  : "Ephedra distachya", 
+  	 	 "current_name"  : "Éphédra distachyum", 
+  	 	 "image"  : "Ephedra distachya/66661.jpg", 
+  	 	 "characteristic"  : "Petit arbuste aux rameaux verts, sans feuilles visibles (feuilles réduites en écailles). Fleurs minuscules. Fruits rouges charnus. Source d'éphédrine. Pousse en milieux secs et rocailleux.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 319,
+ 	 	 "scientific_name"  : "Epilobium angustifolium", 
+  	 	 "current_name"  : "Épilobe à feuilles étroites", 
+  	 	 "image"  : "Epilobium angustifolium/64146.jpg", 
+  	 	 "characteristic"  : "Grande vivace aux tiges dressées. Longues grappes de fleurs rose-pourpre vif, en été. Feuilles linéaires, étroites. Pousse dans les clairières, coupes forestières, bords de routes. Se propage rapidement.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 320,
+ 	 	 "scientific_name"  : "Epilobium dodonaei", 
+  	 	 "current_name"  : "Épilobe de Dodonaeus", 
+  	 	 "image"  : "Epilobium dodonaei/71530.jpg", 
+  	 	 "characteristic"  : "Épilobe vivace aux feuilles linéaires, étroites, souvent rougeâtres. Fleurs roses à pourpres, en grappes. Pousse sur sols graveleux et secs, souvent en montagne ou milieux ouverts.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 321,
+ 	 	 "scientific_name"  : "Epilobium hirsutum", 
+  	 	 "current_name"  : "Épilobe hérissé", 
+  	 	 "image"  : "Epilobium hirsutum/41188.jpg", 
+  	 	 "characteristic"  : "Grande vivace velue. Feuilles lancéolées, dentées. Fleurs roses à pourpres, en grappes lâches. Pousse dans les milieux humides, fossés, bords de rivières.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 322,
+ 	 	 "scientific_name"  : "Epilobium tetragonum", 
+  	 	 "current_name"  : "Épilobe à tiges carrées", 
+  	 	 "image"  : "Epilobium tetragonum/33368.jpg", 
+  	 	 "characteristic"  : "Épilobe vivace aux tiges anguleuses (carrées). Petites fleurs roses pâles, en grappes. Pousse dans les lieux humides et perturbés.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 323,
+ 	 	 "scientific_name"  : "Epipactis atrorubens", 
+  	 	 "current_name"  : "Épipactis rouge sombre", 
+  	 	 "image"  : "Epipactis atrorubens/108623.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre aux tiges et feuilles souvent teintées de rouge-brun. Petites fleurs pourpres-brunâtres, souvent non complètement ouvertes. Pousse dans les milieux secs et calcaires, sous-bois clairs.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 324,
+ 	 	 "scientific_name"  : "Epipactis helleborine", 
+  	 	 "current_name"  : "Épipactis à feuilles de hellébore", 
+  	 	 "image"  : "Epipactis helleborine/51086.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre commune. Tiges robustes. Feuilles ovales, plissées. Petites fleurs vertes et pourpres, en grappes lâches. Pousse dans les bois et lisières, tolérante à l'ombre.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 325,
+ 	 	 "scientific_name"  : "Epipactis palustris", 
+  	 	 "current_name"  : "Épipactis des marais", 
+  	 	 "image"  : "Epipactis palustris/108195.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre des zones humides. Tiges fines. Fleurs relativement grandes, blanches, roses et jaunes, aux couleurs délicates, regroupées en grappes. Pousse dans les tourbières et prairies humides.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 326,
+ 	 	 "scientific_name"  : "Equisetum telmateia", 
+  	 	 "current_name"  : "Prêle des grands bois", 
+  	 	 "image"  : "Equisetum telmateia/89185.jpg", 
+  	 	 "characteristic"  : "Grande prêle vivace. Tiges fertiles non ramifiées, brunâtres, apparaissant au printemps. Tiges stériles vertes, très grandes et très ramifiées, en forme de sapin. Pousse dans les lieux humides.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 327,
+ 	 	 "scientific_name"  : "Eranthis hyemalis", 
+  	 	 "current_name"  : "Éranthis d'hiver", 
+  	 	 "image"  : "Eranthis hyemalis/83448.jpg", 
+  	 	 "characteristic"  : "Petite vivace tubéreuse. Fleurs jaune vif, en forme de coupe, apparaissant très tôt en hiver ou début de printemps, entourées d'une collerette de feuilles. Pousse en sous-bois. Très précoce.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 328,
+ 	 	 "scientific_name"  : "Erica arborea", 
+  	 	 "current_name"  : "Bruyère arborescente", 
+  	 	 "image"  : "Erica arborea/8270.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre persistant méditerranéen. Rameaux nombreux. Petites feuilles en aiguilles, vert foncé. Fleurs blanches campanulées, très nombreuses, parfumées, en grappes. Mellifère.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 329,
+ 	 	 "scientific_name"  : "Erica cinerea", 
+  	 	 "current_name"  : "Bruyère cendrée", 
+  	 	 "image"  : "Erica cinerea/44155.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant. Petites feuilles en aiguilles, vert foncé. Fleurs rose-pourpre vif, en forme de clochettes, en grappes lâches. Pousse sur sols acides et landes. Très colorée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 330,
+ 	 	 "scientific_name"  : "Erica tetralix", 
+  	 	 "current_name"  : "Bruyère des marais", 
+  	 	 "image"  : "Erica tetralix/97937.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant. Feuilles en aiguilles, grisâtres, en verticilles de 4. Fleurs roses en forme de grelot, regroupées en têtes denses au sommet des tiges. Pousse dans les tourbières et milieux humides acides.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 331,
+ 	 	 "scientific_name"  : "Erica vagans", 
+  	 	 "current_name"  : "Bruyère vagabonde", 
+  	 	 "image"  : "Erica vagans/101212.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant formant des tapis. Feuilles en aiguilles. Fleurs roses à blanches, en clochettes, très nombreuses, en longues grappes. Pousse sur sols calcaires ou légèrement acides.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 332,
+ 	 	 "scientific_name"  : "Erigeron annuus", 
+  	 	 "current_name"  : "Vergerette annuelle", 
+  	 	 "image"  : "Erigeron annuus/19333.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux tiges ramifiées. Feuilles lancéolées. Petits capitules de fleurs blanches (parfois roses) avec un centre jaune, ressemblant à de petites pâquerettes. Très commune, souvent adventice.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 333,
+ 	 	 "scientific_name"  : "Erigeron canadensis", 
+  	 	 "current_name"  : "Vergerette du Canada", 
+  	 	 "image"  : "Erigeron canadensis/102936.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux tiges dressées, très ramifiées dans le haut. Feuilles linéaires. Très petites fleurs blanc-verdâtre en nombreux capitules. Envahissante. Ses fruits se dispersent par le vent.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 334,
+ 	 	 "scientific_name"  : "Erigeron karvinskianus", 
+  	 	 "current_name"  : "Pâquerette des murailles", 
+  	 	 "image"  : "Erigeron karvinskianus/107664.jpg", 
+  	 	 "characteristic"  : "Vivace rampante, souvent cultivée. Petites fleurs nombreuses, blanches, passant au rose avec l'âge, avec un centre jaune. Pousse facilement dans les murs, rocailles et fissures. Floraison très longue.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 335,
+ 	 	 "scientific_name"  : "Erigeron sumatrensis", 
+  	 	 "current_name"  : "Vergerette de Sumatra", 
+  	 	 "image"  : "Erigeron sumatrensis/98830.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle similaire à E. canadensis mais généralement plus grande et plus ramifiée. Tiges et feuilles velues. Petites fleurs verdâtres. Très envahissante.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 336,
+ 	 	 "scientific_name"  : "Erinus alpinus", 
+  	 	 "current_name"  : "ÉRinus des Alpes", 
+  	 	 "image"  : "Erinus alpinus/79499.jpg", 
+  	 	 "characteristic"  : "Petite vivace des rocailles. Feuilles en rosette basale. Petites fleurs rose-pourpre (parfois blanches) en grappes lâches. Pousse dans les fissures de rochers et murs calcaires.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 337,
+ 	 	 "scientific_name"  : "Eriobotrya japonica", 
+  	 	 "current_name"  : "Néflier du Japon", 
+  	 	 "image"  : "Eriobotrya japonica/103004.jpg", 
+  	 	 "characteristic"  : "Petit arbre fruitier persistant. Grandes feuilles ovales, coriaces, vert foncé brillant dessus, duveteuses dessous. Fleurs blanches, parfumées, en automne-hiver. Fruits jaunes-orangés comestibles (bibasses ou nèfles du Japon).", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 338,
+ 	 	 "scientific_name"  : "Eriophorum angustifolium", 
+  	 	 "current_name"  : "Linaigrette à feuilles étroites", 
+  	 	 "image"  : "Eriophorum angustifolium/54644.jpg", 
+  	 	 "characteristic"  : "Plante vivace des tourbières. Tiges fines. Feuilles linéaires. Fleurs discrètes suivies de têtes fructifères blanches et plumeuses, très décoratives, ressemblant à du coton. Pousse en milieu très humide et acide.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 339,
+ 	 	 "scientific_name"  : "Erodium ciconium", 
+  	 	 "current_name"  : "Érodium bec-de-cigogne", 
+  	 	 "image"  : "Erodium ciconium/64694.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue. Feuilles profondément découpées. Fleurs roses à pourpres, en ombelles. Fruits très allongés, rappelant un bec de cigogne, d'où son nom. Pousse en milieux secs et perturbés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 340,
+ 	 	 "scientific_name"  : "Erodium cicutarium", 
+  	 	 "current_name"  : "Érodium cigüe", 
+  	 	 "image"  : "Erodium cicutarium/97457.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle très commune. Feuilles finement découpées, ressemblant à la cigüe. Petites fleurs roses à violettes, en ombelles. Fruits allongés en 'bec de grue'.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 341,
+ 	 	 "scientific_name"  : "Erodium foetidum", 
+  	 	 "current_name"  : "Érodium fétide", 
+  	 	 "image"  : "Erodium foetidum/67589.jpg", 
+  	 	 "characteristic"  : "Plante vivace aux feuilles profondément découpées. Fleurs roses à pourpres. Odeur désagréable au froissement. Pousse en milieux secs et rocailleux. Ressemble à d'autres érodiums.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 342,
+ 	 	 "scientific_name"  : "Erodium malacoides", 
+  	 	 "current_name"  : "Érodium à feuilles de mauve", 
+  	 	 "image"  : "Erodium malacoides/76534.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle. Feuilles rondes à ovales, légèrement lobées, rappelant les feuilles de mauve. Petites fleurs roses-pourpres. Pousse en milieux secs et perturbés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 343,
+ 	 	 "scientific_name"  : "Eryngium bourgatii", 
+  	 	 "current_name"  : "Panicaut de Bourgat", 
+  	 	 "image"  : "Eryngium bourgatii/20782.jpg", 
+  	 	 "characteristic"  : "Vivace épineuse de montagne. Feuilles basales découpées et épineuses, souvent marbrées de blanc. Tiges ramifiées. Fleurs bleu-argenté en têtes coniques, entourées de bractées épineuses. Très ornementale.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 344,
+ 	 	 "scientific_name"  : "Eryngium campestre", 
+  	 	 "current_name"  : "Panicaut champêtre", 
+  	 	 "image"  : "Eryngium campestre/93003.jpg", 
+  	 	 "characteristic"  : "Vivace épineuse. Feuilles basales très épineuses, raides. Tiges ramifiées. Petites fleurs blanc-verdâtre en têtes globuleuses, entourées de bractées épineuses. Pousse en milieux secs et ensoleillés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 345,
+ 	 	 "scientific_name"  : "Eryngium maritimum", 
+  	 	 "current_name"  : "Panicaut maritime", 
+  	 	 "image"  : "Eryngium maritimum/50124.jpg", 
+  	 	 "characteristic"  : "Vivace épineuse des dunes. Feuilles coriaces, bleu-vert, très épineuses. Fleurs bleu-argenté en têtes globuleuses, entourées de bractées épineuses. Adaptée aux milieux salés et sableux. Protégée.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 346,
+ 	 	 "scientific_name"  : "Eryngium spinalba", 
+  	 	 "current_name"  : "Panicaut blanc", 
+  	 	 "image"  : "Eryngium spinalba/95824.jpg", 
+  	 	 "characteristic"  : "Vivace épineuse de montagne. Tiges et feuilles vert-bleuté. Fleurs blanches ou bleu pâle en têtes coniques, entourées de bractées épineuses blanches. Très ornementale. Pousse en pelouses d'altitude.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 347,
+ 	 	 "scientific_name"  : "Erysimum cheiri", 
+  	 	 "current_name"  : "Giroflée des murailles", 
+  	 	 "image"  : "Erysimum cheiri/71129.jpg", 
+  	 	 "characteristic"  : "Plante vivace à courte durée de vie ou bisannuelle. Fleurs très parfumées, jaune, orange, rouge ou pourpre, en grappes denses. Feuilles linéaires, gris-vert. Pousse dans les murs et rochers.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 348,
+ 	 	 "scientific_name"  : "Erythronium dens-canis", 
+  	 	 "current_name"  : "Érythrone Dent-de-chien", 
+  	 	 "image"  : "Erythronium dens-canis/76667.jpg", 
+  	 	 "characteristic"  : "Petite vivace bulbeuse des sous-bois. Feuilles basales elliptiques, souvent maculées. Fleurs solitaires, roses-lilas (parfois blanches), aux tépales recourbés vers le haut, rappelant une dent de chien. Fleurissant tôt au printemps.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 349,
+ 	 	 "scientific_name"  : "Eschscholzia californica", 
+  	 	 "current_name"  : "Pavot de Californie", 
+  	 	 "image"  : "Eschscholzia californica/21513.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou vivace de courte vie. Feuilles finement découpées, gris-vert. Grandes fleurs orange vif ou jaunes, en forme de coupe, s'ouvrant au soleil. Très florifère et tolérante à la sécheresse.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 350,
+ 	 	 "scientific_name"  : "Euonymus europaeus", 
+  	 	 "current_name"  : "Fusain d'Europe", 
+  	 	 "image"  : "Euonymus europaeus/68272.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc. Feuilles ovales, vert foncé, virant au rouge vif en automne. Fleurs discrètes. Fruits roses-rouges à quatre lobes, s'ouvrant pour révéler des graines orange vif, très décoratifs en automne.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 351,
+ 	 	 "scientific_name"  : "Euonymus latifolius", 
+  	 	 "current_name"  : "Fusain à larges feuilles", 
+  	 	 "image"  : "Euonymus latifolius/57233.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc. Grandes feuilles ovales, vert foncé, virant au rouge orangé spectaculaire en automne. Fruits rose-rouge vif s'ouvrant pour révéler des graines orange, très décoratifs.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 352,
+ 	 	 "scientific_name"  : "Eupatorium cannabinum", 
+  	 	 "current_name"  : "Eupatoire chanvrine", 
+  	 	 "image"  : "Eupatorium cannabinum/94063.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace des zones humides. Feuilles palmées, dentées. Fleurs petites, roses-pourpres, regroupées en corymbes denses. Attire les papillons. Pousse au bord de l'eau.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 353,
+ 	 	 "scientific_name"  : "Euphorbia amygdaloides", 
+  	 	 "current_name"  : "Euphorbe des bois", 
+  	 	 "image"  : "Euphorbia amygdaloides/27465.jpg", 
+  	 	 "characteristic"  : "Vivace ligneuse à la base. Feuilles persistantes, vert foncé, spatulées. Inflorescences jaune-vert vif (cyathes), regroupées en cymes. Pousse dans les sous-bois. Produit un latex irritant.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 354,
+ 	 	 "scientific_name"  : "Euphorbia characias", 
+  	 	 "current_name"  : "Euphorbe des garrigues", 
+  	 	 "image"  : "Euphorbia characias/56986.jpg", 
+  	 	 "characteristic"  : "Grande vivace méditerranéenne aux tiges robustes et feuillage persistant bleu-vert. Grandes inflorescences vert-jaune éclatantes, en forme de cône. Très graphique. Pousse en plein soleil.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 355,
+ 	 	 "scientific_name"  : "Euphorbia cyparissias", 
+  	 	 "current_name"  : "Euphorbe cyprès", 
+  	 	 "image"  : "Euphorbia cyparissias/64857.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse formant des tapis. Feuilles très fines, linéaires, rappelant celles du cyprès. Inflorescences vert-jaune vif. Peut être envahissante. Produit un latex blanc irritant.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 356,
+ 	 	 "scientific_name"  : "Euphorbia dendroides", 
+  	 	 "current_name"  : "Euphorbe arborescente", 
+  	 	 "image"  : "Euphorbia dendroides/81411.jpg", 
+  	 	 "characteristic"  : "Grand arbuste méditerranéen aux tiges ligneuses et charnues. Feuilles spatulées, persistantes. Grandes inflorescences jaune vif en corymbes. Pousse en milieux côtiers secs et rocailleux. Dormance estivale.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 357,
+ 	 	 "scientific_name"  : "Euphorbia flavicoma", 
+  	 	 "current_name"  : "Euphorbe à chevelure jaune", 
+  	 	 "image"  : "Euphorbia flavicoma/42280.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges fines. Feuilles linéaires. Petites inflorescences jaune-vert, en cymes. Pousse dans les pelouses sèches et rocailleuses. Ressemble à d'autres petites euphorbes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 358,
+ 	 	 "scientific_name"  : "Euphorbia helioscopia", 
+  	 	 "current_name"  : "Euphorbe réveille-matin", 
+  	 	 "image"  : "Euphorbia helioscopia/103129.jpg", 
+  	 	 "characteristic"  : "Plante annuelle aux tiges robustes. Feuilles spatulées, finement dentées. Inflorescences jaune-vert vif, en ombelles terminales. Très commune dans les cultures et jardins. Latex irritant.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 359,
+ 	 	 "scientific_name"  : "Euphorbia lathyris", 
+  	 	 "current_name"  : "Euphorbe des jardins", 
+  	 	 "image"  : "Euphorbia lathyris/53107.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle robuste. Tiges droites, non ramifiées, portant des feuilles opposées, ovales, disposées en croix. Petites inflorescences vert-jaune. Réputée éloigner les taupes. Toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 360,
+ 	 	 "scientific_name"  : "Euphorbia nicaeensis", 
+  	 	 "current_name"  : "Euphorbe de Nice", 
+  	 	 "image"  : "Euphorbia nicaeensis/20296.jpg", 
+  	 	 "characteristic"  : "Vivace méditerranéenne aux tiges dressées. Feuilles étroites, vert-bleuté. Inflorescences vert-jaune, regroupées en corymbes. Pousse sur sols secs et rocailleux. Très résistante.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 361,
+ 	 	 "scientific_name"  : "Euphorbia paralias", 
+  	 	 "current_name"  : "Euphorbe des sables", 
+  	 	 "image"  : "Euphorbia paralias/89274.jpg", 
+  	 	 "characteristic"  : "Vivace succulente des dunes côtières. Tiges robustes. Feuilles charnues, ovales. Inflorescences jaune-vert. Adaptée aux sols sableux et salés. Résistante au vent et aux embruns.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 362,
+ 	 	 "scientific_name"  : "Euphorbia peplis", 
+  	 	 "current_name"  : "Euphorbe péplis", 
+  	 	 "image"  : "Euphorbia peplis/108685.jpg", 
+  	 	 "characteristic"  : "Petite annuelle prostrée des sables maritimes. Feuilles asymétriques, souvent rougeâtres. Petites inflorescences vert-jaune. Protégée dans certaines régions. Rare.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 363,
+ 	 	 "scientific_name"  : "Euphorbia peplus", 
+  	 	 "current_name"  : "Euphorbe des jardins", 
+  	 	 "image"  : "Euphorbia peplus/37622.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle très commune dans les jardins et cultures. Feuilles ovales, vert clair. Petites inflorescences vert-jaune. Latex irritant. Utilisée en médecine traditionnelle.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 364,
+ 	 	 "scientific_name"  : "Euphorbia segetalis", 
+  	 	 "current_name"  : "Euphorbe des moissons", 
+  	 	 "image"  : "Euphorbia segetalis/19148.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux tiges ramifiées. Feuilles linéaires. Petites inflorescences jaune-vert. Pousse dans les cultures, les friches et les milieux secs. Souvent adventice.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 365,
+ 	 	 "scientific_name"  : "Euphorbia seguieriana", 
+  	 	 "current_name"  : "Euphorbe de Seguier", 
+  	 	 "image"  : "Euphorbia seguieriana/47750.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges fines. Feuilles linéaires, vert bleuté. Petites inflorescences jaune-vert en corymbes terminaux. Pousse sur sols secs et rocailleux. Très résistante.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 366,
+ 	 	 "scientific_name"  : "Euphorbia serrata", 
+  	 	 "current_name"  : "Euphorbe serrulée", 
+  	 	 "image"  : "Euphorbia serrata/89480.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou vivace de courte durée de vie. Feuilles dentées. Petites inflorescences jaune-vert. Pousse dans les milieux secs et perturbés du sud de la France.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 367,
+ 	 	 "scientific_name"  : "Euphorbia spinosa", 
+  	 	 "current_name"  : "Euphorbe épineuse", 
+  	 	 "image"  : "Euphorbia spinosa/30465.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste ou vivace prostrée, très ramifiée et épineuse. Feuilles minuscules. Petites inflorescences jaunes. Pousse dans les rochers et pelouses très sèches du sud de l'Europe.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 368,
+ 	 	 "scientific_name"  : "Fagus sylvatica", 
+  	 	 "current_name"  : "Hêtre commun", 
+  	 	 "image"  : "Fagus sylvatica/109930.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à la cime large et arrondie. Écorce lisse, grise. Feuilles ovales, luisantes, vert clair, virant au bronze en automne et souvent persistantes sur l'arbre en hiver. Fruits (faînes) comestibles.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 369,
+ 	 	 "scientific_name"  : "Fatsia japonica", 
+  	 	 "current_name"  : "Fatsia du Japon", 
+  	 	 "image"  : "Fatsia japonica/62564.jpg", 
+  	 	 "characteristic"  : "Grand arbuste persistant aux grandes feuilles palmées, luisantes, vert foncé. Fleurs blanches en boules en automne, suivies de baies noires. Aime l'ombre et l'humidité. Très graphique.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 370,
+ 	 	 "scientific_name"  : "Feijoa sellowiana", 
+  	 	 "current_name"  : "Feijoa", 
+  	 	 "image"  : "Feijoa sellowiana/34746.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre persistant. Feuilles ovales, vert foncé dessus, argentées dessous. Fleurs aux pétales charnus, blancs à rosés, avec de longues étamines rouges, comestibles. Fruits verts, aromatiques, comestibles.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 371,
+ 	 	 "scientific_name"  : "Ferula communis", 
+  	 	 "current_name"  : "Férule commune", 
+  	 	 "image"  : "Ferula communis/98360.jpg", 
+  	 	 "characteristic"  : "Très grande plante vivace méditerranéenne. Tiges creuses, robustes. Feuilles très finement découpées, ressemblant à de grandes aneths. Grandes ombelles de fleurs jaunes vif. Peut être toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 372,
+ 	 	 "scientific_name"  : "Ficaria verna", 
+  	 	 "current_name"  : "Ficaire fausse renoncule", 
+  	 	 "image"  : "Ficaria verna/71987.jpg", 
+  	 	 "characteristic"  : "Petite vivace bulbeuse. Feuilles en forme de cœur, luisantes. Fleurs jaune vif et brillantes, en forme de coupe, apparaissant très tôt au printemps. Peut être envahissante en milieu humide.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 373,
+ 	 	 "scientific_name"  : "Ficus carica", 
+  	 	 "current_name"  : "Figuier", 
+  	 	 "image"  : "Ficus carica/66689.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre caduc aux grandes feuilles profondément lobées. Fruits (figues) verts à pourpres, charnus et sucrés, très appréciés. Pousse bien en climat méditerranéen.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 374,
+ 	 	 "scientific_name"  : "Filipendula ulmaria", 
+  	 	 "current_name"  : "Reine des prés", 
+  	 	 "image"  : "Filipendula ulmaria/109879.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace des zones humides. Feuilles pennées, vert foncé dessus, blanchâtres dessous. Grandes panicules de petites fleurs blanc-crème, très parfumées. Plante médicinale.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 375,
+ 	 	 "scientific_name"  : "Filipendula vulgaris", 
+  	 	 "current_name"  : "Filipendule vulgaire", 
+  	 	 "image"  : "Filipendula vulgaris/93498.jpg", 
+  	 	 "characteristic"  : "Vivace des prairies sèches. Feuilles finement découpées, en rosette basale. Tiges dressées portant des panicules de fleurs blanc-crème. Souvent plus petite que la reine des prés.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 376,
+ 	 	 "scientific_name"  : "Foeniculum vulgare", 
+  	 	 "current_name"  : "Fenouil commun", 
+  	 	 "image"  : "Foeniculum vulgare/107189.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aromatique. Feuilles très finement découpées, vert-bleuté. Grandes ombelles de fleurs jaunes. Fruits (graines de fenouil) aromatiques. Utilisé en cuisine et médecine.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 377,
+ 	 	 "scientific_name"  : "Fragaria vesca", 
+  	 	 "current_name"  : "Fraisier des bois", 
+  	 	 "image"  : "Fragaria vesca/87464.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace stolonifère. Feuilles trifoliées, dentées. Fleurs blanches. Petits fruits rouges, très parfumés (fraises des bois), plus petits que les fraises cultivées. Pousse en sous-bois et lisières.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 378,
+ 	 	 "scientific_name"  : "Frangula dodonei", 
+  	 	 "current_name"  : "Nerprun des rochers", 
+  	 	 "image"  : "Frangula dodonei/58878.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc méditerranéen aux rameaux tortueux. Petites feuilles ovales. Fleurs verdâtres discrètes. Fruits noirs toxiques. Pousse dans les rochers et garrigues sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 379,
+ 	 	 "scientific_name"  : "Fraxinus angustifolia", 
+  	 	 "current_name"  : "Frêne à feuilles étroites", 
+  	 	 "image"  : "Fraxinus angustifolia/34457.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles composées de folioles étroites, vertes, virant au jaune doré en automne. Écorce lisse chez les jeunes arbres. Pousse en forêts riveraines et lieux humides.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 380,
+ 	 	 "scientific_name"  : "Fraxinus excelsior", 
+  	 	 "current_name"  : "Frêne commun", 
+  	 	 "image"  : "Fraxinus excelsior/20795.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles composées de nombreuses folioles. Bourgeons noirs caractéristiques en hiver. Fruits en samares ailées (langues d'oiseau). Pousse en forêts caducifoliées.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 381,
+ 	 	 "scientific_name"  : "Fraxinus ornus", 
+  	 	 "current_name"  : "Frêne à fleurs", 
+  	 	 "image"  : "Fraxinus ornus/82033.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne. Feuilles composées de folioles vert foncé. Grandes panicules de fleurs blanc-crème, très parfumées, au printemps. Pousse dans les bois secs et rocailleux. Très ornemental.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 382,
+ 	 	 "scientific_name"  : "Fritillaria meleagris", 
+  	 	 "current_name"  : "Fritillaire pintade", 
+  	 	 "image"  : "Fritillaria meleagris/24402.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Grandes fleurs pendantes, campanulées, très caractéristiques avec un motif en damier pourpre et blanc, rappelant le plumage d'une pintade. Pousse dans les prairies humides. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 383,
+ 	 	 "scientific_name"  : "Fritillaria pyrenaica", 
+  	 	 "current_name"  : "Fritillaire des Pyrénées", 
+  	 	 "image"  : "Fritillaria pyrenaica/34859.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse de montagne. Fleurs pendantes, campanulées, pourpres-brunâtres avec des reflets verdâtres, parfois tachetées. Pousse dans les pelouses alpines. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 384,
+ 	 	 "scientific_name"  : "Fumaria capreolata", 
+  	 	 "current_name"  : "Fumeterre capréole", 
+  	 	 "image"  : "Fumaria capreolata/108279.jpg", 
+  	 	 "characteristic"  : "Plante annuelle grimpante, aux tiges volubiles. Feuilles finement découpées, gris-vert. Fleurs blanches à crème avec l'extrémité pourpre, en grappes. Pousse dans les haies et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 385,
+ 	 	 "scientific_name"  : "Fumaria officinalis", 
+  	 	 "current_name"  : "Fumeterre officinale", 
+  	 	 "image"  : "Fumaria officinalis/78191.jpg", 
+  	 	 "characteristic"  : "Plante annuelle très commune. Feuilles finement découpées, gris-vert. Petites fleurs roses-pourpres avec une tache rouge-noirâtre, en grappes. Utilisée en phytothérapie. Pousse en culture et friches.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 386,
+ 	 	 "scientific_name"  : "Gagea bohemica", 
+  	 	 "current_name"  : "Gagée de Bohême", 
+  	 	 "image"  : "Gagea bohemica/6780.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse des sols sablonneux. Petites fleurs jaune vif en étoile, apparaissant très tôt au printemps. Feuilles basales linéaires. Très discrète.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 387,
+ 	 	 "scientific_name"  : "Gagea granatelli", 
+  	 	 "current_name"  : "Gagée de Granatelli", 
+  	 	 "image"  : "Gagea granatelli/31405.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse des régions méditerranéennes. Petites fleurs jaune vif en étoile. Ressemble à d'autres gagées mais se distingue par ses bulbes et feuilles. Fleurit tôt au printemps.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 388,
+ 	 	 "scientific_name"  : "Galactites tomentosus", 
+  	 	 "current_name"  : "Galactite tomenteux", 
+  	 	 "image"  : "Galactites tomentosus/105148.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace, très laineuse et épineuse. Feuilles marbrées de blanc. Capitules floraux roses ou pourpres, solitaires ou groupés. Pousse en milieux secs méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 389,
+ 	 	 "scientific_name"  : "Galanthus nivalis", 
+  	 	 "current_name"  : "Perce-neige", 
+  	 	 "image"  : "Galanthus nivalis/28225.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse. Fleurs blanches pendantes, en forme de clochette, avec des marques vertes sur les pétales intérieurs. Fleurissant très tôt en hiver, souvent à travers la neige.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 390,
+ 	 	 "scientific_name"  : "Galeopsis tetrahit", 
+  	 	 "current_name"  : "Galeopsis tétrahit", 
+  	 	 "image"  : "Galeopsis tetrahit/87061.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue. Tiges carrées. Fleurs bilabiées, roses, pourpres ou blanches, avec une gorge tachetée, regroupées en verticilles axillaires. Pousse en milieux perturbés, moissons.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 391,
+ 	 	 "scientific_name"  : "Galinsoga quadriradiata", 
+  	 	 "current_name"  : "Galinsoga cilié", 
+  	 	 "image"  : "Galinsoga quadriradiata/7252.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle très commune, souvent adventice. Petits capitules de fleurs jaunes et blanches, avec 5 ligules blanches. Feuilles ovales, dentées. Pousse rapidement.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 392,
+ 	 	 "scientific_name"  : "Galium aparine", 
+  	 	 "current_name"  : "Gaillet gratteron", 
+  	 	 "image"  : "Galium aparine/57717.jpg", 
+  	 	 "characteristic"  : "Plante annuelle rampante ou grimpante, aux tiges et feuilles hérissées de poils crochus qui s'accrochent. Feuilles verticillées. Petites fleurs blanches. Fruits également crochus. Très envahissant.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 393,
+ 	 	 "scientific_name"  : "Galium odoratum", 
+  	 	 "current_name"  : "Gaillet odorant", 
+  	 	 "image"  : "Galium odoratum/83269.jpg", 
+  	 	 "characteristic"  : "Vivace rampante formant des tapis. Feuilles verticillées par 6-8, très parfumées (odeur de foin coupé). Petites fleurs blanches en corymbes. Pousse en sous-bois frais. Utilisée pour aromatiser.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 394,
+ 	 	 "scientific_name"  : "Galium verum", 
+  	 	 "current_name"  : "Gaillet jaune", 
+  	 	 "image"  : "Galium verum/110998.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges fines, ascendantes. Feuilles très fines, linéaires, verticillées par 8-12. Petites fleurs jaune vif, très nombreuses, regroupées en panicules. Très odorant. Pousse en prairies sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 395,
+ 	 	 "scientific_name"  : "Genista hispanica", 
+  	 	 "current_name"  : "Genêt d'Espagne", 
+  	 	 "image"  : "Genista hispanica/81956.jpg", 
+  	 	 "characteristic"  : "Petit arbuste épineux, formant des touffes denses. Petites feuilles trifoliées. Fleurs jaune vif, papilionacées, en grappes. Pousse en milieux secs et ensoleillés. Très florifère.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 396,
+ 	 	 "scientific_name"  : "Genista pilosa", 
+  	 	 "current_name"  : "Genêt velu", 
+  	 	 "image"  : "Genista pilosa/30349.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste prostré ou rampant, aux tiges velues. Petites feuilles. Fleurs jaune vif, papilionacées, en grappes axillaires. Pousse en landes et pelouses sèches. Forme un excellent couvre-sol.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 397,
+ 	 	 "scientific_name"  : "Genista sagittalis", 
+  	 	 "current_name"  : "Genêt ailé", 
+  	 	 "image"  : "Genista sagittalis/28723.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste prostré aux tiges vertes, aplaties et ailées, comme des rubans. Petites fleurs jaune vif, papilionacées, en grappes terminales. Pousse en prairies sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 398,
+ 	 	 "scientific_name"  : "Genista scorpius", 
+  	 	 "current_name"  : "Genêt scorpion", 
+  	 	 "image"  : "Genista scorpius/98604.jpg", 
+  	 	 "characteristic"  : "Grand arbuste épineux et très ramifié. Feuilles minuscules. Fleurs jaune vif, papilionacées, très nombreuses, couvrant l'arbuste. Pousse en garrigues et maquis. Très résistant à la sécheresse.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 399,
+ 	 	 "scientific_name"  : "Genista tinctoria", 
+  	 	 "current_name"  : "Genêt des teinturiers", 
+  	 	 "image"  : "Genista tinctoria/93506.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste aux tiges fines et aux feuilles lancéolées. Fleurs jaune vif, papilionacées, en grappes. Utilisé autrefois pour teindre en jaune. Pousse en prairies et lisières.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 400,
+ 	 	 "scientific_name"  : "Gentiana acaulis", 
+  	 	 "current_name"  : "Gentiane acaule", 
+  	 	 "image"  : "Gentiana acaulis/86640.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne formant des rosettes de feuilles persistantes. Grandes fleurs bleu-cobalt vif, en forme de trompette, solitaires, presque sessiles (sans tige apparente). Symbole des Alpes.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 401,
+ 	 	 "scientific_name"  : "Gentiana alpina", 
+  	 	 "current_name"  : "Gentiane alpine", 
+  	 	 "image"  : "Gentiana alpina/58328.jpg", 
+  	 	 "characteristic"  : "Petite vivace de haute montagne. Rosette de feuilles basales. Grandes fleurs bleu vif, en forme de trompette, solitaires ou en petits groupes, presque sessiles. Pousse dans les pelouses alpines.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 402,
+ 	 	 "scientific_name"  : "Gentiana burseri", 
+  	 	 "current_name"  : "Gentiane de Burser", 
+  	 	 "image"  : "Gentiana burseri/11281.jpg", 
+  	 	 "characteristic"  : "Gentiane de montagne. Grandes fleurs jaune pâle, campanulées, souvent tachetées de noir à l'intérieur, regroupées en verticilles. Feuilles ovales, plissées. Pousse en prairies et rocailles d'altitude.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 403,
+ 	 	 "scientific_name"  : "Gentiana cruciata", 
+  	 	 "current_name"  : "Gentiane croisette", 
+  	 	 "image"  : "Gentiana cruciata/90343.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges dressées. Feuilles ovales, opposées et sessiles, disposées en croix. Fleurs bleu-violet, en forme de cloche, regroupées en verticilles axillaires. Pousse en pelouses sèches et claires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 404,
+ 	 	 "scientific_name"  : "Gentiana lutea", 
+  	 	 "current_name"  : "Grande gentiane jaune", 
+  	 	 "image"  : "Gentiana lutea/101318.jpg", 
+  	 	 "characteristic"  : "Grande vivace robuste. Grandes feuilles ovales, plissées. Grandes fleurs jaune vif, étoilées, regroupées en verticilles le long de la tige. Racine utilisée pour la production de liqueur. Protégée.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 405,
+ 	 	 "scientific_name"  : "Gentiana nivalis", 
+  	 	 "current_name"  : "Gentiane des neiges", 
+  	 	 "image"  : "Gentiana nivalis/25689.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle de montagne. Petites fleurs bleu vif, étoilées, terminales ou axillaires. Pousse en milieux ouverts, pelouses alpines. Espèce discrète et rare.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 406,
+ 	 	 "scientific_name"  : "Gentiana pneumonanthe", 
+  	 	 "current_name"  : "Gentiane pneumonanthe", 
+  	 	 "image"  : "Gentiana pneumonanthe/102826.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges fines. Grandes fleurs bleu foncé en forme de trompette, souvent avec des points verts, solitaires ou en petits groupes. Pousse dans les prairies humides et landes tourbeuses.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 407,
+ 	 	 "scientific_name"  : "Gentiana purpurea", 
+  	 	 "current_name"  : "Gentiane pourpre", 
+  	 	 "image"  : "Gentiana purpurea/1067.jpg", 
+  	 	 "characteristic"  : "Gentiane de montagne. Fleurs pourpres-brunâtres, campanulées, en verticilles. Feuilles ovales, brillantes. Pousse dans les prairies alpines humides. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 408,
+ 	 	 "scientific_name"  : "Gentiana pyrenaica", 
+  	 	 "current_name"  : "Gentiane des Pyrénées", 
+  	 	 "image"  : "Gentiana pyrenaica/85643.jpg", 
+  	 	 "characteristic"  : "Petite vivace de haute montagne. Feuilles basales en rosette. Petites fleurs bleu-violet foncé, en trompette, solitaires ou en petits groupes. Pousse sur sols calcaires d'altitude.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 409,
+ 	 	 "scientific_name"  : "Gentiana verna", 
+  	 	 "current_name"  : "Gentiane de printemps", 
+  	 	 "image"  : "Gentiana verna/27940.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des touffes. Fleurs bleu-cobalt intense, en étoile, solitaires ou en petits groupes. Fleurit très tôt au printemps. Pousse dans les pelouses alpines et prairies calcaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 410,
+ 	 	 "scientific_name"  : "Gentianella campestris", 
+  	 	 "current_name"  : "Gentianelle des champs", 
+  	 	 "image"  : "Gentianella campestris/92319.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle. Fleurs lilas à pourpres, en forme de trompette, avec quatre lobes inégaux. Pousse dans les prairies et pelouses, souvent sur sols acides.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 411,
+ 	 	 "scientific_name"  : "Gentianopsis ciliata", 
+  	 	 "current_name"  : "Gentianopsis ciliée", 
+  	 	 "image"  : "Gentianopsis ciliata/21079.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle ou bisannuelle. Fleurs bleu vif, en forme de trompette, aux lobes fortement ciliés. Pousse dans les pelouses humides et tourbières. Très délicate.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 412,
+ 	 	 "scientific_name"  : "Geranium columbinum", 
+  	 	 "current_name"  : "Géranium colombin", 
+  	 	 "image"  : "Geranium columbinum/7334.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle aux tiges grêles. Feuilles finement découpées. Fleurs roses à violettes. Fruits allongés en 'bec de grue'. Pousse dans les milieux secs et perturbés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 413,
+ 	 	 "scientific_name"  : "Geranium dissectum", 
+  	 	 "current_name"  : "Géranium découpé", 
+  	 	 "image"  : "Geranium dissectum/31721.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue. Feuilles profondément découpées. Fleurs petites, roses à pourpres. Fruits allongés. Très commun dans les cultures et friches. Ressemble à d'autres géraniums annuels.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 414,
+ 	 	 "scientific_name"  : "Geranium lucidum", 
+  	 	 "current_name"  : "Géranium luisant", 
+  	 	 "image"  : "Geranium lucidum/69786.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle aux tiges et feuilles rouges. Feuilles rondes, luisantes. Petites fleurs roses. Pousse dans les milieux rocailleux, murs et rochers.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 415,
+ 	 	 "scientific_name"  : "Geranium molle", 
+  	 	 "current_name"  : "Géranium à feuilles molles", 
+  	 	 "image"  : "Geranium molle/101749.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle, très velue. Feuilles rondes, lobées. Petites fleurs roses à violettes. Fruits allongés. Très commun dans les pelouses et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 416,
+ 	 	 "scientific_name"  : "Geranium nodosum", 
+  	 	 "current_name"  : "Géranium noueux", 
+  	 	 "image"  : "Geranium nodosum/63183.jpg", 
+  	 	 "characteristic"  : "Vivace aux feuilles lobées, luisantes, souvent avec des taches plus claires. Fleurs roses à lilas, avec des nervures plus foncées. Pousse en sous-bois frais et ombragés.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 417,
+ 	 	 "scientific_name"  : "Geranium phaeum", 
+  	 	 "current_name"  : "Géranium livide", 
+  	 	 "image"  : "Geranium phaeum/30809.jpg", 
+  	 	 "characteristic"  : "Vivace robuste aux feuilles lobées, souvent tachetées de pourpre. Fleurs sombres, brun-pourpre ou marron, très particulières, aux pétales recourbés. Pousse en sous-bois et jardins.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 418,
+ 	 	 "scientific_name"  : "Geranium pratense", 
+  	 	 "current_name"  : "Géranium des prés", 
+  	 	 "image"  : "Geranium pratense/60262.jpg", 
+  	 	 "characteristic"  : "Vivace robuste des prairies. Grandes fleurs bleues à violettes, parfois blanches, aux pétales arrondis. Feuilles profondément découpées. Très ornemental.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 419,
+ 	 	 "scientific_name"  : "Geranium pusillum", 
+  	 	 "current_name"  : "Géranium fluet", 
+  	 	 "image"  : "Geranium pusillum/52911.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle. Feuilles rondes, lobées. Très petites fleurs roses-lilac. Fruits minuscules. Pousse dans les milieux perturbés, pelouses. Discret.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 420,
+ 	 	 "scientific_name"  : "Geranium pyrenaicum", 
+  	 	 "current_name"  : "Géranium des Pyrénées", 
+  	 	 "image"  : "Geranium pyrenaicum/39206.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges fines. Feuilles arrondies, lobées. Fleurs roses-violettes, aux pétales légèrement échancrés. Pousse dans les prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 421,
+ 	 	 "scientific_name"  : "Geranium robertianum", 
+  	 	 "current_name"  : "Géranium Herbe-à-Robert", 
+  	 	 "image"  : "Geranium robertianum/83541.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle. Feuilles très finement découpées, souvent rouges. Petites fleurs roses. Odeur forte et désagréable au froissement. Pousse dans les rochers, murs et sous-bois.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 422,
+ 	 	 "scientific_name"  : "Geranium rotundifolium", 
+  	 	 "current_name"  : "Géranium à feuilles rondes", 
+  	 	 "image"  : "Geranium rotundifolium/77425.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle velue. Feuilles rondes, lobées. Petites fleurs roses. Fruits allongés. Très commun dans les jardins et friches. Similaire à G. molle.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 423,
+ 	 	 "scientific_name"  : "Geranium sanguineum", 
+  	 	 "current_name"  : "Géranium sanguin", 
+  	 	 "image"  : "Geranium sanguineum/55753.jpg", 
+  	 	 "characteristic"  : "Vivace robuste. Feuilles profondément lobées, virant au rouge en automne. Grandes fleurs rose-magenta vif. Pousse dans les pelouses sèches et landes. Très ornementale.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 424,
+ 	 	 "scientific_name"  : "Geranium sylvaticum", 
+  	 	 "current_name"  : "Géranium des bois", 
+  	 	 "image"  : "Geranium sylvaticum/17245.jpg", 
+  	 	 "characteristic"  : "Vivace robuste des sous-bois et prairies d'altitude. Grandes fleurs bleues-violettes ou roses, souvent veinées. Feuilles profondément découpées. Très florifère.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 425,
+ 	 	 "scientific_name"  : "Geum montanum", 
+  	 	 "current_name"  : "Benette des montagnes", 
+  	 	 "image"  : "Geum montanum/21769.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne formant une rosette basale. Feuilles pennées. Grandes fleurs jaune vif, solitaires. Fruits plumeux et décoratifs. Pousse dans les pelouses alpines et rocailles.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 426,
+ 	 	 "scientific_name"  : "Geum reptans", 
+  	 	 "current_name"  : "Benoîte rampante", 
+  	 	 "image"  : "Geum reptans/28597.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne aux stolons rampants. Feuilles basales découpées. Fleurs jaune vif, solitaires. Fruits plumeux et décoratifs. Pousse dans les rochers et éboulis d'altitude.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 427,
+ 	 	 "scientific_name"  : "Geum rivale", 
+  	 	 "current_name"  : "Benoîte des ruisseaux", 
+  	 	 "image"  : "Geum rivale/72913.jpg", 
+  	 	 "characteristic"  : "Vivace des zones humides. Fleurs pendantes, campanulées, orange-brunâtre et rose, très particulières. Fruits plumeux. Pousse au bord des ruisseaux et en prairies humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 428,
+ 	 	 "scientific_name"  : "Geum urbanum", 
+  	 	 "current_name"  : "Benoîte commune", 
+  	 	 "image"  : "Geum urbanum/103017.jpg", 
+  	 	 "characteristic"  : "Vivace commune. Feuilles basales pennées. Petites fleurs jaunes. Fruits globuleux avec des crochets, s'accrochant aux vêtements. Pousse dans les sous-bois, haies et friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 429,
+ 	 	 "scientific_name"  : "Ginkgo biloba", 
+  	 	 "current_name"  : "Ginkgo", 
+  	 	 "image"  : "Ginkgo biloba/28177.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc, fossile vivant. Feuilles uniques en forme d'éventail, bilobées, virant au jaune d'or éclatant en automne. Dioïque (arbres mâles et femelles séparés). Très résistant.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 430,
+ 	 	 "scientific_name"  : "Gladiolus italicus", 
+  	 	 "current_name"  : "Glaïeul des moissons", 
+  	 	 "image"  : "Gladiolus italicus/111327.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Feuilles longues, linéaires. Fleurs roses-pourpres, en forme de trompette, en épis lâches. Jadis commune dans les moissons, devenue rare en raison de l'agriculture intensive.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 431,
+ 	 	 "scientific_name"  : "Glaucium flavum", 
+  	 	 "current_name"  : "Glaucienne jaune", 
+  	 	 "image"  : "Glaucium flavum/72379.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace. Feuilles bleutées, lobées. Grandes fleurs jaune vif, avec quatre pétales froissés. Fruits très longs et fins, en forme de corne. Pousse sur les plages et sables côtiers.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 432,
+ 	 	 "scientific_name"  : "Glechoma hederacea", 
+  	 	 "current_name"  : "Lierre terrestre", 
+  	 	 "image"  : "Glechoma hederacea/34329.jpg", 
+  	 	 "characteristic"  : "Petite vivace rampante formant des tapis. Feuilles rondes ou réniformes, dentées. Petites fleurs bilabiées, violettes, en verticilles axillaires. Pousse en sous-bois, haies et jardins. Très commune.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 433,
+ 	 	 "scientific_name"  : "Gleditsia triacanthos", 
+  	 	 "current_name"  : "Févier d'Amérique", 
+  	 	 "image"  : "Gleditsia triacanthos/49195.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc très épineux (grosses épines ramifiées sur le tronc et les branches). Feuilles composées. Fruits en longues gousses plates et torsadées, persistantes en hiver. Très résistant.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 434,
+ 	 	 "scientific_name"  : "Globularia alypum", 
+  	 	 "current_name"  : "Globulaire buissonnante", 
+  	 	 "image"  : "Globularia alypum/73391.jpg", 
+  	 	 "characteristic"  : "Petit arbuste persistant méditerranéen. Feuilles ovales, luisantes. Fleurs bleu-azur en capitules globuleux, solitaires ou groupés. Pousse en garrigues et maquis. Très résistant à la sécheresse.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 435,
+ 	 	 "scientific_name"  : "Globularia bisnagarica", 
+  	 	 "current_name"  : "Globulaire vulgaire", 
+  	 	 "image"  : "Globularia bisnagarica/12137.jpg", 
+  	 	 "characteristic"  : "Vivace aux feuilles basales en rosette. Fleurs bleu-violet en capitules globuleux, solitaires au sommet des tiges. Pousse en pelouses sèches et calcaires. Très commune.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 436,
+ 	 	 "scientific_name"  : "Globularia repens", 
+  	 	 "current_name"  : "Globulaire rampante", 
+  	 	 "image"  : "Globularia repens/93333.jpg", 
+  	 	 "characteristic"  : "Petite vivace rampante de montagne. Feuilles persistantes en rosette. Fleurs bleu vif en capitules globuleux, solitaires, presque sessiles. Pousse dans les rochers calcaires d'altitude.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 437,
+ 	 	 "scientific_name"  : "Gymnadenia conopsea", 
+  	 	 "current_name"  : "Gymnadénie moucheron", 
+  	 	 "image"  : "Gymnadenia conopsea/35049.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles linéaires. Fleurs roses-pourpres (parfois blanches), très parfumées (clou de girofle), en épis denses. Pousse dans les prairies humides et pelouses calcaires.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 438,
+ 	 	 "scientific_name"  : "Gymnadenia nigra", 
+  	 	 "current_name"  : "Nigritelle noire", 
+  	 	 "image"  : "Gymnadenia nigra/75377.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre de montagne. Petites fleurs très sombres, rouge-brun presque noires, très parfumées, regroupées en épis denses. Pousse dans les pelouses alpines. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 439,
+ 	 	 "scientific_name"  : "Hedera helix", 
+  	 	 "current_name"  : "Lierre commun", 
+  	 	 "image"  : "Hedera helix/67271.jpg", 
+  	 	 "characteristic"  : "Liane ligneuse persistante, grimpante ou rampante. Feuilles lobées ou non, vert foncé et brillantes. Fleurs verdâtres en automne, suivies de baies noires toxiques. Très commune.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 440,
+ 	 	 "scientific_name"  : "Helianthemum apenninum", 
+  	 	 "current_name"  : "Hélianthème des Apennins", 
+  	 	 "image"  : "Helianthemum apenninum/49211.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste ou vivace. Feuilles linéaires, gris-vert. Fleurs blanches, souvent avec une tache jaune à la base des pétales. Pousse sur sols secs et calcaires, en plein soleil.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 441,
+ 	 	 "scientific_name"  : "Helianthemum nummularium", 
+  	 	 "current_name"  : "Hélianthème commun", 
+  	 	 "image"  : "Helianthemum nummularium/56615.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste ou vivace. Feuilles ovales, vertes. Fleurs jaunes vives, souvent en grappes, s'ouvrant au soleil. Très variable en couleur et forme. Pousse en pelouses sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 442,
+ 	 	 "scientific_name"  : "Helianthus annuus", 
+  	 	 "current_name"  : "Tournesol commun", 
+  	 	 "image"  : "Helianthus annuus/95068.jpg", 
+  	 	 "characteristic"  : "Grande plante annuelle. Grandes feuilles cordiformes. Grande inflorescence en capitule, avec de grandes ligules jaunes et un cœur de fleurons brun-noir. Cultivée pour ses graines et l'huile.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 443,
+ 	 	 "scientific_name"  : "Helichrysum stoechas", 
+  	 	 "current_name"  : "Immortelle des sables", 
+  	 	 "image"  : "Helichrysum stoechas/44399.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste aromatique. Feuilles étroites, gris-vert, duveteuses. Fleurs jaunes en petits capitules secs, regroupés. Odeur de curry. Pousse sur les sables côtiers et milieux secs.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 444,
+ 	 	 "scientific_name"  : "Heliotropium europaeum", 
+  	 	 "current_name"  : "Héliotrope d'Europe", 
+  	 	 "image"  : "Heliotropium europaeum/23155.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue. Feuilles ovales. Petites fleurs blanches, parfumées, regroupées en cymes scorpioïdes. Toxique. Pousse dans les milieux perturbés et cultures.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 445,
+ 	 	 "scientific_name"  : "Helleborus foetidus", 
+  	 	 "current_name"  : "Hellébore fétide", 
+  	 	 "image"  : "Helleborus foetidus/96508.jpg", 
+  	 	 "characteristic"  : "Vivace persistante. Feuilles palmées, vert foncé, découpées. Fleurs vert-jaunâtre, campanulées, souvent bordées de rouge, en grappes. Odeur désagréable au froissement. Fleurit en hiver. Toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 446,
+ 	 	 "scientific_name"  : "Helleborus viridis", 
+  	 	 "current_name"  : "Hellébore vert", 
+  	 	 "image"  : "Helleborus viridis/56944.jpg", 
+  	 	 "characteristic"  : "Vivace caduque. Feuilles palmées, vertes. Fleurs vertes à jaune-vert, campanulées. Fleurit au début du printemps. Pousse en sous-bois frais. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 447,
+ 	 	 "scientific_name"  : "Helminthotheca echioides", 
+  	 	 "current_name"  : "Helminthothèque fausse vipérine", 
+  	 	 "image"  : "Helminthotheca echioides/49329.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace, très hérissée de poils. Feuilles basales en rosette. Capitules floraux jaunes, solitaires ou groupés. Pousse dans les friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 448,
+ 	 	 "scientific_name"  : "Hemerocallis fulva", 
+  	 	 "current_name"  : "Hémérocalle fauve", 
+  	 	 "image"  : "Hemerocallis fulva/3799.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse formant des touffes. Longues feuilles linéaires. Grandes fleurs orange-fauve, en trompette, regroupées en grappes. Les fleurs ne durent qu'un jour (d'où le nom 'belle d'un jour').", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 449,
+ 	 	 "scientific_name"  : "Heracleum pyrenaicum", 
+  	 	 "current_name"  : "Berce des Pyrénées", 
+  	 	 "image"  : "Heracleum pyrenaicum/45965.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace de montagne. Grandes feuilles profondément découpées. Grandes ombelles de fleurs blanches. Pousse dans les pelouses et clairières d'altitude.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 450,
+ 	 	 "scientific_name"  : "Heracleum sphondylium", 
+  	 	 "current_name"  : "Berce spondyle", 
+  	 	 "image"  : "Heracleum sphondylium/34344.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle ou vivace. Grandes feuilles profondément découpées et velues. Grandes ombelles de fleurs blanches (parfois roses), plates. Très commune. Peut provoquer des dermatites en cas de contact avec la sève et exposition au soleil.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 451,
+ 	 	 "scientific_name"  : "Hesperis matronalis", 
+  	 	 "current_name"  : "Julienne des jardins", 
+  	 	 "image"  : "Hesperis matronalis/107401.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace de courte durée de vie. Fleurs parfumées, blanches à roses ou violettes, en grappes lâches. Feuilles lancéolées, dentées. Pousse en sous-bois clairs et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 452,
+ 	 	 "scientific_name"  : "Hibiscus rosa-sinensis", 
+  	 	 "current_name"  : "Hibiscus de Chine", 
+  	 	 "image"  : "Hibiscus rosa-sinensis/83786.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre persistant, non rustique sous nos climats. Grandes fleurs en forme d'entonnoir, rouges, roses, jaunes ou blanches. Cultivé en pot ou en serre sous nos latitudes.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 453,
+ 	 	 "scientific_name"  : "Hibiscus syriacus", 
+  	 	 "current_name"  : "Althéa", 
+  	 	 "image"  : "Hibiscus syriacus/63150.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc. Grandes fleurs simples ou doubles, blanches, roses, bleues ou violettes, souvent avec un cœur contrastant. Floraison estivale. Très rustique.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 454,
+ 	 	 "scientific_name"  : "Himantoglossum hircinum", 
+  	 	 "current_name"  : "Himantoglosse bouc", 
+  	 	 "image"  : "Himantoglossum hircinum/22944.jpg", 
+  	 	 "characteristic"  : "Grande orchidée terrestre. Feuilles basales oblongues. Fleurs en épi lâche, aux pétales et sépales verts striés de pourpre, et un labelle très long, torsadé, vert-jaunâtre et pourpre. Odeur de bouc.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 455,
+ 	 	 "scientific_name"  : "Himantoglossum robertianum", 
+  	 	 "current_name"  : "Himantoglosse de Robert", 
+  	 	 "image"  : "Himantoglossum robertianum/96283.jpg", 
+  	 	 "characteristic"  : "Grande orchidée terrestre méditerranéenne. Fleurs très nombreuses, roses-pourpres à verdâtres, avec un labelle trilobé, tacheté. Feuilles larges, gris-vert. Fleurit très tôt au printemps.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 456,
+ 	 	 "scientific_name"  : "Hippocrepis comosa", 
+  	 	 "current_name"  : "Fer-à-cheval", 
+  	 	 "image"  : "Hippocrepis comosa/105471.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Feuilles composées de folioles. Fleurs jaune vif, papilionacées, en têtes denses. Fruits en gousses courbées, ressemblant à des fers à cheval. Pousse en pelouses calcaires sèches.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 457,
+ 	 	 "scientific_name"  : "Hippocrepis emerus", 
+  	 	 "current_name"  : "Coronille des jardins", 
+  	 	 "image"  : "Hippocrepis emerus/66770.jpg", 
+  	 	 "characteristic"  : "Petit arbuste caduc aux rameaux grêles. Feuilles composées. Fleurs jaune vif, papilionacées, en grappes. Fruits en gousses allongées. Très florifère et résistant à la sécheresse.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 458,
+ 	 	 "scientific_name"  : "Holcus lanatus", 
+  	 	 "current_name"  : "Houlque laineuse", 
+  	 	 "image"  : "Holcus lanatus/49356.jpg", 
+  	 	 "characteristic"  : "Graminée vivace formant des touffes. Feuilles et tiges molles, très velues et grisâtres. Inflorescence en panicule dense, souvent rosée. Très commune dans les prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 459,
+ 	 	 "scientific_name"  : "Homogyne alpina", 
+  	 	 "current_name"  : "Homogyne des Alpes", 
+  	 	 "image"  : "Homogyne alpina/80807.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne, formant des tapis. Feuilles basales arrondies, dentées, vert foncé brillant. Petits capitules floraux roses ou pourpres, solitaires sur des tiges courtes. Pousse en sous-bois d'altitude.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 460,
+ 	 	 "scientific_name"  : "Honckenya peploides", 
+  	 	 "current_name"  : "Honckenya péploïde", 
+  	 	 "image"  : "Honckenya peploides/76723.jpg", 
+  	 	 "characteristic"  : "Plante vivace rampante des sables côtiers. Feuilles charnues, ovales. Petites fleurs verdâtres discrètes. Forme des tapis stabilisant le sable. Tolérante au sel et au vent.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 461,
+ 	 	 "scientific_name"  : "Hormathophylla spinosa", 
+  	 	 "current_name"  : "Corbeille d'argent épineuse", 
+  	 	 "image"  : "Hormathophylla spinosa/104066.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste épineux des montagnes méditerranéennes. Feuilles linéaires. Fleurs blanches, en grappes denses, couvrant la plante au printemps. Pousse dans les rochers calcaires.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 462,
+ 	 	 "scientific_name"  : "Humulus lupulus", 
+  	 	 "current_name"  : "Houblon", 
+  	 	 "image"  : "Humulus lupulus/54256.jpg", 
+  	 	 "characteristic"  : "Grande liane grimpante vivace. Feuilles palmées, lobées. Fleurs mâles en panicules, fleurs femelles en cônes écailleux (strobiles), utilisés pour aromatiser la bière. Pousse en lisières et bords de chemins.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 463,
+ 	 	 "scientific_name"  : "Hyacinthoides non-scripta", 
+  	 	 "current_name"  : "Jacinthe des bois", 
+  	 	 "image"  : "Hyacinthoides non-scripta/38345.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Longues feuilles linéaires. Fleurs bleues, campanulées, pendantes d'un seul côté de la tige. Parfumées. Pousse en sous-bois frais. Espèce protégée au Royaume-Uni.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 464,
+ 	 	 "scientific_name"  : "Hydrangea macrophylla", 
+  	 	 "current_name"  : "Hortensia", 
+  	 	 "image"  : "Hydrangea macrophylla/102387.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc. Grandes feuilles ovales, vert foncé. Grandes inflorescences sphériques ou plates (boules ou dentelles), aux couleurs variées (bleu, rose, blanc) selon le pH du sol. Très populaire en jardin.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 465,
+ 	 	 "scientific_name"  : "Hylotelephium telephium", 
+  	 	 "current_name"  : "Orpin reprise", 
+  	 	 "image"  : "Hylotelephium telephium/75968.jpg", 
+  	 	 "characteristic"  : "Vivace succulente aux tiges robustes et feuilles charnues, ovales. Fleurs roses ou pourpres, en corymbes denses et aplatis. Fleurit en fin d'été. Très résistant à la sécheresse. Ancien Sedum telephium.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 466,
+ 	 	 "scientific_name"  : "Hyoscyamus albus", 
+  	 	 "current_name"  : "Jusquiame blanche", 
+  	 	 "image"  : "Hyoscyamus albus/38758.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle velue et collante. Feuilles lobées. Fleurs campanulées, jaune-verdâtre avec un centre pourpre, veinées. Très toxique. Pousse sur sols perturbés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 467,
+ 	 	 "scientific_name"  : "Hyoseris radiata", 
+  	 	 "current_name"  : "Hyoséris radié", 
+  	 	 "image"  : "Hyoseris radiata/30209.jpg", 
+  	 	 "characteristic"  : "Plante vivace méditerranéenne. Rosette basale de feuilles lobées. Tiges florales portant un capitule solitaire de fleurs jaunes. Pousse dans les pelouses et friches ensoleillées.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 468,
+ 	 	 "scientific_name"  : "Hyparrhenia hirta", 
+  	 	 "current_name"  : "Hyparrhénia hirsute", 
+  	 	 "image"  : "Hyparrhenia hirta/88098.jpg", 
+  	 	 "characteristic"  : "Graminée vivace de grande taille. Tiges robustes. Feuilles linéaires. Inflorescence en panicule dense et plumeuse. Pousse en milieux secs et chauds, souvent sur sols pauvres.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 469,
+ 	 	 "scientific_name"  : "Hypericum androsaemum", 
+  	 	 "current_name"  : "Millepertuis androsème", 
+  	 	 "image"  : "Hypericum androsaemum/113079.jpg", 
+  	 	 "characteristic"  : "Petit arbuste caduc ou semi-persistant. Feuilles ovales, vert foncé. Fleurs jaunes, à nombreuses étamines. Fruits charnus, rouges puis noirs, très décoratifs. Pousse en sous-bois et lisières.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 470,
+ 	 	 "scientific_name"  : "Hypericum hirsutum", 
+  	 	 "current_name"  : "Millepertuis hirsute", 
+  	 	 "image"  : "Hypericum hirsutum/30205.jpg", 
+  	 	 "characteristic"  : "Vivace velue. Feuilles ovales. Fleurs jaunes. Pousse en sous-bois clairs et lisières. Se distingue d'autres millepertuis par sa pilosité.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 471,
+ 	 	 "scientific_name"  : "Hypericum perforatum", 
+  	 	 "current_name"  : "Millepertuis perforé", 
+  	 	 "image"  : "Hypericum perforatum/97541.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée aux tiges dressées. Feuilles ovales, avec des points translucides (perforations) visibles à contre-jour. Fleurs jaunes, aux pétales souvent maculés de points noirs. Plante médicinale.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 472,
+ 	 	 "scientific_name"  : "Hypericum richeri", 
+  	 	 "current_name"  : "Millepertuis de Richer", 
+  	 	 "image"  : "Hypericum richeri/66345.jpg", 
+  	 	 "characteristic"  : "Vivace des montagnes. Feuilles ovales. Fleurs jaunes. Pousse en pelouses d'altitude et rochers. Proche d'autres espèces de millepertuis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 473,
+ 	 	 "scientific_name"  : "Hypochaeris radicata", 
+  	 	 "current_name"  : "Porcelle enracinée", 
+  	 	 "image"  : "Hypochaeris radicata/45922.jpg", 
+  	 	 "characteristic"  : "Vivace. Rosette basale de feuilles lobées et velues. Tiges florales ramifiées, portant des capitules de fleurs jaunes. Très commune dans les pelouses et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 474,
+ 	 	 "scientific_name"  : "Ilex aquifolium", 
+  	 	 "current_name"  : "Houx commun", 
+  	 	 "image"  : "Ilex aquifolium/4980.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre persistant. Feuilles coriaces, luisantes, vert foncé, bordées d'épines. Fleurs discrètes. Fruits rouges vifs (baies), très décoratifs, persistant en hiver. Plante dioïque. Toxique.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 475,
+ 	 	 "scientific_name"  : "Impatiens balfouri", 
+  	 	 "current_name"  : "Balsamine de Balfouri", 
+  	 	 "image"  : "Impatiens balfouri/94568.jpg", 
+  	 	 "characteristic"  : "Plante annuelle envahissante. Fleurs blanches et roses, bilabiées, avec un éperon. Feuilles ovales. Pousse en milieux humides et perturbés, souvent au bord des cours d'eau.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 476,
+ 	 	 "scientific_name"  : "Impatiens glandulifera", 
+  	 	 "current_name"  : "Balsamine de l'Himalaya", 
+  	 	 "image"  : "Impatiens glandulifera/45863.jpg", 
+  	 	 "characteristic"  : "Grande plante annuelle envahissante. Tiges robustes, rouges. Grandes fleurs roses, pourpres ou blanches, avec un éperon. Feuilles dentées. Forme des colonies denses le long des cours d'eau. Gousses qui éclatent.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 477,
+ 	 	 "scientific_name"  : "Imperatoria ostruthium", 
+  	 	 "current_name"  : "Impératoire", 
+  	 	 "image"  : "Imperatoria ostruthium/99784.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aromatique. Grandes feuilles finement découpées. Grandes ombelles de petites fleurs blanches. Pousse dans les prairies humides et montagnes. Utilisée en phytothérapie.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 478,
+ 	 	 "scientific_name"  : "Inula conyza", 
+  	 	 "current_name"  : "Inule conyze", 
+  	 	 "image"  : "Inula conyza/12467.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace. Feuilles velues, dentées. Petits capitules de fleurs jaune-brunâtre, regroupés en corymbes. Odeur caractéristique. Pousse en lisières et bords de chemins.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 479,
+ 	 	 "scientific_name"  : "Iris foetidissima", 
+  	 	 "current_name"  : "Iris fétide", 
+  	 	 "image"  : "Iris foetidissima/30642.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles persistantes, vert foncé. Fleurs brun-violet ou bleu-violet, souvent peu spectaculaires. Fruits en capsules s'ouvrant pour révéler de belles graines orange vif, très décoratives.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 480,
+ 	 	 "scientific_name"  : "Iris lutescens", 
+  	 	 "current_name"  : "Iris jaune pâle", 
+  	 	 "image"  : "Iris lutescens/46608.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse méditerranéenne. Feuilles linéaires, dressées. Grandes fleurs jaunes pâles (parfois blanches ou violettes). Pousse sur sols secs et rocailleux. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 481,
+ 	 	 "scientific_name"  : "Iris pseudacorus", 
+  	 	 "current_name"  : "Iris des marais", 
+  	 	 "image"  : "Iris pseudacorus/57593.jpg", 
+  	 	 "characteristic"  : "Grande vivace rhizomateuse des zones humides. Grandes feuilles linéaires, dressées. Grandes fleurs jaune vif. Pousse les pieds dans l'eau ou en sol détrempé. Très commune au bord des rivières.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 482,
+ 	 	 "scientific_name"  : "Isatis tinctoria", 
+  	 	 "current_name"  : "Pastel des teinturiers", 
+  	 	 "image"  : "Isatis tinctoria/436.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle. Rosette basale de grandes feuilles. Tiges florales ramifiées portant de nombreuses petites fleurs jaune vif. Cultivée autrefois pour le bleu. Pousse en friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 483,
+ 	 	 "scientific_name"  : "Jacobaea adonidifolia", 
+  	 	 "current_name"  : "Séneçon à feuilles d'adonide", 
+  	 	 "image"  : "Jacobaea adonidifolia/98369.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles finement découpées, ressemblant à celles de l'adonide. Fleurs jaunes en capitules regroupés en corymbes. Pousse en montagne, en pelouses et rochers.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 484,
+ 	 	 "scientific_name"  : "Jacobaea erucifolia", 
+  	 	 "current_name"  : "Séneçon à feuilles de roquette", 
+  	 	 "image"  : "Jacobaea erucifolia/32996.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles profondément lobées, ressemblant à celles de la roquette. Fleurs jaunes en capitules regroupés en corymbes. Pousse en prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 485,
+ 	 	 "scientific_name"  : "Jacobaea maritima", 
+  	 	 "current_name"  : "Séneçon cinéraire", 
+  	 	 "image"  : "Jacobaea maritima/11098.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste ou vivace. Feuilles profondément découpées, très duveteuses et argentées. Fleurs jaunes en capitules. Cultivé pour son feuillage décoratif. Pousse sur les côtes méditerranéennes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 486,
+ 	 	 "scientific_name"  : "Jacobaea vulgaris", 
+  	 	 "current_name"  : "Séneçon jacobée", 
+  	 	 "image"  : "Jacobaea vulgaris/38691.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace. Rosette basale de feuilles lobées. Fleurs jaunes en capitules regroupés en corymbes. Très commune en prairies. Toxique pour le bétail.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 487,
+ 	 	 "scientific_name"  : "Jasione montana", 
+  	 	 "current_name"  : "Jasione des montagnes", 
+  	 	 "image"  : "Jasione montana/28733.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle. Feuilles linéaires. Fleurs bleu vif, en têtes sphériques, rappelant des scabieuses. Pousse en pelouses sèches et landes.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 488,
+ 	 	 "scientific_name"  : "Jasminum fruticans", 
+  	 	 "current_name"  : "Jasmin jaune sauvage", 
+  	 	 "image"  : "Jasminum fruticans/100945.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc ou semi-persistant aux rameaux grêles. Feuilles trifoliées. Fleurs jaunes parfumées, en cymes axillaires. Pousse en milieux secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 489,
+ 	 	 "scientific_name"  : "Juglans nigra", 
+  	 	 "current_name"  : "Noyer noir", 
+  	 	 "image"  : "Juglans nigra/70453.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles composées. Fruits (noix noires) au brou verdâtre et strié, avec une coque très dure. Bois précieux. Originaire d'Amérique du Nord.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 490,
+ 	 	 "scientific_name"  : "Juglans regia", 
+  	 	 "current_name"  : "Noyer commun", 
+  	 	 "image"  : "Juglans regia/14463.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles composées, aromatiques. Fruits (noix) très appréciés. Bois précieux. Cultivé pour ses fruits et son bois.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 491,
+ 	 	 "scientific_name"  : "Juncus bulbosus", 
+  	 	 "current_name"  : "Jonc bulbeux", 
+  	 	 "image"  : "Juncus bulbosus/58561.jpg", 
+  	 	 "characteristic"  : "Jonc vivace des milieux humides et aquatiques. Tiges fines, souvent flottantes ou submerses, formant des tapis. Petites fleurs verdâtres en petites grappes. Pousse en eaux peu profondes.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 492,
+ 	 	 "scientific_name"  : "Juncus effusus", 
+  	 	 "current_name"  : "Jonc diffus", 
+  	 	 "image"  : "Juncus effusus/23257.jpg", 
+  	 	 "characteristic"  : "Jonc vivace formant de grandes touffes. Tiges cylindriques, lisses, vertes, sans feuilles apparentes. Petites fleurs verdâtres ou brunes, regroupées en cymes latérales. Très commun en milieux humides.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 493,
+ 	 	 "scientific_name"  : "Juncus gerardi", 
+  	 	 "current_name"  : "Jonc de Gerard", 
+  	 	 "image"  : "Juncus gerardi/99694.jpg", 
+  	 	 "characteristic"  : "Jonc vivace des milieux salés. Tiges fines, dressées. Feuilles basales linéaires. Petites fleurs brunes. Pousse dans les prés salés et bordures des lagunes.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 494,
+ 	 	 "scientific_name"  : "Juniperus communis", 
+  	 	 "current_name"  : "Genévrier commun", 
+  	 	 "image"  : "Juniperus communis/41386.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre conifère persistant. Feuilles en aiguilles, piquantes, vert clair dessus avec une bande blanche. Fruits bleus charnus (baies de genièvre), utilisés en cuisine et distillerie. Très répandu.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 495,
+ 	 	 "scientific_name"  : "Juniperus oxycedrus", 
+  	 	 "current_name"  : "Genévrier cade", 
+  	 	 "image"  : "Juniperus oxycedrus/65097.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre conifère persistant méditerranéen. Feuilles en aiguilles, piquantes, avec deux bandes blanches. Fruits rouges-orangés charnus. Bois odorant, utilisé pour le 'Cade'. Pousse en garrigues et maquis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 496,
+ 	 	 "scientific_name"  : "Juniperus phoenicea", 
+  	 	 "current_name"  : "Genévrier de Phénicie", 
+  	 	 "image"  : "Juniperus phoenicea/54494.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre conifère persistant méditerranéen. Feuilles en écailles (jeunes feuilles parfois en aiguilles). Fruits ronds, rouges-orangés charnus. Pousse en milieux côtiers rocheux. Très tolérant à la sécheresse.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 497,
+ 	 	 "scientific_name"  : "Juniperus sabina", 
+  	 	 "current_name"  : "Genévrier sabine", 
+  	 	 "image"  : "Juniperus sabina/71715.jpg", 
+  	 	 "characteristic"  : "Arbuste prostré ou étalé, conifère persistant. Feuillage en écailles, vert foncé, très odorant au froissement. Fruits noirs-bleutés, pruineux. Toxique. Pousse en montagne, sur sols calcaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 498,
+ 	 	 "scientific_name"  : "Kerria japonica", 
+  	 	 "current_name"  : "Corète du Japon", 
+  	 	 "image"  : "Kerria japonica/66485.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc aux rameaux verts vifs. Fleurs jaune vif, simples ou doubles, en forme de pompon (chez le cultivar 'Pleniflora'), apparaissant au printemps. Très florifère et lumineux.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 499,
+ 	 	 "scientific_name"  : "Kickxia spuria", 
+  	 	 "current_name"  : "Cymbalaire bâtarde", 
+  	 	 "image"  : "Kickxia spuria/105160.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle rampante. Feuilles ovales, entières. Petites fleurs jaunes et violettes, bilabiées, avec un éperon. Pousse dans les cultures et friches. Ressemble à la cymbalaire des murs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 500,
+ 	 	 "scientific_name"  : "Knautia arvensis", 
+  	 	 "current_name"  : "Knautie des champs", 
+  	 	 "image"  : "Knautia arvensis/91681.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges dressées. Feuilles basales lobées, feuilles caulinaires découpées. Fleurs lilas à violettes, en capitules hémisphériques, ressemblant à des scabieuses. Très mellifère. Pousse en prairies.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 501,
+ 	 	 "scientific_name"  : "Knautia maxima", 
+  	 	 "current_name"  : "Knautie géante", 
+  	 	 "image"  : "Knautia maxima/28618.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace. Feuilles basales lobées, feuilles caulinaires découpées. Grandes fleurs rose-violet en capitules hémisphériques. Plus grande et plus robuste que la Knautie des champs. Pousse en prairies et lisières.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 502,
+ 	 	 "scientific_name"  : "Koelreuteria paniculata", 
+  	 	 "current_name"  : "Savonnier", 
+  	 	 "image"  : "Koelreuteria paniculata/78947.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne. Feuilles composées, virant au jaune doré en automne. Grandes panicules de fleurs jaunes en été. Fruits en capsules membraneuses, ressemblant à de petites lanternes. Très ornemental.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 503,
+ 	 	 "scientific_name"  : "Laburnum anagyroides", 
+  	 	 "current_name"  : "Cytise aubour", 
+  	 	 "image"  : "Laburnum anagyroides/109995.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc. Feuilles trifoliées. Longues grappes pendantes de fleurs jaunes vif, papilionacées, très spectaculaires au printemps. Toutes les parties de la plante sont toxiques.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 504,
+ 	 	 "scientific_name"  : "Lactuca alpina", 
+  	 	 "current_name"  : "Laitue des Alpes", 
+  	 	 "image"  : "Lactuca alpina/61970.jpg", 
+  	 	 "characteristic"  : "Grande vivace de montagne. Feuilles profondément lobées. Fleurs bleu-violet en capitules groupés en corymbes. Pousse en sous-bois denses et lieux humides en altitude.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 505,
+ 	 	 "scientific_name"  : "Lactuca muralis", 
+  	 	 "current_name"  : "Laitue des murs", 
+  	 	 "image"  : "Lactuca muralis/34134.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle aux tiges fines. Feuilles basales lobées, feuilles caulinaires petites. Petits capitules de fleurs jaunes pâles. Pousse dans les murs, rochers et sous-bois. Très commune.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 506,
+ 	 	 "scientific_name"  : "Lactuca perennis", 
+  	 	 "current_name"  : "Laitue vivace", 
+  	 	 "image"  : "Lactuca perennis/98353.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles basales très découpées, bleu-vert. Capitules de fleurs bleu vif, en grappes lâches. Pousse sur sols secs et rocailleux. Très ornementale.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 507,
+ 	 	 "scientific_name"  : "Lactuca plumieri", 
+  	 	 "current_name"  : "Laitue de Plumier", 
+  	 	 "image"  : "Lactuca plumieri/84251.jpg", 
+  	 	 "characteristic"  : "Grande vivace de montagne. Feuilles profondément découpées, souvent dentées. Fleurs bleu-violet clair en capitules nombreux. Pousse en sous-bois frais d'altitude.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 508,
+ 	 	 "scientific_name"  : "Lactuca serriola", 
+  	 	 "current_name"  : "Laitue scariole", 
+  	 	 "image"  : "Lactuca serriola/64055.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle. Feuilles lobées, hérissées d'épines sur la nervure centrale, orientées dans le plan nord-sud (d'où son nom de 'boussole'). Petits capitules de fleurs jaunes. Très commune en friche.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 509,
+ 	 	 "scientific_name"  : "Lactuca viminea", 
+  	 	 "current_name"  : "Laitue à feuilles de saule", 
+  	 	 "image"  : "Lactuca viminea/20821.jpg", 
+  	 	 "characteristic"  : "Plante vivace aux tiges fines, ramifiées. Feuilles basales découpées, feuilles caulinaires linéaires. Petits capitules de fleurs jaunes. Pousse dans les milieux secs et rocailleux.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 510,
+ 	 	 "scientific_name"  : "Lagurus ovatus", 
+  	 	 "current_name"  : "Queue de lièvre", 
+  	 	 "image"  : "Lagurus ovatus/39249.jpg", 
+  	 	 "characteristic"  : "Petite graminée annuelle. Inflorescence en épillet ovale, doux et soyeux, très décoratif, ressemblant à la queue d'un lièvre. Souvent utilisée en bouquets secs. Pousse sur les sables côtiers et secs.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 511,
+ 	 	 "scientific_name"  : "Lamium album", 
+  	 	 "current_name"  : "Ortie blanche", 
+  	 	 "image"  : "Lamium album/100076.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles ovales, dentées, ressemblant à l'ortie (mais non urticantes). Fleurs blanches bilabiées, regroupées en verticilles axillaires. Pousse en bords de chemins et friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 512,
+ 	 	 "scientific_name"  : "Lamium amplexicaule", 
+  	 	 "current_name"  : "Lamier amplexicaule", 
+  	 	 "image"  : "Lamium amplexicaule/100336.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles arrondies, dentées, embrassant la tige. Petites fleurs roses-pourpres, bilabiées, en verticilles axillaires. Pousse en cultures et jardins. Fleurit très tôt.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 513,
+ 	 	 "scientific_name"  : "Lamium galeobdolon", 
+  	 	 "current_name"  : "Lamier jaune", 
+  	 	 "image"  : "Lamium galeobdolon/59323.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles ovales, dentées, souvent maculées d'argent. Fleurs jaunes bilabiées, en verticilles. Pousse en sous-bois frais. Peut être utilisée comme couvre-sol.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 514,
+ 	 	 "scientific_name"  : "Lamium maculatum", 
+  	 	 "current_name"  : "Lamier maculé", 
+  	 	 "image"  : "Lamium maculatum/94263.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles ovales, dentées, souvent maculées d'une tache argentée. Fleurs roses à pourpres, bilabiées, en verticilles. Pousse en sous-bois et jardins. Cultivée comme ornementale.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 515,
+ 	 	 "scientific_name"  : "Lamium purpureum", 
+  	 	 "current_name"  : "Lamier pourpre", 
+  	 	 "image"  : "Lamium purpureum/44082.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles arrondies, souvent teintées de pourpre, surtout au sommet des tiges. Petites fleurs roses-pourpres, bilabiées, en verticilles. Très commune en cultures et jardins.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 516,
+ 	 	 "scientific_name"  : "Lantana camara", 
+  	 	 "current_name"  : "Lantana", 
+  	 	 "image"  : "Lantana camara/8703.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant, non rustique sous nos climats. Fleurs en corymbes, changeant de couleur au fur et à mesure de leur épanouissement (souvent jaune, orange, rouge). Très florifère. Toxique. Peut être envahissante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 517,
+ 	 	 "scientific_name"  : "Lapsana communis", 
+  	 	 "current_name"  : "Lapsane commune", 
+  	 	 "image"  : "Lapsana communis/37683.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle. Feuilles basales lobées. Petits capitules de fleurs jaunes. Très commune dans les friches, bords de chemins et jardins. Proche de la laitue sauvage.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 518,
+ 	 	 "scientific_name"  : "Larix decidua", 
+  	 	 "current_name"  : "Mélèze d'Europe", 
+  	 	 "image"  : "Larix decidua/79469.jpg", 
+  	 	 "characteristic"  : "Grand conifère caduc. Aiguilles douces, vert clair, virant au jaune d'or en automne avant de tomber. Petits cônes. Pousse en montagne. Le seul conifère d'Europe à perdre ses aiguilles.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 519,
+ 	 	 "scientific_name"  : "Lathraea clandestina", 
+  	 	 "current_name"  : "Lathrée clandestine", 
+  	 	 "image"  : "Lathraea clandestina/30942.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle, se nourrissant sur les racines d'arbres (saules, peupliers). Fleurs violettes en forme de clochettes, apparaissant directement au ras du sol. Fleurit très tôt au printemps.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 520,
+ 	 	 "scientific_name"  : "Lathyrus cicera", 
+  	 	 "current_name"  : "Gesse chiche", 
+  	 	 "image"  : "Lathyrus cicera/105201.jpg", 
+  	 	 "characteristic"  : "Petite annuelle grimpante. Tiges ailées. Feuilles composées de folioles et de vrilles. Fleurs petites, rouge-orangé, solitaires ou en paires. Pousse en cultures et friches méditerranéennes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 521,
+ 	 	 "scientific_name"  : "Lathyrus latifolius", 
+  	 	 "current_name"  : "Gesse à larges feuilles", 
+  	 	 "image"  : "Lathyrus latifolius/57202.jpg", 
+  	 	 "characteristic"  : "Grande vivace grimpante. Tiges largement ailées. Feuilles composées de grandes folioles et de vrilles. Grandes fleurs rose-pourpre vif, en grappes. Très ornementale. Pousse en lisières et haies.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 522,
+ 	 	 "scientific_name"  : "Lathyrus pratensis", 
+  	 	 "current_name"  : "Gesse des prés", 
+  	 	 "image"  : "Lathyrus pratensis/40111.jpg", 
+  	 	 "characteristic"  : "Vivace grimpante aux tiges fines. Feuilles composées de folioles et de vrilles. Fleurs jaune vif, papilionacées, en petites grappes. Très commune en prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 523,
+ 	 	 "scientific_name"  : "Lathyrus sylvestris", 
+  	 	 "current_name"  : "Gesse des bois", 
+  	 	 "image"  : "Lathyrus sylvestris/24919.jpg", 
+  	 	 "characteristic"  : "Vivace grimpante. Tiges fortement ailées. Feuilles composées de folioles et de vrilles. Fleurs roses à pourpres. Pousse en sous-bois clairs et lisières.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 524,
+ 	 	 "scientific_name"  : "Laurus nobilis", 
+  	 	 "current_name"  : "Laurier sauce", 
+  	 	 "image"  : "Laurus nobilis/18990.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre persistant aromatique. Feuilles ovales, coriaces, vert foncé, utilisées en cuisine. Fleurs jaune-verdâtre discrètes. Fruits noirs (drupes). Pousse en climat méditerranéen.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 525,
+ 	 	 "scientific_name"  : "Lavandula stoechas", 
+  	 	 "current_name"  : "Lavande papillon", 
+  	 	 "image"  : "Lavandula stoechas/2864.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste aromatique. Feuilles étroites, gris-vert. Fleurs pourpres foncées en épis denses, surmontés de grandes bractées violettes ressemblant à des ailes de papillon. Pousse en garrigues et maquis.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 526,
+ 	 	 "scientific_name"  : "Legousia speculum-veneris", 
+  	 	 "current_name"  : "Miroir de Vénus", 
+  	 	 "image"  : "Legousia speculum-veneris/84411.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Fleurs bleu-violet vif, en forme d'étoile ou de coupelle, avec des pétales triangulaires. Pousse en cultures et friches. Jadis très commune, devenue plus rare.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 527,
+ 	 	 "scientific_name"  : "Leontodon hispidus", 
+  	 	 "current_name"  : "Liondent hispide", 
+  	 	 "image"  : "Leontodon hispidus/79950.jpg", 
+  	 	 "characteristic"  : "Vivace. Rosette basale de feuilles lobées et velues. Tiges florales non ramifiées, portant un capitule solitaire de fleurs jaunes. Très commun en prairies.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 528,
+ 	 	 "scientific_name"  : "Leontopodium nivale", 
+  	 	 "current_name"  : "Edelweiss", 
+  	 	 "image"  : "Leontopodium nivale/62130.jpg", 
+  	 	 "characteristic"  : "Petite vivace de haute montagne. Feuilles et fleurs couvertes d'un épais feutre blanc, donnant un aspect cotonneux. Fleurs minuscules groupées en capitules, entourées de bractées étoilées. Protégée. Symbole alpin.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 529,
+ 	 	 "scientific_name"  : "Lepidium draba", 
+  	 	 "current_name"  : "Passerage drave", 
+  	 	 "image"  : "Lepidium draba/35552.jpg", 
+  	 	 "characteristic"  : "Plante vivace rhizomateuse. Feuilles ovales, dentées. Petites fleurs blanches, en grappes denses, formant une inflorescence large et aplatie. Peut être envahissante. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 530,
+ 	 	 "scientific_name"  : "Leucanthemopsis alpina", 
+  	 	 "current_name"  : "Leucanthémopsis alpine", 
+  	 	 "image"  : "Leucanthemopsis alpina/50877.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles finement découpées. Capitules de fleurs blanches (parfois roses) avec un centre jaune, ressemblant à de petites marguerites. Pousse dans les rochers et pelouses alpines.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 531,
+ 	 	 "scientific_name"  : "Leucanthemum vulgare", 
+  	 	 "current_name"  : "Marguerite", 
+  	 	 "image"  : "Leucanthemum vulgare/70462.jpg", 
+  	 	 "characteristic"  : "Vivace très commune. Rosette basale de feuilles lobées. Grandes fleurs blanches avec un centre jaune, solitaires au sommet des tiges. Emblème des prairies fleuries.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 532,
+ 	 	 "scientific_name"  : "Ligustrum vulgare", 
+  	 	 "current_name"  : "Troène commun", 
+  	 	 "image"  : "Ligustrum vulgare/54623.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc ou semi-persistant. Feuilles ovales, vert foncé. Petites fleurs blanches parfumées en panicules, suivies de baies noires luisantes. Souvent utilisé en haie. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 533,
+ 	 	 "scientific_name"  : "Lilium martagon", 
+  	 	 "current_name"  : "Lis martagon", 
+  	 	 "image"  : "Lilium martagon/28870.jpg", 
+  	 	 "characteristic"  : "Grande plante bulbeuse. Fleurs pendantes, aux tépales recourbés vers l'arrière, roses-pourpres, tachetées de noir. Parfumées. Pousse en sous-bois clairs et prairies de montagne. Protégée.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 534,
+ 	 	 "scientific_name"  : "Lilium pyrenaicum", 
+  	 	 "current_name"  : "Lis des Pyrénées", 
+  	 	 "image"  : "Lilium pyrenaicum/44920.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse de montagne. Fleurs pendantes, aux tépales recourbés vers l'arrière, jaune vif, souvent tachetées de noir. Parfumée. Pousse dans les pelouses alpines. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 535,
+ 	 	 "scientific_name"  : "Limodorum abortivum", 
+  	 	 "current_name"  : "Limodore à feuilles avortées", 
+  	 	 "image"  : "Limodorum abortivum/81946.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre sans chlorophylle (myco-hétérotrophe), se nourrissant de champignons. Tige robuste, violette. Fleurs violettes, en épi lâche. Pousse en sous-bois secs, surtout sous les pins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 536,
+ 	 	 "scientific_name"  : "Limoniastrum monopetalum", 
+  	 	 "current_name"  : "Limoniastre monopétale", 
+  	 	 "image"  : "Limoniastrum monopetalum/91789.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste méditerranéen aux feuilles spatulées, gris-vert. Fleurs roses-lilas en panicules denses et ramifiées, aériennes. Pousse sur les rochers côtiers et milieux salés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 537,
+ 	 	 "scientific_name"  : "Limonium narbonense", 
+  	 	 "current_name"  : "Salicorne de Narbonne", 
+  	 	 "image"  : "Limonium narbonense/7881.jpg", 
+  	 	 "characteristic"  : "Plante vivace des milieux salés. Tiges fines, ramifiées. Fleurs violettes minuscules, en panicules très ramifiées, aériennes. Pousse dans les marais salants et vasières. Ressemble à d'autres Limonium.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 538,
+ 	 	 "scientific_name"  : "Limonium vulgare", 
+  	 	 "current_name"  : "Lavande de mer", 
+  	 	 "image"  : "Limonium vulgare/29546.jpg", 
+  	 	 "characteristic"  : "Plante vivace des milieux salés. Feuilles basales en rosette. Tiges ramifiées portant de nombreuses petites fleurs lilas-bleu. Pousse dans les marais salants et estuaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 539,
+ 	 	 "scientific_name"  : "Linaria alpina", 
+  	 	 "current_name"  : "Linaire alpine", 
+  	 	 "image"  : "Linaria alpina/4795.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles étroites, charnues. Fleurs violettes avec un palais orangé, en grappes terminales. Pousse dans les éboulis calcaires et rochers d'altitude.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 540,
+ 	 	 "scientific_name"  : "Linaria repens", 
+  	 	 "current_name"  : "Linaire rampante", 
+  	 	 "image"  : "Linaria repens/103094.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles linéaires. Fleurs blanches avec des nervures violettes et un palais jaune, en grappes. Pousse en milieux secs et rocailleux, souvent sur les voies ferrées.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 541,
+ 	 	 "scientific_name"  : "Linaria supina", 
+  	 	 "current_name"  : "Linaire couchée", 
+  	 	 "image"  : "Linaria supina/28696.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou vivace. Tiges prostrées. Feuilles linéaires. Fleurs jaune vif avec un palais orangé, en grappes. Pousse sur les sables et rochers. Très méditerranéenne.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 542,
+ 	 	 "scientific_name"  : "Linaria vulgaris", 
+  	 	 "current_name"  : "Linaire commune", 
+  	 	 "image"  : "Linaria vulgaris/90078.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles linéaires. Fleurs jaune vif avec un palais orange, en grappes denses. Ressemble à un petit muflier. Très commune en bords de chemins et friches.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 543,
+ 	 	 "scientific_name"  : "Linum campanulatum", 
+  	 	 "current_name"  : "Lin campanulé", 
+  	 	 "image"  : "Linum campanulatum/107925.jpg", 
+  	 	 "characteristic"  : "Vivace méditerranéenne. Feuilles linéaires. Fleurs jaune vif, grandes, en forme de campanule. Pousse sur sols secs et rocailleux. Très ornementale.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 544,
+ 	 	 "scientific_name"  : "Linum narbonense", 
+  	 	 "current_name"  : "Lin de Narbonne", 
+  	 	 "image"  : "Linum narbonense/12458.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles linéaires. Grandes fleurs bleu vif, délicates, en forme de coupelle. Pousse sur sols secs et calcaires, pelouses. Très ornementale.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 545,
+ 	 	 "scientific_name"  : "Linum suffruticosum", 
+  	 	 "current_name"  : "Lin sous-frutescent", 
+  	 	 "image"  : "Linum suffruticosum/107015.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste ou vivace. Tiges ligneuses à la base. Feuilles linéaires. Fleurs blanches à rosées, délicates. Pousse sur sols secs et rocailleux.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 546,
+ 	 	 "scientific_name"  : "Linum usitatissimum", 
+  	 	 "current_name"  : "Lin cultivé", 
+  	 	 "image"  : "Linum usitatissimum/102149.jpg", 
+  	 	 "characteristic"  : "Plante annuelle cultivée. Tiges fines. Feuilles linéaires. Fleurs bleues (parfois blanches), délicates. Cultivée pour ses fibres (textile) et ses graines (huile, alimentation).", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 547,
+ 	 	 "scientific_name"  : "Lippia triphylla", 
+  	 	 "current_name"  : "Verveine citronnelle", 
+  	 	 "image"  : "Lippia triphylla/5110.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc ou semi-persistant. Feuilles verticillées par 3, très aromatiques (citron). Petites fleurs blanches-rosées en épis. Utilisée en tisane et cuisine. Non rustique sous tous les climats.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 548,
+ 	 	 "scientific_name"  : "Liquidambar styraciflua", 
+  	 	 "current_name"  : "Copalme d'Amérique", 
+  	 	 "image"  : "Liquidambar styraciflua/81753.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à la cime conique. Feuilles palmées, lobées, ressemblant à celles de l'érable, virant à des couleurs spectaculaires (rouge, orange, pourpre) en automne. Fruits sphériques et épineux.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 549,
+ 	 	 "scientific_name"  : "Liriodendron tulipifera", 
+  	 	 "current_name"  : "Tulipier de Virginie", 
+  	 	 "image"  : "Liriodendron tulipifera/69307.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles uniques, en forme de lyre, avec 4 lobes tronqués. Grandes fleurs vertes-jaunâtres avec une tache orange à la base, en forme de tulipe. Très ornemental.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 550,
+ 	 	 "scientific_name"  : "Lithodora fruticosa", 
+  	 	 "current_name"  : "Lithodora frutiqueuse", 
+  	 	 "image"  : "Lithodora fruticosa/81639.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant. Feuilles étroites, vert foncé. Fleurs bleu vif, en forme d'entonnoir. Pousse sur sols calcaires et secs, en plein soleil. Excellent couvre-sol.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 551,
+ 	 	 "scientific_name"  : "Lithospermum officinale", 
+  	 	 "current_name"  : "Grémil officinal", 
+  	 	 "image"  : "Lithospermum officinale/107902.jpg", 
+  	 	 "characteristic"  : "Plante vivace velue. Feuilles lancéolées. Petites fleurs blanc-jaunâtre. Fruits en petites noix blanches et luisantes. Pousse en sous-bois clairs, lisières et milieux secs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 552,
+ 	 	 "scientific_name"  : "Lobularia maritima", 
+  	 	 "current_name"  : "Corbeille d'argent maritime", 
+  	 	 "image"  : "Lobularia maritima/77223.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou vivace de courte durée de vie, formant des tapis. Feuilles étroites. Petites fleurs blanches ou violettes, très parfumées, en grappes. Souvent cultivée en rocaille ou jardinière. Pousse sur les sables côtiers.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 553,
+ 	 	 "scientific_name"  : "Loncomelos pyrenaicus", 
+  	 	 "current_name"  : "Ornithogale des Pyrénées", 
+  	 	 "image"  : "Loncomelos pyrenaicus/19814.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Longues feuilles linéaires. Fleurs blanc-verdâtre, souvent rayées de brun-vert, en grappes lâches. Pousse en montagne, en sous-bois et pelouses. Anciennement *Ornithogalum pyrenaicum*.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 554,
+ 	 	 "scientific_name"  : "Lonicera alpigena", 
+  	 	 "current_name"  : "Chèvrefeuille des Alpes", 
+  	 	 "image"  : "Lonicera alpigena/30315.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc. Feuilles ovales. Petites fleurs jaune-verdâtre, en paires. Fruits rouges vifs, luisants, pendants, toxiques. Pousse en montagne, en sous-bois et lisières.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 555,
+ 	 	 "scientific_name"  : "Lonicera etrusca", 
+  	 	 "current_name"  : "Chèvrefeuille d'Étrurie", 
+  	 	 "image"  : "Lonicera etrusca/27604.jpg", 
+  	 	 "characteristic"  : "Liane caduque méditerranéenne. Feuilles ovales, les supérieures soudées par paires. Fleurs jaunes à rouge-orangé, parfumées, en grappes. Fruits rouges. Pousse en garrigues et maquis.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 556,
+ 	 	 "scientific_name"  : "Lonicera implexa", 
+  	 	 "current_name"  : "Chèvrefeuille entrelacé", 
+  	 	 "image"  : "Lonicera implexa/76820.jpg", 
+  	 	 "characteristic"  : "Liane persistante ou semi-persistante méditerranéenne. Feuilles ovales, les supérieures soudées. Fleurs jaunâtres à rosées, parfumées, en grappes. Fruits rouges. S'entrelace dans la végétation.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 557,
+ 	 	 "scientific_name"  : "Lonicera periclymenum", 
+  	 	 "current_name"  : "Chèvrefeuille des bois", 
+  	 	 "image"  : "Lonicera periclymenum/69013.jpg", 
+  	 	 "characteristic"  : "Liane caduque. Feuilles ovales. Grandes fleurs crème à rosées, très parfumées, en grappes terminales. Fruits rouges luisants. Très commun en sous-bois et haies.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 558,
+ 	 	 "scientific_name"  : "Lonicera xylosteum", 
+  	 	 "current_name"  : "Chèvrefeuille des haies", 
+  	 	 "image"  : "Lonicera xylosteum/76709.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc. Feuilles ovales, velues. Fleurs blanc-jaunâtre. Fruits rouges luisants, en paires, toxiques. Pousse en sous-bois et haies.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 559,
+ 	 	 "scientific_name"  : "Lotus corniculatus", 
+  	 	 "current_name"  : "Lotier corniculé", 
+  	 	 "image"  : "Lotus corniculatus/79185.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles composées de 3 folioles. Fleurs jaune vif (parfois teintées de rouge), papilionacées, en petits bouquets. Fruits en gousses fines. Très commun en prairies et pelouses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 560,
+ 	 	 "scientific_name"  : "Lotus edulis", 
+  	 	 "current_name"  : "Lotier comestible", 
+  	 	 "image"  : "Lotus edulis/98327.jpg", 
+  	 	 "characteristic"  : "Plante annuelle ou bisannuelle méditerranéenne. Feuilles composées. Fleurs jaune-orangé. Gousses charnues, comestibles. Pousse sur les sols sableux et secs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 561,
+ 	 	 "scientific_name"  : "Lotus maritimus", 
+  	 	 "current_name"  : "Lotier maritime", 
+  	 	 "image"  : "Lotus maritimus/108709.jpg", 
+  	 	 "characteristic"  : "Plante vivace des milieux côtiers. Feuilles charnues. Fleurs jaunes, papilionacées. Pousse sur les sables et galets du littoral. Tolérant au sel.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 562,
+ 	 	 "scientific_name"  : "Lunaria annua", 
+  	 	 "current_name"  : "Monnaie du pape", 
+  	 	 "image"  : "Lunaria annua/80238.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle. Grandes feuilles cordiformes. Fleurs violettes ou blanches, en grappes. Fruits en grandes siliques rondes, plates et translucides, très décoratives, ressemblant à des pièces de monnaie.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 563,
+ 	 	 "scientific_name"  : "Lupinus angustifolius", 
+  	 	 "current_name"  : "Lupin à feuilles étroites", 
+  	 	 "image"  : "Lupinus angustifolius/78611.jpg", 
+  	 	 "characteristic"  : "Plante annuelle cultivée. Feuilles palmées, aux folioles étroites. Fleurs bleues (parfois roses ou blanches), papilionacées, en épis terminaux. Cultivé comme engrais vert ou pour l'alimentation animale.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 564,
+ 	 	 "scientific_name"  : "Luzula campestris", 
+  	 	 "current_name"  : "Luzule champêtre", 
+  	 	 "image"  : "Luzula campestris/25079.jpg", 
+  	 	 "characteristic"  : "Petite graminée vivace formant des touffes. Feuilles fines, ciliées. Petites fleurs brunes-verdâtres en petites grappes lâches. Très commune dans les pelouses et prairies. Fleurit très tôt.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 565,
+ 	 	 "scientific_name"  : "Lychnis coronaria", 
+  	 	 "current_name"  : "Coquelourde des jardins", 
+  	 	 "image"  : "Lychnis coronaria/26494.jpg", 
+  	 	 "characteristic"  : "Vivace de courte durée de vie ou bisannuelle. Feuilles et tiges duveteuses, gris-argenté. Fleurs rose-magenta vif (parfois blanches), solitaires. Très ornementale. Pousse en sols secs et ensoleillés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 566,
+ 	 	 "scientific_name"  : "Lychnis flos-cuculi", 
+  	 	 "current_name"  : "Œillet des prés", 
+  	 	 "image"  : "Lychnis flos-cuculi/4933.jpg", 
+  	 	 "characteristic"  : "Vivace des prairies humides. Tiges fines. Fleurs roses, aux pétales profondément découpés en lanières, donnant un aspect ébouriffé. Pousse en prairies humides et bords de cours d'eau.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 567,
+ 	 	 "scientific_name"  : "Lycopsis arvensis", 
+  	 	 "current_name"  : "Buglosse des champs", 
+  	 	 "image"  : "Lycopsis arvensis/70002.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue et rude. Feuilles lancéolées, ondulées. Fleurs petites, bleues, en forme de trompette. Pousse dans les cultures et friches. Ressemble à la vipérine.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 568,
+ 	 	 "scientific_name"  : "Lycopus europaeus", 
+  	 	 "current_name"  : "Lycope d'Europe", 
+  	 	 "image"  : "Lycopus europaeus/58502.jpg", 
+  	 	 "characteristic"  : "Vivace des zones humides. Tiges carrées. Feuilles dentées. Petites fleurs blanches, regroupées en verticilles axillaires. Pousse au bord des mares et rivières.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 569,
+ 	 	 "scientific_name"  : "Lysimachia arvensis", 
+  	 	 "current_name"  : "Mouron des champs", 
+  	 	 "image"  : "Lysimachia arvensis/36575.jpg", 
+  	 	 "characteristic"  : "Petite annuelle rampante. Feuilles ovales. Petites fleurs oranges-rouges (parfois bleues ou roses), s'ouvrant au soleil. Très commune dans les cultures et jardins.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 570,
+ 	 	 "scientific_name"  : "Lysimachia nemorum", 
+  	 	 "current_name"  : "Lysimaque des bois", 
+  	 	 "image"  : "Lysimachia nemorum/75862.jpg", 
+  	 	 "characteristic"  : "Petite vivace rampante. Feuilles ovales, vert clair. Petites fleurs jaune vif, solitaires à l'aisselle des feuilles. Pousse en sous-bois frais et humides.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 571,
+ 	 	 "scientific_name"  : "Lysimachia vulgaris", 
+  	 	 "current_name"  : "Lysimaque commune", 
+  	 	 "image"  : "Lysimachia vulgaris/48799.jpg", 
+  	 	 "characteristic"  : "Grande vivace des zones humides. Feuilles lancéolées, verticillées. Grandes grappes de fleurs jaune vif. Pousse au bord des cours d'eau et fossés. Très lumineuse.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 572,
+ 	 	 "scientific_name"  : "Lythrum salicaria", 
+  	 	 "current_name"  : "Salicaire", 
+  	 	 "image"  : "Lythrum salicaria/86128.jpg", 
+  	 	 "characteristic"  : "Grande vivace des zones humides. Tiges dressées. Feuilles lancéolées. Longs épis de fleurs rose-pourpre vif. Très attractive pour les pollinisateurs. Pousse au bord de l'eau.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 573,
+ 	 	 "scientific_name"  : "Magnolia grandiflora", 
+  	 	 "current_name"  : "Magnolia à grandes fleurs", 
+  	 	 "image"  : "Magnolia grandiflora/38390.jpg", 
+  	 	 "characteristic"  : "Grand arbre persistant. Grandes feuilles coriaces, luisantes vert foncé dessus, rouille-brun dessous. Très grandes fleurs blanc-crème, parfumées, en forme de coupe. Originaire d'Amérique du Nord. Très ornemental.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 574,
+ 	 	 "scientific_name"  : "Malus domestica", 
+  	 	 "current_name"  : "Pommier cultivé", 
+  	 	 "image"  : "Malus domestica/99079.jpg", 
+  	 	 "characteristic"  : "Arbre fruitier caduc. Fleurs roses à blanches au printemps. Fruits ronds (pommes) comestibles, de tailles et couleurs variées selon les cultivars. Largement cultivé dans le monde.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 575,
+ 	 	 "scientific_name"  : "Malus sylvestris", 
+  	 	 "current_name"  : "Pommier sauvage", 
+  	 	 "image"  : "Malus sylvestris/76161.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou arbuste épineux. Fleurs blanches rosées au printemps. Petits fruits ronds (pommes), acides, mais consommés par la faune. Ancêtre du pommier cultivé.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 576,
+ 	 	 "scientific_name"  : "Malva arborea", 
+  	 	 "current_name"  : "Mauve en arbre", 
+  	 	 "image"  : "Malva arborea/7849.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle ou vivace arbustive. Grandes feuilles lobées. Grandes fleurs rose-violet avec des nervures foncées. Pousse sur les côtes et milieux perturbés. Peut atteindre 2-3 mètres.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 577,
+ 	 	 "scientific_name"  : "Malva moschata", 
+  	 	 "current_name"  : "Mauve musquée", 
+  	 	 "image"  : "Malva moschata/24141.jpg", 
+  	 	 "characteristic"  : "Vivace aux feuilles finement découpées. Grandes fleurs roses (parfois blanches), aux pétales légèrement échancrés. Légèrement parfumée (musc). Pousse en prairies et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 578,
+ 	 	 "scientific_name"  : "Malva neglecta", 
+  	 	 "current_name"  : "Mauve à feuilles rondes", 
+  	 	 "image"  : "Malva neglecta/30921.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle rampante. Feuilles rondes, crénelées. Petites fleurs blanc-rosé. Fruits en 'fromages'. Très commune dans les jardins et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 579,
+ 	 	 "scientific_name"  : "Malva setigera", 
+  	 	 "current_name"  : "Mauve sétigère", 
+  	 	 "image"  : "Malva setigera/40928.jpg", 
+  	 	 "characteristic"  : "Mauve annuelle ou bisannuelle méditerranéenne. Feuilles lobées. Fleurs roses à violettes, souvent avec des nervures foncées. Se distingue par ses poils raides. Pousse en milieux secs et perturbés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 580,
+ 	 	 "scientific_name"  : "Malva sylvestris", 
+  	 	 "current_name"  : "Mauve sylvestre", 
+  	 	 "image"  : "Malva sylvestris/70736.jpg", 
+  	 	 "characteristic"  : "Vivace ou bisannuelle robuste. Grandes feuilles lobées. Grandes fleurs rose-violet avec des nervures foncées. Très commune en friches, bords de chemins. Utilisée en phytothérapie.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 581,
+ 	 	 "scientific_name"  : "Matricaria chamomilla", 
+  	 	 "current_name"  : "Camomille vraie", 
+  	 	 "image"  : "Matricaria chamomilla/72916.jpg", 
+  	 	 "characteristic"  : "Petite annuelle aromatique. Feuilles finement découpées. Petits capitules de fleurs blanches avec un centre jaune conique, creux. Très parfumée. Utilisée en tisane. Pousse en cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 582,
+ 	 	 "scientific_name"  : "Matthiola incana", 
+  	 	 "current_name"  : "Giroflée des jardins", 
+  	 	 "image"  : "Matthiola incana/9545.jpg", 
+  	 	 "characteristic"  : "Plante vivace à courte durée de vie ou bisannuelle. Feuilles gris-vert, duveteuses. Fleurs parfumées, simples ou doubles, de diverses couleurs (rose, violet, blanc, rouge), en grappes. Cultivée pour l'ornement.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 583,
+ 	 	 "scientific_name"  : "Matthiola sinuata", 
+  	 	 "current_name"  : "Giroflée des dunes", 
+  	 	 "image"  : "Matthiola sinuata/14024.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace. Feuilles ondulées, duveteuses. Fleurs parfumées, violettes à roses ou blanches, en grappes. Pousse sur les sables côtiers. Espèce protégée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 584,
+ 	 	 "scientific_name"  : "Maytenus canariensis", 
+  	 	 "current_name"  : "Maytenus des Canaries", 
+  	 	 "image"  : "Maytenus canariensis/45813.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre persistant endémique des Canaries. Feuilles ovales. Petites fleurs verdâtres discrètes. Fruits rouges. Pousse dans les forêts de lauriers. Protégé.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 585,
+ 	 	 "scientific_name"  : "Meconopsis cambrica", 
+  	 	 "current_name"  : "Pavot du Pays de Galles", 
+  	 	 "image"  : "Meconopsis cambrica/111136.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles lobées, velues. Grandes fleurs jaune vif ou orange, solitaires, aux pétales froissés. Se ressème facilement. Pousse dans les milieux rocheux humides et sous-bois clairs.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 586,
+ 	 	 "scientific_name"  : "Medicago arborea", 
+  	 	 "current_name"  : "Luzerne arborescente", 
+  	 	 "image"  : "Medicago arborea/44279.jpg", 
+  	 	 "characteristic"  : "Petit arbuste persistant méditerranéen. Feuilles trifoliées, gris-vert. Fleurs jaune vif, papilionacées, en grappes. Pousse sur sols secs et rocailleux. Très ornementale.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 587,
+ 	 	 "scientific_name"  : "Medicago lupulina", 
+  	 	 "current_name"  : "Luzerne lupuline", 
+  	 	 "image"  : "Medicago lupulina/10951.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle. Feuilles trifoliées. Petites fleurs jaune vif, papilionacées, en petites têtes rondes. Fruits en gousses noires, spiralées. Très commune en pelouses et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 588,
+ 	 	 "scientific_name"  : "Medicago sativa", 
+  	 	 "current_name"  : "Luzerne cultivée", 
+  	 	 "image"  : "Medicago sativa/19826.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles trifoliées. Fleurs violettes, papilionacées, en épis denses. Très cultivée comme fourrage pour le bétail. Enrichit le sol en azote.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 589,
+ 	 	 "scientific_name"  : "Melampyrum pratense", 
+  	 	 "current_name"  : "Mélampyre des prés", 
+  	 	 "image"  : "Melampyrum pratense/55262.jpg", 
+  	 	 "characteristic"  : "Plante annuelle semi-parasite. Feuilles lancéolées. Fleurs jaune pâle, bilabiées, avec une gorge souvent orangée. Pousse en sous-bois et prairies. Les bractées peuvent être pourpres.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 590,
+ 	 	 "scientific_name"  : "Melia azedarach", 
+  	 	 "current_name"  : "Margousier", 
+  	 	 "image"  : "Melia azedarach/79262.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne. Grandes feuilles composées, deux fois pennées. Fleurs lilas parfumées, en panicules. Fruits jaunes globuleux, toxiques. Utilisé comme arbre d'alignement dans les régions chaudes.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 591,
+ 	 	 "scientific_name"  : "Melilotus albus", 
+  	 	 "current_name"  : "Mélilot blanc", 
+  	 	 "image"  : "Melilotus albus/43488.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Feuilles trifoliées. Petites fleurs blanches, papilionacées, en longs épis. Odeur de coumarine (foin coupé). Pousse en friches et bords de chemins. Utilisé comme engrais vert.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 592,
+ 	 	 "scientific_name"  : "Melissa officinalis", 
+  	 	 "current_name"  : "Mélisse officinale", 
+  	 	 "image"  : "Melissa officinalis/95338.jpg", 
+  	 	 "characteristic"  : "Vivace aromatique. Feuilles ovales, dentées, très parfumées (citron). Petites fleurs blanc-rosé, en verticilles axillaires. Utilisée en tisane et phytothérapie. Très mellifère.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 593,
+ 	 	 "scientific_name"  : "Melittis melissophyllum", 
+  	 	 "current_name"  : "Mélitte à feuilles de mélisse", 
+  	 	 "image"  : "Melittis melissophyllum/92462.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles ovales, dentées. Grandes fleurs blanches et roses-pourpres, bilabiées, solitaires à l'aisselle des feuilles. Pousse en sous-bois clairs et lisières.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 594,
+ 	 	 "scientific_name"  : "Mentha aquatica", 
+  	 	 "current_name"  : "Menthe aquatique", 
+  	 	 "image"  : "Mentha aquatica/6250.jpg", 
+  	 	 "characteristic"  : "Vivace des zones humides. Feuilles ovales, velues, très aromatiques (menthe). Petites fleurs lilas, en têtes terminales. Pousse au bord de l'eau. Très parfumée.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 595,
+ 	 	 "scientific_name"  : "Mentha arvensis", 
+  	 	 "current_name"  : "Menthe des champs", 
+  	 	 "image"  : "Mentha arvensis/104127.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles ovales, aromatiques. Petites fleurs lilas, regroupées en verticilles axillaires. Pousse dans les cultures et friches. Utilisée pour le menthol.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 596,
+ 	 	 "scientific_name"  : "Mentha longifolia", 
+  	 	 "current_name"  : "Menthe à feuilles longues", 
+  	 	 "image"  : "Mentha longifolia/90365.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles longues, étroites, très velues, aromatiques. Petites fleurs lilas, en longs épis terminaux. Pousse en milieux humides. Forte odeur de menthe.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 597,
+ 	 	 "scientific_name"  : "Mentha spicata", 
+  	 	 "current_name"  : "Menthe verte", 
+  	 	 "image"  : "Mentha spicata/27983.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles ovales, vertes, très aromatiques. Petites fleurs lilas, en épis fins et pointus. Très cultivée pour la cuisine et les boissons.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 598,
+ 	 	 "scientific_name"  : "Mentha suaveolens", 
+  	 	 "current_name"  : "Menthe odorante", 
+  	 	 "image"  : "Mentha suaveolens/755.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles ovales, duveteuses, vert clair, très aromatiques (menthe pomme). Petites fleurs lilas, en épis. Pousse en milieux humides. Très douce.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 599,
+ 	 	 "scientific_name"  : "Mercurialis annua", 
+  	 	 "current_name"  : "Mercuriale annuelle", 
+  	 	 "image"  : "Mercurialis annua/104097.jpg", 
+  	 	 "characteristic"  : "Plante annuelle. Feuilles ovales, dentées. Fleurs vertes discrètes, les mâles et les femelles sur des plantes différentes. Toxique. Très commune dans les jardins et cultures. Peut être envahissante.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 600,
+ 	 	 "scientific_name"  : "Mercurialis perennis", 
+  	 	 "current_name"  : "Mercuriale vivace", 
+  	 	 "image"  : "Mercurialis perennis/6956.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse des sous-bois. Feuilles ovales, dentées. Fleurs vertes discrètes, les mâles et les femelles sur des plantes différentes. Toxique. Forme des colonies denses.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 601,
+ 	 	 "scientific_name"  : "Microthlaspi perfoliatum", 
+  	 	 "current_name"  : "Tabouret perfolié", 
+  	 	 "image"  : "Microthlaspi perfoliatum/96072.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles basales en rosette, feuilles caulinaires embrassant la tige. Petites fleurs blanches en grappes. Fruits plats, en forme de cœur. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 602,
+ 	 	 "scientific_name"  : "Mirabilis jalapa", 
+  	 	 "current_name"  : "Belle de nuit", 
+  	 	 "image"  : "Mirabilis jalapa/50238.jpg", 
+  	 	 "characteristic"  : "Vivace tubéreuse, souvent cultivée comme annuelle. Fleurs parfumées, en forme de trompette, de diverses couleurs (rose, jaune, blanc, rouge, panaché), s'ouvrant en fin d'après-midi. Toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 603,
+ 	 	 "scientific_name"  : "Misopates orontium", 
+  	 	 "current_name"  : "Muflier des champs", 
+  	 	 "image"  : "Misopates orontium/42923.jpg", 
+  	 	 "characteristic"  : "Petite annuelle velue. Fleurs roses ou pourpres, bilabiées, avec un éperon. Ressemble au muflier cultivé mais plus petit. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 604,
+ 	 	 "scientific_name"  : "Monotropa hypopitys", 
+  	 	 "current_name"  : "Monotrope sucepin", 
+  	 	 "image"  : "Monotropa hypopitys/70258.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle (myco-hétérotrophe). Tiges jaunes-brunâtres. Fleurs jaunes pâles, campanulées, en grappes. Pousse en sous-bois, parasitant les champignons associés aux racines d'arbres.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 605,
+ 	 	 "scientific_name"  : "Morus alba", 
+  	 	 "current_name"  : "Mûrier blanc", 
+  	 	 "image"  : "Morus alba/106858.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles lobées. Fruits (mûres) blancs à roses, comestibles mais fades. Cultivé autrefois pour l'élevage du ver à soie. Très résistant.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 606,
+ 	 	 "scientific_name"  : "Morus kagayamae", 
+  	 	 "current_name"  : "Mûrier de Kagayama", 
+  	 	 "image"  : "Morus kagayamae/93065.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles profondément lobées et découpées, très ornementales. Fruits noirs, comestibles. Souvent cultivé comme arbre d'ornement pour son feuillage.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 607,
+ 	 	 "scientific_name"  : "Muscari comosum", 
+  	 	 "current_name"  : "Muscari à toupet", 
+  	 	 "image"  : "Muscari comosum/50202.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Fleurs brun-verdâtre à la base, surmontées d'un toupet de fleurs stériles bleu-violet vif, en grappe lâche. Très original. Pousse en prairies et vignes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 608,
+ 	 	 "scientific_name"  : "Muscari neglectum", 
+  	 	 "current_name"  : "Muscari négligé", 
+  	 	 "image"  : "Muscari neglectum/90368.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Longues feuilles basales. Petites fleurs bleu-violet foncé, en forme d'urne, très denses en grappe. Très commun et souvent naturalisé. Pousse en prairies, pelouses, vignes.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 609,
+ 	 	 "scientific_name"  : "Myosotis alpestris", 
+  	 	 "current_name"  : "Myosotis alpin", 
+  	 	 "image"  : "Myosotis alpestris/7941.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles velues. Petites fleurs bleu vif avec un œil jaune. Pousse dans les pelouses alpines. Proche du myosotis des jardins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 610,
+ 	 	 "scientific_name"  : "Myosotis arvensis", 
+  	 	 "current_name"  : "Myosotis des champs", 
+  	 	 "image"  : "Myosotis arvensis/78077.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou bisannuelle. Feuilles velues. Petites fleurs bleu clair avec un œil jaune. Très commune dans les cultures et friches. Ressemble au myosotis cultivé.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 611,
+ 	 	 "scientific_name"  : "Myosotis scorpioides", 
+  	 	 "current_name"  : "Myosotis des marais", 
+  	 	 "image"  : "Myosotis scorpioides/64704.jpg", 
+  	 	 "characteristic"  : "Vivace des zones humides. Feuilles allongées, velues. Fleurs bleu vif avec un œil jaune. Pousse au bord de l'eau et en milieux humides. Peut former des tapis.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 612,
+ 	 	 "scientific_name"  : "Myosoton aquaticum", 
+  	 	 "current_name"  : "Mouron aquatique", 
+  	 	 "image"  : "Myosoton aquaticum/71910.jpg", 
+  	 	 "characteristic"  : "Grande annuelle ou vivace de courte durée de vie. Feuilles ovales. Petites fleurs blanches, étoilées, aux pétales bifides. Pousse en milieux humides et au bord de l'eau.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 613,
+ 	 	 "scientific_name"  : "Myrtus communis", 
+  	 	 "current_name"  : "Myrte commun", 
+  	 	 "image"  : "Myrtus communis/84346.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant aromatique. Feuilles ovales, luisantes, vert foncé. Fleurs blanches parfumées, avec de nombreuses étamines. Baies noires comestibles. Pousse en garrigues et maquis. Très décoratif.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 614,
+ 	 	 "scientific_name"  : "Narcissus assoanus", 
+  	 	 "current_name"  : "Narcisse d'Asso", 
+  	 	 "image"  : "Narcissus assoanus/66004.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse. Feuilles très fines, cylindriques. Petites fleurs jaunes, solitaires ou par deux, avec une courte couronne. Pousse en pelouses sèches du sud de la France. Protégée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 615,
+ 	 	 "scientific_name"  : "Narcissus dubius", 
+  	 	 "current_name"  : "Narcisse douteux", 
+  	 	 "image"  : "Narcissus dubius/112459.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Fleurs blanches, souvent par 2-4, avec une couronne courte et plissée. Parfumées. Pousse dans les rochers calcaires du sud-est de la France. Protégée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 616,
+ 	 	 "scientific_name"  : "Narcissus pseudonarcissus", 
+  	 	 "current_name"  : "Narcisse trompette", 
+  	 	 "image"  : "Narcissus pseudonarcissus/17969.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Grandes fleurs jaunes, solitaires, avec une longue couronne en forme de trompette. Le narcisse sauvage le plus commun en montagne et prairies. Ancêtre des narcisses horticoles.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 617,
+ 	 	 "scientific_name"  : "Narcissus tazetta", 
+  	 	 "current_name"  : "Narcisse à bouquet", 
+  	 	 "image"  : "Narcissus tazetta/109466.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Fleurs blanches (parfois jaunes), parfumées, regroupées en ombelle, avec une couronne courte et jaune. Pousse en milieux humides méditerranéens. Souvent cultivé.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 618,
+ 	 	 "scientific_name"  : "Nasturtium officinale", 
+  	 	 "current_name"  : "Cresson de fontaine", 
+  	 	 "image"  : "Nasturtium officinale/105080.jpg", 
+  	 	 "characteristic"  : "Plante vivace aquatique ou semi-aquatique. Feuilles composées. Petites fleurs blanches en grappes. Goût piquant. Cultivé comme légume. Pousse dans les eaux claires et courantes.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 619,
+ 	 	 "scientific_name"  : "Neotinea ustulata", 
+  	 	 "current_name"  : "Orchis brûlé", 
+  	 	 "image"  : "Neotinea ustulata/13019.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles basales oblongues. Fleurs en épi dense, sombres (pourpres-noir) à l'extrémité, puis roses-blanches vers la base, avec un labelle lobé. Protégée. Pousse en pelouses calcaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 620,
+ 	 	 "scientific_name"  : "Neottia nidus-avis", 
+  	 	 "current_name"  : "Néottie nid d'oiseau", 
+  	 	 "image"  : "Neottia nidus-avis/33604.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre sans chlorophylle (saprophyte). Tiges brun-jaunâtre, sans feuilles vertes. Fleurs brun-jaunâtre, en épi. Pousse en sous-bois profonds, se nourrissant de matière organique décomposée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 621,
+ 	 	 "scientific_name"  : "Neottia ovata", 
+  	 	 "current_name"  : "Listère ovale", 
+  	 	 "image"  : "Neottia ovata/56570.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Deux grandes feuilles ovales opposées à mi-hauteur de la tige. Petites fleurs vertes-jaunâtres, en épi lâche, avec un labelle bifide. Pousse en sous-bois frais.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 622,
+ 	 	 "scientific_name"  : "Nerium oleander", 
+  	 	 "current_name"  : "Laurier-rose", 
+  	 	 "image"  : "Nerium oleander/82321.jpg", 
+  	 	 "characteristic"  : "Grand arbuste persistant. Feuilles longues et étroites, coriaces. Grandes fleurs en entonnoir, roses, blanches ou rouges, simples ou doubles, très florifères en été. Toutes les parties sont très toxiques. Pousse en climat méditerranéen.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 623,
+ 	 	 "scientific_name"  : "Nigella damascena", 
+  	 	 "current_name"  : "Nigelle de Damas", 
+  	 	 "image"  : "Nigella damascena/96365.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles très finement découpées, entourant une fleur solitaire. Fleurs bleues, blanches ou roses, avec de longs stigmates. Fruits en capsules gonflées, très décoratives. Cultivée en jardin.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 624,
+ 	 	 "scientific_name"  : "Odontites luteus", 
+  	 	 "current_name"  : "Odontitès jaune", 
+  	 	 "image"  : "Odontites luteus/97417.jpg", 
+  	 	 "characteristic"  : "Plante annuelle semi-parasite. Feuilles linéaires. Fleurs jaunes, bilabiées, en épis. Pousse en pelouses sèches et rocailleuses. Proche de l'euphraise.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 625,
+ 	 	 "scientific_name"  : "Odontites vernus", 
+  	 	 "current_name"  : "Odontitès printanier", 
+  	 	 "image"  : "Odontites vernus/22459.jpg", 
+  	 	 "characteristic"  : "Plante annuelle semi-parasite. Feuilles dentées. Fleurs roses ou pourpres, bilabiées, en épis. Pousse en prairies et bords de chemins. Les bractées sont souvent colorées.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 626,
+ 	 	 "scientific_name"  : "Oenanthe crocata", 
+  	 	 "current_name"  : "Œnanthe safranée", 
+  	 	 "image"  : "Oenanthe crocata/104364.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace des zones humides. Tiges robustes. Grandes ombelles de fleurs blanches. Racines tubéreuses, très toxiques (sève jaunissant à l'air). Pousse au bord de l'eau. Extrêmement dangereuse.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 627,
+ 	 	 "scientific_name"  : "Oenothera biennis", 
+  	 	 "current_name"  : "Onagre bisannuelle", 
+  	 	 "image"  : "Oenothera biennis/46379.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Rosette basale de feuilles. Tiges florales dressées. Grandes fleurs jaune pâle, s'ouvrant le soir et se fanant le matin. Très parfumées. Graines utilisées pour l'huile. Pousse en friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 628,
+ 	 	 "scientific_name"  : "Oenothera glazioviana", 
+  	 	 "current_name"  : "Onagre de Glaziou", 
+  	 	 "image"  : "Oenothera glazioviana/48187.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle, souvent cultivée. Ressemble à l'onagre bisannuelle, mais plus robuste et fleurs souvent plus grandes, jaune vif. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 629,
+ 	 	 "scientific_name"  : "Olea europaea", 
+  	 	 "current_name"  : "Olivier", 
+  	 	 "image"  : "Olea europaea/8938.jpg", 
+  	 	 "characteristic"  : "Arbre persistant emblématique de la Méditerranée. Feuilles étroites, gris-vert. Petites fleurs blanc-crème. Fruits (olives) verts puis noirs, comestibles. Très résistant à la sécheresse.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 630,
+ 	 	 "scientific_name"  : "Onobrychis viciifolia", 
+  	 	 "current_name"  : "Sainfoin cultivé", 
+  	 	 "image"  : "Onobrychis viciifolia/111477.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles composées de nombreuses folioles. Fleurs roses à rouges, papilionacées, en épis denses. Cultivée comme plante fourragère et mellifère. Pousse en pelouses et prairies.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 631,
+ 	 	 "scientific_name"  : "Ononis minutissima", 
+  	 	 "current_name"  : "Bugrane naine", 
+  	 	 "image"  : "Ononis minutissima/2248.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle ou vivace. Tiges fines, parfois épineuses. Petites fleurs jaunes, papilionacées. Pousse sur sols secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 632,
+ 	 	 "scientific_name"  : "Ononis natrix", 
+  	 	 "current_name"  : "Bugrane visqueuse", 
+  	 	 "image"  : "Ononis natrix/108636.jpg", 
+  	 	 "characteristic"  : "Petit arbuste ou vivace, visqueux et collant, parfois épineux. Fleurs jaunes, papilionacées, souvent veinées de rouge. Odeur forte. Pousse en garrigues et maquis. Très méditerranéenne.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 633,
+ 	 	 "scientific_name"  : "Ononis reclinata", 
+  	 	 "current_name"  : "Bugrane couchée", 
+  	 	 "image"  : "Ononis reclinata/59121.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou vivace couchée. Fleurs roses à pourpres, papilionacées. Pousse sur les sables côtiers et milieux secs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 634,
+ 	 	 "scientific_name"  : "Ononis spinosa", 
+  	 	 "current_name"  : "Bugrane épineuse", 
+  	 	 "image"  : "Ononis spinosa/46802.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste épineux. Fleurs roses à pourpres, papilionacées, solitaires ou en petits groupes. Pousse en pelouses sèches et friches. Racine utilisée en phytothérapie.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 635,
+ 	 	 "scientific_name"  : "Onopordum acanthium", 
+  	 	 "current_name"  : "Chardon aux ânes", 
+  	 	 "image"  : "Onopordum acanthium/8932.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle épineuse. Feuilles larges, gris-vert, très épineuses, formant des rosettes. Grandes capitules pourpres, entourés de bractées épineuses. Très imposant. Pousse en friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 636,
+ 	 	 "scientific_name"  : "Ophrys apifera", 
+  	 	 "current_name"  : "Ophrys abeille", 
+  	 	 "image"  : "Ophrys apifera/42608.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles basales. Fleurs aux sépales roses et aux pétales verts, avec un labelle brun velouté, imitant une abeille pour attirer les pollinisateurs. Autofertile. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 637,
+ 	 	 "scientific_name"  : "Ophrys arachnitiformis", 
+  	 	 "current_name"  : "Ophrys en forme d'araignée", 
+  	 	 "image"  : "Ophrys arachnitiformis/49917.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales roses, pétales courts, et un labelle brun velouté avec des motifs complexes, imitant une araignée. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 638,
+ 	 	 "scientific_name"  : "Ophrys aranifera", 
+  	 	 "current_name"  : "Ophrys araignée", 
+  	 	 "image"  : "Ophrys aranifera/61988.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales verts, pétales courts, et un labelle brun velouté avec un motif en H ou en X, imitant une araignée. Protégée. Fleurit très tôt.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 639,
+ 	 	 "scientific_name"  : "Ophrys bertolonii", 
+  	 	 "current_name"  : "Ophrys de Bertoloni", 
+  	 	 "image"  : "Ophrys bertolonii/94687.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales roses, pétales courts, et un labelle brun foncé avec une grande tache bleue métallique en forme de bouclier. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 640,
+ 	 	 "scientific_name"  : "Ophrys fuciflora", 
+  	 	 "current_name"  : "Ophrys frelon", 
+  	 	 "image"  : "Ophrys fuciflora/11455.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales roses-verdâtres, pétales courts, et un labelle grand, trilobé, brun-rougeâtre, avec un motif jaune ou bleu, imitant un frelon. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 641,
+ 	 	 "scientific_name"  : "Ophrys insectifera", 
+  	 	 "current_name"  : "Ophrys mouche", 
+  	 	 "image"  : "Ophrys insectifera/11849.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales verts, pétales très fins et longs, et un labelle étroit, trilobé, brun foncé, avec une tache bleue ou grise, imitant une mouche. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 642,
+ 	 	 "scientific_name"  : "Ophrys lupercalis", 
+  	 	 "current_name"  : "Ophrys de Lupercal", 
+  	 	 "image"  : "Ophrys lupercalis/8192.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales roses, pétales courts, et un labelle brun velouté avec des motifs variés. Proche d'autres espèces, souvent difficile à identifier.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 643,
+ 	 	 "scientific_name"  : "Ophrys lutea", 
+  	 	 "current_name"  : "Ophrys jaune", 
+  	 	 "image"  : "Ophrys lutea/28749.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales verts, pétales courts, et un labelle large, jaune vif, avec une tache brune au centre. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 644,
+ 	 	 "scientific_name"  : "Ophrys passionis", 
+  	 	 "current_name"  : "Ophrys de la Passion", 
+  	 	 "image"  : "Ophrys passionis/33168.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales roses, pétales courts, et un labelle brun-rougeâtre avec un motif bleuâtre ou argenté. Espèce rare et protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 645,
+ 	 	 "scientific_name"  : "Ophrys scolopax", 
+  	 	 "current_name"  : "Ophrys bécasse", 
+  	 	 "image"  : "Ophrys scolopax/20219.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales roses, pétales courts, et un labelle grand, trilobé, brun-rougeâtre, avec des motifs complexes et un appendice terminal, imitant une bécasse. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 646,
+ 	 	 "scientific_name"  : "Ophrys speculum", 
+  	 	 "current_name"  : "Ophrys miroir", 
+  	 	 "image"  : "Ophrys speculum/15016.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs très distinctives aux sépales verts, pétales velus et un labelle brun velouté avec une grande tache bleue métallique brillante (le 'miroir'). Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 647,
+ 	 	 "scientific_name"  : "Ophrys virescens", 
+  	 	 "current_name"  : "Ophrys verdoyant", 
+  	 	 "image"  : "Ophrys virescens/21312.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs aux sépales et pétales verdâtres, avec un labelle trilobé, brun-verdâtre et un motif central. Souvent difficile à distinguer d'autres espèces.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 648,
+ 	 	 "scientific_name"  : "Opuntia ficus-indica", 
+  	 	 "current_name"  : "Figuier de Barbarie", 
+  	 	 "image"  : "Opuntia ficus-indica/69298.jpg", 
+  	 	 "characteristic"  : "Grand cactus aux cladodes (tiges aplaties) charnues, épineuses. Fleurs jaunes ou oranges. Fruits charnus et comestibles (figues de Barbarie). Très commun en Méditerranée, souvent envahissant.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 649,
+ 	 	 "scientific_name"  : "Orchis anthropophora", 
+  	 	 "current_name"  : "Homme pendu", 
+  	 	 "image"  : "Orchis anthropophora/59275.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs vertes et brun-jaunâtre, avec un labelle lobé, divisé en bras et jambes, rappelant une silhouette humaine. Pousse en pelouses calcaires. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 650,
+ 	 	 "scientific_name"  : "Orchis mascula", 
+  	 	 "current_name"  : "Orchis mâle", 
+  	 	 "image"  : "Orchis mascula/111014.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles basales, souvent tachetées de noir. Fleurs rose-pourpre vif (parfois blanches), avec un labelle trilobé, en épis denses. Très commun en sous-bois et prairies. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 651,
+ 	 	 "scientific_name"  : "Orchis provincialis", 
+  	 	 "current_name"  : "Orchis de Provence", 
+  	 	 "image"  : "Orchis provincialis/90340.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles basales souvent tachetées de noir. Fleurs jaune pâle (parfois blanches ou roses) avec un labelle lobé, marqué de points pourpres. Pousse en sous-bois clairs et pelouses méditerranéennes. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 652,
+ 	 	 "scientific_name"  : "Orchis purpurea", 
+  	 	 "current_name"  : "Orchis pourpre", 
+  	 	 "image"  : "Orchis purpurea/66619.jpg", 
+  	 	 "characteristic"  : "Grande orchidée terrestre robuste. Feuilles basales larges. Fleurs en épi dense, aux sépales et pétales formant un casque pourpre foncé, et un grand labelle clair tacheté de pourpre, rappelant une figurine. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 653,
+ 	 	 "scientific_name"  : "Orchis simia", 
+  	 	 "current_name"  : "Orchis singe", 
+  	 	 "image"  : "Orchis simia/65891.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Fleurs en épi cylindrique, aux sépales et pétales formant un casque clair, et un labelle divisé en lobes étroits, rappelant la silhouette d'un singe. Protégée. Odeur caractéristique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 654,
+ 	 	 "scientific_name"  : "Origanum vulgare", 
+  	 	 "current_name"  : "Origan commun", 
+  	 	 "image"  : "Origanum vulgare/25364.jpg", 
+  	 	 "characteristic"  : "Vivace aromatique. Feuilles ovales. Petites fleurs roses-pourpres en têtes denses. Très utilisée comme herbe culinaire (marjolaine). Très mellifère. Pousse en pelouses sèches et lisières.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 655,
+ 	 	 "scientific_name"  : "Ornithogalum umbellatum", 
+  	 	 "current_name"  : "Ornithogale en ombelle", 
+  	 	 "image"  : "Ornithogalum umbellatum/52133.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Longues feuilles basales, avec une bande blanche. Fleurs blanches en étoiles, avec une bande verte au revers, regroupées en corymbe. Toxique. Pousse en prairies et pelouses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 656,
+ 	 	 "scientific_name"  : "Orobanche amethystea", 
+  	 	 "current_name"  : "Orobanche améthyste", 
+  	 	 "image"  : "Orobanche amethystea/98701.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle. Tige robuste, violette. Fleurs bleues-violettes, en épi. Parasite les racines de chardons et autres astéracées. Rare et protégée.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 657,
+ 	 	 "scientific_name"  : "Orobanche caryophyllacea", 
+  	 	 "current_name"  : "Orobanche giroflée", 
+  	 	 "image"  : "Orobanche caryophyllacea/37489.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle. Tiges et fleurs brun-jaunâtre, parfois teintées de pourpre, en épi. Parfum de clou de girofle. Parasite les gaillets. Protégée.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 658,
+ 	 	 "scientific_name"  : "Orobanche gracilis", 
+  	 	 "current_name"  : "Orobanche grêle", 
+  	 	 "image"  : "Orobanche gracilis/104931.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle. Tige fine, souvent rouge-brun. Fleurs jaunes, rouges ou violettes, en épi lâche. Parasite les légumineuses (trèfles, luzernes).", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 659,
+ 	 	 "scientific_name"  : "Orobanche hederae", 
+  	 	 "current_name"  : "Orobanche du lierre", 
+  	 	 "image"  : "Orobanche hederae/84872.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle. Tige et fleurs jaune-brunâtre. Parasite exclusivement le lierre (Hedera helix). Pousse souvent sur les murs colonisés par le lierre.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 660,
+ 	 	 "scientific_name"  : "Orobanche minor", 
+  	 	 "current_name"  : "Orobanche du trèfle", 
+  	 	 "image"  : "Orobanche minor/89597.jpg", 
+  	 	 "characteristic"  : "Plante parasite sans chlorophylle. Tige et fleurs brun-jaunâtre à violacées, en épi. Parasite une large gamme de plantes, notamment les trèfles et les fabacées. Très variable.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 661,
+ 	 	 "scientific_name"  : "Orobanche rapum-genistae", 
+  	 	 "current_name"  : "Orobanche du genêt", 
+  	 	 "image"  : "Orobanche rapum-genistae/46149.jpg", 
+  	 	 "characteristic"  : "Grande plante parasite sans chlorophylle. Tige robuste, écailleuse. Fleurs jaunes à brun-violacé, en épi dense. Parasite les genêts et autres fabacées ligneuses. Protégée.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 662,
+ 	 	 "scientific_name"  : "Osmunda regalis", 
+  	 	 "current_name"  : "Osmonde royale", 
+  	 	 "image"  : "Osmunda regalis/88197.jpg", 
+  	 	 "characteristic"  : "Grande fougère caduque. Frondes bipennées, vert clair, avec des sporanges brun-rouille au sommet, ressemblant à des fleurs. Pousse en milieux très humides et acides, au bord de l'eau. Protégée.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 663,
+ 	 	 "scientific_name"  : "Ostrya carpinifolia", 
+  	 	 "current_name"  : "Ostryer à feuilles de charme", 
+  	 	 "image"  : "Ostrya carpinifolia/57176.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles ovales, dentées, ressemblant à celles du charme. Fruits en grappes de bractées membraneuses, rappelant le houblon. Bois très dur. Pousse en sous-bois et coteaux secs.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 664,
+ 	 	 "scientific_name"  : "Oxalis articulata", 
+  	 	 "current_name"  : "Oxalis articulée", 
+  	 	 "image"  : "Oxalis articulata/4003.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles trifoliées, vertes (parfois pourpres). Fleurs roses à magenta, en ombelles. Très florifère. Peut devenir envahissante. Souvent cultivée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 665,
+ 	 	 "scientific_name"  : "Oxalis corniculata", 
+  	 	 "current_name"  : "Oxalis corniculée", 
+  	 	 "image"  : "Oxalis corniculata/28461.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou vivace rampante. Feuilles trifoliées, souvent pourpres. Petites fleurs jaunes. Fruits en capsules qui projettent les graines à maturité. Très commune dans les jardins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 666,
+ 	 	 "scientific_name"  : "Paliurus spina-christi", 
+  	 	 "current_name"  : "Paliure épine-du-Christ", 
+  	 	 "image"  : "Paliurus spina-christi/51852.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc très épineux. Feuilles ovales, dentées. Petites fleurs jaunes. Fruits ronds et plats, en forme de soucoupe. Pousse en garrigues et maquis. Les épines sont dites avoir servi à la couronne du Christ.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 667,
+ 	 	 "scientific_name"  : "Pallenis spinosa", 
+  	 	 "current_name"  : "Pallenis épineux", 
+  	 	 "image"  : "Pallenis spinosa/36977.jpg", 
+  	 	 "characteristic"  : "Plante annuelle velue, souvent épineuse. Feuilles lancéolées. Capitules de fleurs jaunes, entourés de bractées épineuses. Pousse dans les milieux secs et perturbés méditerranéens.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 668,
+ 	 	 "scientific_name"  : "Pancratium maritimum", 
+  	 	 "current_name"  : "Lis de mer", 
+  	 	 "image"  : "Pancratium maritimum/88106.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse des dunes. Grandes feuilles linéaires, persistantes. Grandes fleurs blanches, très parfumées, en forme de trompette, avec une couronne centrale. Fleurit en fin d'été. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 669,
+ 	 	 "scientific_name"  : "Papaver alpinum", 
+  	 	 "current_name"  : "Pavot alpin", 
+  	 	 "image"  : "Papaver alpinum/106937.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles finement découpées, gris-vert. Fleurs blanches, jaunes ou orange, délicates, avec des pétales froissés. Pousse dans les rochers calcaires d'altitude.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 670,
+ 	 	 "scientific_name"  : "Papaver rhoeas", 
+  	 	 "current_name"  : "Coquelicot", 
+  	 	 "image"  : "Papaver rhoeas/60930.jpg", 
+  	 	 "characteristic"  : "Plante annuelle très commune. Feuilles lobées, velues. Grandes fleurs rouges (parfois roses ou blanches), aux pétales fins et froissés, avec une tache noire à la base. Pousse dans les champs de céréales et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 671,
+ 	 	 "scientific_name"  : "Papaver somniferum", 
+  	 	 "current_name"  : "Pavot à opium", 
+  	 	 "image"  : "Papaver somniferum/17350.jpg", 
+  	 	 "characteristic"  : "Grande annuelle. Feuilles larges, gris-bleu, embrassant la tige. Grandes fleurs blanches, roses, pourpres ou rouges, souvent avec une tache foncée. Capsules (pavots) globuleuses, utilisées pour l'opium. Cultivé ou subspontané. Toxique.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 672,
+ 	 	 "scientific_name"  : "Pardoglossum cheirifolium", 
+  	 	 "current_name"  : "Pardoglosse à feuilles de giroflée", 
+  	 	 "image"  : "Pardoglossum cheirifolium/67067.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou vivace méditerranéenne. Feuilles oblongues, velues. Petites fleurs bleues-violettes, en grappes. Pousse sur sols sableux et perturbés. Anciennement Cynoglossum cheirifolium.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 673,
+ 	 	 "scientific_name"  : "Parietaria judaica", 
+  	 	 "current_name"  : "Pariétaire de Judée", 
+  	 	 "image"  : "Parietaria judaica/19422.jpg", 
+  	 	 "characteristic"  : "Vivace. Tiges rougeâtres. Feuilles ovales, vertes. Petites fleurs verdâtres, minuscules, regroupées à l'aisselle des feuilles. Très commune dans les murs et rochers, allergisante.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 674,
+ 	 	 "scientific_name"  : "Paris quadrifolia", 
+  	 	 "current_name"  : "Parisette à quatre feuilles", 
+  	 	 "image"  : "Paris quadrifolia/3189.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace. Une seule tige avec 4 feuilles disposées en croix. Une fleur solitaire vert-jaunâtre, surmontée d'une baie noire, unique. Toxique. Pousse en sous-bois humides. Protégée.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 675,
+ 	 	 "scientific_name"  : "Parnassia palustris", 
+  	 	 "current_name"  : "Parnassie des marais", 
+  	 	 "image"  : "Parnassia palustris/89820.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Rosette basale de feuilles cordiformes. Fleur solitaire, blanche, en forme d'étoile, avec des staminodes plumeux. Très délicate. Pousse dans les prairies humides et tourbières. Protégée.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 676,
+ 	 	 "scientific_name"  : "Parthenocissus quinquefolia", 
+  	 	 "current_name"  : "Vigne vierge à cinq folioles", 
+  	 	 "image"  : "Parthenocissus quinquefolia/54347.jpg", 
+  	 	 "characteristic"  : "Liane grimpante caduque. Feuilles composées de 5 folioles, virant au rouge éclatant en automne. Adhère aux supports grâce à des ventouses. Fruits noirs. Très commune, souvent cultivée.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 677,
+ 	 	 "scientific_name"  : "Parthenocissus tricuspidata", 
+  	 	 "current_name"  : "Vigne vierge de Virginie", 
+  	 	 "image"  : "Parthenocissus tricuspidata/40708.jpg", 
+  	 	 "characteristic"  : "Liane grimpante caduque. Feuilles lobées ou trifoliées (parfois entières sur les jeunes pousses), virant au rouge orangé en automne. Adhère fortement aux murs. Fruits noirs. Souvent cultivée.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 678,
+ 	 	 "scientific_name"  : "Passiflora caerulea", 
+  	 	 "current_name"  : "Passiflore bleue", 
+  	 	 "image"  : "Passiflora caerulea/110980.jpg", 
+  	 	 "characteristic"  : "Liane grimpante. Feuilles palmées. Grandes fleurs complexes, spectaculaires, avec des filaments bleus, blancs et pourpres. Fruits oranges comestibles. Non rustique dans les régions froides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 679,
+ 	 	 "scientific_name"  : "Pastinaca sativa", 
+  	 	 "current_name"  : "Panais cultivé", 
+  	 	 "image"  : "Pastinaca sativa/87674.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Grandes feuilles découpées. Grandes ombelles de fleurs jaunes. Racine charnue, comestible. Pousse en friches et bords de chemins, souvent subspontanée.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 680,
+ 	 	 "scientific_name"  : "Paulownia tomentosa", 
+  	 	 "current_name"  : "Paulownia impérial", 
+  	 	 "image"  : "Paulownia tomentosa/30038.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles cordiformes. Grandes panicules de fleurs violettes en forme de trompette, très parfumées, apparaissant avant les feuilles. Pousse très vite. Peut être envahissant.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 681,
+ 	 	 "scientific_name"  : "Perovskia atriplicifolia", 
+  	 	 "current_name"  : "Sauge d'Afghanistan", 
+  	 	 "image"  : "Perovskia atriplicifolia/19354.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste ou vivace. Tiges argentées. Feuilles découpées, gris-vert, aromatiques. Petites fleurs bleu-violet en épis fins. Très résistant à la sécheresse. Ancien Perovskia.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 682,
+ 	 	 "scientific_name"  : "Persicaria maculosa", 
+  	 	 "current_name"  : "Renouée persicaire", 
+  	 	 "image"  : "Persicaria maculosa/23797.jpg", 
+  	 	 "characteristic"  : "Plante annuelle. Feuilles lancéolées, souvent avec une tache noire centrale. Petites fleurs roses en épis denses. Très commune dans les cultures et friches humides.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 683,
+ 	 	 "scientific_name"  : "Petasites pyrenaicus", 
+  	 	 "current_name"  : "Pétasite des Pyrénées", 
+  	 	 "image"  : "Petasites pyrenaicus/35879.jpg", 
+  	 	 "characteristic"  : "Grande vivace des zones humides. Grandes feuilles basales rondes ou réniformes, apparaissant après la floraison. Fleurs blanches-verdâtres en capitules, en grappes serrées. Pousse au bord des ruisseaux de montagne.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 684,
+ 	 	 "scientific_name"  : "Phacelia tanacetifolia", 
+  	 	 "current_name"  : "Phacélie à feuilles de tanaisie", 
+  	 	 "image"  : "Phacelia tanacetifolia/76155.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles finement découpées. Fleurs bleu-lavande en cymes scorpioïdes, très mellifères. Cultivée comme engrais vert et plante mellifère. Très attractive pour les abeilles.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 685,
+ 	 	 "scientific_name"  : "Philadelphus coronarius", 
+  	 	 "current_name"  : "Seringat commun", 
+  	 	 "image"  : "Philadelphus coronarius/84868.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc. Feuilles ovales, vertes. Grandes fleurs blanches très parfumées, solitaires ou en petites grappes. Fleurit au printemps. Très populaire en jardin.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 686,
+ 	 	 "scientific_name"  : "Phillyrea angustifolia", 
+  	 	 "current_name"  : "Filaire à feuilles étroites", 
+  	 	 "image"  : "Phillyrea angustifolia/59006.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen. Feuilles étroites, vert foncé. Petites fleurs blanches discrètes. Fruits noirs (drupes). Pousse en garrigues et maquis. Très résistant à la sécheresse.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 687,
+ 	 	 "scientific_name"  : "Phillyrea media", 
+  	 	 "current_name"  : "Filaire intermédiaire", 
+  	 	 "image"  : "Phillyrea media/2502.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant méditerranéen. Feuilles ovales, intermédiaires entre P. angustifolia et P. latifolia. Petites fleurs blanches discrètes. Fruits noirs. Pousse en garrigues et maquis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 688,
+ 	 	 "scientific_name"  : "Phleum pratense", 
+  	 	 "current_name"  : "Phléole des prés", 
+  	 	 "image"  : "Phleum pratense/78567.jpg", 
+  	 	 "characteristic"  : "Graminée vivace formant des touffes. Feuilles linéaires. Inflorescence en épi cylindrique dense, ressemblant à une queue de chat. Très commune en prairies et pelouses, souvent cultivée comme fourrage.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 689,
+ 	 	 "scientific_name"  : "Phlomis fruticosa", 
+  	 	 "current_name"  : "Phlomis ligneux", 
+  	 	 "image"  : "Phlomis fruticosa/106316.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste persistant méditerranéen. Feuilles ovales, duveteuses, gris-vert. Grandes fleurs jaunes en verticilles, formant des couronnes le long des tiges. Très ornemental. Pousse sur sols secs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 690,
+ 	 	 "scientific_name"  : "Photinia serrulata", 
+  	 	 "current_name"  : "Photinia", 
+  	 	 "image"  : "Photinia serrulata/94743.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre persistant. Jeunes pousses rouges. Grandes feuilles ovales, dentées, luisantes. Grandes panicules de fleurs blanches. Souvent cultivé en haie. Originaire d'Asie.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 691,
+ 	 	 "scientific_name"  : "Phyteuma hemisphaericum", 
+  	 	 "current_name"  : "Raiponce hémisphérique", 
+  	 	 "image"  : "Phyteuma hemisphaericum/76798.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles linéaires. Fleurs bleu vif, en tête sphérique très dense. Pousse dans les pelouses alpines et rocailles. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 692,
+ 	 	 "scientific_name"  : "Phyteuma spicatum", 
+  	 	 "current_name"  : "Raiponce en épi", 
+  	 	 "image"  : "Phyteuma spicatum/42070.jpg", 
+  	 	 "characteristic"  : "Vivace aux feuilles basales ovales. Fleurs blanc-verdâtre ou bleu-violet, en épi cylindrique dense. Pousse en sous-bois frais et prairies. Racine comestible.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 693,
+ 	 	 "scientific_name"  : "Phytolacca americana", 
+  	 	 "current_name"  : "Raisin d'Amérique", 
+  	 	 "image"  : "Phytolacca americana/52548.jpg", 
+  	 	 "characteristic"  : "Grande vivace robuste. Feuilles ovales. Fleurs blanc-verdâtre en grappes. Fruits en baies pourpres foncées, toxiques. Peut devenir envahissante. Pousse en friches et lisières.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 694,
+ 	 	 "scientific_name"  : "Picris hieracioides", 
+  	 	 "current_name"  : "Picride fausse épervière", 
+  	 	 "image"  : "Picris hieracioides/1732.jpg", 
+  	 	 "characteristic"  : "Vivace. Rosette basale de feuilles. Tiges ramifiées, portant de nombreux capitules de fleurs jaunes. Très commun en bords de chemins et friches. Ressemble au pissenlit.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 695,
+ 	 	 "scientific_name"  : "Pilosella aurantiaca", 
+  	 	 "current_name"  : "Piloselle orangée", 
+  	 	 "image"  : "Pilosella aurantiaca/111627.jpg", 
+  	 	 "characteristic"  : "Vivace formant des tapis. Rosette basale de feuilles velues. Fleurs orange-rouge vif, en capitules regroupés. Peut être envahissante. Pousse en pelouses et prairies.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 696,
+ 	 	 "scientific_name"  : "Pilosella lactucella", 
+  	 	 "current_name"  : "Piloselle de laiche", 
+  	 	 "image"  : "Pilosella lactucella/1407.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des rosettes. Fleurs jaunes en capitules. Pousse en milieux secs et pauvres, souvent sur sols acides. Anciennement Hieracium lactucella.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 697,
+ 	 	 "scientific_name"  : "Pilosella officinarum", 
+  	 	 "current_name"  : "Piloselle officinale", 
+  	 	 "image"  : "Pilosella officinarum/100639.jpg", 
+  	 	 "characteristic"  : "Vivace formant des tapis. Rosette basale de feuilles velues, souvent gris-vert dessous. Fleurs jaunes en capitules, solitaires sur des tiges non ramifiées. Très commune en pelouses sèches. Ancien Hieracium pilosella.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 698,
+ 	 	 "scientific_name"  : "Pinguicula grandiflora", 
+  	 	 "current_name"  : "Grassette à grandes fleurs", 
+  	 	 "image"  : "Pinguicula grandiflora/90813.jpg", 
+  	 	 "characteristic"  : "Petite plante carnivore. Rosette basale de feuilles gluantes, vert clair, piégeant les insectes. Grandes fleurs violettes, bilabiées, avec un éperon. Pousse en milieux tourbeux et humides. Protégée.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 699,
+ 	 	 "scientific_name"  : "Pinus brutia", 
+  	 	 "current_name"  : "Pin de Calabre", 
+  	 	 "image"  : "Pinus brutia/101333.jpg", 
+  	 	 "characteristic"  : "Grand conifère méditerranéen. Aiguilles longues, fines, groupées par deux. Cônes allongés. Très résistant à la sécheresse. Pousse en forêt sèche. Peut être confondu avec le pin d'Alep.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 700,
+ 	 	 "scientific_name"  : "Pinus cembra", 
+  	 	 "current_name"  : "Pin cembro", 
+  	 	 "image"  : "Pinus cembra/13966.jpg", 
+  	 	 "characteristic"  : "Grand conifère de montagne. Aiguilles groupées par 5, assez courtes. Cônes ovoïdes, dont les graines (pignons) sont comestibles. Pousse en forêt de haute montagne. Protégé.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 701,
+ 	 	 "scientific_name"  : "Pinus halepensis", 
+  	 	 "current_name"  : "Pin d'Alep", 
+  	 	 "image"  : "Pinus halepensis/94986.jpg", 
+  	 	 "characteristic"  : "Conifère méditerranéen de taille moyenne. Aiguilles fines et claires, groupées par deux. Cônes allongés et brillants. Très résistant à la sécheresse. Caractéristique des garrigues et maquis. Espèce pionnière.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 702,
+ 	 	 "scientific_name"  : "Pinus mugo", 
+  	 	 "current_name"  : "Pin à crochets", 
+  	 	 "image"  : "Pinus mugo/109200.jpg", 
+  	 	 "characteristic"  : "Conifère de montagne, arbuste prostré ou petit arbre. Aiguilles courtes et rigides, groupées par deux. Cônes petits, asymétriques. Pousse dans les landes et rocailles d'altitude, souvent sous forme de krummholz.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 703,
+ 	 	 "scientific_name"  : "Pinus nigra", 
+  	 	 "current_name"  : "Pin noir", 
+  	 	 "image"  : "Pinus nigra/4126.jpg", 
+  	 	 "characteristic"  : "Grand conifère. Aiguilles longues, rigides, vert foncé, groupées par deux. Écorce foncée, fissurée. Cônes ovales. Très résistant, pousse en montagne et sur sols calcaires.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 704,
+ 	 	 "scientific_name"  : "Pinus pinaster", 
+  	 	 "current_name"  : "Pin maritime", 
+  	 	 "image"  : "Pinus pinaster/104744.jpg", 
+  	 	 "characteristic"  : "Grand conifère. Aiguilles très longues, épaisses, groupées par deux. Cônes très grands et ovoïdes. Cultivé pour son bois et sa résine. Caractéristique des Landes de Gascogne.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 705,
+ 	 	 "scientific_name"  : "Pinus pinea", 
+  	 	 "current_name"  : "Pin parasol", 
+  	 	 "image"  : "Pinus pinea/93975.jpg", 
+  	 	 "characteristic"  : "Grand conifère méditerranéen à la cime caractéristique en forme de parasol. Aiguilles longues et rigides, groupées par deux. Grands cônes produisant des pignons comestibles.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 706,
+ 	 	 "scientific_name"  : "Pinus sylvestris", 
+  	 	 "current_name"  : "Pin sylvestre", 
+  	 	 "image"  : "Pinus sylvestris/31752.jpg", 
+  	 	 "characteristic"  : "Grand conifère. Aiguilles courtes, vrillées, vert-bleuâtre, groupées par deux. Écorce rouge-orangé sur le haut du tronc. Très répandu en Europe, pousse sur sols variés.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 707,
+ 	 	 "scientific_name"  : "Pistacia lentiscus", 
+  	 	 "current_name"  : "Pistachier lentisque", 
+  	 	 "image"  : "Pistacia lentiscus/14495.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant aromatique. Feuilles composées, vert foncé. Fleurs discrètes. Fruits rouges puis noirs. Résine (gomme mastic) utilisée. Caractéristique des maquis méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 708,
+ 	 	 "scientific_name"  : "Pistacia terebinthus", 
+  	 	 "current_name"  : "Pistachier térébinthe", 
+  	 	 "image"  : "Pistacia terebinthus/67486.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre caduc. Feuilles composées, devenant rouges en automne. Fruits rouges. Galles en forme de corne souvent présentes sur les feuilles. Pousse en garrigues et lieux secs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 709,
+ 	 	 "scientific_name"  : "Pittosporum tenuifolium", 
+  	 	 "current_name"  : "Pittosporum à feuilles fines", 
+  	 	 "image"  : "Pittosporum tenuifolium/101105.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant. Feuilles petites, ondulées, vert clair, parfois pourpres ou panachées. Petites fleurs pourpres foncées, parfumées, très discrètes. Souvent cultivé en haie. Originaire de Nouvelle-Zélande.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 710,
+ 	 	 "scientific_name"  : "Pittosporum tobira", 
+  	 	 "current_name"  : "Pittosporum du Japon", 
+  	 	 "image"  : "Pittosporum tobira/67029.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant. Feuilles coriaces, luisantes, vert foncé. Fleurs blanc-crème, très parfumées, en grappes terminales. Souvent cultivé en haie ou en isolé en climat doux. Originaire d'Asie.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 711,
+ 	 	 "scientific_name"  : "Plantago coronopus", 
+  	 	 "current_name"  : "Plantain corne de cerf", 
+  	 	 "image"  : "Plantago coronopus/6773.jpg", 
+  	 	 "characteristic"  : "Petite annuelle ou vivace. Feuilles basales très découpées, ressemblant à des cornes de cerf. Petites fleurs verdâtres en épis courts. Pousse sur les sols sableux et salés, en bord de mer.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 712,
+ 	 	 "scientific_name"  : "Plantago lagopus", 
+  	 	 "current_name"  : "Plantain pied de lièvre", 
+  	 	 "image"  : "Plantago lagopus/97864.jpg", 
+  	 	 "characteristic"  : "Plantain annuel ou bisannuel méditerranéen. Feuilles basales en rosette. Fleurs verdâtres en épis duveteux, courts et ovales, rappelant un pied de lièvre. Pousse en pelouses sèches.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 713,
+ 	 	 "scientific_name"  : "Plantago lanceolata", 
+  	 	 "current_name"  : "Plantain lancéolé", 
+  	 	 "image"  : "Plantago lanceolata/87532.jpg", 
+  	 	 "characteristic"  : "Vivace très commune. Feuilles longues, étroites, lancéolées, avec des nervures parallèles. Petites fleurs verdâtres en épis ovoïdes ou cylindriques, au bout d'une longue tige. Pousse en prairies et pelouses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 714,
+ 	 	 "scientific_name"  : "Plantago major", 
+  	 	 "current_name"  : "Grand plantain", 
+  	 	 "image"  : "Plantago major/86616.jpg", 
+  	 	 "characteristic"  : "Vivace très commune. Grandes feuilles ovales, basales, avec des nervures parallèles marquées. Petites fleurs verdâtres en longs épis cylindriques. Très résistant au piétinement. Pousse dans les chemins et lieux piétinés.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 715,
+ 	 	 "scientific_name"  : "Plantago maritima", 
+  	 	 "current_name"  : "Plantain maritime", 
+  	 	 "image"  : "Plantago maritima/80255.jpg", 
+  	 	 "characteristic"  : "Vivace des milieux salés. Feuilles charnues, linéaires. Petites fleurs verdâtres en épis cylindriques. Pousse sur les côtes, dans les prés salés et vasières.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 716,
+ 	 	 "scientific_name"  : "Plantago media", 
+  	 	 "current_name"  : "Plantain moyen", 
+  	 	 "image"  : "Plantago media/80513.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles ovales, velues, basales. Petites fleurs verdâtres avec des étamines roses, en épis courts et denses. Pousse en pelouses calcaires et prairies.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 717,
+ 	 	 "scientific_name"  : "Platanthera bifolia", 
+  	 	 "current_name"  : "Platanthère à deux feuilles", 
+  	 	 "image"  : "Platanthera bifolia/106540.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Deux grandes feuilles basales. Fleurs blanches, très parfumées (vanille), avec un long éperon. Pousse en sous-bois clairs et prairies. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 718,
+ 	 	 "scientific_name"  : "Platanthera chlorantha", 
+  	 	 "current_name"  : "Platanthère verdâtre", 
+  	 	 "image"  : "Platanthera chlorantha/105872.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Deux grandes feuilles basales. Fleurs blanc-verdâtre, légèrement parfumées, avec un éperon long et des pollinies divergentes. Pousse en sous-bois et prairies. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 719,
+ 	 	 "scientific_name"  : "Platanus orientalis", 
+  	 	 "current_name"  : "Platane d'Orient", 
+  	 	 "image"  : "Platanus orientalis/106216.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles profondément lobées. Écorce s'exfoliant en plaques. Fruits en boules épineuses, pendants par 3-6. Très résistant. Pousse naturellement au sud-est de l'Europe.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 720,
+ 	 	 "scientific_name"  : "Platanus x acerifolia", 
+  	 	 "current_name"  : "Platane commun", 
+  	 	 "image"  : "Platanus x/63507.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc, hybride entre P. orientalis et P. occidentalis. Grandes feuilles lobées. Écorce s'exfoliant en plaques. Fruits en boules épineuses, pendants par 1-3. Arbre d'alignement très commun.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 721,
+ 	 	 "scientific_name"  : "Poa annua", 
+  	 	 "current_name"  : "Pâturin annuel", 
+  	 	 "image"  : "Poa annua/58244.jpg", 
+  	 	 "characteristic"  : "Petite graminée annuelle. Feuilles fines. Petites panicules de fleurs vertes. Très commune dans les pelouses, chemins, pavés. Très résistante au piétinement.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 722,
+ 	 	 "scientific_name"  : "Polygala vulgaris", 
+  	 	 "current_name"  : "Polygala commun", 
+  	 	 "image"  : "Polygala vulgaris/55342.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Feuilles étroites. Fleurs bleues (parfois roses ou blanches), en grappes lâches, aux pétales complexes. Pousse en pelouses et prairies. Ressemble à de petites orchidées.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 723,
+ 	 	 "scientific_name"  : "Polygonatum multiflorum", 
+  	 	 "current_name"  : "Sceau de Salomon multiflore", 
+  	 	 "image"  : "Polygonatum multiflorum/39294.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Tiges arquées. Feuilles ovales. Fleurs blanc-verdâtre, campanulées, pendantes par grappes de 2 à 5 à l'aisselle des feuilles. Toxique. Pousse en sous-bois frais.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 724,
+ 	 	 "scientific_name"  : "Polygonatum odoratum", 
+  	 	 "current_name"  : "Sceau de Salomon odorant", 
+  	 	 "image"  : "Polygonatum odoratum/66016.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Tiges arquées. Feuilles ovales. Fleurs blanc-verdâtre, campanulées, pendantes solitaires ou par paires à l'aisselle des feuilles. Parfumées. Toxique. Pousse en sous-bois calcaires.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 725,
+ 	 	 "scientific_name"  : "Polypodium vulgare", 
+  	 	 "current_name"  : "Polypode commun", 
+  	 	 "image"  : "Polypodium vulgare/64926.jpg", 
+  	 	 "characteristic"  : "Fougère persistante. Frondes pennées, vert foncé, coriaces. Sporanges ronds et jaunes sur le revers des frondes. Pousse sur les murs, rochers et troncs d'arbres. Très résistant au sec.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 726,
+ 	 	 "scientific_name"  : "Polystichum setiferum", 
+  	 	 "current_name"  : "Polystic à soies", 
+  	 	 "image"  : "Polystichum setiferum/16614.jpg", 
+  	 	 "characteristic"  : "Fougère persistante. Grandes frondes bipennées, vert clair, très finement découpées, avec des écailles soyeuses sur les pétioles. Très ornementale. Pousse en sous-bois frais et humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 727,
+ 	 	 "scientific_name"  : "Populus alba", 
+  	 	 "current_name"  : "Peuplier blanc", 
+  	 	 "image"  : "Populus alba/21746.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles lobées, vert foncé dessus, argentées et tomenteuses dessous, tremblant au vent. Écorce claire. Peut rejeter. Pousse en milieux humides. Peut être envahissant.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 728,
+ 	 	 "scientific_name"  : "Populus nigra", 
+  	 	 "current_name"  : "Peuplier noir", 
+  	 	 "image"  : "Populus nigra/59088.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles triangulaires, vert foncé. Écorce très fissurée. Pousse le long des cours d'eau. Le cultivar 'Italica' (Peuplier d'Italie) a une forme colonnaire caractéristique.", 
+  	 	 "water_need"  : 4.5 
+	},
+	 { 
+ 	 	 "id"  : 729,
+ 	 	 "scientific_name"  : "Populus tremula", 
+  	 	 "current_name"  : "Tremble", 
+  	 	 "image"  : "Populus tremula/85129.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles rondes, dentées, sur des pétioles aplatis, ce qui les fait 'trembler' au moindre souffle. Écorce lisse, gris-vert. Peut drageonner abondamment. Pousse en sous-bois clairs et lisières.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 730,
+ 	 	 "scientific_name"  : "Populus trichocarpa", 
+  	 	 "current_name"  : "Peuplier baumier de l'Ouest", 
+  	 	 "image"  : "Populus trichocarpa/60851.jpg", 
+  	 	 "characteristic"  : "Très grand arbre caduc d'Amérique du Nord. Feuilles ovales, pointues. Bourgeons collants et parfumés. Pousse le long des cours d'eau. Peut être utilisé pour les alignements.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 731,
+ 	 	 "scientific_name"  : "Portulaca oleracea", 
+  	 	 "current_name"  : "Pourpier commun", 
+  	 	 "image"  : "Portulaca oleracea/59873.jpg", 
+  	 	 "characteristic"  : "Petite annuelle rampante. Feuilles charnues, spatulées, vert clair à rougeâtre. Petites fleurs jaunes, solitaires ou en petits groupes. Comestible. Très commune dans les jardins et cultures.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 732,
+ 	 	 "scientific_name"  : "Potentilla erecta", 
+  	 	 "current_name"  : "Potentille tormentille", 
+  	 	 "image"  : "Potentilla erecta/18474.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Tiges fines. Fleurs jaunes, avec seulement 4 pétales (rare chez les Potentilles). Pousse en pelouses, landes et sous-bois clairs. Racine utilisée en phytothérapie.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 733,
+ 	 	 "scientific_name"  : "Potentilla indica", 
+  	 	 "current_name"  : "Fraisier des Indes", 
+  	 	 "image"  : "Potentilla indica/14062.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles trifoliées, ressemblant à celles du fraisier. Fleurs jaunes, solitaires. Fruits rouges, comestibles mais insipides, ressemblant à des fraises. Peut devenir envahissante.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 734,
+ 	 	 "scientific_name"  : "Potentilla recta", 
+  	 	 "current_name"  : "Potentille droite", 
+  	 	 "image"  : "Potentilla recta/34348.jpg", 
+  	 	 "characteristic"  : "Vivace velue aux tiges dressées. Feuilles palmées, avec de nombreuses folioles. Fleurs jaune pâle, en grappes lâches. Pousse en friches et bords de chemins. Peut être envahissante.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 735,
+ 	 	 "scientific_name"  : "Potentilla reptans", 
+  	 	 "current_name"  : "Potentille rampante", 
+  	 	 "image"  : "Potentilla reptans/67691.jpg", 
+  	 	 "characteristic"  : "Vivace stolonifère rampante. Feuilles palmées, à 5 folioles. Fleurs jaune vif, solitaires. Très commune dans les pelouses et chemins, elle forme des tapis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 736,
+ 	 	 "scientific_name"  : "Potentilla sterilis", 
+  	 	 "current_name"  : "Potentille stérile", 
+  	 	 "image"  : "Potentilla sterilis/96728.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Feuilles trifoliées, velues, ressemblant à celles du fraisier. Petites fleurs blanches. Fruits secs (non charnus). Fleurit très tôt au printemps. Pousse en sous-bois clairs.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 737,
+ 	 	 "scientific_name"  : "Potentilla tabernaemontani", 
+  	 	 "current_name"  : "Potentille de Tabernaemontanus", 
+  	 	 "image"  : "Potentilla tabernaemontani/73854.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Feuilles palmées, à 5 folioles. Fleurs jaunes, solitaires. Pousse en pelouses sèches et calcaires. Très proche de Potentilla neumanniana.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 738,
+ 	 	 "scientific_name"  : "Poterium sanguisorba", 
+  	 	 "current_name"  : "Petite pimprenelle", 
+  	 	 "image"  : "Poterium sanguisorba/108400.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles composées, pennées, dentées. Fleurs verdâtres à rougeâtres, en capitules sphériques ou ovoïdes. Jeunes feuilles comestibles, au goût de concombre. Pousse en pelouses sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 739,
+ 	 	 "scientific_name"  : "Prenanthes purpurea", 
+  	 	 "current_name"  : "Prénanthe pourpre", 
+  	 	 "image"  : "Prenanthes purpurea/96102.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles lobées. Capitules de fleurs roses-pourpres, pendants, en panicules lâches. Pousse en sous-bois frais et montagnes.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 740,
+ 	 	 "scientific_name"  : "Primula elatior", 
+  	 	 "current_name"  : "Primevère élevée", 
+  	 	 "image"  : "Primula elatior/84081.jpg", 
+  	 	 "characteristic"  : "Vivace. Rosette basale de feuilles gaufrées. Fleurs jaune pâle, regroupées en ombelle sur une tige. Parfumée. Pousse en sous-bois clairs et prairies humides.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 741,
+ 	 	 "scientific_name"  : "Primula veris", 
+  	 	 "current_name"  : "Primevère officinale", 
+  	 	 "image"  : "Primula veris/55319.jpg", 
+  	 	 "characteristic"  : "Vivace. Rosette basale de feuilles gaufrées. Fleurs jaune d'or avec des taches orange, regroupées en ombelle sur une tige. Parfumée. Pousse en prairies et lisières. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 742,
+ 	 	 "scientific_name"  : "Primula vulgaris", 
+  	 	 "current_name"  : "Primevère commune", 
+  	 	 "image"  : "Primula vulgaris/103782.jpg", 
+  	 	 "characteristic"  : "Vivace. Rosette basale de feuilles gaufrées. Fleurs jaune pâle (parfois blanches, roses, bleues), solitaires, sans tige ou presque. Parfumée. Pousse en sous-bois et prairies. Très commune.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 743,
+ 	 	 "scientific_name"  : "Prospero autumnale", 
+  	 	 "current_name"  : "Scille d'automne", 
+  	 	 "image"  : "Prospero autumnale/3291.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse. Petites fleurs roses-violettes, en grappe lâche, apparaissant à l'automne avant les feuilles. Pousse en pelouses sèches. Anciennement *Scilla autumnalis*.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 744,
+ 	 	 "scientific_name"  : "Prunella grandiflora", 
+  	 	 "current_name"  : "Brunelle à grandes fleurs", 
+  	 	 "image"  : "Prunella grandiflora/71416.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles ovales. Grandes fleurs violettes (parfois roses ou blanches), bilabiées, en épis terminaux. Très ornementale. Pousse en pelouses et lisières ensoleillées.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 745,
+ 	 	 "scientific_name"  : "Prunella hastifolia", 
+  	 	 "current_name"  : "Brunelle à feuilles hastées", 
+  	 	 "image"  : "Prunella hastifolia/57757.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles basales souvent hastées (en forme de fer de hallebarde). Fleurs violettes, en épis. Pousse en prairies et sous-bois clairs.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 746,
+ 	 	 "scientific_name"  : "Prunella laciniata", 
+  	 	 "current_name"  : "Brunelle laciniée", 
+  	 	 "image"  : "Prunella laciniata/79566.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles profondément lobées ou laciniées. Fleurs blanc-jaunâtre, bilabiées, en épis. Pousse en pelouses calcaires sèches. Plus rare que la brunelle commune.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 747,
+ 	 	 "scientific_name"  : "Prunella vulgaris", 
+  	 	 "current_name"  : "Brunelle commune", 
+  	 	 "image"  : "Prunella vulgaris/77525.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles ovales. Fleurs violettes, bilabiées, en épis terminaux. Très commune dans les pelouses, prairies et chemins. Utilisée en phytothérapie.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 748,
+ 	 	 "scientific_name"  : "Prunus armeniaca", 
+  	 	 "current_name"  : "Abricotier", 
+  	 	 "image"  : "Prunus armeniaca/75731.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc. Fleurs blanches à rosées au printemps. Fruits (abricots) charnus, oranges, comestibles. Cultivé pour ses fruits.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 749,
+ 	 	 "scientific_name"  : "Prunus avium", 
+  	 	 "current_name"  : "Merisier", 
+  	 	 "image"  : "Prunus avium/27996.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Fleurs blanches, abondantes, au printemps. Fruits rouges foncés (merises), comestibles mais acides. Bois précieux. Ancêtre du cerisier cultivé. Pousse en sous-bois clairs.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 750,
+ 	 	 "scientific_name"  : "Prunus cerasifera", 
+  	 	 "current_name"  : "Prunier myrobolan", 
+  	 	 "image"  : "Prunus cerasifera/80332.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc. Fleurs blanches à rosées, très abondantes très tôt au printemps. Fruits ronds, rouges ou jaunes, comestibles mais parfois acides. Souvent utilisé comme porte-greffe ou en haie. Nombreux cultivars (ex: 'Pissardii' à feuilles pourpres).", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 751,
+ 	 	 "scientific_name"  : "Prunus dulcis", 
+  	 	 "current_name"  : "Amandier", 
+  	 	 "image"  : "Prunus dulcis/102384.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc. Fleurs blanches à rose pâle, précoces au printemps. Fruits secs (amandes), comestibles. Cultivé pour ses fruits dans les régions méditerranéennes.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 752,
+ 	 	 "scientific_name"  : "Prunus laurocerasus", 
+  	 	 "current_name"  : "Laurier-cerise", 
+  	 	 "image"  : "Prunus laurocerasus/61757.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre persistant. Grandes feuilles luisantes, vert foncé. Fleurs blanches en grappes dressées. Fruits noirs, toxiques. Souvent planté en haie. Peut devenir envahissant.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 753,
+ 	 	 "scientific_name"  : "Prunus mahaleb", 
+  	 	 "current_name"  : "Bois de Sainte-Lucie", 
+  	 	 "image"  : "Prunus mahaleb/107356.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc. Fleurs blanches, parfumées, en grappes. Fruits noirs. Bois odorant, utilisé en ébénisterie. Pousse en coteaux secs et rocailleux.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 754,
+ 	 	 "scientific_name"  : "Prunus padus", 
+  	 	 "current_name"  : "Merisier à grappes", 
+  	 	 "image"  : "Prunus padus/86800.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc. Fleurs blanches, très parfumées, en longues grappes pendantes. Fruits noirs, amers. Pousse en sous-bois frais et bords de cours d'eau.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 755,
+ 	 	 "scientific_name"  : "Prunus serotina", 
+  	 	 "current_name"  : "Cerisier tardif", 
+  	 	 "image"  : "Prunus serotina/60302.jpg", 
+  	 	 "characteristic"  : "Arbre caduc originaire d'Amérique du Nord. Fleurs blanches en grappes allongées. Fruits noirs. Peut être très envahissant en forêt, où il étouffe les espèces indigènes.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 756,
+ 	 	 "scientific_name"  : "Prunus serrulata", 
+  	 	 "current_name"  : "Cerisier du Japon", 
+  	 	 "image"  : "Prunus serrulata/33824.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Fleurs roses ou blanches, souvent doubles, très abondantes et spectaculaires au printemps. Ne produit généralement pas de fruits. Nombreux cultivars. Arbre d'ornement très populaire.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 757,
+ 	 	 "scientific_name"  : "Prunus spinosa", 
+  	 	 "current_name"  : "Prunellier", 
+  	 	 "image"  : "Prunus spinosa/48073.jpg", 
+  	 	 "characteristic"  : "Arbuste très épineux. Fleurs blanches, très précoces, avant les feuilles. Fruits bleus-noirs (prunelles), astringents mais comestibles après les gelées. Forme des haies impénétrables. Pousse en lisières et haies.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 758,
+ 	 	 "scientific_name"  : "Pseudorchis albida", 
+  	 	 "current_name"  : "Orchis blanc", 
+  	 	 "image"  : "Pseudorchis albida/10559.jpg", 
+  	 	 "characteristic"  : "Petite orchidée terrestre. Feuilles basales. Fleurs blanc-verdâtre ou jaunâtres, en épi dense et cylindrique. Pousse en pelouses alpines et subalpines. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 759,
+ 	 	 "scientific_name"  : "Pseudoturritis turrita", 
+  	 	 "current_name"  : "Tourrette", 
+  	 	 "image"  : "Pseudoturritis turrita/45183.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Feuilles basales en rosette, feuilles caulinaires embrassant la tige. Petites fleurs jaunes-verdâtres en longues grappes dressées. Pousse sur sols secs et rocailleux.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 760,
+ 	 	 "scientific_name"  : "Pteridium aquilinum", 
+  	 	 "current_name"  : "Fougère aigle", 
+  	 	 "image"  : "Pteridium aquilinum/36701.jpg", 
+  	 	 "characteristic"  : "Grande fougère caduque, très commune. Frondes grandes, triangulaires, divisées plusieurs fois. Rhizomes traçants, rendant la plante très envahissante. Toxique pour le bétail. Pousse en sous-bois, landes, coupes de bois.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 761,
+ 	 	 "scientific_name"  : "Pterocarya fraxinifolia", 
+  	 	 "current_name"  : "Ptérocarya de Caucase", 
+  	 	 "image"  : "Pterocarya fraxinifolia/78417.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Grandes feuilles composées, pennées. Fruits ailés en longues grappes pendantes, très décoratifs. Pousse le long des cours d'eau. Peut drageonner.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 762,
+ 	 	 "scientific_name"  : "Pulicaria dysenterica", 
+  	 	 "current_name"  : "Pulicaire dysentérique", 
+  	 	 "image"  : "Pulicaria dysenterica/74317.jpg", 
+  	 	 "characteristic"  : "Vivace velue. Feuilles en forme de fer de lance. Capitules de fleurs jaunes, en corymbe. Pousse en milieux humides, au bord de l'eau. Jadis utilisée contre la dysenterie.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 763,
+ 	 	 "scientific_name"  : "Punica granatum", 
+  	 	 "current_name"  : "Grenadier", 
+  	 	 "image"  : "Punica granatum/4604.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre caduc. Feuilles ovales, luisantes. Fleurs oranges-rouges, en forme de cloche, très ornementales. Fruits charnus (grenades), comestibles. Pousse en climat méditerranéen.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 764,
+ 	 	 "scientific_name"  : "Pyracantha coccinea", 
+  	 	 "current_name"  : "Buisson ardent", 
+  	 	 "image"  : "Pyracantha coccinea/79443.jpg", 
+  	 	 "characteristic"  : "Grand arbuste persistant et épineux. Feuilles ovales, luisantes. Petites fleurs blanches en corymbes, suivies de baies rouges-orangées très abondantes et persistantes en hiver. Souvent planté en haie défensive.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 765,
+ 	 	 "scientific_name"  : "Pyrus communis", 
+  	 	 "current_name"  : "Poirier commun", 
+  	 	 "image"  : "Pyrus communis/51639.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Fleurs blanches au printemps. Fruits charnus (poires), comestibles. Cultivé pour ses fruits. L'espèce sauvage (P. pyraster) est épineuse.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 766,
+ 	 	 "scientific_name"  : "Quercus cerris", 
+  	 	 "current_name"  : "Chêne chevelu", 
+  	 	 "image"  : "Quercus cerris/40112.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles profondément lobées, pubescentes dessous. Bourgeons entourés de bractées filamenteuses ('chevelus'). Glands recouverts de cupules très écailleuses. Pousse sur sols variés.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 767,
+ 	 	 "scientific_name"  : "Quercus coccifera", 
+  	 	 "current_name"  : "Chêne kermès", 
+  	 	 "image"  : "Quercus coccifera/87390.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre persistant, très épineux. Petites feuilles coriaces, épineuses. Glands petits. Caractéristique des garrigues et maquis. Peut former des fourrés impénétrables.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 768,
+ 	 	 "scientific_name"  : "Quercus ilex", 
+  	 	 "current_name"  : "Chêne vert", 
+  	 	 "image"  : "Quercus ilex/75682.jpg", 
+  	 	 "characteristic"  : "Grand arbre persistant. Feuilles ovales, coriaces, vert foncé dessus, gris-tomenteuses dessous, parfois épineuses. Glands amers. Caractéristique des forêts méditerranéennes.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 769,
+ 	 	 "scientific_name"  : "Quercus palustris", 
+  	 	 "current_name"  : "Chêne des marais", 
+  	 	 "image"  : "Quercus palustris/29984.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles profondément lobées, aux lobes pointus, virant au rouge écarlate en automne. Glands petits. Pousse en milieux humides, tolère les sols compacts. Originaire d'Amérique du Nord.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 770,
+ 	 	 "scientific_name"  : "Quercus petraea", 
+  	 	 "current_name"  : "Chêne sessile", 
+  	 	 "image"  : "Quercus petraea/6446.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles lobées, avec des lobes moins profonds que Q. robur, à pétiole long. Glands presque sessiles (sans pédoncule long). Pousse sur sols secs et acides. Bois de qualité.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 771,
+ 	 	 "scientific_name"  : "Quercus pubescens", 
+  	 	 "current_name"  : "Chêne pubescent", 
+  	 	 "image"  : "Quercus pubescens/67934.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne. Feuilles lobées, pubescentes dessous, surtout jeunes. Persiste souvent ses feuilles sèches en hiver. Glands petits. Caractéristique des climats secs et chauds, sur sols calcaires.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 772,
+ 	 	 "scientific_name"  : "Quercus robur", 
+  	 	 "current_name"  : "Chêne pédonculé", 
+  	 	 "image"  : "Quercus robur/82571.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles lobées, à lobes profonds, avec des oreillettes à la base. Glands sur de longs pédoncules. Pousse sur sols frais à humides. Le chêne le plus commun en plaine.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 773,
+ 	 	 "scientific_name"  : "Quercus rubra", 
+  	 	 "current_name"  : "Chêne rouge d'Amérique", 
+  	 	 "image"  : "Quercus rubra/47519.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc originaire d'Amérique du Nord. Grandes feuilles profondément lobées, aux lobes pointus, virant au rouge vif en automne. Glands grands. Croissance rapide. Souvent planté.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 774,
+ 	 	 "scientific_name"  : "Quercus suber", 
+  	 	 "current_name"  : "Chêne-liège", 
+  	 	 "image"  : "Quercus suber/68931.jpg", 
+  	 	 "characteristic"  : "Arbre persistant méditerranéen. Feuilles ovales, petites, coriaces, souvent épineuses sur les jeunes pousses. Écorce très épaisse et fissurée, utilisée pour le liège. Pousse sur sols acides.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 775,
+ 	 	 "scientific_name"  : "Ranunculus aconitifolius", 
+  	 	 "current_name"  : "Renoncule à feuilles d'aconit", 
+  	 	 "image"  : "Ranunculus aconitifolius/76042.jpg", 
+  	 	 "characteristic"  : "Grande vivace des zones humides de montagne. Feuilles profondément découpées. Fleurs blanches, en grappes lâches. Pousse au bord des ruisseaux et dans les mégaphorbiaies. Toxique.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 776,
+ 	 	 "scientific_name"  : "Ranunculus acris", 
+  	 	 "current_name"  : "Renoncule âcre", 
+  	 	 "image"  : "Ranunculus acris/84369.jpg", 
+  	 	 "characteristic"  : "Vivace très commune. Feuilles profondément lobées. Fleurs jaune vif, brillantes, solitaires. Toxique. Très commun en prairies et pelouses.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 777,
+ 	 	 "scientific_name"  : "Ranunculus bulbosus", 
+  	 	 "current_name"  : "Renoncule bulbeuse", 
+  	 	 "image"  : "Ranunculus bulbosus/29791.jpg", 
+  	 	 "characteristic"  : "Vivace avec une base renflée (bulbe). Feuilles basales lobées. Fleurs jaune vif, brillantes, solitaires. Sépales réfléchis vers le bas. Toxique. Pousse en prairies sèches et pelouses.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 778,
+ 	 	 "scientific_name"  : "Ranunculus flammula", 
+  	 	 "current_name"  : "Renoncule flammette", 
+  	 	 "image"  : "Ranunculus flammula/87044.jpg", 
+  	 	 "characteristic"  : "Petite vivace rampante des milieux humides. Feuilles entières, lancéolées, ressemblant à une flamme. Fleurs jaune vif. Toxique. Pousse au bord de l'eau et dans les fossés.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 779,
+ 	 	 "scientific_name"  : "Ranunculus gramineus", 
+  	 	 "current_name"  : "Renoncule à feuilles graminiformes", 
+  	 	 "image"  : "Ranunculus gramineus/96604.jpg", 
+  	 	 "characteristic"  : "Vivace méditerranéenne. Feuilles linéaires, ressemblant à de l'herbe. Fleurs jaune vif, brillantes. Pousse en pelouses sèches et rocailleuses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 780,
+ 	 	 "scientific_name"  : "Ranunculus paludosus", 
+  	 	 "current_name"  : "Renoncule des marais", 
+  	 	 "image"  : "Ranunculus paludosus/109050.jpg", 
+  	 	 "characteristic"  : "Vivace méditerranéenne. Feuilles basales lobées. Fleurs jaune vif, brillantes. Pousse en pelouses et prairies humides. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 781,
+ 	 	 "scientific_name"  : "Ranunculus parviflorus", 
+  	 	 "current_name"  : "Renoncule à petites fleurs", 
+  	 	 "image"  : "Ranunculus parviflorus/73956.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles basales rondes, lobées. Petites fleurs jaune pâle. Pousse en milieux secs et perturbés.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 782,
+ 	 	 "scientific_name"  : "Ranunculus peltatus", 
+  	 	 "current_name"  : "Renoncule peltée", 
+  	 	 "image"  : "Ranunculus peltatus/92015.jpg", 
+  	 	 "characteristic"  : "Plante aquatique. Feuilles flottantes peltées, feuilles submergées filiformes. Fleurs blanches, avec un centre jaune. Pousse dans les eaux stagnantes ou lentes. Protégée.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 783,
+ 	 	 "scientific_name"  : "Ranunculus platanifolius", 
+  	 	 "current_name"  : "Renoncule à feuilles de platane", 
+  	 	 "image"  : "Ranunculus platanifolius/1532.jpg", 
+  	 	 "characteristic"  : "Grande vivace de montagne. Feuilles profondément lobées, ressemblant à celles d'un platane. Fleurs blanches. Toxique. Pousse en sous-bois frais et mégaphorbiaies. Proche de R. aconitifolius.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 784,
+ 	 	 "scientific_name"  : "Ranunculus repens", 
+  	 	 "current_name"  : "Renoncule rampante", 
+  	 	 "image"  : "Ranunculus repens/64833.jpg", 
+  	 	 "characteristic"  : "Vivace stolonifère. Feuilles trilobées. Fleurs jaune vif, brillantes. Très commune dans les jardins, pelouses et prairies humides. Peut être envahissante. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 785,
+ 	 	 "scientific_name"  : "Ranunculus sceleratus", 
+  	 	 "current_name"  : "Renoncule scélérate", 
+  	 	 "image"  : "Ranunculus sceleratus/57314.jpg", 
+  	 	 "characteristic"  : "Annuelle des milieux très humides. Tiges charnues. Feuilles brillantes, lobées. Petites fleurs jaune pâle. Très toxique. Pousse dans les fossés et mares. Peut provoquer des brûlures cutanées.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 786,
+ 	 	 "scientific_name"  : "Ranunculus trichophyllus", 
+  	 	 "current_name"  : "Renoncule aquatique à feuilles capillaires", 
+  	 	 "image"  : "Ranunculus trichophyllus/13923.jpg", 
+  	 	 "characteristic"  : "Plante aquatique. Toutes les feuilles sont submergées, très finement divisées en filaments. Petites fleurs blanches. Pousse dans les eaux claires. Ressemble à d'autres renoncules aquatiques.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 787,
+ 	 	 "scientific_name"  : "Raphanus raphanistrum", 
+  	 	 "current_name"  : "Ravenelle", 
+  	 	 "image"  : "Raphanus raphanistrum/69676.jpg", 
+  	 	 "characteristic"  : "Annuelle très commune. Feuilles basales lobées. Fleurs jaunes (parfois blanches ou violettes), souvent avec des nervures foncées. Fruits en siliques étranglées. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 788,
+ 	 	 "scientific_name"  : "Reseda lutea", 
+  	 	 "current_name"  : "Réséda jaune", 
+  	 	 "image"  : "Reseda lutea/105981.jpg", 
+  	 	 "characteristic"  : "Annuelle ou bisannuelle. Feuilles lobées ou découpées. Fleurs jaune-verdâtre, complexes, en longues grappes. Pousse en friches et bords de chemins. Odeur agréable.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 789,
+ 	 	 "scientific_name"  : "Reseda luteola", 
+  	 	 "current_name"  : "Gaude", 
+  	 	 "image"  : "Reseda luteola/8548.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Feuilles entières, étroites. Petites fleurs jaune-verdâtre en longs épis denses. Utilisée comme plante tinctoriale (jaune). Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 790,
+ 	 	 "scientific_name"  : "Reseda phyteuma", 
+  	 	 "current_name"  : "Réséda raiponce", 
+  	 	 "image"  : "Reseda phyteuma/81207.jpg", 
+  	 	 "characteristic"  : "Annuelle ou bisannuelle méditerranéenne. Feuilles basales en rosette. Fleurs blanc-verdâtre, en grappes. Pousse sur sols secs et calcaires.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 791,
+ 	 	 "scientific_name"  : "Reynoutria japonica", 
+  	 	 "current_name"  : "Renouée du Japon", 
+  	 	 "image"  : "Reynoutria japonica/47554.jpg", 
+  	 	 "characteristic"  : "Grande vivace très envahissante. Tiges creuses, ressemblant à du bambou. Grandes feuilles ovales. Petites fleurs blanches en panicules. Forme des colonies denses. Difficile à éradiquer.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 792,
+ 	 	 "scientific_name"  : "Rhamnus alaternus", 
+  	 	 "current_name"  : "Nerprun alaterne", 
+  	 	 "image"  : "Rhamnus alaternus/71358.jpg", 
+  	 	 "characteristic"  : "Grand arbuste persistant méditerranéen. Feuilles ovales, luisantes, vertes. Fleurs verdâtres discrètes. Fruits noirs (drupes). Pousse en garrigues et maquis. Souvent planté en haie.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 793,
+ 	 	 "scientific_name"  : "Rhamnus alpina", 
+  	 	 "current_name"  : "Nerprun des Alpes", 
+  	 	 "image"  : "Rhamnus alpina/23960.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc de montagne. Feuilles ovales, dentées. Fleurs verdâtres discrètes. Fruits noirs (drupes). Pousse en montagne, en sous-bois et éboulis.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 794,
+ 	 	 "scientific_name"  : "Rhamnus cathartica", 
+  	 	 "current_name"  : "Nerprun purgatif", 
+  	 	 "image"  : "Rhamnus cathartica/6471.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc, souvent épineux. Feuilles ovales. Fleurs verdâtres discrètes. Fruits noirs (drupes), purgatives (d'où le nom). Pousse en lisières, haies et sous-bois.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 795,
+ 	 	 "scientific_name"  : "Rhamnus pumila", 
+  	 	 "current_name"  : "Nerprun nain", 
+  	 	 "image"  : "Rhamnus pumila/10820.jpg", 
+  	 	 "characteristic"  : "Petit arbuste prostré de montagne. Feuilles petites, arrondies, dentées. Fleurs verdâtres discrètes. Fruits noirs. Pousse dans les rochers et fissures d'altitude.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 796,
+ 	 	 "scientific_name"  : "Rhaponticum coniferum", 
+  	 	 "current_name"  : "Rhapontique conifère", 
+  	 	 "image"  : "Rhaponticum coniferum/3913.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles basales lobées. Capitules floraux rosés, en forme de cône de conifère avant l'éclosion, puis s'ouvrant en fleurs plumeuses. Pousse en pelouses sèches et garrigues.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 797,
+ 	 	 "scientific_name"  : "Rhinanthus alectorolophus", 
+  	 	 "current_name"  : "Rhinanthe crête-de-coq", 
+  	 	 "image"  : "Rhinanthus alectorolophus/80919.jpg", 
+  	 	 "characteristic"  : "Plante annuelle semi-parasite. Fleurs jaunes, bilabiées, avec une lèvre supérieure en forme de casque. Bractées dentées. Parasite les graminées. Pousse en prairies.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 798,
+ 	 	 "scientific_name"  : "Rhinanthus minor", 
+  	 	 "current_name"  : "Petit rhinanthe", 
+  	 	 "image"  : "Rhinanthus minor/112485.jpg", 
+  	 	 "characteristic"  : "Plante annuelle semi-parasite. Fleurs jaunes, bilabiées, avec une lèvre supérieure en forme de casque. Plus petite que R. alectorolophus. Parasite les graminées. Pousse en prairies et pelouses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 799,
+ 	 	 "scientific_name"  : "Rhododendron ferrugineum", 
+  	 	 "current_name"  : "Rhododendron ferrugineux", 
+  	 	 "image"  : "Rhododendron ferrugineum/97892.jpg", 
+  	 	 "characteristic"  : "Petit arbuste persistant. Feuilles ovales, vert foncé dessus, rouille-brun dessous. Fleurs roses-rouges en grappes. Pousse en montagne sur sols acides (landes à rhododendrons). Protégé.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 800,
+ 	 	 "scientific_name"  : "Rhus coriaria", 
+  	 	 "current_name"  : "Sumac des corroyeurs", 
+  	 	 "image"  : "Rhus coriaria/26883.jpg", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre caduc. Feuilles composées, pennées, virant au rouge vif en automne. Fleurs verdâtres en panicules. Fruits rouges, acides, utilisés comme épice. Pousse en garrigues et milieux secs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 801,
+ 	 	 "scientific_name"  : "Rhus typhina", 
+  	 	 "current_name"  : "Sumac de Virginie", 
+  	 	 "image"  : "Rhus typhina/32647.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc. Grandes feuilles composées, virant au rouge vif en automne. Fruits rouges veloutés en panicules dressées. Drageonne fortement, peut être envahissant. Très ornemental.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 802,
+ 	 	 "scientific_name"  : "Ribes rubrum", 
+  	 	 "current_name"  : "Groseillier rouge", 
+  	 	 "image"  : "Ribes rubrum/48148.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc. Feuilles lobées. Petites fleurs verdâtres. Fruits rouges (groseilles) en grappes, comestibles. Cultivé pour ses fruits.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 803,
+ 	 	 "scientific_name"  : "Robinia pseudoacacia", 
+  	 	 "current_name"  : "Robinier faux-acacia", 
+  	 	 "image"  : "Robinia pseudoacacia/6172.jpg", 
+  	 	 "characteristic"  : "Arbre caduc à croissance rapide, épineux. Feuilles composées. Fleurs blanches, parfumées, en grappes pendantes. Fruits en gousses plates. Très mellifère. Peut être envahissant.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 804,
+ 	 	 "scientific_name"  : "Rosa agrestis", 
+  	 	 "current_name"  : "Églantier des champs", 
+  	 	 "image"  : "Rosa agrestis/32503.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux. Feuilles composées, souvent parfumées. Fleurs blanc-rosé. Fruits rouges (cynorhodons). Pousse en lisières et haies. Proche de Rosa canina.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 805,
+ 	 	 "scientific_name"  : "Rosa canina", 
+  	 	 "current_name"  : "Églantier", 
+  	 	 "image"  : "Rosa canina/19178.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux. Feuilles composées, généralement glabres. Fleurs rose pâle à blanches, solitaires ou en petits groupes. Fruits rouges (cynorhodons) riches en vitamine C. Très commun en haies et lisières.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 806,
+ 	 	 "scientific_name"  : "Rosa pendulina", 
+  	 	 "current_name"  : "Rosier des Alpes", 
+  	 	 "image"  : "Rosa pendulina/89345.jpg", 
+  	 	 "characteristic"  : "Rosier sans épines (ou presque). Fleurs roses foncées. Fruits rouges, pendants, en forme de gourde. Pousse en montagne, en sous-bois clairs et éboulis. Protégé.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 807,
+ 	 	 "scientific_name"  : "Rosa spinosissima", 
+  	 	 "current_name"  : "Rosier pimprenelle", 
+  	 	 "image"  : "Rosa spinosissima/37868.jpg", 
+  	 	 "characteristic"  : "Petit arbuste très épineux. Feuilles composées, petites. Fleurs blanches ou rose pâle, solitaires. Fruits noirs. Pousse en pelouses sèches et dunes. Très rustique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 808,
+ 	 	 "scientific_name"  : "Rosmarinus officinalis", 
+  	 	 "current_name"  : "Romarin", 
+  	 	 "image"  : "Rosmarinus officinalis/2561.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant aromatique. Feuilles étroites, vert foncé dessus, blanchâtres dessous. Petites fleurs bleues-violettes, très mellifères. Pousse en garrigues méditerranéennes. Très cultivé.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 809,
+ 	 	 "scientific_name"  : "Rubia tinctorum", 
+  	 	 "current_name"  : "Garance", 
+  	 	 "image"  : "Rubia tinctorum/61138.jpg", 
+  	 	 "characteristic"  : "Vivace rampante, épineuse. Feuilles verticillées. Petites fleurs jaune-verdâtre. Racine utilisée comme teinture rouge. Pousse en friches et bords de chemins. Anciennement cultivée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 810,
+ 	 	 "scientific_name"  : "Rubus fruticosus", 
+  	 	 "current_name"  : "Ronce commune", 
+  	 	 "image"  : "Rubus fruticosus/68502.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux. Tiges sarmenteuses. Feuilles composées de 3 à 5 folioles. Fleurs blanches à rosées. Fruits noirs (mûres) comestibles. Très commune en haies, lisières, friches. Très envahissante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 811,
+ 	 	 "scientific_name"  : "Rubus idaeus", 
+  	 	 "current_name"  : "Framboisier", 
+  	 	 "image"  : "Rubus idaeus/33146.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux. Tiges drageonnantes. Feuilles composées. Fleurs blanches. Fruits rouges (framboises) comestibles. Pousse en sous-bois clairs et coupes forestières. Cultivé pour ses fruits.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 812,
+ 	 	 "scientific_name"  : "Rubus pedatifolius", 
+  	 	 "current_name"  : "Ronce à feuilles pédalées", 
+  	 	 "image"  : "Rubus pedatifolius/54214.jpg", 
+  	 	 "characteristic"  : "Espèce de ronce aux feuilles palmées, souvent à 5 lobes profonds, rappelant une patte d'oiseau. Les fleurs et fruits sont similaires à d'autres ronces. Pousse dans les milieux forestiers. Identification complexe.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 813,
+ 	 	 "scientific_name"  : "Rubus ulmifolius", 
+  	 	 "current_name"  : "Ronce à feuilles d'orme", 
+  	 	 "image"  : "Rubus ulmifolius/100011.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux. Tiges arquées. Feuilles composées, souvent tomenteuses dessous, rappelant celles de l'orme. Fleurs roses. Fruits noirs (mûres). Très commune, proche de R. fruticosus.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 814,
+ 	 	 "scientific_name"  : "Rumex acetosella", 
+  	 	 "current_name"  : "Petite oseille", 
+  	 	 "image"  : "Rumex acetosella/67751.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Feuilles hastées (en forme de fer de lance), souvent rouges. Petites fleurs rougeâtres en panicules fines. Goût acide, comestible. Pousse sur sols acides et pauvres.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 815,
+ 	 	 "scientific_name"  : "Rumex crispus", 
+  	 	 "current_name"  : "Rumex crépu", 
+  	 	 "image"  : "Rumex crispus/48349.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles longues, étroites, à bords ondulés. Petites fleurs verdâtres-rouges en grappes denses. Peut devenir envahissante. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 816,
+ 	 	 "scientific_name"  : "Rumex obtusifolius", 
+  	 	 "current_name"  : "Grande patience", 
+  	 	 "image"  : "Rumex obtusifolius/78541.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Grandes feuilles basales, larges, ovales, à bord non ondulé. Petites fleurs verdâtres-rouges en grappes. Très commune en friches et prairies. Peut devenir envahissante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 817,
+ 	 	 "scientific_name"  : "Ruscus aculeatus", 
+  	 	 "current_name"  : "Fragon", 
+  	 	 "image"  : "Ruscus aculeatus/94514.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant. Tiges aplaties, coriaces et épineuses, ressemblant à des feuilles (cladodes). Petites fleurs verdâtres. Baies rouges brillantes et persistantes. Pousse en sous-bois. Protégé dans certaines régions.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 818,
+ 	 	 "scientific_name"  : "Ruta montana", 
+  	 	 "current_name"  : "Rue de montagne", 
+  	 	 "image"  : "Ruta montana/12189.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste ou vivace aromatique. Feuilles finement découpées, bleutées. Fleurs jaunes en corymbes. Odeur forte et parfois irritante pour la peau. Pousse sur sols secs et rocailleux méditerranéens. Toxique.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 819,
+ 	 	 "scientific_name"  : "Salix alba", 
+  	 	 "current_name"  : "Saule blanc", 
+  	 	 "image"  : "Salix alba/94805.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles étroites, argentées et soyeuses. Chatons jaunes. Branches souples. Pousse au bord des cours d'eau et zones humides. Utilisé pour les vanneries.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 820,
+ 	 	 "scientific_name"  : "Salix babylonica", 
+  	 	 "current_name"  : "Saule pleureur", 
+  	 	 "image"  : "Salix babylonica/18547.jpg", 
+  	 	 "characteristic"  : "Arbre caduc aux longs rameaux souples et pendants. Feuilles étroites, vert clair. Pousse au bord de l'eau. Très ornemental. Souvent cultivé.", 
+  	 	 "water_need"  : 4.5 
+	},
+	 { 
+ 	 	 "id"  : 821,
+ 	 	 "scientific_name"  : "Salix caprea", 
+  	 	 "current_name"  : "Saule marsault", 
+  	 	 "image"  : "Salix caprea/83845.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc. Feuilles ovales, velues dessous. Gros chatons gris-argentés très précoces (avant les feuilles), très mellifères. Pousse en lisières et coupes forestières.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 822,
+ 	 	 "scientific_name"  : "Salix cinerea", 
+  	 	 "current_name"  : "Saule cendré", 
+  	 	 "image"  : "Salix cinerea/14697.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc. Feuilles ovales, velues, grisâtres dessous. Chatons gris. Pousse en milieux humides, au bord des cours d'eau.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 823,
+ 	 	 "scientific_name"  : "Salix fragilis", 
+  	 	 "current_name"  : "Saule fragile", 
+  	 	 "image"  : "Salix fragilis/68771.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Rameaux cassants à la base. Feuilles lancéolées, dentées. Chatons allongés. Pousse au bord des cours d'eau. Peut atteindre une grande taille.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 824,
+ 	 	 "scientific_name"  : "Salix herbacea", 
+  	 	 "current_name"  : "Saule herbacé", 
+  	 	 "image"  : "Salix herbacea/90638.jpg", 
+  	 	 "characteristic"  : "Plus petit arbre du monde, minuscule arbuste rampant. Feuilles rondes, crénelées. Petits chatons. Pousse en haute montagne, en pelouses et rocailles. Adapté aux conditions extrêmes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 825,
+ 	 	 "scientific_name"  : "Salvia officinalis", 
+  	 	 "current_name"  : "Sauge officinale", 
+  	 	 "image"  : "Salvia officinalis/32141.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste persistant aromatique. Feuilles gris-vert, veloutées. Fleurs violettes, en épis. Très utilisée en cuisine et phytothérapie. Pousse sur sols secs et ensoleillés. Très cultivée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 826,
+ 	 	 "scientific_name"  : "Salvia pratensis", 
+  	 	 "current_name"  : "Sauge des prés", 
+  	 	 "image"  : "Salvia pratensis/57035.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles basales en rosette. Fleurs bleu-violet (parfois roses ou blanches), en épis lâches. Très attractive pour les pollinisateurs. Pousse en prairies et pelouses.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 827,
+ 	 	 "scientific_name"  : "Salvia verbenaca", 
+  	 	 "current_name"  : "Sauge verveine", 
+  	 	 "image"  : "Salvia verbenaca/8935.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles lobées, velues. Petites fleurs bleu-violet, en verticilles espacés sur la tige. Pousse en pelouses sèches et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 828,
+ 	 	 "scientific_name"  : "Sambucus ebulus", 
+  	 	 "current_name"  : "Sureau yèble", 
+  	 	 "image"  : "Sambucus ebulus/15540.jpg", 
+  	 	 "characteristic"  : "Grande vivace herbacée. Feuilles composées. Fleurs blanches en corymbes plats. Fruits noirs brillants, toxiques. Pousse en friches et bords de chemins, souvent en colonies. Forte odeur.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 829,
+ 	 	 "scientific_name"  : "Sambucus nigra", 
+  	 	 "current_name"  : "Sureau noir", 
+  	 	 "image"  : "Sambucus nigra/13921.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc. Feuilles composées. Grandes corymbes de fleurs blanches très parfumées. Fruits noirs (baies de sureau) comestibles après cuisson. Pousse en lisières et sous-bois.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 830,
+ 	 	 "scientific_name"  : "Sambucus racemosa", 
+  	 	 "current_name"  : "Sureau à grappes", 
+  	 	 "image"  : "Sambucus racemosa/65749.jpg", 
+  	 	 "characteristic"  : "Arbuste caduc. Feuilles composées. Fleurs blanc-jaunâtre en panicules coniques. Fruits rouges brillants, en grappes, toxiques crus. Pousse en montagne, en sous-bois et clairières.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 831,
+ 	 	 "scientific_name"  : "Saponaria ocymoides", 
+  	 	 "current_name"  : "Saponaire de Montpellier", 
+  	 	 "image"  : "Saponaria ocymoides/14873.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles ovales. Fleurs roses, en corymbes lâches. Pousse en rocailles et éboulis calcaires. Souvent cultivée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 832,
+ 	 	 "scientific_name"  : "Saponaria officinalis", 
+  	 	 "current_name"  : "Saponaire officinale", 
+  	 	 "image"  : "Saponaria officinalis/70228.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse. Feuilles ovales. Fleurs roses ou blanches, en panicules terminales. Contient de la saponine, utilisée autrefois comme savon. Pousse en bords de cours d'eau et friches.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 833,
+ 	 	 "scientific_name"  : "Satureja montana", 
+  	 	 "current_name"  : "Sarriette des montagnes", 
+  	 	 "image"  : "Satureja montana/110357.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste aromatique persistant. Feuilles étroites, vert foncé. Petites fleurs blanches ou lilas. Très utilisée en cuisine. Pousse sur sols secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 834,
+ 	 	 "scientific_name"  : "Saxifraga aizoides", 
+  	 	 "current_name"  : "Saxifrage faux-aïzoon", 
+  	 	 "image"  : "Saxifraga aizoides/88578.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des tapis. Feuilles charnues, en rosettes. Fleurs jaunes, orange ou rouges. Pousse en haute montagne, sur rochers humides et près des cours d'eau. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 835,
+ 	 	 "scientific_name"  : "Saxifraga granulata", 
+  	 	 "current_name"  : "Saxifrage granulée", 
+  	 	 "image"  : "Saxifraga granulata/81833.jpg", 
+  	 	 "characteristic"  : "Vivace avec de petits bulbilles à la base des feuilles. Feuilles basales réniformes. Fleurs blanches, en grappes lâches. Pousse en pelouses sèches et rocailleuses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 836,
+ 	 	 "scientific_name"  : "Saxifraga media", 
+  	 	 "current_name"  : "Saxifrage moyenne", 
+  	 	 "image"  : "Saxifraga media/109860.jpg", 
+  	 	 "characteristic"  : "Saxifrage de montagne, souvent avec des rosettes de feuilles visqueuses. Fleurs rouges ou pourpres en panicules. Pousse sur les rochers calcaires des Pyrénées. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 837,
+ 	 	 "scientific_name"  : "Saxifraga moschata", 
+  	 	 "current_name"  : "Saxifrage musquée", 
+  	 	 "image"  : "Saxifraga moschata/85684.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des coussinets. Feuilles très petites, vertes. Petites fleurs blanc-jaunâtre à verdâtre, parfois teintées de rose. Pousse en haute montagne, en rocailles et éboulis.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 838,
+ 	 	 "scientific_name"  : "Saxifraga paniculata", 
+  	 	 "current_name"  : "Saxifrage paniculée", 
+  	 	 "image"  : "Saxifraga paniculata/24589.jpg", 
+  	 	 "characteristic"  : "Vivace formant des rosettes de feuilles épaisses, dentées, avec des dépôts calcaires. Fleurs blanches, en panicules dressées. Pousse sur les rochers calcaires en montagne.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 839,
+ 	 	 "scientific_name"  : "Saxifraga tridactylites", 
+  	 	 "current_name"  : "Saxifrage à trois doigts", 
+  	 	 "image"  : "Saxifraga tridactylites/104815.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles petites, souvent trifides ou lobées, parfois rougeâtres. Fleurs blanches, minuscules. Pousse sur les vieux murs, rochers et sols secs. Très précoce.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 840,
+ 	 	 "scientific_name"  : "Scabiosa atropurpurea", 
+  	 	 "current_name"  : "Scabieuse pourpre", 
+  	 	 "image"  : "Scabiosa atropurpurea/85961.jpg", 
+  	 	 "characteristic"  : "Annuelle ou bisannuelle. Feuilles découpées. Grandes fleurs pourpres foncées (parfois roses ou blanches), très parfumées, en capitules. Souvent cultivée comme fleur à couper.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 841,
+ 	 	 "scientific_name"  : "Scabiosa columbaria", 
+  	 	 "current_name"  : "Scabieuse colombaire", 
+  	 	 "image"  : "Scabiosa columbaria/14267.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles basales entières, feuilles caulinaires découpées. Fleurs bleu-violet (parfois roses ou blanches), en capitules. Très commune en pelouses calcaires et prairies sèches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 842,
+ 	 	 "scientific_name"  : "Scilla luciliae", 
+  	 	 "current_name"  : "Scille de Lucile", 
+  	 	 "image"  : "Scilla luciliae/103383.jpg", 
+  	 	 "characteristic"  : "Petite plante bulbeuse. Fleurs bleues (parfois roses ou blanches) avec des rayures plus foncées, en grappes lâches. Fleurit très tôt au printemps. Souvent naturalisée. Ancien *Chionodoxa luciliae*.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 843,
+ 	 	 "scientific_name"  : "Scolymus hispanicus", 
+  	 	 "current_name"  : "Scolyme d'Espagne", 
+  	 	 "image"  : "Scolymus hispanicus/107307.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle épineuse. Feuilles très épineuses, sinuées. Capitules de fleurs jaunes vif. Peut être utilisée comme légume. Pousse en friches et bords de chemins méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 844,
+ 	 	 "scientific_name"  : "Scorzoneroides pyrenaica", 
+  	 	 "current_name"  : "Léontodon des Pyrénées", 
+  	 	 "image"  : "Scorzoneroides pyrenaica/24743.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne. Feuilles basales lobées. Capitules de fleurs jaunes, solitaires. Pousse en pelouses et rocailles alpines. Ancien *Leontodon pyrenaicus*.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 845,
+ 	 	 "scientific_name"  : "Scrophularia auriculata", 
+  	 	 "current_name"  : "Scrofulaire aquatique", 
+  	 	 "image"  : "Scrophularia auriculata/74027.jpg", 
+  	 	 "characteristic"  : "Grande vivace des milieux humides. Tiges carrées. Feuilles ovales, dentées, avec des oreillettes à la base. Fleurs brun-rougeâtre, en panicules. Pousse au bord de l'eau. Utilisée en phytothérapie.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 846,
+ 	 	 "scientific_name"  : "Scrophularia nodosa", 
+  	 	 "current_name"  : "Scrofulaire noueuse", 
+  	 	 "image"  : "Scrophularia nodosa/35068.jpg", 
+  	 	 "characteristic"  : "Vivace. Tiges à section carrée. Feuilles ovales, dentées. Fleurs brun-verdâtre, en panicules. Rhizome noueux. Pousse en sous-bois frais et bords de chemins. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 847,
+ 	 	 "scientific_name"  : "Scutellaria galericulata", 
+  	 	 "current_name"  : "Scutellaire casquée", 
+  	 	 "image"  : "Scutellaria galericulata/59169.jpg", 
+  	 	 "characteristic"  : "Vivace des zones humides. Tiges carrées. Feuilles ovales, dentées. Fleurs bleues, bilabiées, avec une 'casque' sur la lèvre supérieure. Pousse au bord de l'eau. Protégée.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 848,
+ 	 	 "scientific_name"  : "Sedum acre", 
+  	 	 "current_name"  : "Orpin âcre", 
+  	 	 "image"  : "Sedum acre/27719.jpg", 
+  	 	 "characteristic"  : "Petite vivace tapissante. Feuilles petites, charnues, imbriquées. Fleurs jaune vif, étoilées. Goût piquant. Pousse sur les murs, rochers et sols secs. Très résistant à la sécheresse.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 849,
+ 	 	 "scientific_name"  : "Sedum album", 
+  	 	 "current_name"  : "Orpin blanc", 
+  	 	 "image"  : "Sedum album/102044.jpg", 
+  	 	 "characteristic"  : "Vivace tapissante. Feuilles charnues, cylindriques, vertes ou rougeâtres. Fleurs blanches, étoilées, en grappes. Pousse sur les murs, rochers et sols secs. Très résistant.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 850,
+ 	 	 "scientific_name"  : "Sedum dasyphyllum", 
+  	 	 "current_name"  : "Orpin à feuilles charnues", 
+  	 	 "image"  : "Sedum dasyphyllum/68609.jpg", 
+  	 	 "characteristic"  : "Petite vivace tapissante. Feuilles très petites, globuleuses, charnues, bleutées ou rougeâtres. Fleurs blanches, parfois rosées, en grappes lâches. Pousse sur les murs et rochers secs.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 851,
+ 	 	 "scientific_name"  : "Sedum rupestre", 
+  	 	 "current_name"  : "Orpin des rochers", 
+  	 	 "image"  : "Sedum rupestre/66838.jpg", 
+  	 	 "characteristic"  : "Vivace tapissante. Feuilles charnues, bleutées, imbriquées en forme de cône. Fleurs jaunes, étoilées, en corymbes. Pousse sur les murs et rochers secs. Souvent confondu avec S. reflexum.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 852,
+ 	 	 "scientific_name"  : "Sedum sediforme", 
+  	 	 "current_name"  : "Orpin fausse orpin", 
+  	 	 "image"  : "Sedum sediforme/27783.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges rampantes ou dressées. Feuilles charnues, cylindriques, pointues. Fleurs jaune pâle ou blanc crème, étoilées. Pousse sur sols secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 853,
+ 	 	 "scientific_name"  : "Sempervivum arachnoideum", 
+  	 	 "current_name"  : "Joubarbe toile d'araignée", 
+  	 	 "image"  : "Sempervivum arachnoideum/30417.jpg", 
+  	 	 "characteristic"  : "Vivace succulente. Rosettes de feuilles charnues, reliées par de fines soies blanches, rappelant une toile d'araignée. Fleurs roses. Pousse en montagne, sur les rochers. Cultivée pour son aspect décoratif.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 854,
+ 	 	 "scientific_name"  : "Sempervivum montanum", 
+  	 	 "current_name"  : "Joubarbe des montagnes", 
+  	 	 "image"  : "Sempervivum montanum/2934.jpg", 
+  	 	 "characteristic"  : "Vivace succulente. Rosettes de feuilles charnues, vertes à rougeâtres, velues. Fleurs roses à pourpres. Pousse en montagne, sur les rochers et pelouses d'altitude.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 855,
+ 	 	 "scientific_name"  : "Sempervivum tectorum", 
+  	 	 "current_name"  : "Joubarbe des toits", 
+  	 	 "image"  : "Sempervivum tectorum/62762.jpg", 
+  	 	 "characteristic"  : "Vivace succulente. Grandes rosettes de feuilles charnues, vertes à rougeâtres, souvent terminées par une pointe foncée. Fleurs roses. Pousse sur les toits, murs, rochers. Jadis plantée pour protéger des éclairs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 856,
+ 	 	 "scientific_name"  : "Senecio doronicum", 
+  	 	 "current_name"  : "Séneçon doronic", 
+  	 	 "image"  : "Senecio doronicum/104936.jpg", 
+  	 	 "characteristic"  : "Grande vivace de montagne. Feuilles basales ovales, velues. Grandes capitules de fleurs jaunes, solitaires ou en corymbe. Pousse en pelouses alpines et subalpines. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 857,
+ 	 	 "scientific_name"  : "Senecio inaequidens", 
+  	 	 "current_name"  : "Séneçon du Cap", 
+  	 	 "image"  : "Senecio inaequidens/109787.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles étroites, entières ou légèrement dentées. Capitules de fleurs jaunes. Très envahissante, se propage rapidement. Toxique pour le bétail. Pousse en bords de chemins et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 858,
+ 	 	 "scientific_name"  : "Senecio ovatus", 
+  	 	 "current_name"  : "Séneçon de Fuchs", 
+  	 	 "image"  : "Senecio ovatus/18846.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles ovales, dentées, alternes. Capitules de fleurs jaunes, en corymbes. Pousse en sous-bois humides et mégaphorbiaies. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 859,
+ 	 	 "scientific_name"  : "Senecio vulgaris", 
+  	 	 "current_name"  : "Séneçon commun", 
+  	 	 "image"  : "Senecio vulgaris/51109.jpg", 
+  	 	 "characteristic"  : "Petite annuelle très commune. Feuilles lobées, velues. Petits capitules de fleurs jaunes, souvent sans ligules. Pousse dans les jardins, cultures, friches. Très résistant. Toxique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 860,
+ 	 	 "scientific_name"  : "Serapias lingua", 
+  	 	 "current_name"  : "Sérapias langue", 
+  	 	 "image"  : "Serapias lingua/70691.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles basales. Fleurs aux sépales et pétales formant un casque, et un labelle long, entier, rose-pourpre, rappelant une langue. Pousse en pelouses méditerranéennes. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 861,
+ 	 	 "scientific_name"  : "Serapias vomeracea", 
+  	 	 "current_name"  : "Sérapias en soc", 
+  	 	 "image"  : "Serapias vomeracea/16199.jpg", 
+  	 	 "characteristic"  : "Orchidée terrestre. Feuilles basales. Fleurs aux sépales et pétales formant un casque, et un labelle large, cordiforme, brun-rougeâtre, avec un calus en forme de soc de charrue. Pousse en pelouses méditerranéennes. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 862,
+ 	 	 "scientific_name"  : "Sherardia arvensis", 
+  	 	 "current_name"  : "Gratteron des champs", 
+  	 	 "image"  : "Sherardia arvensis/90755.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles verticillées. Petites fleurs roses ou lilas, en têtes terminales. Pousse dans les cultures et friches. Ressemble à un petit gaillet.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 863,
+ 	 	 "scientific_name"  : "Sideritis romana", 
+  	 	 "current_name"  : "Crapaudine de Rome", 
+  	 	 "image"  : "Sideritis romana/105421.jpg", 
+  	 	 "characteristic"  : "Annuelle velue. Feuilles ovales. Petites fleurs jaunâtres, bilabiées, en verticilles. Pousse sur sols secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 864,
+ 	 	 "scientific_name"  : "Silene acaulis", 
+  	 	 "current_name"  : "Silène acaule", 
+  	 	 "image"  : "Silene acaulis/84336.jpg", 
+  	 	 "characteristic"  : "Petite vivace formant des coussinets denses. Feuilles linéaires. Petites fleurs roses ou blanches, presque sessiles (sans tige apparente). Pousse en haute montagne, en rocailles et pelouses. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 865,
+ 	 	 "scientific_name"  : "Silene baccifera", 
+  	 	 "current_name"  : "Silène à baies", 
+  	 	 "image"  : "Silene baccifera/102360.jpg", 
+  	 	 "characteristic"  : "Plante grimpante. Feuilles ovales. Fleurs blanches, s'ouvrant le soir. Fruits en baies noires et brillantes. Pousse en sous-bois et haies. Anciennement *Cucubalus baccifer*.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 866,
+ 	 	 "scientific_name"  : "Silene conica", 
+  	 	 "current_name"  : "Silène conique", 
+  	 	 "image"  : "Silene conica/20707.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Tiges dressées. Feuilles étroites. Fleurs roses, en petites grappes, avec un calice strié et conique. Pousse sur sols sableux et secs. Protégée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 867,
+ 	 	 "scientific_name"  : "Silene dioica", 
+  	 	 "current_name"  : "Compagnon rouge", 
+  	 	 "image"  : "Silene dioica/76489.jpg", 
+  	 	 "characteristic"  : "Vivace dioïque (fleurs mâles et femelles sur plantes différentes). Feuilles ovales. Fleurs roses-rouges vives, en grappes. Pousse en sous-bois frais et lisières.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 868,
+ 	 	 "scientific_name"  : "Silene gallica", 
+  	 	 "current_name"  : "Silène de France", 
+  	 	 "image"  : "Silene gallica/110821.jpg", 
+  	 	 "characteristic"  : "Annuelle velue et visqueuse. Feuilles étroites. Fleurs blanches à roses, souvent avec des taches rouges sur les pétales. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 869,
+ 	 	 "scientific_name"  : "Silene italica", 
+  	 	 "current_name"  : "Silène d'Italie", 
+  	 	 "image"  : "Silene italica/91113.jpg", 
+  	 	 "characteristic"  : "Vivace velue et visqueuse. Feuilles basales en rosette. Fleurs blanches, s'ouvrant le soir, en panicules lâches. Pousse sur sols secs et rocailleux méditerranéens.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 870,
+ 	 	 "scientific_name"  : "Silene latifolia", 
+  	 	 "current_name"  : "Compagnon blanc", 
+  	 	 "image"  : "Silene latifolia/97504.jpg", 
+  	 	 "characteristic"  : "Vivace dioïque. Feuilles larges, velues. Fleurs blanches, s'ouvrant le soir, très parfumées, en grappes. Pousse en friches et bords de chemins. Anciennement *Melandrium album*.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 871,
+ 	 	 "scientific_name"  : "Silene nutans", 
+  	 	 "current_name"  : "Silène penché", 
+  	 	 "image"  : "Silene nutans/42893.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles basales en rosette. Fleurs blanches, pendantes, s'ouvrant le soir et parfumées. Pousse en sous-bois clairs et pelouses calcaires.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 872,
+ 	 	 "scientific_name"  : "Silene uniflora", 
+  	 	 "current_name"  : "Silène maritime", 
+  	 	 "image"  : "Silene uniflora/69428.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles charnues, glauques. Fleurs blanches, solitaires, calice très gonflé. Pousse sur les côtes, sur les dunes et falaises. Très résistant au sel.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 873,
+ 	 	 "scientific_name"  : "Silene vulgaris", 
+  	 	 "current_name"  : "Silène enflé", 
+  	 	 "image"  : "Silene vulgaris/56422.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles lancéolées. Fleurs blanches, avec un grand calice gonflé et nervuré. Jeunes pousses comestibles. Pousse en prairies et pelouses. Très commune.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 874,
+ 	 	 "scientific_name"  : "Silybum marianum", 
+  	 	 "current_name"  : "Chardon-Marie", 
+  	 	 "image"  : "Silybum marianum/26758.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle épineuse. Feuilles luisantes, avec des marbrures blanches. Grands capitules pourpres. Utilisé en phytothérapie pour le foie. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 875,
+ 	 	 "scientific_name"  : "Sinapis arvensis", 
+  	 	 "current_name"  : "Sénevé des champs", 
+  	 	 "image"  : "Sinapis arvensis/98698.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles basales lobées. Fleurs jaunes en grappes. Fruits en siliques. Pousse dans les cultures et friches. Proche du colza.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 876,
+ 	 	 "scientific_name"  : "Sisymbrium irio", 
+  	 	 "current_name"  : "Sisymbre irio", 
+  	 	 "image"  : "Sisymbrium irio/36373.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles très découpées. Petites fleurs jaunes. Fruits en siliques longues et fines. Pousse dans les friches urbaines et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 877,
+ 	 	 "scientific_name"  : "Sisymbrium officinale", 
+  	 	 "current_name"  : "Sisymbre officinal", 
+  	 	 "image"  : "Sisymbrium officinale/86267.jpg", 
+  	 	 "characteristic"  : "Annuelle ou bisannuelle. Feuilles découpées. Petites fleurs jaunes. Fruits en siliques pressées contre la tige. Utilisée comme plante médicinale. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 878,
+ 	 	 "scientific_name"  : "Smilax aspera", 
+  	 	 "current_name"  : "Salsepareille", 
+  	 	 "image"  : "Smilax aspera/80227.jpg", 
+  	 	 "characteristic"  : "Liane grimpante persistante, épineuse. Feuilles coriaces, luisantes, souvent en forme de cœur. Fleurs verdâtres discrètes. Baies rouges brillantes. Pousse en garrigues et sous-bois méditerranéens. Racine médicinale.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 879,
+ 	 	 "scientific_name"  : "Smyrnium olusatrum", 
+  	 	 "current_name"  : "Maceron", 
+  	 	 "image"  : "Smyrnium olusatrum/44583.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Feuilles luisantes, découpées, semblables à celles du céleri. Ombelles de fleurs jaune-verdâtre. Plante aromatique, comestible. Pousse en milieux humides et friches, souvent près de la mer.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 880,
+ 	 	 "scientific_name"  : "Solanum dulcamara", 
+  	 	 "current_name"  : "Morelle douce-amère", 
+  	 	 "image"  : "Solanum dulcamara/6842.jpg", 
+  	 	 "characteristic"  : "Liane herbacée. Feuilles lobées. Fleurs violettes avec un centre jaune, en grappes. Fruits rouges vifs, toxiques. Pousse en milieux humides, au bord de l'eau. Toxique.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 881,
+ 	 	 "scientific_name"  : "Solanum nigrum", 
+  	 	 "current_name"  : "Morelle noire", 
+  	 	 "image"  : "Solanum nigrum/1612.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles ovales. Petites fleurs blanches, étoilées. Fruits noirs, comestibles à pleine maturité mais toxiques verts. Pousse dans les cultures et friches. Toxique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 882,
+ 	 	 "scientific_name"  : "Soldanella alpina", 
+  	 	 "current_name"  : "Soldanelle des Alpes", 
+  	 	 "image"  : "Soldanella alpina/48672.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles rondes, persistantes. Fleurs bleues-violettes, campanulées, frangées, pendantes. Fleurit très tôt à la fonte des neiges. Pousse en pelouses alpines. Protégée.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 883,
+ 	 	 "scientific_name"  : "Solidago virgaurea", 
+  	 	 "current_name"  : "Solidage verge d'or", 
+  	 	 "image"  : "Solidago virgaurea/101659.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles lancéolées. Petits capitules de fleurs jaunes en panicules allongées. Utilisée comme plante médicinale. Pousse en sous-bois clairs et landes. Moins envahissante que d'autres solidages.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 884,
+ 	 	 "scientific_name"  : "Sonchus asper", 
+  	 	 "current_name"  : "Laiteron rude", 
+  	 	 "image"  : "Sonchus asper/107203.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles brillantes, épineuses, embrassant la tige. Capitules de fleurs jaunes. Pousse dans les cultures et friches. Produit un latex blanc.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 885,
+ 	 	 "scientific_name"  : "Sonchus tenerrimus", 
+  	 	 "current_name"  : "Laiteron très tendre", 
+  	 	 "image"  : "Sonchus tenerrimus/7650.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles très finement découpées. Capitules de fleurs jaunes. Pousse en friches et murs, notamment en région méditerranéenne.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 886,
+ 	 	 "scientific_name"  : "Sophora japonica", 
+  	 	 "current_name"  : "Sophora du Japon", 
+  	 	 "image"  : "Sophora japonica/109696.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles composées, pennées. Grandes panicules de fleurs blanc crème, très mellifères, en fin d'été. Fruits en gousses étranglées. Arbre d'ornement. Ancien *Styphnolobium japonicum*.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 887,
+ 	 	 "scientific_name"  : "Sorbus aria", 
+  	 	 "current_name"  : "Alisier blanc", 
+  	 	 "image"  : "Sorbus aria/160.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles ovales, entières ou lobées, vert foncé dessus, blanches et tomenteuses dessous. Fleurs blanches en corymbes. Fruits rouges (alises), comestibles après les gelées. Pousse sur sols calcaires.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 888,
+ 	 	 "scientific_name"  : "Sorbus aucuparia", 
+  	 	 "current_name"  : "Sorbier des oiseleurs", 
+  	 	 "image"  : "Sorbus aucuparia/102150.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc. Feuilles composées, pennées. Fleurs blanches en corymbes. Fruits rouges vifs (sorbes), comestibles après cuisson, très appréciés des oiseaux. Pousse en sous-bois et lisières.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 889,
+ 	 	 "scientific_name"  : "Sorbus domestica", 
+  	 	 "current_name"  : "Cormier", 
+  	 	 "image"  : "Sorbus domestica/95414.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles composées, pennées. Fleurs blanc-crème en corymbes. Fruits (cormes), verts à brun-jaunâtre, comestibles blets. Très rare, protégé. Ancien arbre fruitier.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 890,
+ 	 	 "scientific_name"  : "Sorbus intermedia", 
+  	 	 "current_name"  : "Sorbier de Suède", 
+  	 	 "image"  : "Sorbus intermedia/57004.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles lobées, vert foncé dessus, grises et tomenteuses dessous. Fleurs blanches en corymbes. Fruits rouges. Souvent planté comme arbre d'alignement. Hybride.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 891,
+ 	 	 "scientific_name"  : "Sorbus torminalis", 
+  	 	 "current_name"  : "Alisier torminal", 
+  	 	 "image"  : "Sorbus torminalis/22701.jpg", 
+  	 	 "characteristic"  : "Arbre caduc. Feuilles lobées, à lobes pointus. Fleurs blanches en corymbes. Fruits bruns, tachetés, comestibles blets. Pousse en sous-bois clairs, sur sols calcaires. Protégé.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 892,
+ 	 	 "scientific_name"  : "Spartium junceum", 
+  	 	 "current_name"  : "Genêt d'Espagne", 
+  	 	 "image"  : "Spartium junceum/47724.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc. Tiges vertes, cylindriques, presque sans feuilles. Grandes fleurs jaunes très parfumées, en grappes lâches. Pousse en garrigues méditerranéennes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 893,
+ 	 	 "scientific_name"  : "Spergula arvensis", 
+  	 	 "current_name"  : "Spargoute des champs", 
+  	 	 "image"  : "Spergula arvensis/60373.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles fines, verticillées. Petites fleurs blanches, en cymes lâches. Pousse dans les cultures, souvent sur sols acides.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 894,
+ 	 	 "scientific_name"  : "Spergula media", 
+  	 	 "current_name"  : "Spargoute moyenne", 
+  	 	 "image"  : "Spergula media/68430.jpg", 
+  	 	 "characteristic"  : "Annuelle ou vivace des milieux salés. Feuilles charnues, en forme de fuseau. Fleurs blanches. Pousse sur les côtes et dans les prés salés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 895,
+ 	 	 "scientific_name"  : "Spiranthes spiralis", 
+  	 	 "current_name"  : "Spiranthe d'automne", 
+  	 	 "image"  : "Spiranthes spiralis/89207.jpg", 
+  	 	 "characteristic"  : "Petite orchidée terrestre. Rosette de feuilles basales. Fleurs blanches, très parfumées (vanille), disposées en spirale sur la tige florale. Fleurit en fin d'été-automne. Pousse en pelouses sèches. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 896,
+ 	 	 "scientific_name"  : "Stachys recta", 
+  	 	 "current_name"  : "Épiaire droite", 
+  	 	 "image"  : "Stachys recta/51677.jpg", 
+  	 	 "characteristic"  : "Vivace. Tiges dressées. Feuilles ovales, velues. Fleurs jaune pâle, en verticilles espacés. Pousse en pelouses sèches et rocailleuses. Plante médicinale.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 897,
+ 	 	 "scientific_name"  : "Stachys sylvatica", 
+  	 	 "current_name"  : "Épiaire des bois", 
+  	 	 "image"  : "Stachys sylvatica/83622.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles cordiformes, velues, dentées. Fleurs pourpres-rougeâtres, en verticilles espacés. Odeur forte et désagréable. Pousse en sous-bois frais et humides.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 898,
+ 	 	 "scientific_name"  : "Staehelina dubia", 
+  	 	 "current_name"  : "Stahéline douteuse", 
+  	 	 "image"  : "Staehelina dubia/14899.jpg", 
+  	 	 "characteristic"  : "Petit arbuste ou vivace méditerranéenne. Feuilles linéaires, blanchâtres. Capitules de fleurs roses-pourpres, solitaires. Pousse sur sols secs et rocailleux. Protégée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 899,
+ 	 	 "scientific_name"  : "Stellaria holostea", 
+  	 	 "current_name"  : "Stellaire holostée", 
+  	 	 "image"  : "Stellaria holostea/65390.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Tiges carrées. Feuilles linéaires, pointues. Grandes fleurs blanches, en forme d'étoile. Pousse en sous-bois clairs et haies. Très décorative.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 900,
+ 	 	 "scientific_name"  : "Stellaria media", 
+  	 	 "current_name"  : "Mouron des oiseaux", 
+  	 	 "image"  : "Stellaria media/37664.jpg", 
+  	 	 "characteristic"  : "Petite annuelle très commune. Feuilles ovales. Petites fleurs blanches, étoilées, aux pétales bifides. Comestible. Pousse dans les jardins, cultures, friches. Très résistant.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 901,
+ 	 	 "scientific_name"  : "Succisa pratensis", 
+  	 	 "current_name"  : "Succise des prés", 
+  	 	 "image"  : "Succisa pratensis/43037.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges velues. Feuilles basales ovales, feuilles caulinaires plus petites. Fleurs bleu-violet en capitules sphériques. Appréciée des papillons. Pousse en prairies humides et landes.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 902,
+ 	 	 "scientific_name"  : "Symphytum officinale", 
+  	 	 "current_name"  : "Consoude officinale", 
+  	 	 "image"  : "Symphytum officinale/3591.jpg", 
+  	 	 "characteristic"  : "Grande vivace velue. Feuilles grandes, lancéolées. Fleurs violettes, roses ou blanches, en grappes pendantes. Utilisée en phytothérapie. Pousse en milieux humides et bords de cours d'eau.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 903,
+ 	 	 "scientific_name"  : "Symphytum tuberosum", 
+  	 	 "current_name"  : "Consoude tubéreuse", 
+  	 	 "image"  : "Symphytum tuberosum/28046.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles plus petites que S. officinale. Fleurs jaune pâle, en grappes. Rhizome tubéreux. Pousse en sous-bois frais et humides.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 904,
+ 	 	 "scientific_name"  : "Syringa vulgaris", 
+  	 	 "current_name"  : "Lilas commun", 
+  	 	 "image"  : "Syringa vulgaris/78816.jpg", 
+  	 	 "characteristic"  : "Grand arbuste ou petit arbre caduc. Feuilles cordiformes. Grandes panicules de fleurs violettes (parfois blanches), très parfumées. Très cultivé dans les jardins. Peut être subspontané.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 905,
+ 	 	 "scientific_name"  : "Tanacetum vulgare", 
+  	 	 "current_name"  : "Tanaisie commune", 
+  	 	 "image"  : "Tanacetum vulgare/103581.jpg", 
+  	 	 "characteristic"  : "Vivace aromatique. Feuilles très découpées, ressemblant à des fougères. Fleurs jaunes, en capitules sans ligules, regroupées en corymbes. Toxique. Utilisée comme répulsif. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 906,
+ 	 	 "scientific_name"  : "Taraxacum campylodes", 
+  	 	 "current_name"  : "Pissenlit de montagne", 
+  	 	 "image"  : "Taraxacum campylodes/91059.jpg", 
+  	 	 "characteristic"  : "Espèce de pissenlit de montagne. Feuilles basales découpées. Fleurs jaunes en capitules solitaires. Souvent plus robuste que T. officinale. Pousse en pelouses alpines.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 907,
+ 	 	 "scientific_name"  : "Taraxacum officinale", 
+  	 	 "current_name"  : "Pissenlit commun", 
+  	 	 "image"  : "Taraxacum officinale/61030.jpg", 
+  	 	 "characteristic"  : "Vivace très commune. Rosette basale de feuilles très découpées. Fleurs jaunes en capitules solitaires sur des hampes creuses. Fruits en aigrettes (boules blanches). Comestible. Très résistant.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 908,
+ 	 	 "scientific_name"  : "Taxus baccata", 
+  	 	 "current_name"  : "If commun", 
+  	 	 "image"  : "Taxus baccata/51588.jpg", 
+  	 	 "characteristic"  : "Grand conifère persistant. Aiguilles plates, vert foncé. Baies rouges charnues, toxiques (sauf l'arille). Bois très dur. Plante très toxique. Arbre de longévité. Pousse en sous-bois calcaires.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 909,
+ 	 	 "scientific_name"  : "Teucrium chamaedrys", 
+  	 	 "current_name"  : "Germandrée petit-chêne", 
+  	 	 "image"  : "Teucrium chamaedrys/73071.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste ou vivace. Feuilles petites, dentées, ressemblant à celles du chêne. Fleurs roses-pourpres, bilabiées, en épis lâches. Pousse en pelouses sèches et rocailleuses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 910,
+ 	 	 "scientific_name"  : "Teucrium flavum", 
+  	 	 "current_name"  : "Germandrée jaune", 
+  	 	 "image"  : "Teucrium flavum/29090.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste méditerranéen. Feuilles ovales. Fleurs jaunes, bilabiées. Pousse sur sols secs et rocailleux. Plus rare.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 911,
+ 	 	 "scientific_name"  : "Teucrium fruticans", 
+  	 	 "current_name"  : "Germandrée arbustive", 
+  	 	 "image"  : "Teucrium fruticans/102508.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant. Feuilles gris-argentées. Fleurs bleues, bilabiées, en grappes. Très ornementale. Pousse en garrigues et maquis méditerranéens. Souvent cultivée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 912,
+ 	 	 "scientific_name"  : "Teucrium montanum", 
+  	 	 "current_name"  : "Germandrée des montagnes", 
+  	 	 "image"  : "Teucrium montanum/27170.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste formant des coussinets. Feuilles étroites, vert foncé. Fleurs jaune pâle ou blanc crème. Pousse en montagne, sur rochers calcaires. Protégée.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 913,
+ 	 	 "scientific_name"  : "Teucrium scorodonia", 
+  	 	 "current_name"  : "Germandrée scorodoine", 
+  	 	 "image"  : "Teucrium scorodonia/6351.jpg", 
+  	 	 "characteristic"  : "Vivace velue. Feuilles ovales, dentées, ridées. Fleurs jaune-verdâtre, bilabiées, en épis lâches. Odeur d'ail. Pousse en sous-bois et lisières.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 914,
+ 	 	 "scientific_name"  : "Thalictrum aquilegiifolium", 
+  	 	 "current_name"  : "Pigamon à feuilles d'ancolie", 
+  	 	 "image"  : "Thalictrum aquilegiifolium/29210.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles composées, ressemblant à celles de l'ancolie. Fleurs sans pétales, avec de nombreuses étamines jaunes ou rosées, formant des panaches plumeux. Pousse en sous-bois frais et mégaphorbiaies.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 915,
+ 	 	 "scientific_name"  : "Thymus serpyllum", 
+  	 	 "current_name"  : "Thym serpolet", 
+  	 	 "image"  : "Thymus serpyllum/55026.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste rampant et aromatique. Feuilles petites, ovales. Fleurs roses-pourpres en petites têtes. Très mellifère. Pousse en pelouses sèches et rocailleuses.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 916,
+ 	 	 "scientific_name"  : "Thymus vulgaris", 
+  	 	 "current_name"  : "Thym commun", 
+  	 	 "image"  : "Thymus vulgaris/94705.jpg", 
+  	 	 "characteristic"  : "Sous-arbuste aromatique. Feuilles étroites, enroulées. Fleurs roses-pourpres. Très utilisée en cuisine et phytothérapie. Pousse en garrigues méditerranéennes. Très cultivé.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 917,
+ 	 	 "scientific_name"  : "Tilia cordata", 
+  	 	 "current_name"  : "Tilleul à petites feuilles", 
+  	 	 "image"  : "Tilia cordata/47161.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles petites, cordiformes, vert foncé, glauques dessous, avec des touffes de poils roussâtres à l'aisselle des nervures. Fleurs blanc-jaunâtre, très parfumées, mellifères. Pousse en forêt.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 918,
+ 	 	 "scientific_name"  : "Tilia dasystyla", 
+  	 	 "current_name"  : "Tilleul à style velu", 
+  	 	 "image"  : "Tilia dasystyla/8387.jpg", 
+  	 	 "characteristic"  : "Espèce de tilleul peu commune. Feuilles cordiformes. Fleurs jaune pâle. Se distingue par la pubescence sur son style. Originaire du Caucase et d'Anatolie.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 919,
+ 	 	 "scientific_name"  : "Tilia platyphyllos", 
+  	 	 "current_name"  : "Tilleul à grandes feuilles", 
+  	 	 "image"  : "Tilia platyphyllos/26564.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles grandes, cordiformes, vert clair, pubescentes dessus et dessous. Fleurs blanc-jaunâtre, parfumées, mellifères. Pousse en forêt, souvent en montagne.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 920,
+ 	 	 "scientific_name"  : "Tordylium apulum", 
+  	 	 "current_name"  : "Tordyle d'Apulie", 
+  	 	 "image"  : "Tordylium apulum/16500.jpg", 
+  	 	 "characteristic"  : "Annuelle méditerranéenne. Feuilles pennées. Petites ombelles de fleurs blanches. Fruits ronds et plats, ailés. Pousse dans les champs et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 921,
+ 	 	 "scientific_name"  : "Tordylium maximum", 
+  	 	 "current_name"  : "Grand tordyle", 
+  	 	 "image"  : "Tordylium maximum/38210.jpg", 
+  	 	 "characteristic"  : "Grande annuelle. Feuilles pennées. Grandes ombelles de fleurs blanc-verdâtre. Fruits ronds et plats, très ailés. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 922,
+ 	 	 "scientific_name"  : "Torilis arvensis", 
+  	 	 "current_name"  : "Torilis des champs", 
+  	 	 "image"  : "Torilis arvensis/78379.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles finement découpées. Petites ombelles de fleurs blanches. Fruits couverts de soies crochues, s'accrochant aux vêtements. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 923,
+ 	 	 "scientific_name"  : "Tozzia alpina", 
+  	 	 "current_name"  : "Tozzie des Alpes", 
+  	 	 "image"  : "Tozzia alpina/72276.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace semi-parasite. Feuilles ovales. Fleurs jaunes avec des taches pourpres, bilabiées, en grappes. Pousse en montagne, en bords de ruisseaux et prairies humides. Protégée.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 924,
+ 	 	 "scientific_name"  : "Tractema lilio-hyacinthus", 
+  	 	 "current_name"  : "Jacinthe des Pyrénées", 
+  	 	 "image"  : "Tractema lilio-hyacinthus/62480.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Feuilles linéaires. Fleurs bleu vif, campanulées, en grappes lâches. Pousse en sous-bois clairs et prairies de montagne. Anciennement *Hyacinthoides lilio-hyacinthus*.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 925,
+ 	 	 "scientific_name"  : "Tractema verna", 
+  	 	 "current_name"  : "Jacinthe printanière", 
+  	 	 "image"  : "Tractema verna/27802.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Feuilles linéaires. Fleurs bleu pâle, campanulées, en grappes. Fleurit très tôt au printemps. Pousse en sous-bois clairs et prairies. Anciennement *Hyacinthoides verna*.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 926,
+ 	 	 "scientific_name"  : "Tragopogon porrifolius", 
+  	 	 "current_name"  : "Salsifis cultivé", 
+  	 	 "image"  : "Tragopogon porrifolius/78544.jpg", 
+  	 	 "characteristic"  : "Bisannuelle. Feuilles longues, linéaires, glauques. Grandes capitules de fleurs pourpres. Racine comestible. Pousse en friches et prairies, souvent subspontané.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 927,
+ 	 	 "scientific_name"  : "Tragopogon pratensis", 
+  	 	 "current_name"  : "Salsifis des prés", 
+  	 	 "image"  : "Tragopogon pratensis/20938.jpg", 
+  	 	 "characteristic"  : "Bisannuelle. Feuilles longues, linéaires. Grandes capitules de fleurs jaunes. Ferme en milieu de journée. Pousse en prairies et bords de chemins. Produit un latex blanc.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 928,
+ 	 	 "scientific_name"  : "Tribulus terrestris", 
+  	 	 "current_name"  : "Tribule terrestre", 
+  	 	 "image"  : "Tribulus terrestris/11595.jpg", 
+  	 	 "characteristic"  : "Annuelle rampante. Feuilles composées, pennées. Petites fleurs jaunes. Fruits épineux, pouvant blesser pieds et pneus. Pousse sur sols sableux et perturbés en régions chaudes.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 929,
+ 	 	 "scientific_name"  : "Trifolium alpinum", 
+  	 	 "current_name"  : "Trèfle des Alpes", 
+  	 	 "image"  : "Trifolium alpinum/58331.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne. Feuilles trifoliées, grandes. Grandes fleurs roses à pourpres, parfumées, en têtes denses. Pousse en pelouses alpines. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 930,
+ 	 	 "scientific_name"  : "Trifolium campestre", 
+  	 	 "current_name"  : "Trèfle des champs", 
+  	 	 "image"  : "Trifolium campestre/25529.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles trifoliées. Petites fleurs jaunes, en têtes lâches. Très commun en prairies, pelouses et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 931,
+ 	 	 "scientific_name"  : "Trifolium cherleri", 
+  	 	 "current_name"  : "Trèfle de Cherler", 
+  	 	 "image"  : "Trifolium cherleri/22732.jpg", 
+  	 	 "characteristic"  : "Trèfle annuel méditerranéen. Tiges velues. Feuilles trifoliées. Fleurs roses en têtes velues et globuleuses. Pousse en pelouses sèches.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 932,
+ 	 	 "scientific_name"  : "Trifolium incarnatum", 
+  	 	 "current_name"  : "Trèfle incarnat", 
+  	 	 "image"  : "Trifolium incarnatum/61173.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles trifoliées. Grandes fleurs rouge vif, en épis coniques. Cultivée comme plante fourragère et engrais vert. Très ornementale.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 933,
+ 	 	 "scientific_name"  : "Trifolium pratense", 
+  	 	 "current_name"  : "Trèfle des prés", 
+  	 	 "image"  : "Trifolium pratense/6724.jpg", 
+  	 	 "characteristic"  : "Vivace très commune. Feuilles trifoliées, souvent avec une tache claire. Fleurs roses-pourpres en têtes denses. Très utilisée comme fourrage. Pousse en prairies et pelouses.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 934,
+ 	 	 "scientific_name"  : "Trifolium repens", 
+  	 	 "current_name"  : "Trèfle blanc", 
+  	 	 "image"  : "Trifolium repens/54652.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles trifoliées, souvent avec une tache claire. Fleurs blanches, parfumées, en têtes sphériques. Très commun dans les pelouses et prairies. Fixe l'azote.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 935,
+ 	 	 "scientific_name"  : "Trifolium resupinatum", 
+  	 	 "current_name"  : "Trèfle renversé", 
+  	 	 "image"  : "Trifolium resupinatum/105480.jpg", 
+  	 	 "characteristic"  : "Annuelle. Fleurs roses, groupées en têtes, qui se retournent à maturité, faisant paraître le calice gonflé au-dessus des fleurs. Pousse en prairies humides et friches méditerranéennes.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 936,
+ 	 	 "scientific_name"  : "Trifolium scabrum", 
+  	 	 "current_name"  : "Trèfle scabre", 
+  	 	 "image"  : "Trifolium scabrum/88828.jpg", 
+  	 	 "characteristic"  : "Annuelle velue. Petites feuilles trifoliées. Petites fleurs blanches-rosées, en têtes solitaires. Pousse en pelouses sèches et calcaires.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 937,
+ 	 	 "scientific_name"  : "Trifolium stellatum", 
+  	 	 "current_name"  : "Trèfle étoilé", 
+  	 	 "image"  : "Trifolium stellatum/87127.jpg", 
+  	 	 "characteristic"  : "Annuelle velue. Feuilles trifoliées. Fleurs roses en têtes globuleuses. À maturité, le calice se gonfle et s'étale en étoile. Pousse en pelouses et friches méditerranéennes.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 938,
+ 	 	 "scientific_name"  : "Trifolium subterraneum", 
+  	 	 "current_name"  : "Trèfle souterrain", 
+  	 	 "image"  : "Trifolium subterraneum/91839.jpg", 
+  	 	 "characteristic"  : "Annuelle. Fleurs blanches, en têtes. Après la floraison, les têtes se recourbent et enfouissent les fruits sous terre. Pousse en pelouses sèches et sableuses.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 939,
+ 	 	 "scientific_name"  : "Tripleurospermum inodorum", 
+  	 	 "current_name"  : "Matricaire inodore", 
+  	 	 "image"  : "Tripleurospermum inodorum/102186.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles finement découpées. Capitules de fleurs blanches (ligules) et jaunes (centre), sans odeur de camomille. Très commune en cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 940,
+ 	 	 "scientific_name"  : "Tripodion tetraphyllum", 
+  	 	 "current_name"  : "Tripodion à quatre feuilles", 
+  	 	 "image"  : "Tripodion tetraphyllum/8963.jpg", 
+  	 	 "characteristic"  : "Annuelle méditerranéenne. Feuilles ovales. Fleurs jaunes en épis courts, entourées de 4 bractées foliacées. Pousse sur sols secs et rocailleux. Anciennement *Anthyllis tetraphylla*.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 941,
+ 	 	 "scientific_name"  : "Tripolium pannonicum", 
+  	 	 "current_name"  : "Aster maritime", 
+  	 	 "image"  : "Tripolium pannonicum/69912.jpg", 
+  	 	 "characteristic"  : "Vivace des milieux salés. Feuilles charnues, linéaires. Capitules de fleurs bleues-violettes (ligules) et jaunes (centre). Pousse dans les prés salés et vasières. Ancien *Aster tripolium*.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 942,
+ 	 	 "scientific_name"  : "Trollius europaeus", 
+  	 	 "current_name"  : "Trolle d'Europe", 
+  	 	 "image"  : "Trollius europaeus/58629.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles profondément découpées. Grandes fleurs jaune vif, globuleuses. Pousse en prairies humides de montagne et bords de ruisseaux. Protégée.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 943,
+ 	 	 "scientific_name"  : "Tuberaria guttata", 
+  	 	 "current_name"  : "Tubéraire à gouttes", 
+  	 	 "image"  : "Tuberaria guttata/85494.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles basales en rosette. Fleurs jaunes, souvent avec une tache rouge à la base de chaque pétale. Pousse en pelouses sableuses et rocailleuses méditerranéennes.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 944,
+ 	 	 "scientific_name"  : "Tulipa sylvestris", 
+  	 	 "current_name"  : "Tulipe sauvage", 
+  	 	 "image"  : "Tulipa sylvestris/111086.jpg", 
+  	 	 "characteristic"  : "Plante bulbeuse. Feuilles longues, linéaires. Fleurs jaunes, parfumées, souvent pendantes avant l'éclosion. Pousse en prairies et sous-bois clairs. Protégée. Se naturalise facilement.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 945,
+ 	 	 "scientific_name"  : "Tussilago farfara", 
+  	 	 "current_name"  : "Tussilage", 
+  	 	 "image"  : "Tussilago farfara/105474.jpg", 
+  	 	 "characteristic"  : "Vivace. Fleurs jaunes en capitules solitaires, apparaissant très tôt au printemps, avant les feuilles. Feuilles grandes, cordiformes, blanches-tomenteuses dessous. Pousse sur sols argileux et humides. Rhizome traçant.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 946,
+ 	 	 "scientific_name"  : "Ulex europaeus", 
+  	 	 "current_name"  : "Ajonc d'Europe", 
+  	 	 "image"  : "Ulex europaeus/13510.jpg", 
+  	 	 "characteristic"  : "Grand arbuste très épineux. Rameaux verts. Grandes fleurs jaunes, très parfumées (coco), en fin d'hiver et au printemps. Pousse en landes et friches. Très commun. Peut être envahissant.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 947,
+ 	 	 "scientific_name"  : "Ulex gallii", 
+  	 	 "current_name"  : "Ajonc de Gall", 
+  	 	 "image"  : "Ulex gallii/57507.jpg", 
+  	 	 "characteristic"  : "Arbuste épineux. Fleurs jaunes, plus petites et plus tardives que U. europaeus. Pousse en landes atlantiques. Proche de U. europaeus.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 948,
+ 	 	 "scientific_name"  : "Ulmus minor", 
+  	 	 "current_name"  : "Orme champêtre", 
+  	 	 "image"  : "Ulmus minor/26146.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc. Feuilles ovales, asymétriques à la base, dentées. Souvent attaqué par la graphiose. Pousse en haies, lisières et forêts. Plus résistant que l'orme lisse.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 949,
+ 	 	 "scientific_name"  : "Umbilicus rupestris", 
+  	 	 "current_name"  : "Nombril de Vénus", 
+  	 	 "image"  : "Umbilicus rupestris/29554.jpg", 
+  	 	 "characteristic"  : "Plante succulente. Feuilles rondes, charnues, en forme de soucoupe, avec un 'nombril' central. Tiges florales dressées, portant des fleurs jaune-verdâtre, campanulées. Pousse sur les vieux murs et rochers.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 950,
+ 	 	 "scientific_name"  : "Urospermum dalechampii", 
+  	 	 "current_name"  : "Urosperme de Dalechamp", 
+  	 	 "image"  : "Urospermum dalechampii/72774.jpg", 
+  	 	 "characteristic"  : "Vivace méditerranéenne. Feuilles basales découpées. Grands capitules de fleurs jaunes pâles, à centre plus foncé. Pousse en pelouses et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 951,
+ 	 	 "scientific_name"  : "Urtica dioica", 
+  	 	 "current_name"  : "Grande ortie", 
+  	 	 "image"  : "Urtica dioica/66554.jpg", 
+  	 	 "characteristic"  : "Vivace très commune, couverte de poils urticants. Feuilles ovales, dentées. Petites fleurs verdâtres en grappes pendantes. Comestible cuite, utilisée en phytothérapie et purin. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 952,
+ 	 	 "scientific_name"  : "Vaccinium myrtillus", 
+  	 	 "current_name"  : "Myrtille", 
+  	 	 "image"  : "Vaccinium myrtillus/19644.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste caduc. Feuilles ovales, vertes. Fleurs rose pâle, campanulées. Baies noires-bleutées (myrtilles) comestibles. Pousse en sous-bois acides et landes de montagne.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 953,
+ 	 	 "scientific_name"  : "Vaccinium vitis-idaea", 
+  	 	 "current_name"  : "Airelle rouge", 
+  	 	 "image"  : "Vaccinium vitis-idaea/10230.jpg", 
+  	 	 "characteristic"  : "Petit sous-arbuste persistant. Feuilles ovales, coriaces, luisantes. Fleurs roses-blanches. Baies rouges (airelles), comestibles, acides. Pousse en sous-bois acides et landes de montagne.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 954,
+ 	 	 "scientific_name"  : "Valeriana celtica", 
+  	 	 "current_name"  : "Valériane celtique", 
+  	 	 "image"  : "Valeriana celtica/106669.jpg", 
+  	 	 "characteristic"  : "Petite vivace de montagne. Feuilles entières, lancéolées. Fleurs blanc-jaunâtre, parfumées. Rare et protégée. Utilisée pour un parfum. Pousse en pelouses alpines. Ancien *Valeriana spicata*.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 955,
+ 	 	 "scientific_name"  : "Valeriana officinalis", 
+  	 	 "current_name"  : "Valériane officinale", 
+  	 	 "image"  : "Valeriana officinalis/103519.jpg", 
+  	 	 "characteristic"  : "Grande vivace. Feuilles composées, pennées. Fleurs roses à blanches, parfumées, en corymbes. Racine utilisée pour ses propriétés calmantes. Pousse en prairies humides et bords de cours d'eau.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 956,
+ 	 	 "scientific_name"  : "Veratrum album", 
+  	 	 "current_name"  : "Vérâtre blanc", 
+  	 	 "image"  : "Veratrum album/48139.jpg", 
+  	 	 "characteristic"  : "Grande vivace de montagne. Grandes feuilles plissées. Fleurs blanc-verdâtre, en panicules dressées. Très toxique. Pousse en prairies humides et mégaphorbiaies d'altitude. Protégée.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 957,
+ 	 	 "scientific_name"  : "Verbascum blattaria", 
+  	 	 "current_name"  : "Molène blattaire", 
+  	 	 "image"  : "Verbascum blattaria/7699.jpg", 
+  	 	 "characteristic"  : "Bisannuelle. Feuilles basales en rosette, feuilles caulinaires dentées. Fleurs jaunes (parfois blanches) avec un centre pourpre, en grappes lâches. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 958,
+ 	 	 "scientific_name"  : "Verbascum boerhavii", 
+  	 	 "current_name"  : "Molène de Boerhaave", 
+  	 	 "image"  : "Verbascum boerhavii/95982.jpg", 
+  	 	 "characteristic"  : "Bisannuelle. Feuilles basales en rosette. Fleurs jaunes en épis lâches, pubescentes. Pousse sur sols secs et rocailleux. Plus rare.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 959,
+ 	 	 "scientific_name"  : "Verbascum lychnitis", 
+  	 	 "current_name"  : "Molène lychnite", 
+  	 	 "image"  : "Verbascum lychnitis/85600.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Tiges ramifiées, couvertes d'un duvet cotonneux. Fleurs jaunes pâle (rarement blanches) en panicules lâches. Pousse en friches et sols perturbés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 960,
+ 	 	 "scientific_name"  : "Verbascum nigrum", 
+  	 	 "current_name"  : "Molène noire", 
+  	 	 "image"  : "Verbascum nigrum/80746.jpg", 
+  	 	 "characteristic"  : "Vivace. Tiges velues. Feuilles basales cordiformes. Fleurs jaunes avec des étamines pourpres, en épis dressés. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 961,
+ 	 	 "scientific_name"  : "Verbascum pulverulentum", 
+  	 	 "current_name"  : "Molène farineuse", 
+  	 	 "image"  : "Verbascum pulverulentum/91036.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Entièrement couverte d'une pubescence blanchâtre farineuse. Fleurs jaunes, en panicules très ramifiées. Pousse sur sols sableux et secs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 962,
+ 	 	 "scientific_name"  : "Verbascum sinuatum", 
+  	 	 "current_name"  : "Molène sinuée", 
+  	 	 "image"  : "Verbascum sinuatum/43657.jpg", 
+  	 	 "characteristic"  : "Bisannuelle méditerranéenne. Feuilles basales découpées, sinuées, ondulées. Fleurs jaunes en grandes panicules ramifiées. Pousse en friches et bords de chemins secs.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 963,
+ 	 	 "scientific_name"  : "Verbascum thapsus", 
+  	 	 "current_name"  : "Molène officinale", 
+  	 	 "image"  : "Verbascum thapsus/43004.jpg", 
+  	 	 "characteristic"  : "Grande bisannuelle. Entièrement couverte d'un dense duvet cotonneux. Grandes feuilles. Fleurs jaunes, en épi dense et dressé. Utilisée en phytothérapie. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 964,
+ 	 	 "scientific_name"  : "Verbena officinalis", 
+  	 	 "current_name"  : "Verveine officinale", 
+  	 	 "image"  : "Verbena officinalis/41272.jpg", 
+  	 	 "characteristic"  : "Vivace aux tiges raides. Feuilles lobées. Petites fleurs lilas pâle, en épis fins. Utilisée en phytothérapie. Pousse en friches et bords de chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 965,
+ 	 	 "scientific_name"  : "Veronica anagallis-aquatica", 
+  	 	 "current_name"  : "Véronique mouron d'eau", 
+  	 	 "image"  : "Veronica anagallis-aquatica/81419.jpg", 
+  	 	 "characteristic"  : "Vivace aquatique ou semi-aquatique. Tiges creuses. Feuilles charnues, ovales. Fleurs bleu pâle, en grappes. Pousse dans les fossés et cours d'eau.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 966,
+ 	 	 "scientific_name"  : "Veronica arvensis", 
+  	 	 "current_name"  : "Véronique des champs", 
+  	 	 "image"  : "Veronica arvensis/36171.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles ovales, dentées. Petites fleurs bleues, presque sessiles. Très commune dans les cultures, jardins, murs.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 967,
+ 	 	 "scientific_name"  : "Veronica beccabunga", 
+  	 	 "current_name"  : "Véronique des ruisseaux", 
+  	 	 "image"  : "Veronica beccabunga/71667.jpg", 
+  	 	 "characteristic"  : "Vivace aquatique. Tiges charnues. Feuilles ovales, luisantes. Fleurs bleues, en grappes. Pousse dans les ruisseaux et mares.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 968,
+ 	 	 "scientific_name"  : "Veronica chamaedrys", 
+  	 	 "current_name"  : "Véronique petit-chêne", 
+  	 	 "image"  : "Veronica chamaedrys/98427.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles dentées, velues. Fleurs bleu vif, en grappes. Très commune en sous-bois clairs et prairies. Très décorative.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 969,
+ 	 	 "scientific_name"  : "Veronica cymbalaria", 
+  	 	 "current_name"  : "Véronique cymbalaire", 
+  	 	 "image"  : "Veronica cymbalaria/76131.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Feuilles rondes, lobées, velues. Petites fleurs blanches, solitaires. Pousse sur les murs et sols perturbés, surtout en climat doux.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 970,
+ 	 	 "scientific_name"  : "Veronica hederifolia", 
+  	 	 "current_name"  : "Véronique à feuilles de lierre", 
+  	 	 "image"  : "Veronica hederifolia/22375.jpg", 
+  	 	 "characteristic"  : "Annuelle. Feuilles trilobées, rappelant le lierre. Petites fleurs bleu pâle, solitaires. Très commune dans les cultures et jardins. Fleurit très tôt.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 971,
+ 	 	 "scientific_name"  : "Veronica officinalis", 
+  	 	 "current_name"  : "Véronique officinale", 
+  	 	 "image"  : "Veronica officinalis/57603.jpg", 
+  	 	 "characteristic"  : "Vivace rampante, velue. Feuilles ovales, dentées. Fleurs bleu pâle, en grappes dressées. Utilisée en phytothérapie. Pousse en sous-bois clairs et landes.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 972,
+ 	 	 "scientific_name"  : "Veronica persica", 
+  	 	 "current_name"  : "Véronique de Perse", 
+  	 	 "image"  : "Veronica persica/94800.jpg", 
+  	 	 "characteristic"  : "Annuelle rampante. Feuilles ovales, dentées. Fleurs bleu vif, solitaires. Très commune dans les jardins et cultures. Originaire d'Asie.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 973,
+ 	 	 "scientific_name"  : "Veronica serpyllifolia", 
+  	 	 "current_name"  : "Véronique à feuilles de serpolet", 
+  	 	 "image"  : "Veronica serpyllifolia/54526.jpg", 
+  	 	 "characteristic"  : "Petite vivace rampante. Feuilles ovales, petites, rappelant le serpolet. Petites fleurs bleu pâle ou blanches, en grappes. Pousse dans les pelouses et chemins.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 974,
+ 	 	 "scientific_name"  : "Viburnum lantana", 
+  	 	 "current_name"  : "Viorne lantane", 
+  	 	 "image"  : "Viburnum lantana/14587.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc. Feuilles ridées, vert foncé dessus, tomenteuses dessous. Fleurs blanches en corymbes. Fruits rouges puis noirs. Pousse en sous-bois calcaires et lisières.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 975,
+ 	 	 "scientific_name"  : "Viburnum opulus", 
+  	 	 "current_name"  : "Viorne obier", 
+  	 	 "image"  : "Viburnum opulus/35848.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc. Feuilles lobées, rappelant celles de l'érable. Fleurs blanches en corymbes plats, souvent avec de grandes fleurs stériles périphériques. Fruits rouges vifs, toxiques crus. Pousse en milieux humides.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 976,
+ 	 	 "scientific_name"  : "Viburnum rhytidophyllum", 
+  	 	 "current_name"  : "Viorne à feuilles ridées", 
+  	 	 "image"  : "Viburnum rhytidophyllum/86535.jpg", 
+  	 	 "characteristic"  : "Grand arbuste persistant. Grandes feuilles ridées, vert foncé dessus, feutrées dessous. Fleurs blanc-crème en corymbes. Fruits rouges puis noirs. Souvent cultivé. Originaire de Chine.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 977,
+ 	 	 "scientific_name"  : "Viburnum tinus", 
+  	 	 "current_name"  : "Laurier-tin", 
+  	 	 "image"  : "Viburnum tinus/21991.jpg", 
+  	 	 "characteristic"  : "Arbuste persistant. Feuilles ovales, luisantes. Fleurs blanc-rosé en corymbes, parfumées, en hiver. Fruits noirs. Très cultivé en climat doux. Pousse en garrigues méditerranéennes.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 978,
+ 	 	 "scientific_name"  : "Vicia cracca", 
+  	 	 "current_name"  : "Vesce craque", 
+  	 	 "image"  : "Vicia cracca/41013.jpg", 
+  	 	 "characteristic"  : "Plante grimpante. Feuilles composées, avec des vrilles. Fleurs bleu-violet en longues grappes unilatérales. Pousse en prairies et bords de chemins. Très commune.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 979,
+ 	 	 "scientific_name"  : "Vicia hirsuta", 
+  	 	 "current_name"  : "Vesce hérissée", 
+  	 	 "image"  : "Vicia hirsuta/72164.jpg", 
+  	 	 "characteristic"  : "Petite annuelle grimpante. Feuilles composées, avec des vrilles. Petites fleurs blanc-bleuâtre en grappes courtes. Fruits en petites gousses velues. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 980,
+ 	 	 "scientific_name"  : "Vicia hybrida", 
+  	 	 "current_name"  : "Vesce hybride", 
+  	 	 "image"  : "Vicia hybrida/90915.jpg", 
+  	 	 "characteristic"  : "Annuelle grimpante. Feuilles composées, avec des vrilles. Fleurs jaune-brunâtre, solitaires ou par paires à l'aisselle des feuilles. Pousse en pelouses sèches méditerranéennes.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 981,
+ 	 	 "scientific_name"  : "Vicia pannonica", 
+  	 	 "current_name"  : "Vesce de Pannonie", 
+  	 	 "image"  : "Vicia pannonica/72390.jpg", 
+  	 	 "characteristic"  : "Annuelle ou bisannuelle. Feuilles composées, avec des vrilles. Fleurs jaune-crème, souvent striées de violet, en grappes. Cultivée comme plante fourragère. Pousse en prairies et friches.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 982,
+ 	 	 "scientific_name"  : "Vicia sativa", 
+  	 	 "current_name"  : "Vesce cultivée", 
+  	 	 "image"  : "Vicia sativa/25037.jpg", 
+  	 	 "characteristic"  : "Annuelle grimpante. Feuilles composées, avec des vrilles. Fleurs roses à pourpres, solitaires ou par paires à l'aisselle des feuilles. Cultivée comme plante fourragère et engrais vert. Pousse dans les cultures et friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 983,
+ 	 	 "scientific_name"  : "Vicia sepium", 
+  	 	 "current_name"  : "Vesce des haies", 
+  	 	 "image"  : "Vicia sepium/103013.jpg", 
+  	 	 "characteristic"  : "Vivace grimpante. Feuilles composées, avec des vrilles. Fleurs roses à pourpres, en grappes courtes. Pousse dans les haies, lisières et prairies.", 
+  	 	 "water_need"  : 1.8 
+	},
+	 { 
+ 	 	 "id"  : 984,
+ 	 	 "scientific_name"  : "Vinca major", 
+  	 	 "current_name"  : "Grande pervenche", 
+  	 	 "image"  : "Vinca major/99248.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Grandes feuilles ovales, luisantes. Grandes fleurs bleues-violettes. Peut devenir envahissante. Souvent cultivée comme couvre-sol. Pousse en sous-bois frais.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 985,
+ 	 	 "scientific_name"  : "Vinca minor", 
+  	 	 "current_name"  : "Petite pervenche", 
+  	 	 "image"  : "Vinca minor/56206.jpg", 
+  	 	 "characteristic"  : "Vivace rampante. Feuilles petites, ovales, luisantes. Fleurs bleues-violettes. Moins envahissante que V. major. Souvent cultivée comme couvre-sol. Pousse en sous-bois secs.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 986,
+ 	 	 "scientific_name"  : "Vincetoxicum hirundinaria", 
+  	 	 "current_name"  : "Dompte-venin officinal", 
+  	 	 "image"  : "Vincetoxicum hirundinaria/96327.jpg", 
+  	 	 "characteristic"  : "Vivace dressée. Feuilles ovales. Fleurs blanc-jaunâtre en cymes axillaires. Fruits en follicules. Anciennement utilisée comme contrepoison. Toxique. Pousse en pelouses calcaires et lisières.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 987,
+ 	 	 "scientific_name"  : "Vincetoxicum nigrum", 
+  	 	 "current_name"  : "Dompte-venin noir", 
+  	 	 "image"  : "Vincetoxicum nigrum/15421.jpg", 
+  	 	 "characteristic"  : "Vivace volubile. Feuilles ovales. Fleurs pourpre foncé à noir, en cymes axillaires. Très envahissante en Amérique du Nord. Pousse en sous-bois et friches.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 988,
+ 	 	 "scientific_name"  : "Viola alba", 
+  	 	 "current_name"  : "Violette blanche", 
+  	 	 "image"  : "Viola alba/14967.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Fleurs blanches, parfumées, avec un éperon verdâtre. Pousse en sous-bois clairs et lisières.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 989,
+ 	 	 "scientific_name"  : "Viola arvensis", 
+  	 	 "current_name"  : "Pensée des champs", 
+  	 	 "image"  : "Viola arvensis/92481.jpg", 
+  	 	 "characteristic"  : "Petite annuelle. Fleurs petites, blanc-jaunâtre, avec des taches violettes sur les pétales inférieurs. Très commune dans les cultures et friches.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 990,
+ 	 	 "scientific_name"  : "Viola biflora", 
+  	 	 "current_name"  : "Violette à deux fleurs", 
+  	 	 "image"  : "Viola biflora/22678.jpg", 
+  	 	 "characteristic"  : "Petite vivace. Fleurs jaunes, solitaires ou par paires, avec des nervures foncées. Pousse en montagne, en sous-bois frais et rochers humides.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 991,
+ 	 	 "scientific_name"  : "Viola calcarata", 
+  	 	 "current_name"  : "Pensée à éperon", 
+  	 	 "image"  : "Viola calcarata/94327.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne. Grandes fleurs violettes, bleues ou jaunes, avec un long éperon. Pousse en pelouses alpines. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 992,
+ 	 	 "scientific_name"  : "Viola cornuta", 
+  	 	 "current_name"  : "Pensée cornue", 
+  	 	 "image"  : "Viola cornuta/28321.jpg", 
+  	 	 "characteristic"  : "Vivace. Fleurs violettes, parfumées, avec un long éperon. Souvent cultivée et hybridée pour les jardins. Originaire des Pyrénées.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 993,
+ 	 	 "scientific_name"  : "Viola lutea", 
+  	 	 "current_name"  : "Pensée jaune", 
+  	 	 "image"  : "Viola lutea/24675.jpg", 
+  	 	 "characteristic"  : "Vivace de montagne. Fleurs jaunes (parfois violettes ou bicolores). Pousse en pelouses alpines et subalpines. Protégée.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 994,
+ 	 	 "scientific_name"  : "Viola odorata", 
+  	 	 "current_name"  : "Violette odorante", 
+  	 	 "image"  : "Viola odorata/23374.jpg", 
+  	 	 "characteristic"  : "Petite vivace stolonifère. Feuilles cordiformes. Fleurs violettes, très parfumées. Pousse en sous-bois, lisières, jardins. Utilisée en parfumerie.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 995,
+ 	 	 "scientific_name"  : "Viola riviniana", 
+  	 	 "current_name"  : "Violette de Rivinus", 
+  	 	 "image"  : "Viola riviniana/21825.jpg", 
+  	 	 "characteristic"  : "Vivace. Feuilles cordiformes. Fleurs bleu-violet sans parfum. Pousse en sous-bois, haies et prairies. Très commune.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 996,
+ 	 	 "scientific_name"  : "Viola tricolor", 
+  	 	 "current_name"  : "Pensée sauvage", 
+  	 	 "image"  : "Viola tricolor/5498.jpg", 
+  	 	 "characteristic"  : "Annuelle ou bisannuelle. Fleurs tricolores (blanc, jaune, violet). Pousse en pelouses, friches et cultures. Ancêtre des pensées cultivées.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 997,
+ 	 	 "scientific_name"  : "Viscum album", 
+  	 	 "current_name"  : "Gui", 
+  	 	 "image"  : "Viscum album/48607.jpg", 
+  	 	 "characteristic"  : "Plante parasite. Tiges ramifiées en boule. Feuilles coriaces, vert-jaunâtre. Baies blanches, visqueuses, toxiques. Pousse sur les arbres (pommiers, peupliers, etc.). Symbolique de Noël.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 998,
+ 	 	 "scientific_name"  : "Vitex agnus-castus", 
+  	 	 "current_name"  : "Gattilier", 
+  	 	 "image"  : "Vitex agnus-castus/8759.jpg", 
+  	 	 "characteristic"  : "Grand arbuste caduc. Feuilles palmées. Grandes panicules de fleurs violettes, parfumées. Fruits (baies) utilisés en phytothérapie. Pousse au bord de l'eau en climat méditerranéen. Souvent cultivé.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 999,
+ 	 	 "scientific_name"  : "Vitis vinifera", 
+  	 	 "current_name"  : "Vigne cultivée", 
+  	 	 "image"  : "Vitis vinifera/59241.jpg", 
+  	 	 "characteristic"  : "Liane grimpante. Feuilles palmées, lobées. Fleurs verdâtres discrètes. Fruits (raisins) comestibles, utilisés pour le vin. Cultivée mondialement. L'espèce sauvage existe aussi.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 1000,
+ 	 	 "scientific_name"  : "Wisteria sinensis", 
+  	 	 "current_name"  : "Glycine de Chine", 
+  	 	 "image"  : "Wisteria sinensis/98822.jpg", 
+  	 	 "characteristic"  : "Grande liane ligneuse grimpante. Feuilles composées, pennées. Grandes grappes de fleurs violettes ou blanches, très parfumées, pendantes au printemps. Très ornementale. Peut être envahissante.", 
+  	 	 "water_need"  : 3.0 
+	}
+]
+
+import sqlite3
+import json
+
+# Connexion à la base SQLite (fichier database.db)
+conn = sqlite3.connect('mikolo_maitso.db')
+cursor = conn.cursor()
+
+def ajout(plantee, cursor):
+    cursor.execute("""
+        INSERT INTO plant (id, scientific_name, current_name, image, characteristic, water_need)
+        VALUES (?, ?, ?, ?, ?, ?)
+    """, (
+        plantee['id'],
+        plantee['scientific_name'],
+        plantee['current_name'],
+        plantee['image'],
+        plantee['characteristic'],
+        plantee['water_need']
+    ))
+
+# Supposons que plantes est défini quelque part avant
+for plt in plantes:
+    ajout(plt, cursor)
+
+conn.commit()
+cursor.close()
+conn.close()
+
+
+
+"""
+import requests
+import json
+import psycopg2
+
+
+conn = psycopg2.connect(
+    host="localhost",
+    database="mikolomaitso",
+    user="postgres",
+    password="thia"
+)
+
+cursor = conn.cursor()
+
+
+
+def  ajout(plantee,cursor):
+	cursor.execute(----
+		INSERT INTO plant (id, scientific_name, current_name, image, characteristic, water_need)
+		VALUES (%s, %s, %s, %s, %s, %s)
+	---, (plantee['id'],
+		plantee['scientific_name'],
+		plantee['current_name'],
+		plantee['image'],
+		plantee['characteristic'],
+		plantee['water_need']))
+
+
+for plt in plantes:
+	ajout(plt, cursor)
+
+
+conn.commit()
+cursor.close()
+conn.close()
+"""
