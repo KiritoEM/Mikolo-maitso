@@ -1,0 +1,43 @@
+
+
+@app.route(f'/api/recuperation/Scanned_plant/',methods=['GET'])
+def recuperation_scanned_plant():
+    scanned_plants = Scanned_plant.query.all()
+    return jsonify([scanned_plant.to_dict() for scanned_plant in scanned_plants]), 200
+
+
+
+@app.route(f'/api/recuperation/Diagnostic/',methods=['GET'])
+def recuperation_diagnostic():
+    diagnostics = Diagnostic.query.all()
+    return jsonify([diagnostic.to_dict() for diagnostic in diagnostics]), 200
+
+@app.route(f'/api/recuperation/Irrigation_system/',methods=['GET'])
+def recuperation_irrigation_system():
+    irrigation_systems = Irrigation_system.query.all()
+    return jsonify([irrigation_system.to_dict() for irrigation_system in irrigation_systems]), 200
+
+@app.route(f'/api/recuperation/Irrigation_action/',methods=['GET'])
+def recuperation_irrigation_action():
+    irrigation_actions = Irrigation_action.query.all()
+    return jsonify([irrigation_action.to_dict() for irrigation_action in irrigation_actions]), 200
+
+@app.route(f'/api/recuperation/Microcontroller/',methods=['GET'])
+def recuperation_microcontroller():
+    microcontrollers = Microcontroller.query.all()
+    return jsonify([microcontroller.to_dict() for microcontroller in microcontrollers]), 200
+
+@app.route(f'/api/recuperation/Sensor/',methods=['GET'])
+def recuperation_sensor():
+    sensors = Sensor.query.all()
+    return jsonify([sensor.to_dict() for sensor in sensors]), 200
+
+@app.route(f'/api/recuperation/Sensor_data/',methods=['GET'])
+def recuperation_sensor_data():
+    sensor_data = Sensor_data.query.all()
+    return jsonify([sensor_datum.to_dict() for sensor_datum in sensor_data]), 200
+
+@app.route(f'/api/recuperation/User/',methods=['GET'])
+def recuperation_user():
+    users = User.query.all()
+    return jsonify([user.to_dict() for user in users]), 200
