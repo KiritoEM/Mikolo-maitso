@@ -8002,12 +8002,12 @@ plantes = [
 ]
 
 
-if(input("1 / sqlite ---- \n2 / postgresql ---- \n  : ") == "1"):
+if(input("1 / sqlite ---- \n 2 / postgresql ---- \n  : ") == "1"):
 	import sqlite3
 	import json
 
 	# Connexion à la base SQLite (fichier database.db)
-	conn = sqlite3.connect('mikolo_maitso.db')
+	conn = sqlite3.connect('mikolomaitso.db')
 	cursor = conn.cursor()
 
 	def ajout(plantee, cursor):

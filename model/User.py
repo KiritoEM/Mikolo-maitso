@@ -4,7 +4,7 @@ import  enum
 class   role_enum(enum.Enum):
     ADMIN   =   'admin'
     USER    =   'user'
-    EDITOR  =   'EDITOR'
+    EDITOR  =   'editor'
 
 class   User(database.Model):
     __tablename__ = 'user'

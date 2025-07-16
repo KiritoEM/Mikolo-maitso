@@ -1,4 +1,4 @@
-plantes = [ 
+[ 
 	 { 
  	 	 "id"  : 1,
  	 	 "scientific_name"  : "Abies alba", 
@@ -8000,77 +8000,3 @@ plantes = [
   	 	 "water_need"  : 3.0 
 	}
 ]
-
-
-if(input("1 / sqlite ---- \n2 / postgresql ---- \n  : ") == "1"):
-	import sqlite3
-	import json
-
-	# Connexion à la base SQLite (fichier database.db)
-	conn = sqlite3.connect('mikolo_maitso.db')
-	cursor = conn.cursor()
-
-	def ajout(plantee, cursor):
-		cursor.execute("""
-			INSERT INTO plant (id, scientific_name, current_name, image, characteristic, water_need)
-			VALUES (?, ?, ?, ?, ?, ?)
-		""", (
-			plantee['id'],
-			plantee['scientific_name'],
-			plantee['current_name'],
-			plantee['image'],
-			plantee['characteristic'],
-			plantee['water_need']
-		))
-
-	# Supposons que plantes est défini quelque part avant
-	for plt in plantes:
-		ajout(plt, cursor)
-
-	conn.commit()
-	cursor.close()
-	conn.close()
-
-
-
-else :
-
-	mdp = input("Veuillez entrer votre mot de passe psql:")
-	dbname = input("Veuillez entrer le nom de votre base de données psql:")
-
-
-	import requests
-	import json
-	import psycopg2
-
-
-	conn = psycopg2.connect(
-		host="localhost",
-		database = dbname,
-		user="postgres",
-		password = mdp
-	)
-
-	cursor = conn.cursor()
-
-
-
-	def  ajout(plantee,cursor):
-		cursor.execute("""
-			INSERT INTO plant (id, scientific_name, current_name, image, characteristic, water_need)
-			VALUES (%s, %s, %s, %s, %s, %s)"""
-			, (plantee['id'],
-			plantee['scientific_name'],
-			plantee['current_name'],
-			plantee['image'],
-			plantee['characteristic'],
-			plantee['water_need']))
-
-
-	for plt in plantes:
-		ajout(plt, cursor)
-
-
-	conn.commit()
-	cursor.close()
-	conn.close()

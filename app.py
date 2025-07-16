@@ -5,6 +5,24 @@ from extension_shared import database
 import  psycopg2
 from werkzeug.security import generate_password_hash, check_password_hash
 from flask_cors import CORS
+from flask_jwt_extended import (
+    JWTManager, create_access_token, get_jwt_identity, jwt_required
+)
+
+
+
+import os
+from dragoneye import Dragoneye, Image
+from dotenv import load_dotenv
+from PIL import Image as PILImage
+from io import BytesIO
+
+
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+import jwt
+import datetime
+from functools import wraps
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -42,6 +60,9 @@ cl = ["Plant","Scanned_plant","Diagnostic","Irrigation_system","Irrigationaction
 app = Flask(__name__)
 
 CORS(app)
+app.config['JWT_SECRET_KEY'] = 'ta_clé_secrète'
+jwt = JWTManager(app)
+
 
 #---------------------------------------------------------------------------
 
@@ -127,7 +148,8 @@ def ajout_sensor_data():
     database.session.commit()
     return jsonify({'message': 'Données du capteur ajoutées avec succès'}), 201
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@app.route(f'/api/creation/User/',methods=['POST'])
+
+@app.route(f'/api/users/signin/',methods=['POST'])
 def ajout_user():
     data = request.get_json()
     if 'password' in data:
@@ -138,6 +160,13 @@ def ajout_user():
     return jsonify({'message': 'Utilisateur ajouté avec succès'}), 201
 
 # FIN ------------ toutes creations ici ------------------
+
+
+
+
+
+
+
 
 # Debut ------------- toutes recuperations ici ------------------
 
@@ -158,6 +187,105 @@ def recuperation_plant_by_name(plant_name):
 
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+@app.route(f'/api/recuperation/Scanned_plant/<int:scanned_plant_id>', methods=['GET'])
+def recuperation_scanned_plant_by_id(scanned_plant_id):
+    scanned_plant = Scanned_plant.query.get(scanned_plant_id)
+    if not scanned_plant:
+        return jsonify({'message': 'Plante scannée non trouvée'}), 404
+    return jsonify(scanned_plant.to_dict()), 200
+
+@app.route(f'/api/recuperation/Diagnostic/<int:diagnostic_id>', methods=['GET'])
+def recuperation_diagnostic_by_id(diagnostic_id):
+    diagnostic = Diagnostic.query.get(diagnostic_id)
+    if not diagnostic:
+        return jsonify({'message': 'Diagnostic non trouvé'}), 404
+    return jsonify(diagnostic.to_dict()), 200
+
+@app.route(f'/api/recuperation/Irrigation_system/<int:irrigation_system_id>', methods=['GET'])
+def recuperation_irrigation_system_by_id(irrigation_system_id):
+    irrigation_system = Irrigation_system.query.get(irrigation_system_id)
+    if not irrigation_system:
+        return jsonify({'message': 'Système d\'irrigation non trouvé'}), 404
+    return jsonify(irrigation_system.to_dict()), 200
+
+
+
+@app.route(f'/api/recuperation/Irrigation_action/<int:irrigation_action_id>', methods=['GET'])
+def recuperation_irrigation_action_by_id(irrigation_action_id):
+    irrigation_action = Irrigation_action.query.get(irrigation_action_id)
+    if not irrigation_action:
+        return jsonify({'message': 'Action d\'irrigation non trouvée'}), 404
+    return jsonify(irrigation_action.to_dict()), 200
+
+
+
+@app.route(f'/api/recuperation/Microcontroller/<int:microcontroller_id>', methods=['GET'])
+def recuperation_microcontroller_by_id(microcontroller_id):
+    microcontroller = Microcontroller.query.get(microcontroller_id)
+    if not microcontroller:
+        return jsonify({'message': 'Microcontrôleur non trouvé'}), 404
+    return jsonify(microcontroller.to_dict()), 200
+
+
+
+@app.route(f'/api/recuperation/Sensor/<int:sensor_id>', methods=['GET'])
+def recuperation_sensor_by_id(sensor_id):
+    sensor = Sensor.query.get(sensor_id)
+    if not sensor:
+        return jsonify({'message': 'Capteur non trouvé'}), 404
+    return jsonify(sensor.to_dict()), 200
+
+
+@app.route(f'/api/recuperation/Sensor_data/<int:sensor_data_id>', methods=['GET'])
+def recuperation_sensor_data_by_id(sensor_data_id):
+    sensor_data = Sensor_data.query.get(sensor_data_id)
+    if not sensor_data:
+        return jsonify({'message': 'Données du capteur non trouvées'}), 404
+    return jsonify(sensor_data.to_dict()), 200
+
+
+
+
+def recuperation_all(obj_recup):
+    objs = obj_recup.query.all()
+    if not objs:
+        return jsonify({'message': f'Aucun {obj_recup.__tablename__} trouvé'}), 404
+    return jsonify([obj.to_dict() for obj in objs]), 200
+
+@app.route(f'/api/all/recuperation/<string:to_get>',methods=['GET'])
+def recuperation_all_objects(to_get):
+    if to_get == 'Plant':
+        return recuperation_all(Plant)
+    elif to_get == 'Scanned_plant':
+        return recuperation_all(Scanned_plant)
+    elif to_get == 'Diagnostic':
+        return recuperation_all(Diagnostic)
+    elif to_get == 'Irrigation_system':
+        return recuperation_all(Irrigation_system)
+    elif to_get == 'Irrigation_action':
+        return recuperation_all(Irrigation_action)
+    elif to_get == 'Microcontroller':
+        return recuperation_all(Microcontroller)
+    elif to_get == 'Sensor':
+        return recuperation_all(Sensor)
+    elif to_get == 'Sensor_data':
+        return recuperation_all(Sensor_data)
+    elif to_get == 'User':
+        return recuperation_all(User)
+    else:
+        return jsonify({'message': 'Type de récupération non reconnu'}), 400
+
+
+
+
+
+
+
+
+
+
 
 def get(o):
     Obj = o.query.all()
@@ -201,7 +329,55 @@ def recuperation(types):
 
 
 
+#fin creation ----- specifique de toutes elements de la table -----------------
 
+
+
+
+# Clé secrète pour signer le JWT
+
+
+
+@app.route('/api/users/login/', methods=['POST'])
+def authentification():
+    data = request.get_json()
+    email = data.get('email')
+    password = data.get('password')
+
+    if not email or not password:
+        return jsonify({'message': 'Email et mot de passe requis'}), 400
+
+    user = User.query.filter_by(email=email).first()
+    if not user:
+        return jsonify({'message': 'Utilisateur non trouvé'}), 404
+
+    if not check_password_hash(user.password, password):
+        return jsonify({'message': 'Mot de passe incorrect'}), 401
+
+    # Génération du JWT
+    token = create_access_token(identity=user.id)
+
+    return jsonify({
+        'message': 'Authentification réussie',
+        'token': token,
+        'user': user.to_dict()  # Assure-toi que cette méthode existe dans ton modèle
+    }), 200
+
+@app.route('/protected', methods=['GET'])
+@jwt_required()
+def protected_route():
+    current_user_id = get_jwt_identity()
+    user = User.query.get(current_user_id)
+    return jsonify({
+        'message': f'Bienvenue {user.nom} ! Ceci est une ressource protégée.'
+    }), 200
+
+
+
+@app.route('/recup/',methods=['GET'])
+def recup():
+    users = User.query.all()
+    return jsonify([user.to_dict() for user in users]), 200
 
 
 
@@ -227,34 +403,6 @@ def delete_plant():
     database.session.commit()
     return jsonify({'message': 'Plante supprimée avec succès'}), 200
 
-
-liste = ["Plant","Scanned_plant","Diagnostic","Irrigation_system","Irrigationaction","Microcontroller","Sensor","Sensor_data","User"]
-c = 'creation'
-r = 'recuperation'
-d = 'delete'
-x = 'modification'
-cl = ["Plant","Scanned_plant","Diagnostic","Irrigation_system","Irrigationaction","Microcontroller","Sensor","Sensor_data","User"]
-
-"""
-def transformation(str,choix):
-    return f" '/api/{choix}/{str}' "
-
-listes = [transformation(li,d) for li in cl]
-
-supr = "supprimée avec succès"
-find = "non trouvée"
-
-@app.route(listes[5],methods=['DELETE'])
-def delete_microcontroller():
-    data = request.get_json()
-    micro_id = data.get('id')
-    micro = Microcontroller.query.get(micro_id)
-    if not micro :
-        return jsonify({'message' : f'microcontroller {find}'}), 404
-    database.session.delete(micro)
-    database.session.commit()
-    return jsonify({'message' : f'microcontroller {supr}'})
-"""
 # ------------------------------------------ fin suppression -------------------------------------------------
  
 
@@ -278,12 +426,89 @@ def lancer():
         return f"Creation reussi"
     
 
+
+
+
+
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+#------------------------------------Amboara ---------------------------------------
+
+load_dotenv()
+AUTH_TOKEN = os.getenv("AUTH_TOKEN")
+
+# Initialiser le client Dragoneye
+dragoneye_client = Dragoneye(api_key=AUTH_TOKEN)
+
+app = Flask(__name__)
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    if 'image' not in request.files:
+        return jsonify({"error": "Aucun fichier image trouvé"}), 400
+
+    image_file = request.files['image']
+
+    # Valider le fichier image
+    try:
+        test_img = PILImage.open(BytesIO(image_file.read()))
+        image_file.seek(0)  # Revenir au début du fichier après lecture
+    except Exception:
+        return jsonify({"error": "Fichier image invalide"}), 400
+
+    try:
+        # Construire l’objet image
+        image = Image(file_or_bytes=image_file.read())
+
+        # Effectuer la prédiction
+        prediction_result = dragoneye_client.classification.predict(
+            image=image,
+            model_name="dragoneye/plants"
+        )
+
+        results = []
+
+        for obj in prediction_result.predictions:
+            category = obj.category
+            results.append({
+                "id": category.id,
+                "type": category.type.name,
+                "name": category.name,
+                "displayName": category.displayName,
+                "score": category.score,
+                "bbox": obj.normalizedBbox
+            })
+
+        return jsonify({"predictions": results})
+
+    except Exception as e:
+        return jsonify({
+            "error": "Erreur serveur",
+            "details": str(e)
+        }), 500
+
+
+
+
+
+
+
+
+
+
 # ----------------- Lancement de l'application -----------------
 if __name__ == '__main__':
     app.debug = True
     app.run()
 
     
+
+
+
+
 
 
 
