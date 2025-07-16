@@ -1,25 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import LoginScreen from './pages/login';
-import InscriptionScreen from './pages/signup/index';
-// import SimulationGraphs from './pages/chart/chart';
+import React from 'react';
+
+import AppNavigator from './navigation/appNavigator';
+import {AuthProvider} from './context/authContext';
+
 export default function App() {
   return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <InscriptionScreen/>
-      {/* <SimulationGraphs/> */}
-      {/* <LoginScreen/> */}
-      
-    </View>
+  <AuthProvider>
+  
+      <AppNavigator />
+   
+  </AuthProvider>
+    
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
