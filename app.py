@@ -75,6 +75,13 @@ database.init_app(app)
 #-------------------- un pour db et un pour des requettes sql directes
 
 
+load_dotenv()
+AUTH_TOKEN = os.getenv("AUTH_TOKEN")
+
+# Initialiser le client Dragoneye
+dragoneye_client = Dragoneye(api_key=AUTH_TOKEN)
+
+
 # -------------------------------------------------------------------- Routes \\ Operation CRUD // --------------------------------------------------------------------
     # DEBUT ------------ toutes creations ici ------------------
 
@@ -437,13 +444,6 @@ def lancer():
 
 #------------------------------------Amboara ---------------------------------------
 
-load_dotenv()
-AUTH_TOKEN = os.getenv("AUTH_TOKEN")
-
-# Initialiser le client Dragoneye
-dragoneye_client = Dragoneye(api_key=AUTH_TOKEN)
-
-app = Flask(__name__)
 
 @app.route('/predict', methods=['POST'])
 def predict():
