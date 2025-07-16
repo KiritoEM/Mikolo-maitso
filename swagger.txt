@@ -1,0 +1,371 @@
+openapi: 3.0.0
+info:
+  title: API Mikolo Maitso
+  description: API pour la gestion des plantes, des diagnostics et des systèmes d'irrigation
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+    description: Serveur de développement
+
+paths:
+  /api/creation/Plant/:
+    post:
+      tags:
+        - Plante
+      summary: Ajouter une nouvelle plante
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Plant'
+      responses:
+        '201':
+          description: Plante ajoutée avec succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Plante ajoutée avec succès"
+
+  /api/creation/Scanned_plant/:
+    post:
+      tags:
+        - Plante scannée
+      summary: Ajouter une plante scannée
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Scanned_plant'
+      responses:
+        '201':
+          description: Plante scannée ajoutée avec succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Plante scannée ajoutée avec succès"
+
+  /api/creation/Diagnostic/:
+    post:
+      tags:
+        - Diagnostic
+      summary: Ajouter un diagnostic
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Diagnostic'
+      responses:
+        '201':
+          description: Diagnostic ajouté avec succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Diagnostic ajouté avec succès"
+
+  /api/users/signin/:
+    post:
+      tags:
+        - Utilisateur
+      summary: Créer un nouvel utilisateur
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: Utilisateur créé avec succès
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Utilisateur ajouté avec succès"
+
+  /api/users/login/:
+    post:
+      tags:
+        - Authentification
+      summary: Authentification utilisateur
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: "user@example.com"
+                password:
+                  type: string
+                  example: "password123"
+      responses:
+        '200':
+          description: Authentification réussie
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                  token:
+                    type: string
+                  user:
+                    $ref: '#/components/schemas/User'
+        '400':
+          description: Email et mot de passe requis
+        '404':
+          description: Utilisateur non trouvé
+        '401':
+          description: Mot de passe incorrect
+
+  /api/recuperation/Plant/{plant_id}:
+    get:
+      tags:
+        - Plante
+      summary: Récupérer une plante par ID
+      parameters:
+        - name: plant_id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Plante trouvée
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Plant'
+        '404':
+          description: Plante non trouvée
+
+  /api/all/recuperation/{to_get}:
+    get:
+      tags:
+        - Général
+      summary: Récupérer tous les éléments d'un type
+      parameters:
+        - name: to_get
+          in: path
+          required: true
+          schema:
+            type: string
+            enum: [Plant, Scanned_plant, Diagnostic, Irrigation_system, Irrigation_action, Microcontroller, Sensor, Sensor_data, User]
+      responses:
+        '200':
+          description: Liste des éléments
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  oneOf:
+                    - $ref: '#/components/schemas/Plant'
+                    - $ref: '#/components/schemas/Scanned_plant'
+                    - $ref: '#/components/schemas/Diagnostic'
+                    - $ref: '#/components/schemas/Irrigation_system'
+                    - $ref: '#/components/schemas/Irrigation_action'
+                    - $ref: '#/components/schemas/Microcontroller'
+                    - $ref: '#/components/schemas/Sensor'
+                    - $ref: '#/components/schemas/Sensor_data'
+                    - $ref: '#/components/schemas/User'
+        '404':
+          description: Aucun élément trouvé
+        '400':
+          description: Type de récupération non reconnu
+
+  /predict:
+    post:
+      tags:
+        - Analyse d'image
+      summary: Analyser une image de plante
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                image:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Résultats de l'analyse
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  predictions:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                        type:
+                          type: string
+                        name:
+                          type: string
+                        displayName:
+                          type: string
+                        score:
+                          type: number
+                        bbox:
+                          type: object
+        '400':
+          description: Aucun fichier image trouvé ou fichier invalide
+        '500':
+          description: Erreur serveur
+
+components:
+  schemas:
+    Plant:
+      type: object
+      properties:
+        id:
+          type: integer
+        current_name:
+          type: string
+        scientific_name:
+          type: string
+        family:
+          type: string
+        origin:
+          type: string
+        description:
+          type: string
+
+    Scanned_plant:
+      type: object
+      properties:
+        id:
+          type: integer
+        plant_id:
+          type: integer
+        scan_date:
+          type: string
+          format: date-time
+        image_url:
+          type: string
+        health_status:
+          type: string
+
+    Diagnostic:
+      type: object
+      properties:
+        id:
+          type: integer
+        scanned_plant_id:
+          type: integer
+        diagnosis_date:
+          type: string
+          format: date-time
+        disease_name:
+          type: string
+        treatment_advice:
+          type: string
+        confidence_level:
+          type: number
+
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        nom:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+        role:
+          type: string
+
+    Irrigation_system:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+        status:
+          type: string
+
+    Irrigation_action:
+      type: object
+      properties:
+        id:
+          type: integer
+        system_id:
+          type: integer
+        action_date:
+          type: string
+          format: date-time
+        duration:
+          type: integer
+        water_quantity:
+          type: number
+
+    Microcontroller:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        location:
+          type: string
+        status:
+          type: string
+
+    Sensor:
+      type: object
+      properties:
+        id:
+          type: integer
+        microcontroller_id:
+          type: integer
+        type:
+          type: string
+        status:
+          type: string
+
+    Sensor_data:
+      type: object
+      properties:
+        id:
+          type: integer
+        sensor_id:
+          type: integer
+        reading_date:
+          type: string
+          format: date-time
+        value:
+          type: number
+        unit:
+          type: string
