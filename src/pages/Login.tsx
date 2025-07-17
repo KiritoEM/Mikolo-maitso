@@ -11,7 +11,6 @@ import FaceRecognitionModal from '../components/FaceRecognitionModal';
 import { UserRound } from 'lucide-react';
 import { login } from '../services/authServices';
 import { createSession } from '../lib/session';
-import { useAuth } from '../context/AuthContext';
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');

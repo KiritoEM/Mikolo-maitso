@@ -24,7 +24,7 @@ const FaceRecognitionModal: React.FC<FaceRecognitionModalProps> = ({
   const [isCapturing, setIsCapturing] = useState(false);
   const [status, setStatus] = useState<'loading' | 'ready' | 'capturing' | 'success' | 'error'>('loading');
   const [message, setMessage] = useState('Initialisation de la caméra...');
-  const [faceDescriptor, setFaceDescriptor] = useState<Float32Array | null>(null);
+  //@ts-ignore
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
 
   // Charger les modèles Face-API

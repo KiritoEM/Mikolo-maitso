@@ -18,7 +18,7 @@ const PlantCard: React.FC<PlantCardProps> = ({
 }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm group border border-gray-100 dark:border-gray-700">
-      <div className="relative aspect-[4/3]">
+      <div className="relative aspect-[5/3]">
         <img
           src={image}
           alt={name}

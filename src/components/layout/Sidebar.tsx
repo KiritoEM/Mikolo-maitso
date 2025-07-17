@@ -21,12 +21,12 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="w-64 h-screen bg-white dark:bg-gray-800 border-r border-gray-50 dark:border-gray-700 flex flex-col">
+    <div className="w-64 fixed h-screen bg-white dark:bg-gray-800 border-r border-gray-50 dark:border-gray-700 flex flex-col">
       <div className="p-6">
         <Logo />
       </div>
       
-      <nav className="flex-1 px-4">
+      <nav className="flex-1 px-4 mt-8">
         {navItems.map((item) => (
           <NavLink
             key={item.path}
