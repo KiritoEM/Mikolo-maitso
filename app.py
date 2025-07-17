@@ -205,12 +205,26 @@ def recuperation_plant_by_name(plant_name):
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-@app.route(f'/api/recuperation/Scanned_plant/<int:scanned_plant_id>', methods=['GET'])
-def recuperation_scanned_plant_by_id(scanned_plant_id):
-    scanned_plant = Scanned_plant.query.get(scanned_plant_id)
+@app.route(f'/api/recuperation/Scanned_plant/<int:user_id>', methods=['GET'])
+def recuperation_scanned_plant_by_id(user_id):
+    scanned_plant = Scanned_plant.query.filter_by(user_id=user_id).all()
+    user = User.query.get(user_id)
     if not scanned_plant:
         return jsonify({'message': 'Plante scannée non trouvée'}), 404
-    return jsonify(scanned_plant.to_dict()), 200
+
+    plant_ids = [plant.plant_id for plant in scanned_plant]
+    plants_list = [
+        {
+            "scan_id": plant.id,
+            "plant_id": plant.plant_id
+        }
+        for plant in scanned_plant
+    ]
+
+    return jsonify({
+        "user_email": user.email if user else None,
+        "plant": plants_list
+    }), 200
 
 @app.route(f'/api/recuperation/Diagnostic/<int:diagnostic_id>', methods=['GET'])
 def recuperation_diagnostic_by_id(diagnostic_id):
@@ -298,33 +312,6 @@ def recuperation_all_objects(to_get):
 
 
 
-
-
-
-
-
-def get(o):
-    Obj = o.query.all()
-    return jsonify([objet.to_dict() for objet in Obj ]), 200
-
-
-@app.route('/new-api/recuperation/<string:types>/',methods=['GET'])
-def recuperation(types):
-    if types == 'Plant':
-        return get(Plant)
-    elif types == 'Scanned_plant':
-        return get(Scanned_plant)
-    elif types == 'Diagnostic':
-        return get(Diagnostic)
-    elif types == 'Irrigation_system':
-        return get(Irrigation_system)
-    elif types == 'Irrigation_action':
-        return get(Irrigation_action)
-    elif types == 'Microcontroller':
-        return get(Microcontroller)
-    elif types == 'User':
-        return get(User)
-    return {'message' : 'verifier votre routes'}
 
 
 
