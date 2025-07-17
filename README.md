@@ -1,7 +1,7 @@
 # Mikolo-maitso
 liste enum
 personne {
-      \n admin
+       admin
       editor
       user
 }
