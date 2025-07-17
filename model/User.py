@@ -12,7 +12,7 @@ class   User(database.Model):
     email = database.Column(database.String(100), nullable=False)
     password = database.Column(database.String(100), nullable=False)
     profile_picture = database.Column(database.String(1000),nullable=True)
-    role = database.Column(database.Enum(role_enum),default=role_enum.USER,nullable=False)
+    role = database.Column(database.Enum(role_enum),default=role_enum.ADMIN,nullable=False)
 
     def to_dict(self):
         return {
