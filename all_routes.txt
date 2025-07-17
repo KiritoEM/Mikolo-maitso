@@ -15,7 +15,7 @@
 /api/recuperation/Plant/{name}
 /api/recuperation/Scanned_plant/{user_id}
 /api/recuperation/Diagnostic/ {id_diag}
-/api/recuperation/Irrigaiton_system/ {irri_id}
+/api/recuperation/Irrigation_system/ {irri_id}
 /api/recuperation/Irrigation_action/{irrigation_action_id}
 /api/recuperation/Microcontroller/{microcontroller_id}
 /api/recuperation/Sensor/{sensor_id}
