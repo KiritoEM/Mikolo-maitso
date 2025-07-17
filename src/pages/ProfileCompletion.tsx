@@ -54,11 +54,12 @@ const ProfileCompletion: React.FC = () => {
     <>
       <div className="min-h-screen gradient-bg flex items-center justify-center p-4">
         <div className="w-full max-w-md">
-          <div className="flex justify-center mb-8">
-            <Logo size="large" />
-          </div>
+          
           
           <Card>
+            <div className="flex justify-center mb-8">
+            <Logo size="large" />
+            </div>
             <h1 className="text-2xl font-bold text-gray-800 mb-4">
               Finaliser votre inscription
             </h1>

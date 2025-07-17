@@ -13,6 +13,7 @@
     "@lottiefiles/dotlottie-react": "^0.13.5",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-tabs": "^1.0.4",
+    "axios": "^1.10.0",
     "chart.js": "^4.4.1",
     "face-api.js": "^0.22.2",
     "framer-motion": "^11.0.3",

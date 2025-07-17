@@ -1,83 +1,137 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import { Bell, Search, Droplets, Clock, Play, Pause, Settings, Calendar, BarChart3 } from 'lucide-react';
+import { Bell, Search, Download, Filter, Eye, SlidersHorizontal } from 'lucide-react';
 import Sidebar from '../components/layout/Sidebar';
 import Button from '../components/ui/Button';
+import monsteraImage from '../assets/image/monstera.jpg';
+import ficusImage from '../assets/image/ficus-lyrata2.jpg';
+import pothosImage from '../assets/image/Pothos_epipremnum_feuilles.jpg';
+import me from '../assets/image/me.jpg'; // pdp
 
-interface IrrigationZone {
+interface PlantIrrigation {
   id: number;
   name: string;
-  status: 'active' | 'inactive' | 'scheduled';
-  lastWatered: string;
-  nextWatering: string;
-  waterAmount: string;
-  duration: string;
-  plants: number;
+  image: string;
+  microcontroller: string;
+  ipAddress: string;
+  mode: 'MANUEL' | 'AUTOMATIQUE';
+  date: string;
 }
 
 const Irrigations: React.FC = () => {
   const { user } = useAuth();
-  const [activeTab, setActiveTab] = useState<'zones' | 'schedule' | 'history'>('zones');
+  const [selectedPlants, setSelectedPlants] = useState<number[]>([]);
   
-  const irrigationZones: IrrigationZone[] = [
+  // Fonction pour exporter en CSV
+  const exportToCSV = () => {
+    // Filtrer les plantes sélectionnées ou toutes si aucune sélection
+    const plantsToExport = selectedPlants.length > 0 
+      ? plantIrrigations.filter(plant => selectedPlants.includes(plant.id))
+      : plantIrrigations;
+    
+    // Créer les en-têtes CSV
+    const headers = ['Plante', 'Microcontroller', 'Adresse IP', 'Mode', 'Date'];
+    
+    // Créer les lignes de données
+    const csvData = plantsToExport.map(plant => [
+      plant.name,
+      plant.microcontroller,
+      plant.ipAddress,
+      plant.mode,
+      plant.date
+    ]);
+    
+    // Combiner en-têtes et données
+    const csvContent = [headers, ...csvData]
+      .map(row => row.map(field => `"${field}"`).join(','))
+      .join('\n');
+    
+    // Créer et télécharger le fichier
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const link = document.createElement('a');
+    const url = URL.createObjectURL(blob);
+    link.setAttribute('href', url);
+    
+    // Nom du fichier avec timestamp
+    const timestamp = new Date().toISOString().split('T')[0];
+    const filename = selectedPlants.length > 0 
+      ? `irrigations_selection_${timestamp}.csv`
+      : `irrigations_historique_${timestamp}.csv`;
+    
+    link.setAttribute('download', filename);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    
+    // Notification de succès (optionnel)
+    console.log(`Export CSV réussi: ${plantsToExport.length} entrées exportées`);
+  };
+  
+  const plantIrrigations: PlantIrrigation[] = [
     {
       id: 1,
-      name: 'Zone Salon',
-      status: 'active',
-      lastWatered: 'Il y a 2h',
-      nextWatering: 'Dans 6h',
-      waterAmount: '250ml',
-      duration: '5 min',
-      plants: 3
+      name: 'Monstera',
+      image: monsteraImage,
+      microcontroller: 'Arduino Uno',
+      ipAddress: '192.168.1.101',
+      mode: 'MANUEL',
+      date: '30/07'
     },
     {
       id: 2,
-      name: 'Zone Cuisine',
-      status: 'scheduled',
-      lastWatered: 'Il y a 8h',
-      nextWatering: 'Dans 2h',
-      waterAmount: '180ml',
-      duration: '3 min',
-      plants: 2
+      name: 'Pothos',
+      image: pothosImage,
+      microcontroller: 'Arduino Uno',
+      ipAddress: '192.168.1.101',
+      mode: 'MANUEL',
+      date: '27/07'
     },
     {
       id: 3,
-      name: 'Zone Balcon',
-      status: 'inactive',
-      lastWatered: 'Il y a 1j',
-      nextWatering: 'Manuel',
-      waterAmount: '400ml',
-      duration: '8 min',
-      plants: 5
+      name: 'Ficus Lyrata',
+      image: ficusImage,
+      microcontroller: 'Arduino Uno',
+      ipAddress: '192.168.1.101',
+      mode: 'AUTOMATIQUE',
+      date: '24/07'
     }
   ];
 
-  const getStatusColor = (status: string) => {
-    switch (status) {
-      case 'active': return 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300';
-      case 'scheduled': return 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300';
-      case 'inactive': return 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300';
-      default: return 'bg-gray-100 text-gray-700 dark:bg-gray-700 dark:text-gray-300';
+  const handleSelectAll = (checked: boolean) => {
+    if (checked) {
+      setSelectedPlants(plantIrrigations.map(plant => plant.id));
+    } else {
+      setSelectedPlants([]);
     }
   };
 
-  const getStatusText = (status: string) => {
-    switch (status) {
-      case 'active': return 'En cours';
-      case 'scheduled': return 'Programmé';
-      case 'inactive': return 'Inactif';
-      default: return 'Inconnu';
+  const handleSelectPlant = (plantId: number, checked: boolean) => {
+    if (checked) {
+      setSelectedPlants([...selectedPlants, plantId]);
+    } else {
+      setSelectedPlants(selectedPlants.filter(id => id !== plantId));
     }
   };
+
+  const isAllSelected = selectedPlants.length === plantIrrigations.length;
+  const isIndeterminate = selectedPlants.length > 0 && selectedPlants.length < plantIrrigations.length;
 
   return (
     <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
       <Sidebar />
       
       <div className="flex-1 flex flex-col overflow-hidden">
-        <header className="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+        <header className="" // bg-white dark:bg-gray-800 border-b border-gray-50 dark:border-gray-700 
+        >
           <div className="flex items-center justify-between px-8 py-4">
-            <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">Système d'irrigation</h1>
+            <div className="flex items-center gap-2">
+              <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
+                Bienvenue, {user?.username || 'Ravaka Erlivah'}
+              </h1>
+              <span className="text-3xl">👋</span>
+            </div>
+            
             
             <div className="flex items-center gap-6">
               <div className="relative">
@@ -89,18 +143,13 @@ const Irrigations: React.FC = () => {
                 />
               </div>
               
-              <Button className="flex items-center gap-2">
-                <Settings className="h-5 w-5" />
-                Configurer
-              </Button>
-              
               <button className="relative">
                 <Bell className="h-6 w-6 text-gray-600 dark:text-gray-300" />
                 <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-500 rounded-full border-2 border-white dark:border-gray-800"></span>
               </button>
               
               <img
-                src={user?.profilePhoto || "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg"}
+                src={user?.profilePhoto || me}
                 alt="Profile"
                 className="h-10 w-10 rounded-full object-cover"
               />
@@ -110,134 +159,126 @@ const Irrigations: React.FC = () => {
         
         <main className="flex-1 overflow-y-auto p-8">
           <div className="max-w-7xl mx-auto">
-            {/* Navigation Tabs */}
-            <div className="flex gap-6 mb-8">
-              <button
-                onClick={() => setActiveTab('zones')}
-                className={`pb-2 px-1 border-b-2 font-medium transition-colors ${
-                  activeTab === 'zones'
-                    ? 'border-primary-green text-primary-green'
-                    : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <Droplets className="h-5 w-5" />
-                  Zones d'irrigation
-                </div>
-              </button>
-              <button
-                onClick={() => setActiveTab('schedule')}
-                className={`pb-2 px-1 border-b-2 font-medium transition-colors ${
-                  activeTab === 'schedule'
-                    ? 'border-primary-green text-primary-green'
-                    : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5" />
-                  Programmation
-                </div>
-              </button>
-              <button
-                onClick={() => setActiveTab('history')}
-                className={`pb-2 px-1 border-b-2 font-medium transition-colors ${
-                  activeTab === 'history'
-                    ? 'border-primary-green text-primary-green'
-                    : 'border-transparent text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
-                }`}
-              >
-                <div className="flex items-center gap-2">
-                  <BarChart3 className="h-5 w-5" />
-                  Historique
-                </div>
-              </button>
+            <div className="flex items-center justify-between mb-8">
+              <h1 className="text-xl font-semibold text-gray-900 dark:text-white">Plantes scannées</h1>
+              
+              
+              <div className="flex items-center gap-4">
+                <button className="flex items-center gap-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                  <SlidersHorizontal className="h-5 w-5" />
+                </button>
+                
+                <Button 
+                  onClick={exportToCSV}
+                  className="w-60 flex items-center gap-2 bg-primary-green hover:bg-primary-green/90"
+                >
+                  <Download className="h-5 w-5" />
+                  Exporter en CSV
+                </Button>
+              </div>
             </div>
-
-            {/* Zones Tab */}
-            {activeTab === 'zones' && (
-              <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
-                {irrigationZones.map((zone) => (
-                  <div key={zone.id} className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-sm border border-gray-100 dark:border-gray-700">
-                    <div className="flex items-start justify-between mb-4">
-                      <div>
-                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">{zone.name}</h3>
-                        <span className={`text-xs px-3 py-1 rounded-full font-medium ${getStatusColor(zone.status)}`}>
-                          {getStatusText(zone.status)}
-                        </span>
-                      </div>
-                      <div className="flex gap-2">
-                        <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                          {zone.status === 'active' ? (
-                            <Pause className="h-4 w-4 text-gray-600 dark:text-gray-300" />
-                          ) : (
-                            <Play className="h-4 w-4 text-gray-600 dark:text-gray-300" />
-                          )}
-                        </button>
-                        <button className="p-2 rounded-lg bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors">
-                          <Settings className="h-4 w-4 text-gray-600 dark:text-gray-300" />
-                        </button>
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-3">
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">Dernière irrigation:</span>
-                        <span className="text-gray-900 dark:text-white font-medium">{zone.lastWatered}</span>
-                      </div>
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">Prochaine irrigation:</span>
-                        <span className="text-gray-900 dark:text-white font-medium">{zone.nextWatering}</span>
-                      </div>
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">Quantité d'eau:</span>
-                        <span className="text-gray-900 dark:text-white font-medium">{zone.waterAmount}</span>
-                      </div>
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">Durée:</span>
-                        <span className="text-gray-900 dark:text-white font-medium">{zone.duration}</span>
-                      </div>
-                      <div className="flex justify-between text-sm">
-                        <span className="text-gray-600 dark:text-gray-400">Plantes:</span>
-                        <span className="text-gray-900 dark:text-white font-medium">{zone.plants}</span>
-                      </div>
-                    </div>
-                    
-                    <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700">
-                      <Button variant="secondary" fullWidth className="text-sm">
-                        Démarrer maintenant
-                      </Button>
-                    </div>
-                  </div>
-                ))}
+            
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 overflow-hidden">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-gray-50 dark:bg-gray-700">
+                    <tr>
+                      <th className="px-6 py-4 text-left">
+                        <input
+                          type="checkbox"
+                          checked={isAllSelected}
+                          ref={(input) => {
+                            if (input) input.indeterminate = isIndeterminate;
+                          }}
+                          onChange={(e) => handleSelectAll(e.target.checked)}
+                          className="rounded border-gray-300 text-primary-green focus:ring-primary-green"
+                        />
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                        Plante
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                        Microcontroller
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                        Adresse IP
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                        Mode
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                        Date
+                      </th>
+                      <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                        Actions
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
+                    {plantIrrigations.map((plant) => (
+                      <tr key={plant.id} className="hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                        <td className="px-6 py-4">
+                          <input
+                            type="checkbox"
+                            checked={selectedPlants.includes(plant.id)}
+                            onChange={(e) => handleSelectPlant(plant.id, e.target.checked)}
+                            className="rounded border-gray-300 text-primary-green focus:ring-primary-green"
+                          />
+                        </td>
+                        <td className="px-6 py-4">
+                          <div className="flex items-center gap-3">
+                            <img
+                              src={plant.image}
+                              alt={plant.name}
+                              className="h-10 w-10 rounded-full object-cover"
+                            />
+                            <span className="text-sm font-medium text-gray-900 dark:text-white">
+                              {plant.name}
+                            </span>
+                          </div>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                            {plant.microcontroller}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                            {plant.ipAddress}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${
+                            plant.mode === 'AUTOMATIQUE'
+                              ? 'bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300'
+                              : 'bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300'
+                          }`}>
+                            {plant.mode}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                            {plant.date}
+                          </span>
+                        </td>
+                        <td className="px-6 py-4">
+                          <button className="flex items-center gap-2 px-3 py-1 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors">
+                            <Eye className="h-4 w-4" />
+                            Détails
+                          </button>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
-            )}
-
-            {/* Schedule Tab */}
-            {activeTab === 'schedule' && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
-                <div className="text-center py-12">
-                  <Calendar className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Programmation d'irrigation</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-6">
-                    Configurez les horaires d'irrigation automatique pour vos zones
-                  </p>
-                  <Button>Créer une programmation</Button>
-                </div>
+              
+              <div className="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
+                  Historique d'irrigations de plantes
+                </p>
               </div>
-            )}
-
-            {/* History Tab */}
-            {activeTab === 'history' && (
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-sm border border-gray-100 dark:border-gray-700">
-                <div className="text-center py-12">
-                  <BarChart3 className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Historique d'irrigation</h3>
-                  <p className="text-gray-600 dark:text-gray-400">
-                    Consultez l'historique des irrigations et les statistiques de consommation d'eau
-                  </p>
-                </div>
-              </div>
-            )}
+            </div>
           </div>
         </main>
       </div>

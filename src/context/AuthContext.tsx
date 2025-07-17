@@ -19,12 +19,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   const [tempUser, setTempUser] = useState<User | null>(null);
   
   const login = async (email: string, password: string) => {
-    // This would be replaced with actual API call in production
+    // Ceci serait remplacé par un appel d'API réel en production
     try {
-      // Simulating API call
+      // Simulation d'un appel d'API
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Mock successful login
+      // Simulation de connexion réussie
       setUser({
         id: '1',
         username: 'user',
@@ -37,12 +37,12 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
   };
 
   const register = async (username: string, email: string, password: string) => {
-    // This would be replaced with actual API call in production
+    // Ceci serait remplacé par un appel d'API réel en production
     try {
-      // Simulating API call
+      // Simulation d'un appel d'API
       await new Promise(resolve => setTimeout(resolve, 1000));
       
-      // Store as temporary user until profile completion
+      // Stocker en tant qu'utilisateur temporaire jusqu'à la fin du profil
       setTempUser({
         username,
         email,

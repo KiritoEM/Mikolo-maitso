@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import { LayoutGrid, Leaf, Droplets, Settings, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import Logo from '../Logo';
-import img from '../../assets/image/plants7.png';
+import img from '../../assets/image/plants10.png';
 
 const Sidebar: React.FC = () => {
   const { isDarkMode, toggleTheme } = useTheme();
@@ -21,7 +21,7 @@ const Sidebar: React.FC = () => {
   };
 
   return (
-    <div className="w-64 h-screen bg-white dark:bg-gray-800 border-r border-gray-200 dark:border-gray-700 flex flex-col">
+    <div className="w-64 h-screen bg-white dark:bg-gray-800 border-r border-gray-50 dark:border-gray-700 flex flex-col">
       <div className="p-6">
         <Logo />
       </div>
@@ -32,7 +32,7 @@ const Sidebar: React.FC = () => {
             key={item.path}
             to={item.path}
             className={({ isActive }) =>
-              `flex items-center px-4 py-3 rounded-lg mb-1 transition-colors ${
+              `flex items-center px-4 py-3 rounded-r-full mb-1 transition-colors ${
                 isActive
                   ? 'bg-primary-green/10 text-primary-green'
                   : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white'
@@ -48,7 +48,7 @@ const Sidebar: React.FC = () => {
       <div className="p-4 mt-auto">
         <button 
           onClick={handleThemeToggle}
-          className="flex items-center px-4 py-3 w-full rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition-colors"
+          className="flex items-center px-4 py-3 w-full rounded-r-full text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition-colors"
         >
           {isDarkMode ? (
             <>
@@ -64,11 +64,11 @@ const Sidebar: React.FC = () => {
         </button>
       </div>
       
-      <div className="p-8">
+      <div className="p-7">
         <img
           src={img}
           alt="Plantes décoratives"
-          className="w-full h-48 object-cover rounded-lg"
+          className="w-full h-55 object-cover rounded-lg"
         />
       </div>
     </div>
