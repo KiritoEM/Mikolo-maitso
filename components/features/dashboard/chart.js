@@ -36,7 +36,7 @@ const PlantChart = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Nombres de plantes</Text>
+      <Text style={styles.title}>nombre de plantes</Text>
       <BarChart
         data={data}
         width={screenWidth - 40}

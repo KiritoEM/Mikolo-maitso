@@ -13,26 +13,30 @@ import FacialRecognitionButton from "../../shared/ui/button/facial";
 import LogoSvg from "../../../helpers/logosvg";
 
 import { login } from "../../../services/auth";
+import api from "../../../services/api";
 
 const LoginComponent = () => {
 
   const navigation = useNavigation();
-  // const { login } = useContext(AuthContext);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = async () => {
-    try{
-      const data = await login(email, password);
+    try {
+      console.log('Tentative de connexion avec :', { email, password });
+      const response = await api.post('/api/users/login/', { email, password });
+      console.log('Réponse complète :', response);
 
-      console.log('Token recu', data.token);
+      navigation.replace('Tabs');
       
-      navigation.navigate('Tabs', { screen: 'Accueil' });
-      
-    } catch(error){
-      Alert.alert('Erreur', error.message);
+    } catch (error) {
+      console.error('Détails de l\'erreur :', error.response || error);
+      Alert.alert(
+        'Erreur',
+        error.response?.data?.message || 'Erreur de connexion au serveur'
+      );
     }
   };
 

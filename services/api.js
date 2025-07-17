@@ -1,11 +1,11 @@
 import axios from "axios";
 
-//instance de l'action
-
 const api = axios.create({
-    baseURL:'http://localhost:5000',
-    headers:{
-        "Content-Type":'application/json', //envoi de donnees format json
-    }
+    baseURL: 'http://192.168.88.42:5000', 
+  headers: {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+  },
 });
+
 export default api;

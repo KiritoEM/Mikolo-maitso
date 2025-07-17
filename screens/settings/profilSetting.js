@@ -12,10 +12,10 @@ const user = mockUser[0];
 
 export default function ProfileSettingsScreen() {
   const navigation = useNavigation();
-  const [pseudo, setPseudo] = useState(user.name);
+  const [username, setusername] = useState(user.name);
   const [image, setImage] = useState(user.profile_picture);
 
-  const [isPseudoFocused, setIsPseudoFocused] = useState(false);
+  const [isusernameFocused, setIsusernameFocused] = useState(false);
   const [isEmailFocused, setIsEmailFocused] = useState(false);
 
   const pickImage = async () => {
@@ -48,20 +48,20 @@ export default function ProfileSettingsScreen() {
         </TouchableOpacity>
       </View>
 
-      <Text style={styles.label}>Pseudo</Text>
+      <Text style={styles.label}>username</Text>
       <View
         style={[
           styles.inputWrapper,
-          isPseudoFocused && styles.focusedInput,
+          isusernameFocused && styles.focusedInput,
         ]}
       >
         <Ionicons name="person" size={20} color="black" style={styles.icon} />
         <TextInput
           style={styles.input}
-          value={pseudo}
-          onChangeText={setPseudo}
-          onFocus={() => setIsPseudoFocused(true)}
-          onBlur={() => setIsPseudoFocused(false)}
+          value={username}
+          onChangeText={setusername}
+          onFocus={() => setIsusernameFocused(true)}
+          onBlur={() => setIsusernameFocused(false)}
         />
       </View>
 

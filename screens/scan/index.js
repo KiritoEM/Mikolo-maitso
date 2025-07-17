@@ -1,119 +1,98 @@
-// ScanScreen.js
-import React, { useEffect, useRef, useState } from 'react';
-import { View, StyleSheet, Animated, Dimensions, TouchableOpacity, Text } from 'react-native';
-import { Camera } from 'expo-camera';
-import * as MediaLibrary from 'expo-media-library';
-import { captureRef } from 'react-native-view-shot';
-
-const { height, width } = Dimensions.get('window');
-
-export default function ScanScreen() {
-  const cameraRef = useRef(null);
-  const viewRef = useRef(null);
-  const scanAnim = useRef(new Animated.Value(0)).current;
-  const [hasPermission, setHasPermission] = useState(null);
-  const [isScanning, setIsScanning] = useState(true);
+import React, { useState, useEffect } from 'react';
+import { View, Text, TouchableOpacity, Image, StyleSheet, Alert } from 'react-native';
+import * as ImagePicker from 'expo-image-picker';
+import * as ImageManipulator from 'expo-image-manipulator';
+import { imageAnalysisService } from '../../services/imageAnalysisService';
+const ScanScreen = () => {
+  const [image, setImage] = useState(null);
+  const [cameraPermission, setCameraPermission] = useState(null);
 
   useEffect(() => {
     (async () => {
-      const { status } = await Camera.requestCameraPermissionsAsync();
-      await MediaLibrary.requestPermissionsAsync();
-      setHasPermission(status === 'granted');
+      const { status } = await ImagePicker.requestCameraPermissionsAsync();
+      setCameraPermission(status === 'granted');
     })();
   }, []);
 
-  useEffect(() => {
-    animateScanLine();
-  }, []);
+  const openCamera = async () => {
+    if (cameraPermission) {
+      const result = await ImagePicker.launchCameraAsync({
+        allowsEditing: true,
+        aspect: [4, 3],
+        quality: 1,
+      });
 
-  const animateScanLine = () => {
-    scanAnim.setValue(0);
-    Animated.loop(
-      Animated.sequence([
-        Animated.timing(scanAnim, {
-          toValue: height * 0.6,
-          duration: 2000,
-          useNativeDriver: true,
-        }),
-        Animated.timing(scanAnim, {
-          toValue: 0,
-          duration: 2000,
-          useNativeDriver: true,
-        }),
-      ])
-    ).start();
+      if (!result.canceled) {
+        try {
+          const manipulatedImage = await ImageManipulator.manipulateAsync(
+            result.assets[0].uri,
+            [],
+            { compress: 1, format: ImageManipulator.SaveFormat.PNG }
+          );
+          setImage(manipulatedImage.uri);
+        } catch (error) {
+          Alert.alert("Erreur", "Échec de la conversion de l'image.");
+        }
+      }
+    } else {
+      Alert.alert("Permission refusée", "Active la caméra dans les paramètres.");
+    }
   };
 
-  const takeScreenshot = async () => {
-    setIsScanning(false); // pour figer la caméra
-    const uri = await captureRef(viewRef, {
-      format: 'png',
-      quality: 1,
-    });
-    await MediaLibrary.saveToLibraryAsync(uri);
-    alert('Capture sauvegardée !');
-    setIsScanning(true);
-  };
+  const handlePrediction = async () => {
+    if (!image) return;
 
-  if (hasPermission === null) {
-    return <View />;
-  }
-  if (hasPermission === false) {
-    return <Text>Accès caméra refusé</Text>;
-  }
+    try {
+      const result = await imageAnalysisService.analyzePlantImage(image);
+      Alert.alert("Résultat", JSON.stringify(result, null, 2));
+    } catch (error) {
+      Alert.alert("Erreur", error.message || "Erreur inconnue");
+    }
+  };
 
   return (
-    <View style={styles.container} ref={viewRef}>
-      <Camera style={styles.camera} ref={cameraRef} type={Camera.Constants.Type.back}>
-        {isScanning && (
-          <View style={styles.overlay}>
-            <Animated.View
-              style={[
-                styles.scanLine,
-                { transform: [{ translateY: scanAnim }] },
-              ]}
-            />
-          </View>
-        )}
-      </Camera>
+    <View style={styles.container}>
+      <Text style={styles.title}>Identifier une plante</Text>
+      <Text style={styles.subtitle}>Prenez une photo de la plante</Text>
 
-      <TouchableOpacity style={styles.button} onPress={takeScreenshot}>
-        <Text style={styles.text}>📷 Capturer</Text>
+      {image ? (
+        <Image source={{ uri: image }} style={styles.preview} />
+      ) : (
+        <View style={styles.placeholder}>
+          <Text>Pas d'image sélectionnée</Text>
+        </View>
+      )}
+
+      <TouchableOpacity style={styles.button} onPress={openCamera}>
+        <Text style={styles.buttonText}>Scanner</Text>
       </TouchableOpacity>
+
+      {image && (
+        <TouchableOpacity
+          style={[styles.button, { backgroundColor: '#7cb518', marginTop: 10 }]}
+          onPress={handlePrediction}
+        >
+          <Text style={styles.buttonText}>Prédire</Text>
+        </TouchableOpacity>
+      )}
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
-  container: { flex: 1 },
-  camera: { flex: 1 },
-  overlay: {
-    position: 'absolute',
-    top: '20%',
-    left: '10%',
-    width: '80%',
-    height: '60%',
-    borderColor: 'green',
-    borderWidth: 2,
-    overflow: 'hidden',
+  container: { flex: 1, padding: 20, alignItems: 'center', justifyContent: 'center' },
+  title: { fontSize: 24, fontWeight: 'bold', marginBottom: 10 },
+  subtitle: { fontSize: 16, color: '#666', marginBottom: 20 },
+  placeholder: {
+    width: '100%', height: 200, backgroundColor: '#f0f0f0',
+    justifyContent: 'center', alignItems: 'center', marginBottom: 20,
   },
-  scanLine: {
-    height: 2,
-    width: '100%',
-    backgroundColor: 'lime',
-    position: 'absolute',
-    top: 0,
-  },
+  preview: { width: '100%', height: 200, marginBottom: 20, resizeMode: 'cover' },
   button: {
-    position: 'absolute',
-    bottom: 50,
-    alignSelf: 'center',
-    backgroundColor: '#000',
-    padding: 15,
-    borderRadius: 10,
+    backgroundColor: '#7cb518', padding: 15, borderRadius: 10,
+    width: '100%', alignItems: 'center',
   },
-  text: {
-    color: '#fff',
-    fontSize: 18,
-  },
+  buttonText: { color: 'white', fontWeight: 'bold' },
 });
+
+export default ScanScreen;

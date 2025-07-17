@@ -1,19 +1,15 @@
-import React, { useContext, useEffect, useState } from "react";
-import { View,StyleSheet } from "react-native";
-import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import React from "react";
+import { View, StyleSheet } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
-
-// Auth context
-import AuthContext from "../context/authContext";
 
 // Écrans d’auth
 import LoginScreen from "../screens/auth/login";
 import InscriptionScreen from "../screens/auth/signup";
 import FinalizeProfilScreen from "../screens/auth/finalisation";
 import WelcomeScreen from "../screens/welcome";
-import LoadingScreen from "../screens/loading";
 
 // Dashboard
 import HomeScreen from "../screens/dashboard/home";
@@ -53,21 +49,8 @@ function Tabs() {
         tabBarIcon: ({ color, size, focused }) => {
           if (route.name === "Scan") {
             return (
-              <View
-                style={{
-                  backgroundColor: "#7cb518",
-                  width: 60,
-                  height: 60,
-                  borderRadius: 80,
-                  padding: 2,
-                  position: "absolute",
-                  top: -35,
-                  gap:4,
-                  borderWidth:4,
-                  borderColor:'#ffff',
-                }}
-              >
-                <Ionicons name="scan" size={24} color="white" style={styles.scan} />
+              <View style={styles.scanButton}>
+                <Ionicons name="scan" size={24} color="white" style={styles.scanIcon} />
               </View>
             );
           }
@@ -109,44 +92,43 @@ function Tabs() {
 }
 
 export default function MainNavigator() {
-  const { user, loading } = useContext(AuthContext);
-  const [checking, setChecking] = useState(true);
-
-  useEffect(() => {
-    // Simuler la vérification de session
-    setTimeout(() => setChecking(false), 2500); //2.5s
-  }, []);
-
-  if (checking || loading) return <LoadingScreen />;
-
   return (
     <NavigationContainer>
-      <Stack.Navigator
-        screenOptions={{ headerShown: false }}
-        key={user?.profile_picture ? "with-profile" : "no-profile"} 
-      >
-        {!user ? (
-          <>
-            <Stack.Screen name="Login" component={LoginScreen} />
-            <Stack.Screen name="Signup" component={InscriptionScreen} />
-          </>
-        ) : !user.profile_picture ? (
-          <Stack.Screen name="FinalizeProfile" component={FinalizeProfilScreen} />
-        ) : (
-          <>
-            <Stack.Screen name="Welcome" component={WelcomeScreen} />
-            <Stack.Screen name="Tabs" component={Tabs} />
-            <Stack.Screen name="ProfileSettings" component={ProfileSettingsScreen} />
-            <Stack.Screen name="SecuritySettings" component={SecuritySettingsScreen} />
-          </>
-        )}
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        {/* Auth */}
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Signup" component={InscriptionScreen} />
+
+        {/* Onboarding/Profile */}
+        <Stack.Screen name="FinalizeProfile" component={FinalizeProfilScreen} />
+        <Stack.Screen name="Welcome" component={WelcomeScreen} />
+
+        {/* App principale */}
+        <Stack.Screen name="Tabs" component={Tabs} />
+
+        {/* Paramètres */}
+        <Stack.Screen name="ProfileSettings" component={ProfileSettingsScreen} />
+        <Stack.Screen name="SecuritySettings" component={SecuritySettingsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
+
 const styles = StyleSheet.create({
-  scan: {
-    marginTop:9.5,
-    marginLeft:12,
-     },
-  })
+  scanButton: {
+    backgroundColor: "#7cb518",
+    width: 60,
+    height: 60,
+    borderRadius: 80,
+    padding: 2,
+    position: "absolute",
+    top: -35,
+    gap: 4,
+    borderWidth: 4,
+    borderColor: "#ffff",
+  },
+  scanIcon: {
+    marginTop: 9.5,
+    marginLeft: 12,
+  },
+});
