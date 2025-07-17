@@ -27,6 +27,6 @@ dependances mila installena
 python 
 
 puis => py -m venv venv
-
+ => \venv\Scritps\activate
  => pip install flask flask-sqlalchemy psycopg2-binary werkzeug flask-cors flask-jwt-extended python-dotenv pillow
  => pip install pyjwt
