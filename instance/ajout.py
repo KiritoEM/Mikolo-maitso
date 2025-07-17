@@ -8392,7 +8392,10 @@ plantess = [
 ]
 
 
-if(input("1 / sqlite ---- \n 2 / postgresql ---- \n  : ") == "1"):
+inpute = input("Choisissez votre base de données: \n1 / sqlite ---- :\n2 / postgresql ---- :\n3 / autre scritps : ")
+
+
+if(inpute == "1"):
 	import sqlite3
 	import json
 
@@ -8445,7 +8448,7 @@ if(input("1 / sqlite ---- \n 2 / postgresql ---- \n  : ") == "1"):
 
 
 
-else :
+elif(inpute == "2"):
 
 	mdp = input("Veuillez entrer votre mot de passe psql:")
 	dbname = input("Veuillez entrer le nom de votre base de données psql:")
@@ -8486,3 +8489,15 @@ else :
 	conn.commit()
 	cursor.close()
 	conn.close()
+	
+elif(inpute == "3"):
+	import sqlite3
+	import json
+	conn = sqlite3.connect('mikolo_maitso.db')
+	cursor = conn.cursor()
+	cursor.execute("ALTER TABLE Scanned_plant RENAME TO plant_old;")
+	
+	conn.commit()
+	cursor.close()
+	conn.close()
+

@@ -194,7 +194,8 @@ def recuperation_plant_by_id(plant_id):
 
 @app.route(f'/api/recuperation/Plant/<string:plant_name>', methods=['GET'])
 def recuperation_plant_by_name(plant_name):
-    plant = Plant.query.filter_by(current_name=plant_name).first()
+    plant_name_new = plant_name[0].upper() + plant_name[1:].lower()
+    plant = Plant.query.filter_by(current_name=plant_name_new).first()
     if not plant:
         return jsonify({'message': 'Plante non trouvée'}), 404
     return jsonify(plant.to_dict()), 200
@@ -460,11 +461,20 @@ def lancer():
         return f"Creation reussi"
     
 
+@app.route('/library/alternation/',methods=['GET'])
+def lancerAlterne():
+    with app.app_context():
+        Scanned_plant.__table__.create(database.engine)
+    return f"Creation reussi"
 
-
-
-
-
+@app.route('/href/library/drop/<string:table_name>',methods=['GET'])
+def drop_table(table_name):
+    with app.app_context():
+        newTab = table_name[0].upper() + table_name[1:].lower()
+        if table_name == 'Scanned_plant':
+            Scanned_plant.__table__.drop(database.engine)
+    return f"Table {table_name} supprimée avec succès"
+    
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
