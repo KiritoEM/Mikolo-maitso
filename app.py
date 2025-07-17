@@ -23,6 +23,7 @@ from io import BytesIO
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 import jwt
 import datetime
+from datetime import timedelta
 from functools import wraps
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -60,8 +61,18 @@ cl = ["Plant","Scanned_plant","Diagnostic","Irrigation_system","Irrigationaction
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, resources={r"/api/*": {"origins": "*"}}, supports_credentials=True)
+#CORS(app)
 app.config['JWT_SECRET_KEY'] = 'ta_clé_secrète'
+
+
+# Durée du token d'accès (access token)
+app.config['JWT_ACCESS_TOKEN_EXPIRES'] = timedelta(days=30)  # ou heures, jours
+
+# Durée du token de rafraîchissement (refresh token)
+app.config['JWT_REFRESH_TOKEN_EXPIRES'] = timedelta(days=30)
+
+
 jwt = JWTManager(app)
 
 
@@ -157,6 +168,11 @@ def ajout_sensor_data():
     return jsonify({'message': 'Données du capteur ajoutées avec succès'}), 201
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+
+
+
+
 @app.route(f'/api/users/signin/',methods=['POST'])
 def ajout_user():
     data = request.get_json()
@@ -166,15 +182,6 @@ def ajout_user():
     database.session.add(new_user)
     database.session.commit()
     return jsonify({'message': 'Utilisateur ajouté avec succès'}), 201
-
-# FIN ------------ toutes creations ici ------------------
-
-
-
-
-
-
-
 
 # Debut ------------- toutes recuperations ici ------------------
 
@@ -362,6 +369,8 @@ def authentification():
     if not check_password_hash(user.password, password):
         return jsonify({'message': 'Mot de passe incorrect'}), 401
 
+
+
     # Génération du JWT
     token = create_access_token(identity=user.id)
 
@@ -370,6 +379,12 @@ def authentification():
         'token': token,
         'user': user.to_dict()  # Assure-toi que cette méthode existe dans ton modèle
     }), 200
+
+
+
+
+
+
 
 @app.route('/protected', methods=['GET'])
 @jwt_required()
@@ -411,6 +426,17 @@ def delete_plant():
     database.session.commit()
     return jsonify({'message': 'Plante supprimée avec succès'}), 200
 
+@app.route('/api/delete/users/', methods=['DELETE'])
+def delete_user():
+    data = request.get_json()
+    user_id = data.get('id')
+    user = User.query.get(user_id)
+    if not user:
+        return jsonify({'message': 'Utilisateur non trouvé'}), 404
+    database.session.delete(user)
+    database.session.commit()
+    return jsonify({'message': 'Utilisateur supprimé avec succès'}), 200
+
 # ------------------------------------------ fin suppression -------------------------------------------------
  
 
@@ -443,16 +469,50 @@ def lancer():
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #------------------------------------Amboara ---------------------------------------
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict/', methods=['POST'])
 def predict():
     if 'image' not in request.files:
         return jsonify({"error": "Aucun fichier image trouvé"}), 400
 
     image_file = request.files['image']
-
+    print(type(image_file))
     # Valider le fichier image
     try:
         test_img = PILImage.open(BytesIO(image_file.read()))
@@ -474,6 +534,7 @@ def predict():
 
         for obj in prediction_result.predictions:
             category = obj.category
+
             results.append({
                 "id": category.id,
                 "type": category.type.name,
@@ -483,7 +544,8 @@ def predict():
                 "bbox": obj.normalizedBbox
             })
 
-        return jsonify({"predictions": results})
+        #print(results)
+        return jsonify({"predictions": results}), 200
 
     except Exception as e:
         return jsonify({
@@ -493,7 +555,19 @@ def predict():
 
 
 
+@app.route("/arroser", methods=["POST"])
+def arroser():
+    data = request.get_json()
+    quantite = data.get("quantite")
 
+    try:
+        quantite = int(quantite)
+        with serial.Serial('COM5', 9600, timeout=1) as arduino:
+            time.sleep(2)  # Temps pour que l'Arduino reset la liaison série
+            arduino.write(f"{quantite}\n".encode())
+        return jsonify({"message": f"{quantite} ml envoyés à l'Arduino."})
+    except Exception as e:
+        return jsonify({"message": f"Erreur : {e}"}), 500
 
 
 

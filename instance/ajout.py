@@ -8390,6 +8390,8 @@ plantess = [
   	 	 "water_need"  : 0.05 
 	},
 ]
+
+
 if(input("1 / sqlite ---- \n 2 / postgresql ---- \n  : ") == "1"):
 	import sqlite3
 	import json
@@ -8411,9 +8413,31 @@ if(input("1 / sqlite ---- \n 2 / postgresql ---- \n  : ") == "1"):
 			plantee['water_need']
 		))
 
+	def ajout2(plantee, cursor):
+		image_path = os.path.join(".", "images", plantée['image'])  # adapt. si tes images ne sont pas dans ./images
+
+		try:
+			with open(image_path, 'rb') as f:
+				image_data = f.read()
+		except FileNotFoundError:
+			print(f"⚠️ Image non trouvée: {image_path}, insertion annulée.")
+			return
+
+		cursor.execute("""
+			INSERT INTO plant (id, scientific_name, current_name, image, characteristic, water_need)
+			VALUES (?, ?, ?, ?, ?, ?)
+		""", (
+			plantee['id'],
+			plantee['scientific_name'],
+			plantee['current_name'],
+			image_data,  # Image en binaire
+			plantee['characteristic'],
+			plantee['water_need']
+		))
+
 	# Supposons que plantes est défini quelque part avant
 	for plt in plantess:
-		ajout(plt, cursor)
+		ajout2(plt, cursor)
 
 	conn.commit()
 	cursor.close()

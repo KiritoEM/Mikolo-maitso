@@ -1,0 +1,378 @@
+plante = [ 
+	 { 
+ 	 	 "id"  : 1,
+ 	 	 "scientific_name"  : "Abies alba", 
+  	 	 "current_name"  : "Sapin blanc", 
+  	 	 "image"  : "African Violet (Saintpaulia ionantha)/110.jpg", 
+  	 	 "characteristic"  : "Grand conifère persistant de forme conique, aux aiguilles aplaties et vert foncé, avec des cônes dressés qui se désintègrent sur l'arbre. Écorce lisse chez les jeunes arbres, fissurée avec l'âge.", 
+  	 	 "water_need"  : 15.0 
+	},
+	 { 
+ 	 	 "id"  : 2,
+ 	 	 "scientific_name"  : "Abies cephalonica", 
+  	 	 "current_name"  : "Sapin de Céphalonie", 
+  	 	 "image"  : "Aloe Vera/61.jpg", 
+  	 	 "characteristic"  : "Conifère persistant avec des aiguilles rigides, piquantes, vert foncé brillant, disposées radialement autour des rameaux. Cônes cylindriques et dressés.", 
+  	 	 "water_need"  : 12.0 
+	},
+	 { 
+ 	 	 "id"  : 3,
+ 	 	 "scientific_name"  : "Acacia dealbata", 
+  	 	 "current_name"  : "Mimosa d'hiver", 
+  	 	 "image"  : "Anthurium (Anthurium andraeanum)/275.jpg", 
+  	 	 "characteristic"  : "Arbre ou grand arbuste à croissance rapide, persistant, avec un feuillage très fin, bipenné, de couleur gris-vert. Fleurs jaunes, parfumées, en grappes, apparaissant en hiver.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 4,
+ 	 	 "scientific_name"  : "Acanthus mollis", 
+  	 	 "current_name"  : "Acanthe molle", 
+  	 	 "image"  : "Areca Palm (Dypsis lutescens)/188.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aux feuilles basales lobées et brillantes, vert foncé. Hampes florales érigées portant des fleurs blanches et pourpres en épis d'été, souvent utilisées dans l'art et l'architecture.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 5,
+ 	 	 "scientific_name"  : "Acer campestre", 
+  	 	 "current_name"  : "Érable champêtre", 
+  	 	 "image"  : "Asparagus Fern (Asparagus setaceus)/56.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc, à couronne dense et arrondie. Feuilles trilobées vert foncé, virant au jaune doré en automne. Écorce fissurée, parfois avec des crêtes liégeuses.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 6,
+ 	 	 "scientific_name"  : "Acer monspessulanum", 
+  	 	 "current_name"  : "Érable de Montpellier", 
+  	 	 "image"  : "Begonia (Begonia spp.)/21.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc méditerranéen, à croissance lente. Feuilles trilobées, petites, luisantes, vert foncé, virant au jaune ou rouge-orangé en automne. Tolérant à la sécheresse.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 7,
+ 	 	 "scientific_name"  : "Acer negundo", 
+  	 	 "current_name"  : "Érable à feuilles de frêne", 
+  	 	 "image"  : "Bird of Paradise (Strelitzia reginae)/177.jpg", 
+  	 	 "characteristic"  : "Arbre caduc à croissance rapide, souvent multitronc, avec des feuilles composées (ressemblant à celles du frêne), vert clair, virant au jaune pâle en automne. Espèce pionnière.", 
+  	 	 "water_need"  : 7.0 
+	},
+	 { 
+ 	 	 "id"  : 8,
+ 	 	 "scientific_name"  : "Acer opalus", 
+  	 	 "current_name"  : "Érable opale", 
+  	 	 "image"  : "Birds Nest Fern (Asplenium nidus)/270.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, aux feuilles palmées à 5-7 lobes arrondis, vert foncé et pubescentes en dessous. Belle coloration automnale jaune à orangée. Écorce lisse et grise.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 9,
+ 	 	 "scientific_name"  : "Acer palmatum", 
+  	 	 "current_name"  : "Érable japonais", 
+  	 	 "image"  : "Boston Fern (Nephrolepis exaltata)/285.jpg", 
+  	 	 "characteristic"  : "Petit arbre ou grand arbuste caduc, très ornemental, avec des feuilles palmées profondément lobées, souvent rouges ou pourpres, virant à des couleurs éclatantes en automne. Nombreux cultivars.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 10,
+ 	 	 "scientific_name"  : "Acer platanoides", 
+  	 	 "current_name"  : "Érable plane", 
+  	 	 "image"  : "Calathea/132.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à couronne large et arrondie. Feuilles palmées à 5-7 lobes pointus, vert vif, virant au jaune d'or en automne. Produit une sève laiteuse si la feuille est cassée.", 
+  	 	 "water_need"  : 9.0 
+	},
+	 { 
+ 	 	 "id"  : 11,
+ 	 	 "scientific_name"  : "Acer pseudoplatanus", 
+  	 	 "current_name"  : "Érable sycomore", 
+  	 	 "image"  : "Cast Iron Plant (Aspidistra elatior)/186.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à croissance rapide, avec une cime large et des feuilles palmées à 5 lobes grossièrement dentées, vert foncé sur le dessus et gris-vert en dessous. Écorce s'exfoliant en plaques.", 
+  	 	 "water_need"  : 10.0 
+	},
+	 { 
+ 	 	 "id"  : 12,
+ 	 	 "scientific_name"  : "Acer saccharinum", 
+  	 	 "current_name"  : "Érable argenté", 
+  	 	 "image"  : "Chinese evergreen (Aglaonema)/372.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à croissance très rapide, souvent avec plusieurs troncs. Feuilles profondément lobées, vert clair sur le dessus et argentées en dessous. Virage jaune pâle en automne. Rameaux pendants.", 
+  	 	 "water_need"  : 12.0 
+	},
+	 { 
+ 	 	 "id"  : 13,
+ 	 	 "scientific_name"  : "Achillea filipendulina", 
+  	 	 "current_name"  : "Achillée 'Coronation Gold'", 
+  	 	 "image"  : "Chinese Money Plant (Pilea peperomioides)/128.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée robuste formant des touffes. Tiges dressées portant de grands corymbes plats de petites fleurs jaune vif et de feuilles finement découpées et aromatiques. Excellente pour les bouquets secs.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 14,
+ 	 	 "scientific_name"  : "Achillea millefolium", 
+  	 	 "current_name"  : "Achillée millefeuille", 
+  	 	 "image"  : "Christmas Cactus (Schlumbergera bridgesii)/209.jpg", 
+  	 	 "characteristic"  : "Vivace herbacée commune, aux feuilles finement découpées et aromatiques. Petites fleurs blanches à roses, regroupées en corymbes plats. Très rustique et résistante à la sécheresse.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 15,
+ 	 	 "scientific_name"  : "Achillea ptarmica", 
+  	 	 "current_name"  : "Achillée 'Boule de Neige'", 
+  	 	 "image"  : "Chrysanthemum/135.jpg", 
+  	 	 "characteristic"  : "Vivace rhizomateuse aux feuilles lancéolées et dentelées. Fleurs blanches, doubles, ressemblant à de petits pompons, groupées en corymbes lâches. Apprécie les sols frais.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 16,
+ 	 	 "scientific_name"  : "Aconitum lycoctonum", 
+  	 	 "current_name"  : "Aconit tue-loup", 
+  	 	 "image"  : "Ctenanthe/41.jpg", 
+  	 	 "characteristic"  : "Plante vivace toxique aux fleurs en casque, généralement jaunes, regroupées en grappes lâches. Feuilles profondément lobées. Typique des sous-bois humides et des lisières.", 
+  	 	 "water_need"  : 4.0 
+	},
+	 { 
+ 	 	 "id"  : 17,
+ 	 	 "scientific_name"  : "Aconitum napellus", 
+  	 	 "current_name"  : "Aconit napel", 
+  	 	 "image"  : "Daffodils (Narcissus spp.)/238.jpg", 
+  	 	 "characteristic"  : "Plante vivace très toxique, aux fleurs bleu-violet foncé en forme de casque, groupées en épis terminaux. Feuilles palmées et découpées. Pousse dans les milieux frais et humides.", 
+  	 	 "water_need"  : 4.5 
+	},
+	 { 
+ 	 	 "id"  : 18,
+ 	 	 "scientific_name"  : "Adenostyles alliariae", 
+  	 	 "current_name"  : "Adénostyle à feuilles d'alliaire", 
+  	 	 "image"  : "Dracaena/38.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace de montagne aux grandes feuilles basales triangulaires et dentées. Hampes florales dressées portant de nombreux petits capitules rosés ou pourpres. Odeur d'ail froissée.", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 19,
+ 	 	 "scientific_name"  : "Adonis annua", 
+  	 	 "current_name"  : "Adonis d'automne", 
+  	 	 "image"  : "Dumb Cane (Dieffenbachia spp.)/517.jpg", 
+  	 	 "characteristic"  : "Petite plante annuelle aux fleurs rouges écarlates, solitaires, avec un centre sombre. Feuilles très finement découpées. Fleurissant au printemps ou en été, souvent dans les champs cultivés.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 20,
+ 	 	 "scientific_name"  : "Aegopodium podagraria", 
+  	 	 "current_name"  : "Égopode podagraire", 
+  	 	 "image"  : "Elephant Ear (Alocasia spp.)/158.jpg", 
+  	 	 "characteristic"  : "Vivace envahissante aux racines traçantes. Feuilles composées de 3 folioles dentées. Petites fleurs blanches en ombelles plates. Souvent considérée comme une mauvaise herbe tenace.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 21,
+ 	 	 "scientific_name"  : "Aesculus hippocastanum", 
+  	 	 "current_name"  : "Marronnier d'Inde", 
+  	 	 "image"  : "English Ivy (Hedera helix)/160.jpg", 
+  	 	 "characteristic"  : "Grand arbre caduc à la couronne large et arrondie. Grandes feuilles palmées à 5-7 folioles. Grandes panicules dressées de fleurs blanches tachées de jaune et rouge. Produit des 'marrons' non comestibles.", 
+  	 	 "water_need"  : 18.0 
+	},
+	 { 
+ 	 	 "id"  : 22,
+ 	 	 "scientific_name"  : "Aethionema saxatile", 
+  	 	 "current_name"  : "Aéthionème des rochers", 
+  	 	 "image"  : "Hyacinth (Hyacinthus orientalis)/6.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace tapissante, idéale pour les rocailles. Feuilles gris-vert, persistantes. Petites fleurs roses ou blanches regroupées en grappes denses. Floraison printanière.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 23,
+ 	 	 "scientific_name"  : "Agave americana", 
+  	 	 "current_name"  : "Agave d'Amérique", 
+  	 	 "image"  : "Iron Cross begonia (Begonia masoniana)/35.jpg", 
+  	 	 "characteristic"  : "Grande succulente formant une rosette de feuilles charnues, épaisses, rigides, bleu-vert, bordées d'épines. Fleur unique et spectaculaire après de nombreuses années (monocarpique), sur une hampe florale géante.", 
+  	 	 "water_need"  : 0.5 
+	},
+	 { 
+ 	 	 "id"  : 24,
+ 	 	 "scientific_name"  : "Agave sisalana", 
+  	 	 "current_name"  : "Sisal", 
+  	 	 "image"  : "Jade plant (Crassula ovata)/214.jpeg", 
+  	 	 "characteristic"  : "Plante succulente aux longues feuilles fibreuses et pointues, de couleur vert clair. Elle produit une fibre résistante (sisal) utilisée pour les cordages. La hampe florale est très haute.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 25,
+ 	 	 "scientific_name"  : "Agrimonia eupatoria", 
+  	 	 "current_name"  : "Aigremoine", 
+  	 	 "image"  : "Kalanchoe/112.jpg", 
+  	 	 "characteristic"  : "Plante vivace herbacée de taille moyenne, aux feuilles composées et dentées. Petites fleurs jaunes étoilées disposées en longs épis terminaux. Fruits en forme de cônes accrocheurs.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 26,
+ 	 	 "scientific_name"  : "Agrostemma githago", 
+  	 	 "current_name"  : "Nielle des blés", 
+  	 	 "image"  : "Lilium (Hemerocallis)/143.jpg", 
+  	 	 "characteristic"  : "Plante annuelle élancée aux fleurs solitaires, grandes, violet-rose vif, avec des rayures foncées. Feuilles étroites et opposées. Ancienne adventice des cultures céréalières, devenue rare.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 27,
+ 	 	 "scientific_name"  : "Ailanthus altissima", 
+  	 	 "current_name"  : "Ailante glanduleux", 
+  	 	 "image"  : "Lily of the valley (Convallaria majalis)/225.jpg", 
+  	 	 "characteristic"  : "Arbre caduc à croissance rapide, souvent invasif, avec de grandes feuilles composées de nombreuses folioles. Odeur désagréable au froissement. Produit de nombreuses samares en grappes. Très résistant à la pollution.", 
+  	 	 "water_need"  : 6.0 
+	},
+	 { 
+ 	 	 "id"  : 28,
+ 	 	 "scientific_name"  : "Ajuga chamaepitys", 
+  	 	 "current_name"  : "Bugle de Genève", 
+  	 	 "image"  : "Money Tree (Pachira aquatica)/312.jpg", 
+  	 	 "characteristic"  : "Petite plante vivace tapissante, aux feuilles profondément découpées et velues. Fleurs bleu-violet à blanches, en verticilles à l'aisselle des feuilles. Pousse en milieu sec et ensoleillé.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 29,
+ 	 	 "scientific_name"  : "Ajuga genevensis", 
+  	 	 "current_name"  : "Bugle rampante", 
+  	 	 "image"  : "Monstera Deliciosa (Monstera deliciosa)/325.png", 
+  	 	 "characteristic"  : "Plante vivace couvre-sol formant des rosettes, aux feuilles basales ovales et légèrement dentées. Épis floraux dressés de fleurs bleu-violet. S'étend par des stolons aériens.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 30,
+ 	 	 "scientific_name"  : "Ajuga iva", 
+  	 	 "current_name"  : "Bugle Iva", 
+  	 	 "image"  : "Orchid/127.jpg", 
+  	 	 "characteristic"  : "Petite vivace méditerranéenne tapissante, aux feuilles petites, spatulées et légèrement velues. Fleurs roses ou pourpres en épis courts. Souvent odorante.", 
+  	 	 "water_need"  : 0.8 
+	},
+	 { 
+ 	 	 "id"  : 31,
+ 	 	 "scientific_name"  : "Ajuga reptans", 
+  	 	 "current_name"  : "Bugle rampante", 
+  	 	 "image"  : "Parlor Palm (Chamaedorea elegans)/126.jpg", 
+  	 	 "characteristic"  : "Plante vivace couvre-sol aux feuilles vert foncé, parfois pourprées. Fleurs bleu-violet en épis dressés au printemps. S'étend rapidement par des stolons rampants, formant un tapis dense.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 32,
+ 	 	 "scientific_name"  : "Albizia julibrissin", 
+  	 	 "current_name"  : "Arbre à soie", 
+  	 	 "image"  : "Peace lily/207.jpg", 
+  	 	 "characteristic"  : "Petit arbre caduc ornemental, à la cime étalée en parasol. Feuilles bipennées très fines, ressemblant à des fougères. Fleurs roses en pompons plumeux, très décoratives en été. Gousses plates.", 
+  	 	 "water_need"  : 5.0 
+	},
+	 { 
+ 	 	 "id"  : 33,
+ 	 	 "scientific_name"  : "Alcea rosea", 
+  	 	 "current_name"  : "Rose trémière", 
+  	 	 "image"  : "Poinsettia (Euphorbia pulcherrima)/25.jpg", 
+  	 	 "characteristic"  : "Grande plante bisannuelle ou vivace éphémère aux tiges dressées. Grandes fleurs solitaires en forme de coupe, de couleurs variées (rose, rouge, jaune, blanc), le long d'une haute hampe florale. Rustique.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 34,
+ 	 	 "scientific_name"  : "Alliaria petiolata", 
+  	 	 "current_name"  : "Alliaire officinale", 
+  	 	 "image"  : "Polka Dot Plant (Hypoestes phyllostachya)/23.jpg", 
+  	 	 "characteristic"  : "Plante bisannuelle ou annuelle aux feuilles cordiformes et dentées. Petites fleurs blanches à quatre pétales, groupées en grappes. Odeur d'ail quand on froisse les feuilles. Envahissante.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 35,
+ 	 	 "scientific_name"  : "Allium narcissiflorum", 
+  	 	 "current_name"  : "Ail à fleurs de narcisse", 
+  	 	 "image"  : "Ponytail Palm (Beaucarnea recurvata)/94.jpg", 
+  	 	 "characteristic"  : "Petit ail ornemental aux fleurs pendantes en forme de cloche, de couleur rose-pourpre. Feuilles étroites et linéaires. Pousse en petites touffes.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 36,
+ 	 	 "scientific_name"  : "Allium nigrum", 
+  	 	 "current_name"  : "Ail noir", 
+  	 	 "image"  : "Pothos (Ivy arum)/100.jpg", 
+  	 	 "characteristic"  : "Ail ornemental aux grandes ombelles sphériques de fleurs blanches à verdâtres, parfois avec une tache pourpre au centre. Feuillage rubané. Belle floraison printanière.", 
+  	 	 "water_need"  : 1.5 
+	},
+	 { 
+ 	 	 "id"  : 37,
+ 	 	 "scientific_name"  : "Allium polyanthum", 
+  	 	 "current_name"  : "Ail à nombreuses fleurs", 
+  	 	 "image"  : "Prayer Plant (Maranta leuconeura)/306.jpg", 
+  	 	 "characteristic"  : "Ail sauvage aux feuilles linéaires. Grande ombelle sphérique de nombreuses petites fleurs blanc rosé. Odeur d'ail. Peut être envahissant dans certaines conditions.", 
+  	 	 "water_need"  : 1.2 
+	},
+	 { 
+ 	 	 "id"  : 38,
+ 	 	 "scientific_name"  : "Allium schoenoprasum", 
+  	 	 "current_name"  : "Ciboulette", 
+  	 	 "image"  : "Rattlesnake Plant (Calathea lancifolia)/267.jpg", 
+  	 	 "characteristic"  : "Vivace bulbeuse formant des touffes denses. Feuilles fines, creuses, cylindriques, vert foncé, très aromatiques. Fleurs globuleuses, roses ou pourpres. Largement utilisée comme herbe aromatique.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 39,
+ 	 	 "scientific_name"  : "Allium sphaerocephalon", 
+  	 	 "current_name"  : "Ail à tête ronde", 
+  	 	 "image"  : "Rubber Plant (Ficus elastica)/115.jpg", 
+  	 	 "characteristic"  : "Ail ornemental distinctif avec des fleurs violet-pourpre foncé regroupées en têtes sphériques et compactes au sommet de tiges fines. Aspect graphique, idéal en massif.", 
+  	 	 "water_need"  : 1.0 
+	},
+	 { 
+ 	 	 "id"  : 40,
+ 	 	 "scientific_name"  : "Allium triquetrum", 
+  	 	 "current_name"  : "Ail triquètre", 
+  	 	 "image"  : "Sago Palm (Cycas revoluta)/165.jpg", 
+  	 	 "characteristic"  : "Ail sauvage aux feuilles basales linéaires et triangulaires en coupe. Fleurs blanches en forme de clochettes pendantes, regroupées en grappes lâches. Odeur d'ail prononcée. Peut être invasif.", 
+  	 	 "water_need"  : 2.0 
+	},
+	 { 
+ 	 	 "id"  : 41,
+ 	 	 "scientific_name"  : "Allium ursinum", 
+  	 	 "current_name"  : "Ail des ours", 
+  	 	 "image"  : "Schefflera/238.jpeg", 
+  	 	 "characteristic"  : "Vivace bulbeuse formant des tapis au printemps. Grandes feuilles vertes, lancéolées, au parfum d'ail très prononcé. Fleurs blanches étoilées en ombelles. Très apprécié en cuisine sauvage.", 
+  	 	 "water_need"  : 2.5 
+	},
+	 { 
+ 	 	 "id"  : 42,
+ 	 	 "scientific_name"  : "Alnus alnobetula", 
+  	 	 "current_name"  : "Aulne vert", 
+  	 	 "image"  : "Snake plant (Sanseviera)/257.png", 
+  	 	 "characteristic"  : "Arbuste ou petit arbre caduc, souvent multi-tronc, avec une écorce lisse. Feuilles ovales, doublement dentées. Cônes ovoïdes et ligneux persistants. Pousse dans les zones froides et humides de montagne.", 
+  	 	 "water_need"  : 10.0 
+	},
+	 { 
+ 	 	 "id"  : 43,
+ 	 	 "scientific_name"  : "Alnus cordata", 
+  	 	 "current_name"  : "Aulne de Corse", 
+  	 	 "image"  : "Tradescantia/164.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne à croissance rapide, avec une cime conique. Feuilles cordiformes (en forme de cœur), brillantes, vert foncé. Tolérant aux sols secs et à la pollution. Fixe l'azote.", 
+  	 	 "water_need"  : 8.0 
+	},
+	 { 
+ 	 	 "id"  : 44,
+ 	 	 "scientific_name"  : "Alnus glutinosa", 
+  	 	 "current_name"  : "Aulne glutineux", 
+  	 	 "image"  : "Tulip/274.jpg", 
+  	 	 "characteristic"  : "Arbre caduc de taille moyenne, typique des zones humides. Feuilles arrondies ou obovales, dentelées, vert foncé et brillantes, souvent collantes quand jeunes. Cônes ligneux persistants. Supporte les sols inondés.", 
+  	 	 "water_need"  : 15.0 
+	},
+	 { 
+ 	 	 "id"  : 45,
+ 	 	 "scientific_name"  : "Althaea cannabina", 
+  	 	 "current_name"  : "Guimauve à feuilles de chanvre", 
+  	 	 "image"  : "Venus Flytrap/172.jpg", 
+  	 	 "characteristic"  : "Grande plante vivace aux tiges ramifiées. Feuilles profondément lobées, rappelant le chanvre. Fleurs rose pâle avec un centre plus sombre, ressemblant à de petites roses, groupées à l'aisselle des feuilles.", 
+  	 	 "water_need"  : 3.0 
+	},
+	 { 
+ 	 	 "id"  : 46,
+ 	 	 "scientific_name"  : "Althaea officinalis", 
+  	 	 "current_name"  : "Guimauve officinale", 
+  	 	 "image"  : "Yucca/33.jpg", 
+  	 	 "characteristic"  : "Plante vivace velue, aux feuilles lobées, gris-vert et duveteuses. Grandes fleurs rose pâle ou blanches, en forme d'entonnoir, le long des tiges. Cultivée pour ses propriétés médicinales (racine).", 
+  	 	 "water_need"  : 3.5 
+	},
+	 { 
+ 	 	 "id"  : 47,
+ 	 	 "scientific_name"  : "Amaranthus deflexus", 
+  	 	 "current_name"  : "Amarante couchée", 
+  	 	 "image"  : "ZZ Plant (Zamioculcas zamiifolia)/364.jpg", 
+  	 	 "characteristic"  : "Plante annuelle rampante ou ascendante, aux feuilles ovales à losangiques, vert foncé. Petites fleurs verdâtres ou reddish, regroupées en épis compacts et axillaires. Souvent considérée comme une mauvaise herbe.", 
+  	 	 "water_need"  : 1.0 
+	},
+]
