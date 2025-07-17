@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+psycopg2-binary
+werkzeug
+flask-cors
+flask-jwt-extended
+python-dotenv
+pillow
+pyjwt
+python_dragoneye
