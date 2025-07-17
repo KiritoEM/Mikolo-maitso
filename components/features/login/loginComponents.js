@@ -5,19 +5,19 @@ import { useNavigation } from "@react-navigation/native";
 import { View, StyleSheet, Text, TextInput, TouchableOpacity } from "react-native";
 import { MaterialIcons, Ionicons } from "@expo/vector-icons";
 
-import AuthContext from "../../../context/authContext";
+// import AuthContext from "../../../context/authContext";
 import * as LocalAuthentication from 'expo-local-authentication';
 
 import Button from "../../shared/ui/button/button";
 import FacialRecognitionButton from "../../shared/ui/button/facial";
 import LogoSvg from "../../../helpers/logosvg";
 
-// import { login } from "../../../services/auth";
+import { login } from "../../../services/auth";
 
 const LoginComponent = () => {
 
   const navigation = useNavigation();
-  const { login } = useContext(AuthContext);
+  // const { login } = useContext(AuthContext);
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

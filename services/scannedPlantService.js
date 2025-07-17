@@ -1,21 +1,22 @@
-import api from './api';
+import api from "./api";
 
-export const scannedPlantService = {
-  createScannedPlant: async (scannedPlantData) => {
-    try {
-      const response = await api.post('/api/creation/Scanned_plant/', scannedPlantData);
-      return response.data;
-    } catch (error) {
-      throw error.response.data;
+export const Scanned_plant = async (plant_id,scan_date, image_url,health_status) => {
+    try{
+        const reponse = await api.post('/api/creation/Scanned_plant/',
+        {
+          plant_id,
+          scan_date,
+          image_url,
+          health_status,
+        })
     }
-  },
-
-  getAllScannedPlants: async () => {
-    try {
-      const response = await api.get('/api/all/recuperation/Scanned_plant');
-      return response.data;
-    } catch (error) {
-      throw error.response.data;
+    catch (error){
+        if(error.reponse){
+            //Erreur du reponse
+            throw new Error(error.reponse.data.message);
+        } else {
+            // erreur serveur
+            throw new Error('Erreur de connexion serveur');
+        }
     }
-  },
-};
+}
