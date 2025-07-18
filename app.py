@@ -374,7 +374,7 @@ def authentification():
 
 
     # Génération du JWT
-    token = create_access_token(identity={"id": user.id, "name".user.username ,"email": user.email})
+    token = create_access_token(identity={"id": user.id, "name":user.username ,"email": user.email})
 
     return jsonify({
         'message': 'Authentification réussie',
