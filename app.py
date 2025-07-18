@@ -56,6 +56,13 @@ d = 'delete'
 x = 'modification'
 cl = ["Plant","Scanned_plant","Diagnostic","Irrigation_system","Irrigationaction","Microcontroller","Sensor","Sensor_data","User"]
 
+from flask_jwt_extended import get_jwt_identity
+
+@jwt_required()
+def route_protegee():
+    current_user = get_jwt_identity()
+    print(current_user)  # {'id': ..., 'email': ...}
+    user_id = current_user['id']
 
 # ----------------- Initialisation Flask et base de données ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -105,12 +112,19 @@ def ajout_plant():
     database.session.commit()
     return jsonify({'message': 'Plante ajoutée avec succès'}), 201
 
-@app.route(f'/api/creation/Scanned_plant/',methods=['POST'])
+@app.route(f'/api/creation/Scanned_plant/', methods=['POST'])
+@jwt_required()
 def ajout_scanned_plant():
+    current_user = get_jwt_identity()
+    user_id = current_user['id']
+
     data = request.get_json()
+    data['user_id'] = user_id  # injecter le user_id dans les données
+
     new_scanned_plant = Scanned_plant(**data)
     database.session.add(new_scanned_plant)
     database.session.commit()
+    
     return jsonify({'message': 'Plante scannée ajoutée avec succès'}), 201
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -360,7 +374,7 @@ def authentification():
 
 
     # Génération du JWT
-    token = create_access_token(identity=user.id)
+    token = create_access_token(identity={"id": user.id, "name".user.username ,"email": user.email})
 
     return jsonify({
         'message': 'Authentification réussie',
