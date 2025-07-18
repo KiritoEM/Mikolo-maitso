@@ -36,7 +36,7 @@ const Sidebar: React.FC = () => {
         <Logo />
       </div>
 
-      <nav className="flex-1 px-4 mt-8">
+      <nav className="px-4 mt-8">
         {navItems.map((item) => (
           <NavLink
             key={item.path}
@@ -55,7 +55,7 @@ const Sidebar: React.FC = () => {
         ))}
       </nav>
 
-      <div className="p-4 mt-auto">
+      <div className="pt-2 p-4">
         <button
           onClick={handleThemeToggle}
           className="flex items-center px-4 py-3 w-full rounded-lg text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition-colors"
@@ -89,7 +89,7 @@ const Sidebar: React.FC = () => {
         <img
           src={img}
           alt="Plantes décoratives"
-          className="w-full h-55 object-cover rounded-lg"
+          className="absolute bottom-0 -left-14 w-full h-60 object-contain rounded-lg"
         />
       </div>
     </div>
