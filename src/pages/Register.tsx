@@ -1,23 +1,23 @@
-import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import Logo from '../components/Logo';
-import Input from '../components/ui/Input';
-import Button from '../components/ui/Button';
-import Card from '../components/ui/Card';
-import { register } from '../services/authServices';
+import React, { useState } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import Logo from "../components/Logo";
+import Input from "../components/ui/Input";
+import Button from "../components/ui/Button";
+import Card from "../components/ui/Card";
+import { register } from "../services/authServices";
 
 const Register: React.FC = () => {
-  const [username, setUsername] = useState('');
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState('');
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setError('');
+    setError("");
     setIsLoading(true);
 
     try {
@@ -29,10 +29,10 @@ const Register: React.FC = () => {
         return;
       }
 
-      navigate('/');
+      navigate("/");
     } catch (err) {
-      console.error('Erreur lors de la création du compte:', err);
-      setError('Une erreur est survenue lors de la création du compte');
+      console.error("Erreur lors de la création du compte:", err);
+      setError("Une erreur est survenue lors de la création du compte");
     } finally {
       setIsLoading(false);
     }
@@ -45,9 +45,12 @@ const Register: React.FC = () => {
           <div className="flex justify-center mb-6">
             <Logo size="medium" />
           </div>
-          <h1 className="text-center text-4xl font-bold text-gray-800 mb-4">Créer un compte</h1>
+          <h1 className="text-center text-4xl font-bold text-gray-800 mb-4">
+            Créer un compte
+          </h1>
           <p className="text-center text-gray-600 mb-6">
-            Prenez soin de vos plantes et contribuez à un avenir vert en rejoignant Mikolo.
+            Prenez soin de vos plantes et contribuez à un avenir vert en
+            rejoignant Mikolo.
           </p>
 
           {error && (
@@ -95,8 +98,11 @@ const Register: React.FC = () => {
 
           <div className="text-center mt-6">
             <p className="text-gray-600">
-              Vous avez déjà un compte?{' '}
-              <Link to="/login" className="text-blue-500 hover:text-blue-700 font-medium">
+              Vous avez déjà un compte?{" "}
+              <Link
+                to="/"
+                className="text-blue-500 hover:text-blue-700 font-medium"
+              >
                 Se connecter
               </Link>
             </p>
