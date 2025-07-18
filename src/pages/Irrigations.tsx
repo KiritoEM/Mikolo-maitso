@@ -14,6 +14,7 @@ import monsteraImage from "../assets/image/monstera.jpg";
 import ficusImage from "../assets/image/ficus-lyrata2.jpg";
 import pothosImage from "../assets/image/Pothos_epipremnum_feuilles.jpg";
 import me from "../assets/image/me.jpg"; // pdp
+import DashboardHeader from "../components/layout/DashboardHeader";
 
 interface PlantIrrigation {
   id: number;
@@ -134,53 +135,20 @@ const Irrigations: React.FC = () => {
     <div className="flex h-screen bg-gray-50 dark:bg-gray-900">
       <Sidebar />
 
-      <div className="flex-1 flex flex-col overflow-hidden">
-        <header
-          className="" // bg-white dark:bg-gray-800 border-b border-gray-50 dark:border-gray-700
-        >
-          <div className="flex items-center justify-between px-8 py-4">
-            <div className="flex items-center gap-2">
-              <h1 className="text-2xl font-semibold text-gray-900 dark:text-white">
-                Bienvenue, {user?.username || "Ravaka Erlivah"}
-              </h1>
-              <span className="text-3xl">👋</span>
-            </div>
+      <div className="content ml-64 w-full max-w-[calc(100%-256px)] flex flex-col overflow-hidden">
+        <DashboardHeader />
 
-            <div className="flex items-center gap-6">
-              <div className="relative">
-                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-5 w-5" />
-                <input
-                  type="text"
-                  placeholder="Rechercher..."
-                  className="pl-10 pr-4 py-2 rounded-lg border border-gray-200 dark:border-gray-600 focus:outline-none focus:ring-2 focus:ring-primary-green/20 focus:border-primary-green w-64 bg-white dark:bg-gray-700 text-gray-900 dark:text-white"
-                />
-              </div>
-
-              <button className="relative">
-                <Bell className="h-6 w-6 text-gray-600 dark:text-gray-300" />
-                <span className="absolute -top-1 -right-1 h-4 w-4 bg-red-500 rounded-full border-2 border-white dark:border-gray-800"></span>
-              </button>
-
-              <img
-                src={user?.profilePhoto || me}
-                alt="Profile"
-                className="h-10 w-10 rounded-full object-cover"
-              />
-            </div>
-          </div>
-        </header>
-
-        <main className="flex-1 overflow-y-auto p-8">
-          <div className="max-w-7xl mx-auto">
-            <div className="flex items-center justify-between mb-8">
-              <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
-                Plantes scannées
+        <main className="px-8 pt-8 pb-14">
+          <div className="flex flex-col">
+            <div className="header flex justify-between mb-8">
+              <h1 className="text-3xl font-semibold text-gray-900 dark:text-white">
+                Irrigations{" "}
               </h1>
 
               <div className="flex items-center gap-4">
-                <button className="flex items-center gap-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
+                {/* <button className="flex items-center gap-2 px-4 py-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
                   <SlidersHorizontal className="h-5 w-5" />
-                </button>
+                </button> */}
 
                 <Button
                   onClick={exportToCSV}

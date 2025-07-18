@@ -1,4 +1,4 @@
-import { useRef, useCallback, FC } from "react";
+import { useRef, useCallback, FC, Fragment } from "react";
 import Webcam from "react-webcam";
 import { X, CheckCircle, AlertCircle } from "lucide-react";
 import * as Dialog from "@radix-ui/react-dialog";
@@ -9,7 +9,7 @@ interface PlantScannerProps {
   isOpen: boolean;
   onClose: () => void;
   onSuccess: (imageData: string) => void;
-  onRecognize: () => void;
+  onRecognize: (imageData: string) => void;
 }
 
 const PlantScanner: FC<PlantScannerProps> = ({
@@ -64,7 +64,7 @@ const PlantScanner: FC<PlantScannerProps> = ({
               </Dialog.Close>
             </div>
 
-            {/* {(status === "ready" || status === "capturing" || !status) && (
+            {(status === "ready" || status === "capturing" || !status) && (
               <Fragment>
                 <div className="relative mb-6">
                   <div className="relative w-full h-80 bg-gray-100 dark:bg-gray-700 rounded-lg overflow-hidden">
@@ -81,40 +81,16 @@ const PlantScanner: FC<PlantScannerProps> = ({
                   </div>
                 </div>
 
-                <div className="flex items-center justify-center mb-6">
-                  <div className="flex items-center gap-3">
-                    {getStatusIcon()}
-                    <span className={`text-sm font-medium ${getStatusColor()}`}>
-                      {message}
-                    </span>
-                  </div>
-                </div>
-
                 <div className="flex gap-3">
-                  <Button
-                    variant="secondary"
-                    fullWidth
-                    onClick={handleClose}
-                    disabled={isCapturing}
-                  >
+                  <Button variant="secondary" fullWidth onClick={handleClose}>
                     Annuler
                   </Button>
-                  <Button
-                    fullWidth
-                    onClick={startCapture}
-                  >
+                  <Button fullWidth onClick={startCapture}>
                     Scanner
                   </Button>
                 </div>
               </Fragment>
-            )} */}
-
-            {status === "capturing" ||
-              (status === "ready" && (
-                <Button fullWidth onClick={onRecognize}>
-                  Scanner la plante
-                </Button>
-              ))}
+            )}
 
             {status === "loading" && (
               <div className="h-80 flex flex-col items-center justify-center rounded-xl">
@@ -130,7 +106,7 @@ const PlantScanner: FC<PlantScannerProps> = ({
                 <CheckCircle className="w-16 h-16 text-primary-green mb-4" />
                 <p className="font-medium text-gray-600 dark:text-gray-400">
                   Une plante reconnue:{" "}
-                  <span className="text-gray-900 dark:text-white">
+                  <span className="text-gray-900 dark:text-white text-lg">
                     "{plantRecognized?.name.toUpperCase()}"
                   </span>
                 </p>

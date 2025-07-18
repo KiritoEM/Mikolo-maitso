@@ -98,19 +98,20 @@ const Plants: React.FC = () => {
     return maxItem;
   };
 
-  const handleRecognizePlant = async () => {
+  const handleRecognizePlant = async (imageData: string) => {
     try {
       setStatus("loading");
 
-      const blob = (await fetch("/test-plant.jfif")).blob();
-      const testImage = new File([await blob], "test.jfif", {
-        type: (await blob).type,
-      });
+      // const blob = (await fetch("/test-plant.jfif")).blob();
+      // const testImage = new File([await blob], "test.jfif", {
+      //   type: (await blob).type,
+      // });
 
-      // const plantRecognizedResponse = await scanPlant(
-      //   await base64ToFile(imageData, "scanned_plant.jpg")
-      // );
-      const plantRecognizedResponse = await scanPlant(testImage);
+      // const plantRecognizedResponse = await scanPlant(testImage);
+
+      const plantRecognizedResponse = await scanPlant(
+        await base64ToFile(imageData, "scanned_plant.jpg")
+      );
 
       if (plantRecognizedResponse.status === "success") {
         console.log(plantRecognizedResponse.data);
@@ -121,15 +122,13 @@ const Plants: React.FC = () => {
         if (predictedPlant) {
           setStatus("success");
           setPlant({
-            name: predictedPlant,
+            name: predictedPlant, 
           });
 
           const savePlantResponse = await savePlantScanned(predictedPlant, 0);
 
           if (savePlantResponse.status === "error") {
-            toast(savePlantResponse.message, {
-              type: "error",
-            });
+            console.error(savePlantResponse.message);
           }
         } else {
           setStatus("error");
@@ -181,8 +180,8 @@ const Plants: React.FC = () => {
                   isOpen={showModal}
                   onClose={handleCloseScanner}
                   onSuccess={handleRecognizePlant}
-                  onRecognize={handleRecognizePlant}
-                  />
+                  onRecognize={(imageData: string) => handleRecognizePlant(imageData)}
+                />
               </div>
             </div>
 

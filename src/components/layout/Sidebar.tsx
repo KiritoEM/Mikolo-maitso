@@ -22,7 +22,7 @@ const Sidebar: React.FC = () => {
     { icon: LayoutGrid, label: "Dashboard", path: "/dashboard" },
     { icon: Leaf, label: "Plantes", path: "/plantes" },
     { icon: Droplets, label: "Irrigations", path: "/irrigations" },
-    { icon: Settings, label: "Paramètres", path: "/parametres" },
+    // { icon: Settings, label: "Paramètres", path: "/parametres" },
   ];
 
   const handleThemeToggle = () => {
